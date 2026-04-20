@@ -12,15 +12,7 @@ KNOWLEDGE_BASE_DIR = Path(__file__).parent.parent
 
 KNOWLEDGE_FILES: Dict[str, str] = {
     "persona_basics": "docs/book_notes/01-persona-basics.md",
-    "research_methods": "docs/book_notes/02-research-methods.md",
-    "data_collection": "docs/book_notes/03-data-collection.md",
-    "segmentation": "docs/book_notes/04-segmentation.md",
-    "persona_creation": "docs/book_notes/05-persona-creation.md",
-    "scenario_design": "docs/book_notes/06-scenario-design.md",
-    "application": "docs/book_notes/07-application.md",
-    "validation": "docs/book_notes/08-validation.md",
-    "case_studies": "docs/book_notes/09-case-studies.md",
-    "quick_reference": "docs/book_notes/10-quick-reference.md",
+    "measuring_results": "docs/book_notes/02-measuring-results.md",
 }
 
 # ── 角色优先级 ──────────────────────────────────────────────

@@ -697,7 +697,7 @@ Q14. 您的年龄段？ Q15. 性别？ Q16. 职业？ Q17. 收入范围？
 | "管理层不买账" | 用商业价值语言沟通，展示ROI案例，从小项目试点 |
 
 
-## Python 工具包
+## 六、Python 工具包
 
 Skill 提供完整的 Python API，位于 `persona/` 包目录下，可直接导入使用。
 
@@ -750,5 +750,5 @@ results = search_knowledge("细分")
 ## 知识库文件
 
 知识库 Markdown 文档位于 `docs/book_notes/` 目录下：
-- `part1_人物角色介绍.md` — 人物角色基础概念与价值
-- `part3c_衡量成果.md` — 成果衡量方法论
+- `01-persona-basics.md` — 人物角色基础概念与价值
+- `02-measuring-results.md` — 成果衡量方法论

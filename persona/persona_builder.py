@@ -103,9 +103,10 @@ class PersonaBuilder:
         business_goals: Optional[List[str]] = None,
     ) -> PersonaProfile:
         """添加一个人物角色"""
-        if priority not in ("primary", "secondary", "supplementary"):
+        valid_priorities = ("primary", "secondary", "unimportant", "negative")
+        if priority not in valid_priorities:
             raise ValueError(
-                f"优先级 '{priority}' 无效，可选: primary, secondary, supplementary"
+                f"优先级 '{priority}' 无效，可选: {valid_priorities}"
             )
         persona = PersonaProfile(
             name=name,
@@ -146,9 +147,10 @@ class PersonaBuilder:
     def render_persona_markdown(self, persona: PersonaProfile) -> str:
         """输出单个角色的 Markdown 文档"""
         priority_labels = {
-            "primary": "🔴 主要角色",
+            "primary": "🔴 首要角色",
             "secondary": "🟡 次要角色",
-            "supplementary": "🔵 补充角色",
+            "unimportant": "🔵 不重要角色",
+            "negative": "⚫ 排斥角色",
         }
         lines = [f"# {persona.name}\n"]
         lines.append(f"**{persona.short_desc}**\n")
