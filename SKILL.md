@@ -695,3 +695,60 @@ Q14. 您的年龄段？ Q15. 性别？ Q16. 职业？ Q17. 收入范围？
 | "没有预算做大规模研究" | 定性方法(A1)：15次访谈+3-4周即可完成 |
 | "角色做完就被束之高阁了" | 模块F活力维护：海报、卡片、会议引用、定期更新 |
 | "管理层不买账" | 用商业价值语言沟通，展示ROI案例，从小项目试点 |
+
+
+## Python 工具包
+
+Skill 提供完整的 Python API，位于 `persona/` 包目录下，可直接导入使用。
+
+### 核心模块
+
+| 模块 | 类/函数 | 用途 |
+|------|---------|------|
+| `__init__.py` | `PersonaSkill` | 统一入口：封装全部A-J模块执行能力 |
+| `config.py` | `AnalysisConfig` | 运行时配置：分析维度、输出格式等 |
+| `utils.py` | `load_knowledge`, `search_knowledge` | 知识库加载与搜索 |
+| `templates.py` | 模板常量 | 访谈问题、角色文档、分析报告模板 |
+| `interview.py` | `InterviewBuilder` | 访谈提纲生成器：按段落生成定制化问题 |
+| `survey.py` | `SurveyBuilder` | 问卷设计器：需求型/验证型/满意度型 |
+| `segment.py` | `SegmentAnalyzer` | 用户细分：数据管理、细分评估、矩阵输出 |
+| `persona_builder.py` | `PersonaBuilder` | 角色创建：文档生成、对比表、质量评审 |
+| `strategy.py` | `StrategyAnalyzer` | 商业策略：价值评估、功能矩阵、竞品分析 |
+| `design.py` | `DesignAdvisor` | 设计指导：信息架构、内容策略、路径验证 |
+| `measure.py` | `MeasureSystem` | 衡量成果：测试脚本、指标体系、Bug优先级 |
+
+### 使用示例
+
+```python
+import sys
+sys.path.insert(0, "/path/to/web-persona-skill")
+from persona import PersonaSkill, InterviewBuilder, SegmentAnalyzer, PersonaBuilder
+
+# 统一入口
+skill = PersonaSkill("我的产品")
+guide = skill.generate_interview("用户访谈", ["goals", "behaviors", "pain_points"])
+survey = skill.generate_survey("需求调研", "needs", pain_points=["操作复杂", "找不到功能"])
+skill.add_persona("小明", "效率型", "primary", "快就是好",
+                  goals=["快速完成"], behaviors=["高频使用"], attitudes=["追求效率"],
+                  bio="小明是一位忙碌的白领...")
+print(skill.render_all_personas())
+print(skill.review_personas())
+
+# 访谈框架
+builder = InterviewBuilder("用户访谈")
+builder.set_context("针对近期注册的新用户")
+builder.include_sections(["goals", "behaviors", "pain_points"])
+builder.add_custom_question("goals", "你最希望通过我们的产品实现什么？", priority=3)
+guide = builder.build()
+print(InterviewBuilder.render_markdown(guide))
+
+# 知识库搜索
+from persona import search_knowledge
+results = search_knowledge("细分")
+```
+
+## 知识库文件
+
+知识库 Markdown 文档位于 `docs/book_notes/` 目录下：
+- `part1_人物角色介绍.md` — 人物角色基础概念与价值
+- `part3c_衡量成果.md` — 成果衡量方法论
