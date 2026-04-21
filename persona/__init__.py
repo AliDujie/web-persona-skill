@@ -227,6 +227,378 @@ class PersonaSkill:
     def search_knowledge(self, keyword: str) -> Dict[str, List[str]]:
         return search_knowledge(keyword)
 
+    # ── CEO 视角扩展分析 ──
+    def generate_persona_economics(self, total_users: int = 100000) -> str:
+        """
+        生成用户经济模型（CEO 视角）
+
+        基于用户画像，估算各 Persona 的规模、获客成本、生命周期价值。
+
+        Args:
+            total_users: 总用户数基准（默认 10 万）
+        """
+        personas = self.persona_builder.get_personas()
+        if not personas:
+            return "## 用户经济模型\n\n⚠️ 请先创建人物角色（使用 add_persona 方法）"
+
+        # 基于已创建的 persona 生成经济模型
+        persona_count = len(personas)
+        base_percentage = 100 // persona_count
+
+        result = f"""## 用户经济模型
+
+**总用户基准**: {total_users:,} 人
+
+---
+
+### 各 Persona 规模估算
+
+| Persona | 占比 | 用户数 | 优先级 | 特征描述 |
+|---------|------|--------|--------|---------|
+"""
+        for i, p in enumerate(personas):
+            percentage = base_percentage if i < persona_count - 1 else 100 - (base_percentage * (persona_count - 1))
+            user_count = int(total_users * percentage / 100)
+            priority_label = PRIORITY_LABELS.get(p.priority, p.priority)
+            result += f"| {p.name} | {percentage}% | {user_count:,} | {priority_label} | {p.short_desc} |\n"
+
+        result += f"""
+---
+
+### 获客成本估算 (CAC)
+
+| Persona | 主要渠道 | 渠道成本 | 转化率 | 预计 CAC |
+|---------|---------|---------|--------|---------|
+"""
+        for p in personas:
+            # 根据优先级估算 CAC
+            if p.priority == "primary":
+                cac = "150 元"
+                channel = "内容营销"
+                conversion = "3.5%"
+            elif p.priority == "secondary":
+                cac = "100 元"
+                channel = "社交媒体"
+                conversion = "2.8%"
+            else:
+                cac = "50 元"
+                channel = "自然流量"
+                conversion = "1.5%"
+            result += f"| {p.name} | {channel} | 5 元/点击 | {conversion} | {cac} |\n"
+
+        result += f"""
+---
+
+### 生命周期价值 (LTV)
+
+| Persona | 平均客单价 | 年消费频次 | 平均留存 | LTV |
+|---------|-----------|-----------|---------|-----|
+"""
+        for p in personas:
+            # 根据优先级估算 LTV
+            if p.priority == "primary":
+                ltv = "1,200 元"
+                avg_order = "200 元"
+                frequency = "6 次"
+                retention = "18 个月"
+            elif p.priority == "secondary":
+                ltv = "600 元"
+                avg_order = "150 元"
+                frequency = "4 次"
+                retention = "12 个月"
+            else:
+                ltv = "200 元"
+                avg_order = "100 元"
+                frequency = "2 次"
+                retention = "6 个月"
+            result += f"| {p.name} | {avg_order} | {frequency} | {retention} | {ltv} |\n"
+
+        result += f"""
+---
+
+### LTV/CAC 健康度分析
+
+| Persona | LTV | CAC | LTV/CAC | 健康标准 | 评估 |
+|---------|-----|-----|---------|---------|------|
+"""
+        for p in personas:
+            if p.priority == "primary":
+                ltv_num = 1200
+                cac_num = 150
+            elif p.priority == "secondary":
+                ltv_num = 600
+                cac_num = 100
+            else:
+                ltv_num = 200
+                cac_num = 50
+            ratio = ltv_num / cac_num
+            status = "🟢" if ratio > 3 else "🟡" if ratio > 2 else "🔴"
+            result += f"| {p.name} | {ltv_num} 元 | {cac_num} 元 | {ratio:.1f} | > 3 | {status} |\n"
+
+        result += """
+---
+
+### 战略建议
+
+#### 重点投入 Persona
+"""
+        primary_personas = [p for p in personas if p.priority == "primary"]
+        if primary_personas:
+            result += f"**推荐**: {', '.join([p.name for p in primary_personas])}\n\n"
+            result += "**理由**:\n"
+            result += "1. LTV/CAC > 3（健康）\n"
+            result += "2. 留存率高\n"
+            result += "3. 增长潜力大\n\n"
+
+        result += """#### 谨慎投入 Persona
+"""
+        low_priority = [p for p in personas if p.priority in ("unimportant", "negative")]
+        if low_priority:
+            result += f"**推荐**: {', '.join([p.name for p in low_priority])}\n\n"
+            result += "**理由**:\n"
+            result += "1. LTV/CAC < 3（需优化）\n"
+            result += "2. 价格敏感，忠诚度低\n"
+            result += "3. 建议优化定价策略\n"
+
+        return result
+
+    def generate_acquisition_strategy(self) -> str:
+        """
+        生成用户获取策略（基于 Persona 经济模型）
+
+        为各 Persona 设计针对性的获客策略和预算分配。
+        """
+        personas = self.persona_builder.get_personas()
+        if not personas:
+            return "## 用户获取策略\n\n⚠️ 请先创建人物角色（使用 add_persona 方法）"
+
+        result = """## 用户获取策略
+
+---
+
+### 各 Persona 获客策略
+
+"""
+        for p in personas:
+            if p.priority == "primary":
+                target_users = "35%"
+                channels = [
+                    {"name": "内容营销", "budget": "50 万", "users": "3,333 人", "cac": "150 元", "roi": "200%"},
+                    {"name": "KOL 合作", "budget": "30 万", "users": "2,000 人", "cac": "150 元", "roi": "180%"},
+                ]
+                key_message = "强调品质、体验、口碑"
+            elif p.priority == "secondary":
+                target_users = "40%"
+                channels = [
+                    {"name": "社交媒体广告", "budget": "40 万", "users": "4,000 人", "cac": "100 元", "roi": "150%"},
+                    {"name": "促销活动", "budget": "20 万", "users": "2,000 人", "cac": "100 元", "roi": "120%"},
+                ]
+                key_message = "强调优惠、折扣、性价比"
+            else:
+                target_users = "25%"
+                channels = [
+                    {"name": "搜索广告", "budget": "15 万", "users": "3,000 人", "cac": "50 元", "roi": "100%"},
+                    {"name": "应用商店", "budget": "5 万", "users": "1,000 人", "cac": "50 元", "roi": "80%"},
+                ]
+                key_message = "强调快速、简单、省时"
+
+            result += f"""#### {p.name}
+**目标**: 获取 {target_users} 用户
+
+**核心渠道**:
+| 渠道 | 预算 (万) | 预计获客 | CAC | ROI |
+|------|----------|---------|-----|-----|
+"""
+            for ch in channels:
+                result += f"| {ch['name']} | {ch['budget']} | {ch['users']} | {ch['cac']} | {ch['roi']} |\n"
+
+            result += f"""
+**关键信息**: {key_message}
+
+---
+
+"""
+
+        result += """### 总预算分配
+
+| Persona | 预算 (万) | 占比 | 预计获客 | 加权 CAC |
+|---------|----------|------|---------|---------|
+"""
+        total_budget = 0
+        total_users = 0
+        for p in personas:
+            if p.priority == "primary":
+                budget = 80
+                users = 5333
+                cac = 150
+            elif p.priority == "secondary":
+                budget = 60
+                users = 6000
+                cac = 100
+            else:
+                budget = 20
+                users = 4000
+                cac = 50
+            total_budget += budget
+            total_users += users
+            result += f"| {p.name} | {budget} | {int(budget/total_budget*100)}% | {users:,} 人 | {cac} 元 |\n"
+
+        result += f"""| **总计** | **{total_budget}** | **100%** | **{total_users:,} 人** | **{int(total_budget/total_users*10000)} 元** |
+
+---
+
+### 获客时间线
+
+| 阶段 | 时间 | 目标 | 预算 | 关键指标 |
+|------|------|------|------|---------|
+| Phase 1 | 0-4 周 | 验证渠道 | {int(total_budget*0.2)} 万 | CAC < 150 元 |
+| Phase 2 | 4-12 周 | 规模化 | {int(total_budget*0.5)} 万 | 获客 {int(total_users*0.6):,} 人 |
+| Phase 3 | 12-24 周 | 优化 ROI | {int(total_budget*0.3)} 万 | LTV/CAC > 3 |
+"""
+
+        return result
+
+    def generate_retention_strategy(self) -> str:
+        """
+        生成用户留存策略（基于 Persona 特征）
+
+        为各 Persona 设计针对性的留存策略和生命周期管理。
+        """
+        personas = self.persona_builder.get_personas()
+        if not personas:
+            return "## 用户留存策略\n\n⚠️ 请先创建人物角色（使用 add_persona 方法）"
+
+        result = """## 用户留存策略
+
+---
+
+### 各 Persona 留存分析
+
+| Persona | 次日留存 | 7 日留存 | 30 日留存 | 90 日留存 | 行业基准 |
+|---------|---------|---------|---------|---------|---------|
+"""
+        for p in personas:
+            if p.priority == "primary":
+                retention = {"次日": "45%", "7日": "35%", "30日": "25%", "90日": "18%", "基准": "15%"}
+                status = "🟢"
+            elif p.priority == "secondary":
+                retention = {"次日": "40%", "7日": "28%", "30日": "18%", "90日": "12%", "基准": "12%"}
+                status = "🟡"
+            else:
+                retention = {"次日": "35%", "7日": "22%", "30日": "12%", "90日": "8%", "基准": "10%"}
+                status = "🟡"
+            result += f"| {p.name} | {retention['次日']} | {retention['7日']} | {retention['30日']} | {retention['90日']} | {retention['基准']} {status} |\n"
+
+        result += """
+---
+
+### 留存驱动因素
+
+"""
+        for p in personas:
+            if p.priority == "primary":
+                drivers = ["服务质量（影响权重 40%）", "个性化体验（影响权重 35%）", "会员权益（影响权重 25%）"]
+                signals = ["满意度评分下降", "投诉次数增加", "会员续费率下降"]
+                intervention = "客服主动关怀"
+            elif p.priority == "secondary":
+                drivers = ["优惠活动频率（影响权重 50%）", "价格竞争力（影响权重 30%）", "积分奖励（影响权重 20%）"]
+                signals = ["连续 7 天未访问", "优惠券未使用", "比价行为增加"]
+                intervention = "发送专属优惠"
+            else:
+                drivers = ["操作便捷性（影响权重 60%）", "加载速度（影响权重 40%）"]
+                signals = ["连续 14 天未访问", "跳出率增加", "停留时间缩短"]
+                intervention = "简化流程引导"
+
+            result += f"""#### {p.name}
+**关键驱动因素**:
+"""
+            for i, driver in enumerate(drivers, 1):
+                result += f"{i}. {driver}\n"
+
+            result += """
+**流失预警信号**:
+"""
+            for i, signal in enumerate(signals, 1):
+                result += f"- 信号 {i}: {signal}\n"
+
+            result += f"""
+**干预策略**: {intervention}
+
+---
+
+"""
+
+        result += """### 生命周期管理
+
+| 阶段 | """
+        result += " | ".join([p.name for p in personas])
+        result += " |\n|------|" + "|".join(["--------" for _ in personas]) + "|\n"
+
+        stages = [
+            ("新用户 (0-7 天)", ["首单优惠", "品质展示", "快速引导"]),
+            ("活跃用户 (7-30 天)", ["复购优惠", "会员权益", "快捷功能"]),
+            ("成熟用户 (30-90 天)", ["积分奖励", "专属服务", "自动化"]),
+            ("衰退用户 (90 天+)", ["召回优惠", "关怀回访", "简化流程"]),
+        ]
+
+        for stage_name, strategies in stages:
+            result += f"| {stage_name} | " + " | ".join(strategies) + " |\n"
+
+        result += """
+---
+
+### 留存提升计划
+
+| 举措 | 投入 | 预期效果 | 时间周期 | 优先级 |
+|------|------|---------|---------|--------|
+| 会员体系 | 50 万 | 留存提升 15% | 8 周 | P0 |
+| 个性化推荐 | 30 万 | 留存提升 10% | 6 周 | P1 |
+| 客服优化 | 20 万 | 留存提升 8% | 4 周 | P1 |
+
+**总投入**: 100 万
+**预期 ROI**: 250%
+"""
+
+        return result
+
+    def generate_persona(self, include_ceo_analysis: bool = True, total_users: int = 100000) -> str:
+        """
+        生成用户画像报告（含 CEO 决策模块）
+
+        Args:
+            include_ceo_analysis: 是否包含 CEO 视角扩展分析（默认 True）
+            total_users: 总用户数基准（默认 10 万）
+        """
+        # 生成基础用户画像
+        personas = self.persona_builder.get_personas()
+        if not personas:
+            return "⚠️ 请先创建人物角色（使用 add_persona 方法）"
+
+        base_report = self.render_all_personas()
+
+        if include_ceo_analysis:
+            economics = self.generate_persona_economics(total_users)
+            acquisition = self.generate_acquisition_strategy()
+            retention = self.generate_retention_strategy()
+            return f"""{base_report}
+
+---
+
+## CEO 视角扩展分析
+
+{economics}
+
+---
+
+{acquisition}
+
+---
+
+{retention}
+"""
+        else:
+            return base_report
+
 
 __all__ = [
     "PersonaSkill",
