@@ -83,8 +83,8 @@ for topic, paragraphs in results.items():
 │   └── measure.py              # 测试计划与衡量体系
 └── docs/
     └── book_notes/             # 书籍知识笔记
-        ├── part1_人物角色介绍.md
-        └── part3c_衡量成果.md
+        ├── 01-persona-basics.md
+        └── 02-measuring-results.md
 ```
 
 ## 依赖
