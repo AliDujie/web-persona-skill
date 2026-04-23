@@ -6,7 +6,7 @@
 快速开始::
 
     from persona import PersonaSkill
-    skill = PersonaSkill("飞猪旅行")
+    skill = PersonaSkill("我的产品")
 
     # 生成访谈提纲
     guide = skill.generate_interview("用户访谈", ["goals", "behaviors", "pain_points"])
@@ -46,7 +46,7 @@ class PersonaSkill:
 
     用法::
 
-        skill = PersonaSkill("飞猪旅行")
+        skill = PersonaSkill("我的产品")
 
         # 模块B: 访谈提纲
         guide = skill.generate_interview("用户访谈", ["goals", "pain_points"])

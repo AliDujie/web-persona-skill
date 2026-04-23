@@ -8,11 +8,11 @@ from dataclasses import dataclass, field
 from typing import Dict, List
 
 
-KNOWLEDGE_BASE_DIR = Path(__file__).parent.parent
+KNOWLEDGE_BASE_DIR = Path(__file__).parent.parent / "references"
 
 KNOWLEDGE_FILES: Dict[str, str] = {
-    "persona_basics": "docs/book_notes/01-persona-basics.md",
-    "measuring_results": "docs/book_notes/02-measuring-results.md",
+    "persona_basics": "01-persona-basics.md",
+    "measuring_results": "02-measuring-results.md",
 }
 
 # ── 角色优先级 ──────────────────────────────────────────────
@@ -92,6 +92,9 @@ class AnalysisConfig:
     max_questions_per_section: int = 5
     output_format: str = "markdown"
     language: str = "zh"
+
+    def __post_init__(self) -> None:
+        self.validate()
 
     def validate(self) -> None:
         """校验配置合法性。"""

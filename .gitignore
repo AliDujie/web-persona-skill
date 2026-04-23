@@ -7,3 +7,13 @@ build/
 .eggs/
 .ruff_cache/
 .pytest_cache/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.log

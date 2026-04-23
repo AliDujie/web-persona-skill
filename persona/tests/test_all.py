@@ -38,16 +38,16 @@ def test_interview_builder():
     """验证访谈提纲生成器的完整流程。"""
     from persona.interview import InterviewBuilder
 
-    builder = InterviewBuilder("飞猪旅行用户访谈")
+    builder = InterviewBuilder("电商平台用户访谈")
     builder.set_context("针对近期注册的新用户")
     builder.set_target_users("过去30天内注册的用户")
     builder.include_sections(["goals", "behaviors", "pain_points"])
-    builder.add_custom_question("goals", "你最希望通过飞猪实现什么？", priority=3)
+    builder.add_custom_question("goals", "你最希望通过平台实现什么？", priority=3)
     builder.add_tip("注意观察用户提到价格时的情绪变化")
 
     guide = builder.build()
     assert len(guide.questions) > 3, "应生成多个问题"
-    assert guide.title == "飞猪旅行用户访谈"
+    assert guide.title == "电商平台用户访谈"
     assert guide.context == "针对近期注册的新用户"
 
     # 验证自定义问题被包含
@@ -57,7 +57,7 @@ def test_interview_builder():
 
     # 验证 Markdown 输出
     md = InterviewBuilder.render_markdown(guide)
-    assert "飞猪旅行用户访谈" in md
+    assert "电商平台用户访谈" in md
     assert len(md) > 200, "Markdown 输出不应过短"
 
     # 验证 JSON 输出
@@ -75,7 +75,7 @@ def test_survey_builder():
 
     # 需求型问卷
     builder = SurveyBuilder("旅行需求调研", "needs")
-    builder.set_product("飞猪旅行")
+    builder.set_product("电商平台")
     builder.set_pain_points(["找酒店耗时", "价格不透明", "评价不可信"])
     survey = builder.build()
     assert len(survey.questions) >= 3, "需求型问卷应有多个问题"
@@ -83,11 +83,11 @@ def test_survey_builder():
 
     md = SurveyBuilder.render_markdown(survey)
     assert "旅行需求调研" in md
-    assert "飞猪旅行" in md
+    assert "电商平台" in md
 
     # 验证型问卷
     builder2 = SurveyBuilder("细分验证", "validation")
-    builder2.set_product("飞猪旅行")
+    builder2.set_product("电商平台")
     builder2.set_hypotheses(["用户主要为商旅出行", "用户重视性价比"])
     survey2 = builder2.build()
     assert survey2.survey_type == "validation"
@@ -95,7 +95,7 @@ def test_survey_builder():
 
     # 满意度问卷
     builder3 = SurveyBuilder("满意度调查", "satisfaction")
-    builder3.set_product("飞猪旅行")
+    builder3.set_product("电商平台")
     survey3 = builder3.build()
     assert survey3.survey_type == "satisfaction"
 
@@ -141,7 +141,7 @@ def test_persona_builder():
     """验证角色创建、对比和质量评审的完整流程。"""
     from persona.persona_builder import PersonaBuilder
 
-    builder = PersonaBuilder("飞猪旅行")
+    builder = PersonaBuilder("电商平台")
 
     # 创建两个角色
     p1 = builder.add_persona(
@@ -205,7 +205,7 @@ def test_strategy_analyzer():
     """验证商业策略、功能矩阵和竞品分析。"""
     from persona.strategy import StrategyAnalyzer
 
-    analyzer = StrategyAnalyzer("飞猪旅行")
+    analyzer = StrategyAnalyzer("电商平台")
 
     # 角色商业价值评估
     analyzer.add_persona_value("小明", "大型市场", "高", "中", "高", 8)
@@ -238,7 +238,7 @@ def test_design_advisor():
     """验证信息架构、内容策略和路径验证。"""
     from persona.design import DesignAdvisor
 
-    advisor = DesignAdvisor("飞猪旅行")
+    advisor = DesignAdvisor("电商平台")
 
     # 导航结构
     advisor.add_nav_item("首页", ["小明", "小红"])
@@ -272,7 +272,7 @@ def test_measure_system():
     """验证测试脚本、指标体系和Bug优先级自动计算。"""
     from persona.measure import MeasureSystem
 
-    system = MeasureSystem("飞猪旅行")
+    system = MeasureSystem("电商平台")
 
     # 测试脚本
     system.add_test_script("小明", [
