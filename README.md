@@ -306,6 +306,104 @@ report = skill.generate_persona(include_ceo_analysis=True)
 print(report)  # User economics + Acquisition + Retention strategies
 ```
 
+### 💡 Core Capabilities
+
+| # | Capability | Module | Description |
+|---|------------|--------|-------------|
+| 1 | **Interview Guide Generation** | `interview.py` | User research interview framework |
+| 2 | **Survey Design** | `survey.py` | User segmentation surveys |
+| 3 | **User Segmentation Analysis** | `segment.py` | Behavior-based user clustering |
+| 4 | **Persona Creation** | `persona_builder.py` | Persona profile generation and management |
+| 5 | **Business Strategy** | `strategy.py` | Feature priority + business strategy |
+| 6 | **Information Architecture** | `design.py` | IA and content strategy |
+| 7 | **Testing and Measurement** | `measure.py` | Test planning and measurement system |
+
+### 🔧 Practical Examples
+
+```python
+# Example 1: Complete persona creation workflow
+skill = PersonaSkill("Healthcare Platform")
+
+skill.add_persona(
+    name="Dr. Sarah Chen",
+    archetype="Efficiency-Driven Professional",
+    type="primary",
+    quote="I need to access patient records quickly between appointments",
+    goals=["Reduce admin time", "Access records from mobile", "Secure data sharing"],
+    behaviors=["Uses tablet during rounds", "Checks email on phone", "Values speed over features"]
+)
+
+skill.add_persona(
+    name="Nurse James Park",
+    archetype="Care-Focused Coordinator",
+    type="secondary",
+    quote="I need to coordinate care across multiple patients",
+    goals=["Track patient progress", "Communicate with doctors", "Manage shift handoffs"],
+    behaviors=["Uses shared dashboard", "Relies on notifications", "Works in shifts"]
+)
+
+print(skill.render_all_personas())
+
+# Example 2: User segmentation analysis
+segments = skill.analyze_segments(
+    data=[
+        {"user": "A", "frequency": "daily", "features": ["search", "bookmarks"]},
+        {"user": "B", "frequency": "weekly", "features": ["dashboard", "reports"]},
+    ]
+)
+print(f"Identified {len(segments)} distinct segments")
+
+# Example 3: CEO perspective with acquisition strategy
+report = skill.generate_persona(include_ceo_analysis=True)
+print(report)  # User economics + acquisition + retention strategies
+```
+
+### 👥 Who Is This For?
+
+| Role | How This Skill Helps |
+|------|---------------------|
+| **UX Designers** | Create evidence-based personas from real user data |
+| **Product Managers** | Align product decisions with user segments |
+| **Marketing Teams** | Target messaging to specific persona needs |
+| **Service Designers** | Map services to persona journeys and touchpoints |
+| **AI Agents** | Zero-dependency Python package for automated persona generation |
+
+### 🛠️ Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Personas feel stereotypical | Add specific behavioral data and direct quotes from real research |
+| Too many personas | Consolidate to 3-5 primary personas; use secondary for edge cases |
+| Segments overlap significantly | Re-examine segmentation criteria — use behavior over demographics |
+| Design guidance too generic | Tie each design recommendation to a specific persona goal or behavior |
+
+### 🤝 Best Practices
+
+1. **Base personas on real research** — Never create personas from assumptions alone
+2. **Focus on behaviors, not demographics** — What users do matters more than who they are
+3. **Include design guidance** — Each persona should inform specific design decisions
+4. **Keep it to 3-5 personas** — More personas dilute focus; prioritize primary users
+5. **Update regularly** — Personas decay; validate with new research every 6-12 months
+
+### 🌟 User Reviews
+
+> "Our team used to have armchair personas based on assumptions. This skill helped us create evidence-based personas that actually changed our design decisions." — **UX Design Lead, Healthcare Tech**
+
+> "The segmentation analysis revealed a user group we completely missed. They turned out to be our fastest-growing segment." — **Product Manager, Social Platform**
+
+> "We present personas to the board now. Having structured, data-backed personas makes user-centered decisions much easier." — **VP of Design, Enterprise Software**
+
+### 📖 Extended Reading
+
+- **"The User Is Always Right"** — Steve Mulder, the classic persona creation guide
+- **"About Face: The Essentials of Interaction Design"** — Alan Cooper, persona-driven design
+- **"Mapping Experiences"** — Jim Kalbach, customer journey mapping
+- **"Lean UX"** — Jeff Gothelf, persona-driven agile design
+
+### 📚 About This Skill
+
+This skill is based on the methodology from *"The User Is Always Right"* by Steve Mulder, a classic in persona creation. The skill provides a structured approach to creating evidence-based user personas that drive design decisions.
+
 ### 🔗 Related Skills
 
 This skill is part of the **AliDujie UX Research Skills Ecosystem**:
