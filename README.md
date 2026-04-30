@@ -460,7 +460,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.1 | 2026-04-30 | 修复 Changelog 表格格式，添加 GitHub Topics 独立章节 |
+| v2.2 | 2026-04-30 | 更新维护，清理格式 |
 | v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
 | v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
 | v1.6 | 2026-04-23 | 添加 badges、技能生态系统 ASCII 图、双语支持、Why Use This Skill?、Quick Start、最佳实践、作者信息 |
@@ -484,8 +484,4 @@ web-persona-skill alicloud
 
 ---
 
-
-
----
-
-*Last Updated: 2026-04-30 | AliDujie Skill Ecosystem*
+*Last Updated: 2026-04-30 | AliDujie Skill Ecosystem | v2.2*
