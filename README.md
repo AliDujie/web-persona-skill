@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--04--29-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--04--30-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -460,6 +460,14 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.1 | 2026-04-30 | 修复 Changelog 表格格式，添加 GitHub Topics 独立章节 |
+| v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
+| v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
+| v1.6 | 2026-04-23 | 添加 badges、技能生态系统 ASCII 图、双语支持、Why Use This Skill?、Quick Start、最佳实践、作者信息 |
+| v1.5 | 2026-04-23 | 添加实际案例、故障排除、扩展阅读、技能生态导航 |
+| v1.4 | 2026-04-23 | 添加技能生态导航表、Last Updated 徽章 |
+| v1.3 | 2026-04-22 | 初始版本 |
+
 ### 🏷️ GitHub Topics (Recommended)
 
 ```
@@ -476,13 +484,7 @@ web-persona-skill alicloud
 
 ---
 
-## 📜 许可 (License)
-| v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
-| v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
-| v1.6 | 2026-04-23 | 添加 badges、技能生态系统 ASCII 图、双语支持、Why Use This Skill?、Quick Start、最佳实践、作者信息 |
-| v1.5 | 2026-04-23 | 添加实际案例、故障排除、扩展阅读、技能生态导航 |
-| v1.4 | 2026-04-23 | 添加技能生态导航表、Last Updated 徽章 |
-| v1.3 | 2026-04-22 | 初始版本 |
+
 
 ---
 
