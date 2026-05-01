@@ -2,7 +2,8 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Version](https://img.shields.io/badge/version-2.3.0-green.svg)](CHANGELOG.md)
+[![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Version](https://img.shields.io/badge/version-2.4.0-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -422,18 +423,6 @@ report = skill.generate_persona(include_ceo_analysis=True)
 print(report)  # User economics + acquisition + retention strategies
 ```
 
-### 👥 Who Is This For?
-
-| Role | How This Skill Helps |
-|------|---------------------|
-| **UX Designers** | Create evidence-based personas from real user data |
-| **Product Managers** | Align product decisions with user segments |
-| **Marketing Teams** | Target messaging to specific persona needs |
-| **Service Designers** | Map services to persona journeys and touchpoints |
-| **AI Agents** | Zero-dependency Python package for automated persona generation |
-
-### 🛠️ Troubleshooting
-
 | Issue | Solution |
 |-------|----------|
 | Personas feel stereotypical | Add specific behavioral data and direct quotes from real research |
@@ -491,23 +480,6 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
 
-### 🛠️ Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Personas feel stereotypical | Add specific behavioral data and direct quotes from real research |
-| Too many personas | Consolidate to 3-5 primary personas; use secondary for edge cases |
-| Segments overlap significantly | Re-examine segmentation criteria — use behavior over demographics |
-| Design guidance too generic | Tie each design recommendation to a specific persona goal or behavior |
-
-### 🤝 Best Practices
-
-1. **Base personas on real research** — Never create personas from assumptions alone
-2. **Focus on behaviors, not demographics** — What users do matters more than who they are
-3. **Include design guidance** — Each persona should inform specific design decisions
-4. **Keep it to 3-5 personas** — More personas dilute focus; prioritize primary users
-5. **Update regularly** — Personas decay; validate with new research every 6-12 months
-
 ### 📦 Dependencies
 
 - Python >= 3.8
@@ -515,6 +487,56 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - Cross-platform: macOS / Linux / Windows
 
 ---
+
+## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
+
+Persona 是 **AliDujie UX 研究技能生态系统** 的人物角色核心。以下是与其他技能配合使用的典型工作流：
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "我需要知道用户是谁" | → **Web Persona** (本技能) — 创建具体的人物角色 |
+| "我不知道该研究什么" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐帮你找到方向 |
+| "我想理解用户为什么这样做" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 挖掘用户背后的"工作" |
+| "我需要验证一个假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试和样本量计算 |
+| "我的产品价值够不够？" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 契合度诊断 |
+| "我怎么把研究结果讲清楚？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事和图表改造 |
+
+### 工作流 1: 研究 → Persona → 价值设计
+
+```
+UDM (用户访谈) → Persona (角色创建) → VPD (价值主张)
+```
+
+**场景**: 新产品设计
+1. 用 UDM 访谈和观察方法收集用户数据
+2. 用 Persona 基于行为数据创建证据驱动的角色
+3. 用 VPD 将角色目标/痛点映射到价值主张画布
+
+### 工作流 2: Persona → 定量验证 → 汇报
+
+```
+Persona (角色细分) → QuantUX (分层测试) → SWD (故事呈现)
+```
+
+**场景**: 个性化产品优化
+1. 用 Persona 创建 3-5 个核心角色
+2. 用 QuantUX 为每个角色设计分层 A/B 测试
+3. 用 SWD 将角色故事和数据可视化呈现
+
+### 工作流 3: JTBD → Persona 精化
+
+```
+JTBD (任务聚类) → Persona (角色定义) → QuantUX (规模验证)
+```
+
+**场景**: 用户细分验证
+1. 用 JTBD 四力分析识别用户切换动机和任务聚类
+2. 用 Persona 将 JTBD 发现整合到角色文档
+3. 用 QuantUX 日志分析验证角色规模和行为模式
+
+> 💡 **提示**: Persona 的黄金法则是"不从人口统计入手"——聚焦目标/行为/观点三维度。
 
 ## Run Tests / 运行测试
 
@@ -573,4 +595,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.3.0*
+*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.4.0*
