@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--04--30-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -169,6 +169,7 @@ print(report)
 web-persona-skill/
 ├── SKILL.md              # AI Agent 技能定义
 ├── README.md             # 本文件
+├── INSTALL.md            # 安装指南
 ├── pyproject.toml        # Python 包构建配置
 ├── persona/              # Python 包（纯标准库）
 │   ├── __init__.py       # PersonaSkill 统一入口
