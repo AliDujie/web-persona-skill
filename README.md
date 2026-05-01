@@ -492,6 +492,58 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 ---
 
+## 🔗 Skill Ecosystem Workflow
+
+Persona is the persona core of the **AliDujie UX Research Skills Ecosystem**. Here are typical workflows combining it with other skills:
+
+### 🧭 Quick Decision Guide
+
+| Your Question | Recommended Skill |
+|---------------|------------------|
+| "I need to know who my users are" | → **Web Persona** (this skill) — Create concrete personas |
+| "I don't know what research to do" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — Method recommendation |
+| "I want to understand why users do this" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — Uncover the underlying "jobs" |
+| "I need to validate a hypothesis" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B testing & sample size |
+| "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
+| "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+
+### Workflow 1: Research → Persona → Value Design
+
+```
+UDM (research) → Persona (persona creation) → VPD (value alignment)
+```
+
+**Scenario**: Evidence-driven persona creation
+1. Use UDM interviews and observation to collect behavioral data
+2. Use Persona to synthesize data into concrete, actionable personas
+3. Use VPD to align value proposition to each persona's needs
+
+### Workflow 2: Persona → Segmented Testing → Opportunity
+
+```
+Persona (user segments) → QuantUX (stratified A/B testing) → JTBD (opportunity scoring)
+```
+
+**Scenario**: Personalized product optimization
+1. Use Persona to define user segments based on behavior patterns
+2. Use QuantUX to design stratified A/B tests for each segment
+3. Use JTBD to calculate opportunity scores per segment
+
+### Workflow 3: User Feedback → Value Adjustment
+
+```
+Persona (user feedback) → SWD (chart makeover) → VPD (value adjustment)
+```
+
+**Scenario**: User satisfaction improvement
+1. Use Persona to collect and organize user feedback data
+2. Use SWD to transform charts, highlighting key issues
+3. Use VPD to adjust value proposition based on targeted feedback
+
+> 💡 **Tip**: Personas pair naturally with UDM — use UDM interview and observation methods to collect persona research data, building evidence-driven personas.
+
+---
+
 ## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
 
 Persona 是 **AliDujie UX 研究技能生态系统** 的人物角色核心。以下是与其他技能配合使用的典型工作流：
