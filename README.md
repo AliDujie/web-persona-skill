@@ -10,6 +10,21 @@
 
 ---
 
+### 🤔 什么时候使用这个技能？(When to Use This Skill?)
+
+| 你的场景 | 推荐技能 |
+|----------|----------|
+| 需要创建人物角色、用户细分、设计指导 | ✅ **Web Persona** (本技能) |
+| 需要选择研究方法、设计访谈、执行可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 需要理解用户"工作"、机会评分、竞争分析 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 需要定量验证假设、设计 A/B 测试、计算样本量 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 需要价值主张画布、实验验证、优先级排序 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 **提示**: Persona 与 UDM 配合使用，用 UDM 访谈/观察方法收集角色研究数据，构建证据驱动的人物角色。
+
+---
+
 ## 中文说明
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
@@ -461,6 +476,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.3 | 2026-05-01 | 添加 "When to Use This Skill?" 决策指南，更新维护 |
 | v2.2 | 2026-04-30 | 更新维护，清理格式 |
 | v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
 | v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
