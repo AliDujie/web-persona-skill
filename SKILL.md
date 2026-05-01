@@ -1,5 +1,6 @@
 ---
 name: web-persona
+version: "2.3.0"
 description: Web人物角色(Personas)创建与应用专家技能。基于《赢在用户》全书知识体系，具备完整执行能力：方法选择决策、访谈提纲生成、问卷设计、用户细分、角色文档创建、质量评审、商业策略分析、功能优先级排序、设计指导、测试计划与衡量体系，以及CEO视角经济模型与增长策略。
 ---
 
@@ -267,7 +268,33 @@ cd web-persona-skill && python persona/tests/test_all.py
 | Best Buy | 零售 | 角色指导零售店优化，目标客户消费额提升30% |
 | Sony Boom Box | 消费电子 | 用户说想要黄色但都拿了黑色，证明言行不一 |
 
-## 九、参考资料
+## 九、与其他 Skill 协作
+
+Persona 是 AliDujie UX 研究技能生态系统的用户定义层，为其他技能提供用户视角：
+
+| 协作场景 | 协作 Skill | 工作流 |
+|---------|-----------|--------|
+| 角色数据可视化 | Storytelling with Data | Persona 数据 -> SWD 选图表 -> SWD 构建故事 |
+| 角色到价值主张 | Value Proposition Design | Persona 目标/痛点 -> VPD 画布 -> Persona 验证 |
+| JTBD 研究整合 | JTBD Knowledge | JTBD Jobs -> Persona 细分映射 -> Persona 文档 |
+| 角色定量验证 | Quantitative UX Research | UXR 数据 -> Persona 定量验证 -> Persona 精化 |
+| 角色研究方法 | Universal Design Methods | UDM 访谈/观察 -> Persona 数据收集 -> Persona 创建 |
+
+**协作示例（UDM → Persona → SWD）**：
+```python
+# Step 1: UDM 收集用户研究数据
+# Step 2: Persona 创建角色文档
+from persona import PersonaSkill
+skill = PersonaSkill("电商平台")
+skill.add_persona("小明", "效率型用户", "primary", goals=["快速下单"])
+print(skill.render_all_personas())
+# Step 3: SWD 将角色数据可视化
+from swd import SWDSkill
+swd = SWDSkill("用户画像汇报")
+ctx = swd.build_context(audience="产品团队", cta="按首要角色优化设计")
+```
+
+## 十、参考资料
 
 | 书名 | 作者 | 说明 |
 |------|------|------|
