@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.4.0-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -22,6 +22,7 @@
 | 需要定量验证假设、设计 A/B 测试、计算样本量 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | 需要价值主张画布、实验验证、优先级排序 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
 | 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 需要商业分析框架、结构化思维、战略决策 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 **提示**: Persona 与 UDM 配合使用，用 UDM 访谈/观察方法收集角色研究数据，构建证据驱动的人物角色。
 
@@ -258,7 +259,7 @@ web-persona-skill/
 - **Persona + VPD** → 用人物角色驱动价值主张设计
 - **Persona + SWD** → 用数据叙事向团队展示角色故事
 
-👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [量化 UX 研究](https://github.com/AliDujie/Quantitative-UX-Research) | [价值主张设计](https://github.com/AliDujie/value-proposition-design) | [数据叙事](https://github.com/AliDujie/storytelling-with-data)
+👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [量化 UX 研究](https://github.com/AliDujie/Quantitative-UX-Research) | [价值主张设计](https://github.com/AliDujie/value-proposition-design) | [数据叙事](https://github.com/AliDujie/storytelling-with-data) | [结构化思维](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ### 🛠️ 故障排查 (Troubleshooting)
 
@@ -319,7 +320,7 @@ web-persona-skill/
 
 | Feature | Description |
 |---------|-------------|
-| 7 Core Capabilities | Interview guides, surveys, user segmentation, persona creation, business strategy, IA, testing & measurement |
+| 10 Core Capabilities | Interview guides, surveys, user segmentation, persona creation, business strategy, IA, testing & measurement, CEO decision support |
 | Persona Profiles | Behavior-based goals, pain points, design guidance |
 | CEO Perspective | User economics + acquisition + retention strategies |
 | User Segmentation | Behavior-based user clustering |
@@ -382,6 +383,9 @@ print(report)  # User economics + Acquisition + Retention strategies
 | 5 | **Business Strategy** | `strategy.py` | Feature priority + business strategy |
 | 6 | **Information Architecture** | `design.py` | IA and content strategy |
 | 7 | **Testing and Measurement** | `measure.py` | Test planning and measurement system |
+| 8 | **CEO: User Economics** | `persona.py` | LTV/CAC model, persona-level revenue estimation |
+| 9 | **CEO: Acquisition Strategy** | `persona.py` | Channel prioritization, conversion funnel, ROI |
+| 10 | **CEO: Retention Strategy** | `persona.py` | Churn prediction, lifecycle management, re-engagement |
 
 ### 🔧 Practical Examples
 
@@ -478,7 +482,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
 
-👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ### 📦 Dependencies
 
@@ -584,7 +588,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.3 | 2026-05-01 | 添加 "When to Use This Skill?" 决策指南，更新维护 |
+| v2.4.1 | 2026-05-02 | 修复 SKILL.md 版本号不一致 (v2.3.0→v2.4.0)，补充 CEO 能力到英文能力表，添加 Structured-Thinking-Model 交叉引用 |
 | v2.2 | 2026-04-30 | 更新维护，清理格式 |
 | v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
 | v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
@@ -595,4 +599,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.4.0*
+*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.4.1*
