@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -26,6 +27,33 @@
 ---
 
 ## 中文说明
+
+### 🎯 Features at a Glance / 功能一览
+
+| 功能 | 说明 |
+|------|------|
+| 7 大执行能力 | 访谈提纲、调查问卷、用户细分、人物角色创建、商业策略、信息架构、测试与衡量 |
+| 人物角色档案 | 基于行为的目标、痛点、设计指导生成 |
+| CEO 视角分析 | 用户经济模型 + 获取策略 + 留存策略 |
+| 用户细分 | 基于行为模式的用户分群 |
+| 双语支持 | 完整中英文文档和代码示例 |
+
+### 👥 适合谁？(Who Is This For?)
+
+| 角色 | 使用场景 |
+|------|----------|
+| **UX 设计师** | 基于真实数据创建证据驱动的人物角色 |
+| **产品经理** | 将产品决策与用户细分对齐 |
+| **营销团队** | 针对特定人物角色需求精准定位信息 |
+| **服务设计师** | 将服务映射到角色旅程和触点 |
+| **AI Agent** | 作为工具调用，自动化人物角色生成流程 |
+
+### 🏷️ GitHub Topics（推荐）
+
+```
+persona user-research user-segmentation design-guidance
+python-toolkit openclaw-skill alicloud
+```
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
 
@@ -286,6 +314,26 @@ web-persona-skill/
 - **Bilingual Support** — Complete CN/EN documentation for international teams
 - **Plug-and-Play** — Intuitive API, rich code examples, produce persona reports immediately
 
+### 🎯 Features at a Glance
+
+| Feature | Description |
+|---------|-------------|
+| 7 Core Capabilities | Interview guides, surveys, user segmentation, persona creation, business strategy, IA, testing & measurement |
+| Persona Profiles | Behavior-based goals, pain points, design guidance |
+| CEO Perspective | User economics + acquisition + retention strategies |
+| User Segmentation | Behavior-based user clustering |
+| Bilingual Support | Complete CN/EN documentation and code examples |
+
+### 👥 Who Is This For?
+
+| Role | Use Case |
+|------|----------|
+| **UX Designers** | Create evidence-based personas from real user data |
+| **Product Managers** | Align product decisions with user segments |
+| **Marketing Teams** | Target messaging to specific persona needs |
+| **Service Designers** | Map services to persona journeys and touchpoints |
+| **AI Agents** | Zero-dependency Python package for automated persona workflows |
+
 ### 🚀 Quick Start
 
 ```python
@@ -443,6 +491,23 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
 
+### 🛠️ Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Personas feel stereotypical | Add specific behavioral data and direct quotes from real research |
+| Too many personas | Consolidate to 3-5 primary personas; use secondary for edge cases |
+| Segments overlap significantly | Re-examine segmentation criteria — use behavior over demographics |
+| Design guidance too generic | Tie each design recommendation to a specific persona goal or behavior |
+
+### 🤝 Best Practices
+
+1. **Base personas on real research** — Never create personas from assumptions alone
+2. **Focus on behaviors, not demographics** — What users do matters more than who they are
+3. **Include design guidance** — Each persona should inform specific design decisions
+4. **Keep it to 3-5 personas** — More personas dilute focus; prioritize primary users
+5. **Update regularly** — Personas decay; validate with new research every 6-12 months
+
 ### 📦 Dependencies
 
 - Python >= 3.8
@@ -450,6 +515,27 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - Cross-platform: macOS / Linux / Windows
 
 ---
+
+## Run Tests / 运行测试
+
+```bash
+cd /path/to/web-persona-skill
+python3 -m pytest persona/tests/ -v 2>/dev/null || echo "No test suite yet — run manual validation"
+```
+
+## 🤝 参与贡献 (Contributing)
+
+欢迎贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
+
+- 🐛 **报告 Bug**: 提交 [Issue](https://github.com/AliDujie/web-persona-skill/issues)
+- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AliDujie/web-persona-skill/issues/new?template=feature_request.md)
+- 📝 **改进文档**: PR 欢迎，特别是参考文档和代码示例
+
+## 🆘 获取帮助 (Getting Help)
+
+- 📖 查看 [故障排查](#故障排查-troubleshooting) 部分
+- 📚 阅读 [references/](references/) 目录下的知识库文档
+- 💬 在 [Issues](https://github.com/AliDujie/web-persona-skill/issues) 中提问
 
 ## 📖 扩展阅读
 
