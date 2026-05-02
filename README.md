@@ -495,6 +495,27 @@ print(f"Identified {len(segments)} distinct segments")
 # Example 3: CEO perspective with acquisition strategy
 report = skill.generate_persona(include_ceo_analysis=True)
 print(report)  # User economics + acquisition + retention strategies
+
+# Example 4: End-to-end persona workflow for a SaaS product
+skill = PersonaSkill("Project Management SaaS")
+skill.add_persona(
+    name="Team Lead Maria",
+    archetype="Results-Driven Manager",
+    type="primary",
+    quote="I need visibility into what my team is working on without micromanaging",
+    goals=["Track team progress", "Identify blockers early", "Report to stakeholders"],
+    behaviors=["Checks dashboard daily", "Uses weekly reports", "Delegates via tool"]
+)
+
+# Feature prioritization based on persona impact
+skill.add_feature("Automated Status Reports", {"Team Lead Maria": "high"},
+                  business_value="high", tech_difficulty="medium")
+print(skill.render_feature_matrix())
+
+# Validate user journey (3-step rule)
+result = skill.validate_path("Team Lead Maria", "Review team status",
+                             ["Dashboard", "Team Overview", "Reports"])
+print(result)  # Pass/Fail with actionable feedback
 ```
 
 ### 🛠️ Troubleshooting
