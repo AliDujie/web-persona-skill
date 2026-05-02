@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "2.4.2"
+version = "2.4.3"
 description = "Web Persona 人物角色创建与应用工具包 - 基于《赢在用户》"
 readme = "README.md"
 requires-python = ">=3.8"
