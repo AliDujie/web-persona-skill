@@ -229,8 +229,7 @@ web-persona-skill/
 │   ├── strategy.py       # 商业策略与功能优先级
 │   ├── design.py         # 信息架构与内容策略
 │   └── measure.py        # 测试计划与衡量体系
-├── references/           # 知识库文档
-└── README.md
+└── references/           # 知识库文档
 ```
 
 ### 🔗 相关技能
