@@ -432,7 +432,7 @@ print(result)  # Pass/Fail with explanation
 | 7 | **Testing & Measurement** | `measure.py` | QA test scripts + metrics + bug prioritization (P0-P3) |
 | 8 | **CEO: User Economics** | `persona.py` | LTV/CAC model, persona-level revenue, health assessment |
 | 9 | **CEO: Acquisition Strategy** | `persona.py` | Channel prioritization, budget allocation, ROI, timeline |
-| 10 | **CEO: Retention Strategy** | `persona.py` | Retention rate, churn预警, lifecycle management |
+| 10 | **CEO: Retention Strategy** | `persona.py` | Retention rate, churn early warning, lifecycle management, reactivation |
 
 ### 🔧 Practical Examples
 
@@ -519,6 +519,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 - **[Quantitative-UX-Research](https://github.com/AliDujie/Quantitative-UX-Research)** — Quantitative research, HEART framework
 - **[Value-Proposition-Design](https://github.com/AliDujie/value-proposition-design)** — Value proposition canvas
 - **[Storytelling-with-Data](https://github.com/AliDujie/storytelling-with-data)** — Data storytelling
+- **[Structured-Thinking-Model](https://github.com/AliDujie/Structured-Thinking-Model)** — 70+ business analysis frameworks
 
 ### 🌟 Why Choose AliDujie Skill Ecosystem?
 
@@ -533,11 +534,20 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
-### 📦 Dependencies
+### 🏷️ GitHub Topics (Recommended)
 
-- Python >= 3.8
-- **No external dependencies** (pure standard library)
-- Cross-platform: macOS / Linux / Windows
+```
+persona user-research user-segmentation design-guidance
+python-toolkit openclaw-skill alicloud
+```
+
+### 📋 Changelog
+
+| Version | Date | Changes |
+|---------|------|--------|
+| v2.4.2 | 2026-05-02 | Repo maintenance: fixed encoding bug in English capabilities table (流失预警 → churn early warning), added GitHub Topics, changelog, and Structured-Thinking-Model to English section |
+| v2.4.1 | 2026-05-02 | Fixed SKILL.md version mismatch, added CEO capabilities to English table |
+| v2.4 | 2026-04-30 | Updated maintenance, cleaned up formatting |
 
 ---
 
