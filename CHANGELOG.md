@@ -1,5 +1,14 @@
 # Changelog
 
+## [R25] - 2026-05-02
+
+### Changed
+- Updated CN capability count from 7 to 10, adding CEO capabilities to Chinese table
+- Updated CN/EN features table to reflect 10 capabilities
+
+### Maintenance
+- Aligned CN/EN capability counts for consistency
+
 ## [R24] - 2026-05-02
 
 ### Added

@@ -34,7 +34,7 @@
 
 | 功能 | 说明 |
 |------|------|
-| 7 大执行能力 | 访谈提纲、调查问卷、用户细分、人物角色创建、商业策略、信息架构、测试与衡量 |
+| 10 大执行能力 | 访谈提纲、调查问卷、用户细分、人物角色创建、商业策略、信息架构、测试与衡量、CEO 用户经济模型 |
 | 人物角色档案 | 基于行为的目标、痛点、设计指导生成 |
 | CEO 视角分析 | 用户经济模型 + 获取策略 + 留存策略 |
 | 用户细分 | 基于行为模式的用户分群 |
@@ -126,7 +126,7 @@ print(report)
 # 输出：用户经济模型 + 获取策略 + 留存策略
 ```
 
-### 💡 核心能力
+### 💡 10 大核心能力
 
 | # | 能力 | 模块 | 功能 |
 |---|------|------|------|
@@ -137,6 +137,9 @@ print(report)
 | 5 | **商业策略** | `strategy.py` | 功能优先级 + 商业策略 |
 | 6 | **信息架构** | `design.py` | IA 与内容策略 |
 | 7 | **测试与衡量** | `measure.py` | 测试计划与衡量体系 |
+| 8 | **CEO: 用户经济模型** | `persona.py` | LTV/CAC 模型、角色级收入估算 |
+| 9 | **CEO: 获取策略** | `persona.py` | 渠道优先级、转化漏斗、ROI |
+| 10 | **CEO: 留存策略** | `persona.py` | 流失预测、生命周期管理、重新激活 |
 
 ### 🔧 实用示例
 
@@ -426,6 +429,8 @@ print(f"Identified {len(segments)} distinct segments")
 report = skill.generate_persona(include_ceo_analysis=True)
 print(report)  # User economics + acquisition + retention strategies
 ```
+
+### 🛠️ Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
