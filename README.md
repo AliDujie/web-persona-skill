@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.2-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.3-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -343,6 +343,17 @@ web-persona-skill/
 - **Bilingual Support** — Complete CN/EN documentation for international teams
 - **Plug-and-Play** — Intuitive API, rich code examples, produce persona reports immediately
 
+### 🧭 Quick Decision Guide
+
+| Your Question | Recommended Skill |
+|---------------|------------------|
+| "I need to know who my users are" | → **Web Persona** (this skill) — Create concrete personas |
+| "I don't know what research to do" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — Method recommendation |
+| "I want to understand why users do this" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — Uncover the underlying "jobs" |
+| "I need to validate a hypothesis" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B testing & sample size |
+| "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
+| "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+
 ### 🎯 Features at a Glance
 
 | Feature | Description |
@@ -545,6 +556,7 @@ python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
 | v2.4.2 | 2026-05-02 | Repo maintenance: fixed encoding bug in English capabilities table (流失预警 → churn early warning), added GitHub Topics, changelog, and Structured-Thinking-Model to English section |
 | v2.4.1 | 2026-05-02 | Fixed SKILL.md version mismatch, added CEO capabilities to English table |
 | v2.4 | 2026-04-30 | Updated maintenance, cleaned up formatting |
@@ -701,6 +713,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
 | v2.4.2 | 2026-05-02 | 仓库维护：优化人物角色检查清单格式，增强工作流 3 描述一致性，统一交叉引用格式，补充 Features at a Glance 表 |
 | v2.4.1 | 2026-05-02 | 修复 SKILL.md 版本号不一致 (v2.3.0→v2.4.0)，补充 CEO 能力到英文能力表，添加 Structured-Thinking-Model 交叉引用 |
 | v2.2 | 2026-04-30 | 更新维护，清理格式 |
@@ -713,4 +726,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.4.2*
+*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.4.3*
