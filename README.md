@@ -124,22 +124,47 @@ print(f"问卷题目数: {survey.question_count}")
 report = skill.generate_persona(include_ceo_analysis=True)
 print(report)
 # 输出：用户经济模型 + 获取策略 + 留存策略
+
+# ===== 场景 4: 功能优先级 + Bug 优先级 =====
+skill.add_feature("快速下单", {"小明": "高", "小红": "低"}, business_value="高", tech_difficulty="低")
+skill.add_feature("个性化推荐", {"小明": "中", "小红": "高"}, business_value="高", tech_difficulty="中")
+print(skill.render_feature_matrix())  # P0-P3 功能优先级矩阵
+
+# Bug 优先级 — 按角色影响面自动定级
+bug1 = skill.add_bug("首页加载慢", "小明", is_primary=True, blocks_core=True)
+print(bug1)  # P0: 首页加载慢 (影响首要角色核心任务)
+bug2 = skill.add_bug("推荐算法偏差", "小红", is_primary=False, blocks_core=False)
+print(bug2)  # P2: 推荐算法偏差
+
+# ===== 场景 5: 信息架构 + 内容策略 =====
+print(skill.render_ia())              # 信息架构方案
+print(skill.render_content_strategy())  # 内容策略
+
+# ===== 场景 6: 路径验证 (3 步规则) =====
+result = skill.validate_path("小明", "完成购物", ["首页", "搜索", "详情页", "下单"])
+print(result)  # 路径是否通过 3 步规则
+
+# ===== 场景 7: 测试计划 + 衡量体系 =====
+skill.add_test_script("小明", steps=["打开首页", "搜索商品", "查看详情", "完成下单"])
+skill.add_metric("小明", metric="任务完成率", target="90%", source="GA", method="数据分析")
+print(skill.render_test_plan())     # 测试计划
+print(skill.render_measure_system())  # 衡量体系
 ```
 
 ### 💡 10 大核心能力
 
 | # | 能力 | 模块 | 功能 |
 |---|------|------|------|
-| 1 | **访谈提纲生成** | `interview.py` | 用户研究访谈框架 |
-| 2 | **调查问卷设计** | `survey.py` | 用户细分问卷 |
-| 3 | **用户细分分析** | `segment.py` | 基于行为的用户分群 |
-| 4 | **人物角色创建** | `persona_builder.py` | 角色档案生成与管理 |
-| 5 | **商业策略** | `strategy.py` | 功能优先级 + 商业策略 |
-| 6 | **信息架构** | `design.py` | IA 与内容策略 |
-| 7 | **测试与衡量** | `measure.py` | 测试计划与衡量体系 |
-| 8 | **CEO: 用户经济模型** | `persona.py` | LTV/CAC 模型、角色级收入估算 |
-| 9 | **CEO: 获取策略** | `persona.py` | 渠道优先级、转化漏斗、ROI |
-| 10 | **CEO: 留存策略** | `persona.py` | 流失预测、生命周期管理、重新激活 |
+| 1 | **访谈提纲生成** | `interview.py` | 8 段落（暖场→目标→行为→痛点→期望→竞品→未来→收尾） |
+| 2 | **调查问卷设计** | `survey.py` | 需求型/验证型/满意度型三类问卷 |
+| 3 | **用户细分分析** | `segment.py` | 目标/行为/观点三维细分 + 2x2 矩阵 |
+| 4 | **人物角色创建** | `persona_builder.py` | 完整角色卡 + 对比表 + 场景 + 12 项质量评审 |
+| 5 | **商业策略** | `strategy.py` | 角色商业价值 + 功能矩阵(P0-P3) + 竞品分析 |
+| 6 | **信息架构** | `design.py` | 导航方案 + 内容策略 + 路径验证(3步规则) |
+| 7 | **测试与衡量** | `measure.py` | QA 测试脚本 + 指标体系 + Bug 优先级(P0-P3) |
+| 8 | **CEO: 用户经济模型** | `persona.py` | LTV/CAC 模型、角色级收入估算、健康度评估 |
+| 9 | **CEO: 获取策略** | `persona.py` | 获客渠道优先级、预算分配、ROI、时间线 |
+| 10 | **CEO: 留存策略** | `persona.py` | 留存率、流失预警、生命周期管理、重新激活 |
 
 ### 🔧 实用示例
 
@@ -369,25 +394,45 @@ skill.add_persona(
 print(skill.render_all_personas())
 # Output: 2 persona profiles with goals, behaviors, pain points, design guidance
 
+# Quality review (12-item checklist)
+print(skill.review_personas())
+
 # CEO Perspective Analysis
 report = skill.generate_persona(include_ceo_analysis=True)
 print(report)  # User economics + Acquisition + Retention strategies
+
+# Feature priority matrix
+skill.add_feature("Quick Checkout", {"Xiao Ming": "high", "Xiao Hong": "low"},
+                  business_value="high", tech_difficulty="low")
+print(skill.render_feature_matrix())  # P0-P3 ranking
+
+# Bug priority by persona impact
+bug = skill.add_bug("Slow homepage", "Xiao Ming", is_primary=True, blocks_core=True)
+print(bug)  # P0: Slow homepage (blocks primary persona's core task)
+
+# IA + Content strategy
+print(skill.render_ia())
+print(skill.render_content_strategy())
+
+# Path validation (3-step rule)
+result = skill.validate_path("Xiao Ming", "Complete purchase", ["Home", "Search", "Checkout"])
+print(result)  # Pass/Fail with explanation
 ```
 
-### 💡 Core Capabilities
+### 💡 10 Core Capabilities
 
 | # | Capability | Module | Description |
 |---|------------|--------|-------------|
-| 1 | **Interview Guide Generation** | `interview.py` | User research interview framework |
-| 2 | **Survey Design** | `survey.py` | User segmentation surveys |
-| 3 | **User Segmentation Analysis** | `segment.py` | Behavior-based user clustering |
-| 4 | **Persona Creation** | `persona_builder.py` | Persona profile generation and management |
-| 5 | **Business Strategy** | `strategy.py` | Feature priority + business strategy |
-| 6 | **Information Architecture** | `design.py` | IA and content strategy |
-| 7 | **Testing and Measurement** | `measure.py` | Test planning and measurement system |
-| 8 | **CEO: User Economics** | `persona.py` | LTV/CAC model, persona-level revenue estimation |
-| 9 | **CEO: Acquisition Strategy** | `persona.py` | Channel prioritization, conversion funnel, ROI |
-| 10 | **CEO: Retention Strategy** | `persona.py` | Churn prediction, lifecycle management, re-engagement |
+| 1 | **Interview Guide** | `interview.py` | 8-section interview (warmup → goals → behaviors → pains → expectations → competitors → future → closing) |
+| 2 | **Survey Design** | `survey.py` | Needs/validation/satisfaction survey types |
+| 3 | **User Segmentation** | `segment.py` | Goals/behaviors/attitudes 3D segmentation + 2x2 matrix |
+| 4 | **Persona Creation** | `persona_builder.py` | Persona profiles + comparison table + scenarios + 12-item quality review |
+| 5 | **Business Strategy** | `strategy.py` | Persona business value + feature matrix (P0-P3) + competitor analysis |
+| 6 | **Information Architecture** | `design.py` | Navigation + content strategy + path validation (3-step rule) |
+| 7 | **Testing & Measurement** | `measure.py` | QA test scripts + metrics + bug prioritization (P0-P3) |
+| 8 | **CEO: User Economics** | `persona.py` | LTV/CAC model, persona-level revenue, health assessment |
+| 9 | **CEO: Acquisition Strategy** | `persona.py` | Channel prioritization, budget allocation, ROI, timeline |
+| 10 | **CEO: Retention Strategy** | `persona.py` | Retention rate, churn预警, lifecycle management |
 
 ### 🔧 Practical Examples
 
