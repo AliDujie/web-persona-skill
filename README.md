@@ -647,7 +647,9 @@ JTBD (任务聚类) → Persona (角色定义) → QuantUX (规模验证)
 
 ```bash
 cd /path/to/web-persona-skill
-python3 -m pytest persona/tests/ -v 2>/dev/null || echo "No test suite yet — run manual validation"
+python3 -m pytest persona/tests/ -v
+# 或直接运行测试
+python3 persona/tests/test_all.py
 ```
 
 ## 🤝 参与贡献 (Contributing)
