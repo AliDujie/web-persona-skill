@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.7-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.8-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -748,9 +748,9 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
 | v2.4.7 | 2026-05-03 | 仓库维护：优化 Quick Start 场景 4-7 代码示例注释格式，统一 SKILL.md 与 README.md 版本引用 |
 | v2.4.5 | 2026-05-03 | 仓库维护：添加英文版版本历史表，统一 pyproject.toml 元数据 |
-|------|------|------|
 | v2.4.4 | 2026-05-03 | 仓库维护：跨技能一致性审查，验证交叉引用和版本对齐 |
 | v2.4.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
 | v2.4.2 | 2026-05-02 | 仓库维护：优化人物角色检查清单格式，增强工作流 3 描述一致性，统一交叉引用格式，补充 Features at a Glance 表 |
@@ -768,6 +768,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
 |---------|------|--------|
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -782,4 +783,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.7*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.8*
