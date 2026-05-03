@@ -3,8 +3,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.10-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.11-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -744,6 +744,40 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 - **Emp ID**: 27768
 - **Nickname**: 渡劫
 
+### 🚀 完整端到端工作流：从角色到设计指导 (End-to-End Workflow)
+
+以下是一个真实场景中，6 个技能如何协作完成从人物角色创建到设计指导的完整工作流：
+
+**场景**: 电商平台需要基于数据的人物角色来指导产品改版
+
+```
+Phase 1: 角色研究
+  UDM: 用户观察 + 情境访谈 (20 用户) → 收集行为数据
+  JTBD: 分析不同用户群体的核心"工作"差异
+
+Phase 2: Persona 角色创建 (本技能)
+  → segment_users: 基于行为模式分群 (搜索型/浏览型/比价型)
+  → create_persona: 创建 2 个首要角色
+     "小明" - 效率型买家 (搜索型): 快速找到商品 → 3 步内完成
+     "小红" - 发现型买家 (浏览型): 探索灵感 → 个性化推荐
+  → generate_checklist: 角色设计检查清单 (10 维度)
+  → strategy: 获取策略 + 留存策略
+
+Phase 3: 验证与量化
+  QuantUX: 日志分析验证角色行为模式 (10 万+ 用户)
+  VPD: 为不同角色设计差异化价值主张
+
+Phase 4: 设计执行
+  UDM: 基于 Persona 设计可用性测试场景
+  SWD: 将角色洞察转化为设计原则汇报
+```
+
+> 💡 **Persona 是工作流的决策锚点**: 所有后续决策 (功能优先级、设计方向、营销定位) 都以角色为锚
+
+👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
 ### 💡 Pro Tips / 专业提示
 
 - **不从人口统计入手** — 聚焦目标/行为/观点三维度，而非年龄/性别/收入
@@ -757,6 +791,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从角色创建到设计指导的 6 技能协作流程） |
 | v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
 | v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），强化角色创建原则 |
 | v2.4.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式（删除错误分隔符行），SKILL.md 版本对齐，完善角色创建原则 |
@@ -789,6 +824,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from persona creation to design guidance
 | v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
 | v2.4.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for persona creation principles |
 | v2.4.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, refined persona creation principles |
@@ -805,4 +841,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.10*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.11*
