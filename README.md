@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.8-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.9-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -590,7 +590,6 @@ python-toolkit openclaw-skill alicloud
 | Version | Date | Changes |
 | v2.4.7 | 2026-05-03 | Repo maintenance: improved Quick Start scenario 4-7 code comment formatting, aligned SKILL.md version with README.md |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
-|---------|------|--------|
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
 | v2.4.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
 | v2.4.2 | 2026-05-02 | Repo maintenance: fixed encoding bug in English capabilities table (流失预警 → churn early warning), added GitHub Topics, changelog, and Structured-Thinking-Model to English section |
@@ -749,6 +748,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | 版本 | 日期 | 变更 |
 | v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
+| v2.4.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式（删除错误分隔符行），SKILL.md 版本对齐，完善角色创建原则 |
 | v2.4.7 | 2026-05-03 | 仓库维护：优化 Quick Start 场景 4-7 代码示例注释格式，统一 SKILL.md 与 README.md 版本引用 |
 | v2.4.5 | 2026-05-03 | 仓库维护：添加英文版版本历史表，统一 pyproject.toml 元数据 |
 | v2.4.4 | 2026-05-03 | 仓库维护：跨技能一致性审查，验证交叉引用和版本对齐 |
@@ -769,7 +769,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 | Version | Date | Changes |
 | v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
-|---------|------|--------|
+| v2.4.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, refined persona creation principles |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
 | v2.4.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
@@ -783,4 +783,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.8*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.9*
