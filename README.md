@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.5-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.6-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -780,4 +780,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.5*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.6*
