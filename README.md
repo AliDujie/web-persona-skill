@@ -787,7 +787,6 @@ Phase 4: 设计执行
 - **角色需要定期更新** — 每 6-12 个月用新研究验证角色有效性
 - **Persona + QuantUX 量化验证** — 用日志分析验证角色行为模式的规模和真实性
 
-
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
@@ -822,7 +821,6 @@ Phase 4: 设计执行
 - **Update Personas Regularly** — Validate personas with new research every 6-12 months
 - **Persona + QuantUX for validation** — Use log analysis to validate persona behavior patterns at scale
 
-
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
@@ -841,6 +839,14 @@ Phase 4: 设计执行
 | v1.7 | 2026-04-25 | Unified skill ecosystem format, updated cross-references |
 | v1.6 | 2026-04-23 | Added badges, ASCII diagram, bilingual support, Why Use This Skill?, Quick Start, best practices |
 | v1.3 | 2026-04-22 | Initial release |
+
+---
+
+### 👨‍💻 Credits
+
+Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007), covering evidence-based persona creation and application.
+
+**Applicable to:** UX Designers, Product Managers, Interaction Designers, Marketers
 
 ---
 
