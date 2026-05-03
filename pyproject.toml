@@ -4,13 +4,25 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "2.4.4"
+version = "2.4.5"
 description = "Web Persona toolkit — evidence-based persona creation and application, based on 'The User Is Always Right' (人物角色创建与应用工具包 - 基于《赢在用户》)"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [{name = "AliDujie"}]
 keywords = ["persona", "user-research", "user-segmentation", "design-guidance", "openclaw-skill"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/AliDujie/web-persona-skill"
+Repository = "https://github.com/AliDujie/web-persona-skill"
+Issues = "https://github.com/AliDujie/web-persona-skill/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0", "ruff>=0.1.0"]

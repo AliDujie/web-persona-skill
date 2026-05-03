@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.4-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.5-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -588,6 +588,7 @@ python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+| v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 |---------|------|--------|
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
 | v2.4.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
@@ -746,6 +747,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.5 | 2026-05-03 | 仓库维护：添加英文版版本历史表，统一 pyproject.toml 元数据 |
 |------|------|------|
 | v2.4.4 | 2026-05-03 | 仓库维护：跨技能一致性审查，验证交叉引用和版本对齐 |
 | v2.4.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
@@ -761,4 +763,21 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.4*
+## 📋 Version History (English)
+
+| Version | Date | Changes |
+|---------|------|--------|
+| v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
+| v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
+| v2.4.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
+| v2.4.2 | 2026-05-02 | Fixed encoding bug in English capabilities table, added GitHub Topics and changelog to English section |
+| v2.4.1 | 2026-05-02 | Fixed SKILL.md version mismatch, added CEO capabilities to English table |
+| v2.4 | 2026-04-30 | Updated maintenance, cleaned up formatting |
+| v2.0 | 2026-04-29 | Unified cross-references to GitHub absolute links, added GitHub Topics |
+| v1.7 | 2026-04-25 | Unified skill ecosystem format, updated cross-references |
+| v1.6 | 2026-04-23 | Added badges, ASCII diagram, bilingual support, Why Use This Skill?, Quick Start, best practices |
+| v1.3 | 2026-04-22 | Initial release |
+
+---
+
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.5*
