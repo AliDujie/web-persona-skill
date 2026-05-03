@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.9-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.10-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -744,10 +744,21 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 - **Emp ID**: 27768
 - **Nickname**: 渡劫
 
+### 💡 Pro Tips / 专业提示
+
+- **不从人口统计入手** — 聚焦目标/行为/观点三维度，而非年龄/性别/收入
+- **行为 > 态度** — 用户"做了什么"比"说了什么"重要 10 倍
+- **首要角色最多 2 个** — 超过 2 个首要角色意味着焦点分散
+- **3 步规则验证路径** — 首要角色完成核心任务不应超过 3 步
+- **角色需要定期更新** — 每 6-12 个月用新研究验证角色有效性
+- **Persona + QuantUX 量化验证** — 用日志分析验证角色行为模式的规模和真实性
+
+
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
 | v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
+| v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），强化角色创建原则 |
 | v2.4.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式（删除错误分隔符行），SKILL.md 版本对齐，完善角色创建原则 |
 | v2.4.7 | 2026-05-03 | 仓库维护：优化 Quick Start 场景 4-7 代码示例注释格式，统一 SKILL.md 与 README.md 版本引用 |
 | v2.4.5 | 2026-05-03 | 仓库维护：添加英文版版本历史表，统一 pyproject.toml 元数据 |
@@ -765,10 +776,21 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
+### 💡 Pro Tips
+
+- **Don't Start with Demographics** — Focus on goals/behaviors/attitudes, not age/gender/income
+- **Behaviors > Attitudes** — What users "do" matters 10x more than what they "say"
+- **Max 2 Primary Personas** — More than 2 primary personas means scattered focus
+- **3-Step Rule for Paths** — Primary personas shouldn't need more than 3 steps for core tasks
+- **Update Personas Regularly** — Validate personas with new research every 6-12 months
+- **Persona + QuantUX for validation** — Use log analysis to validate persona behavior patterns at scale
+
+
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 | v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
+| v2.4.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for persona creation principles |
 | v2.4.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, refined persona creation principles |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -783,4 +805,4 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.9*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.10*
