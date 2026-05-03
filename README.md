@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.11-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.12-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -395,7 +395,7 @@ from persona import PersonaSkill
 
 skill = PersonaSkill("E-commerce Platform")
 
-# Create Personas
+# ===== Scenario 1: Create Personas =====
 skill.add_persona(
     name="Xiao Ming",
     archetype="Efficiency User",
@@ -417,27 +417,27 @@ skill.add_persona(
 print(skill.render_all_personas())
 # Output: 2 persona profiles with goals, behaviors, pain points, design guidance
 
-# Quality review (12-item checklist)
+# ===== Scenario 2: Persona Quality Review (12-Item Checklist) =====
 print(skill.review_personas())
 
-# CEO Perspective Analysis
+# ===== Scenario 3: CEO Perspective (User Economics + Acquisition + Retention) =====
 report = skill.generate_persona(include_ceo_analysis=True)
 print(report)  # User economics + Acquisition + Retention strategies
 
-# Feature priority matrix
+# ===== Scenario 4: Feature Priority Matrix =====
 skill.add_feature("Quick Checkout", {"Xiao Ming": "high", "Xiao Hong": "low"},
                   business_value="high", tech_difficulty="low")
 print(skill.render_feature_matrix())  # P0-P3 ranking
 
-# Bug priority by persona impact
+# ===== Scenario 5: Bug Priority by Persona Impact =====
 bug = skill.add_bug("Slow homepage", "Xiao Ming", is_primary=True, blocks_core=True)
 print(bug)  # P0: Slow homepage (blocks primary persona's core task)
 
-# IA + Content strategy
+# ===== Scenario 6: IA + Content Strategy =====
 print(skill.render_ia())
 print(skill.render_content_strategy())
 
-# Path validation (3-step rule)
+# ===== Scenario 7: Path Validation (3-Step Rule) =====
 result = skill.validate_path("Xiao Ming", "Complete purchase", ["Home", "Search", "Checkout"])
 print(result)  # Pass/Fail with explanation
 ```
