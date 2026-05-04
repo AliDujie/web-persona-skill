@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.15-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.16-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -871,7 +871,7 @@ Phase 4: 设计执行
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.4.15 | 2026-05-04 | 仓库维护：优化英文版 Quick Start 示例代码，增强 Features at a Glance 表格描述
+| v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单 | | 仓库维护：优化英文版 Quick Start 示例代码，增强 Features at a Glance 表格描述
 | v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
 | v2.4.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.4.8→v2.4.10 顺序校正），增强英文版 Quick Start 场景注释 |
 | v2.4.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从角色创建到设计指导的 6 技能协作流程） |
@@ -906,7 +906,7 @@ Phase 4: 设计执行
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.4.15 | 2026-05-04 | Repo maintenance: improved English Quick Start example code, enhanced Features at a Glance table descriptions
+| v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单 | | Repo maintenance: improved English Quick Start example code, enhanced Features at a Glance table descriptions
 | v2.4.14 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
 | v2.4.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.4.8→v2.4.10 sequence corrected), enhanced English Quick Start scenario comments |
 | v2.4.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from persona creation to design guidance |
@@ -936,4 +936,4 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.15*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.16*
