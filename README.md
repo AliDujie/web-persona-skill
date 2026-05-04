@@ -586,6 +586,31 @@ This skill is based on the methodology from *"The User Is Always Right"* by Stev
 
 This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 
+```
+┌─────────────────────────────────────────────────────────────┐
+│           AliDujie Skill Ecosystem                          │
+├─────────────────────────────────────────────────────────────┤
+│   📊 Quantitative UX Research ←───→ 📖 Universal Design     │
+│    (quantitative)   triangulation       Methods             │
+│              ↑                          ↓                   │
+│              │                    🎯 JTBD Knowledge          │
+│              │                    (needs insight)            │
+│   📈 Storytelling with Data ←───→ 💎 Value Proposition      │
+│    (data narrative) presentation         Design              │
+│              ↑                          ↑                   │
+│              │                    👤 Web Persona             │
+│              └────────────────────  (this skill)             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Integration patterns:**
+
+- **Persona + UDM** → Collect persona research data with UDM interviews and observation methods
+- **Persona + JTBD** → Define personas based on JTBD task clustering
+- **Persona + QuantUX** → Validate persona segments and market size with quantitative data
+- **Persona + VPD** → Drive value proposition design from persona goals and pains
+- **Persona + SWD** → Present persona stories with data-driven narratives
+
 - **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
 - **[JTBD-Knowledge-Skill](https://github.com/AliDujie/jtbd-knowledge-skill)** — Jobs-to-be-Done theory
 - **[Quantitative-UX-Research](https://github.com/AliDujie/Quantitative-UX-Research)** — Quantitative research, HEART framework
