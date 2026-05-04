@@ -3,8 +3,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.17-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.18-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--05-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -288,6 +288,9 @@ web-persona-skill/
 │              ↑                          ↑                   │
 │              │                    👤 Web Persona             │
 │              └────────────────────  (人物角色)               │
+│                                         ↓                   │
+│                                    🧠 Structured Thinking   │
+│                                    Model (结构化思维)        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -629,6 +632,9 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 │              ↑                          ↑                   │
 │              │                    👤 Web Persona             │
 │              └────────────────────  (this skill)             │
+│                                         ↓                   │
+│                                    🧠 Structured Thinking   │
+│                                    Model                     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -873,6 +879,7 @@ Phase 4: 设计执行
 
 | 版本 | 日期 | 变更 |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
+| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；优化英文版 Quick Start 示例代码，增强 Features at a Glance 表格描述
 | v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
 | v2.4.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.4.8→v2.4.10 顺序校正），增强英文版 Quick Start 场景注释 |
@@ -939,4 +946,5 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.17*
+*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.4.17*
+| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
