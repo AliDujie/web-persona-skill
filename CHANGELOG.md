@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.4.15 - 2026-05-04
+
+- Improved English Quick Start example code clarity
+- Enhanced Features at a Glance table descriptions
+- Aligned SKILL.md frontmatter version with README and pyproject.toml
+
 ## v2.4.14 - 2026-05-04
 
 - Added FAQ sections (CN/EN) to README for improved discoverability
