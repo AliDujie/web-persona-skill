@@ -884,6 +884,7 @@ Phase 4: 设计执行
 | v2.4.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, refined persona creation principles |
 | v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md |
 | v2.4.7 | 2026-05-03 | Repo maintenance: improved Quick Start scenario 4-7 code example comment formatting, aligned SKILL.md version |
+| v2.4.6 | 2026-05-03 | Repo maintenance: fixed SKILL.md version mismatch (2.4.4→2.4.6), aligned all version references across README/SKILL.md/pyproject.toml |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
 | v2.4.3 | 2026-05-02 | Added English Quick Decision Guide table to improve cross-skill discoverability |
