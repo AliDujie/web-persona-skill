@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.13-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.14-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -318,6 +318,20 @@ web-persona-skill/
 | **场景具体** | 角色在特定场景下才有意义 | "工作日午餐时" vs "一般购物" |
 | **可区分** | 角色之间行为模式明显不同 | 效率型 vs 探索型 |
 
+### ❓ 常见问题 (FAQ)
+
+**Q: 人物角色 (Persona) 和用户细分 (Segmentation) 有什么区别？**
+A: 用户细分是基于数据将用户分组（如行为模式、使用频率），人物角色是为每个重要分组创建有名字、有故事的档案。细分是"分群"，Persona 是"人格化"。本技能同时支持两者。
+
+**Q: 需要多少研究数据才能创建 Persona？**
+A: 建议至少 5-8 个用户访谈或 50+ 份问卷数据。没有足够数据时，可以用假设性 Persona 起步，但必须标注"待验证"并尽快用真实研究确认。
+
+**Q: Persona 创建后怎么用？**
+A: 在产品设计、功能优先级、营销信息、服务设计等决策中引用 Persona。问自己"这个决定对 [角色名] 有什么影响？"如果团队不做 Persona 驱动的决策，Persona 就成了墙上装饰。
+
+**Q: 如何验证 Persona 的有效性？**
+A: 用新研究数据验证角色行为模式是否成立。配合 QuantUX 的日志分析，用真实行为数据验证角色假设。建议每 6-12 个月更新一次。
+
 ### 📚 关于《The User Is Always Right》
 
 - **书名**: The User Is Always Right: A Practical Guide to Creating and Using Personas for the Web
@@ -534,6 +548,20 @@ print(result)  # Pass/Fail with actionable feedback
 3. **Include design guidance** — Each persona should inform specific design decisions
 4. **Keep it to 3-5 personas** — More personas dilute focus; prioritize primary users
 5. **Update regularly** — Personas decay; validate with new research every 6-12 months
+
+### ❓ FAQ
+
+**Q: What's the difference between Personas and User Segmentation?**
+A: Segmentation groups users based on data (behavior patterns, usage frequency); Personas create named, storied profiles for each important group. Segmentation is "clustering," Personas are "humanizing." This skill supports both.
+
+**Q: How much research data is needed to create Personas?**
+A: At least 5-8 user interviews or 50+ survey responses. With insufficient data, start with assumption-based personas but label them "unvalidated" and confirm with real research ASAP.
+
+**Q: How do I use Personas after creating them?**
+A: Reference them in product design, feature prioritization, marketing messaging, and service design decisions. Ask "What impact does this decision have on [persona name]?" If your team doesn't make persona-driven decisions, they become wall decorations.
+
+**Q: How do I validate Persona effectiveness?**
+A: Validate behavior patterns with new research data. Use QuantUX log analysis to confirm persona assumptions with real behavior data. Recommend updating every 6-12 months.
 
 ### 🌟 User Reviews
 
@@ -790,7 +818,7 @@ Phase 4: 设计执行
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.4.13 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
+| v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
 | v2.4.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.4.8→v2.4.10 顺序校正），增强英文版 Quick Start 场景注释 |
 | v2.4.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从角色创建到设计指导的 6 技能协作流程） |
 | v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），强化角色创建原则 |
@@ -824,7 +852,7 @@ Phase 4: 设计执行
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.4.13 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
+| v2.4.14 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
 | v2.4.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.4.8→v2.4.10 sequence corrected), enhanced English Quick Start scenario comments |
 | v2.4.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from persona creation to design guidance |
 | v2.4.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for persona creation principles |
@@ -852,4 +880,4 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.13*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.14*
