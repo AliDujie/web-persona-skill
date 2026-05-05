@@ -1,10 +1,11 @@
 # Web Persona Skill
 
+[![Ecosystem](https://img.shields.io/badge/AliDujie-Ecosystem-7B68EE.svg)](https://github.com/AliDujie)
 [![GitHub stars](https://img.shields.io/github/stars/AliDujie/web-persona-skill)](https://github.com/AliDujie/web-persona-skill)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--05-brightgreen.svg)
-[![Version](https://img.shields.io/badge/version-2.1.0-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.1-green.svg)](CHANGELOG.md)
 
 基于《赢在用户：Web 人物角色创建和应用实践指南》(The User Is Always Right) 的完整人物角色工具包。
 
@@ -663,11 +664,13 @@ P2: 分数 < 3.0
 
 ## 📝 更新日志 (Changelog)
 
-- **v1.0** — 初始版本，8 大核心执行能力
-- **v1.1** — 添加 Python API、知识库搜索
-- **v1.2** — 增强功能优先级矩阵、添加 Bug 优先级自动计算
-- **v1.3** — 完善质量评审体系、添加生态系统集成和用户评价
+- **v2.2.1** — 英文文档增强：添加 Features at a Glance、Who Is This For、Best Practices、Extended Reading、Skill Ecosystem Workflow、Troubleshooting 章节；添加生态系统徽章
+- **v2.1.0** — 添加英文章节、FAQ、版本徽章、修复生态系统链接
 - **v1.4** — 添加技能生态系统导航、Last Updated 时间戳
+- **v1.3** — 完善质量评审体系、添加生态系统集成和用户评价
+- **v1.2** — 增强功能优先级矩阵、添加 Bug 优先级自动计算
+- **v1.1** — 添加 Python API、知识库搜索
+- **v1.0** — 初始版本，8 大核心执行能力
 
 ## 🌟 用户评价 (Testimonials)
 
@@ -736,6 +739,176 @@ print(skill.render_feature_matrix())
 | "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
 
+### 🎯 Features at a Glance
+
+| Feature | Description |
+|---------|-------------|
+| Persona Builder | Complete persona document generation with structured fields |
+| Interview Framework | Goal/behavior/pain-point based interview guide generation |
+| Survey Designer | Need-based, validation, and satisfaction survey templates |
+| User Segmentation | Data-driven segmentation with evaluation matrices |
+| Quality Review | Built-in persona credibility and usability checks |
+| Feature Prioritization | Auto-calculate feature and bug priorities by persona importance |
+| Design Guidance | Information architecture, content strategy, path validation |
+| 8 Core Capabilities | Full workflow from research to design guidance |
+| Zero Dependencies | Pure Python standard library, 5-minute setup |
+
+### 👥 Who Is This For?
+
+| Role | Use Case |
+|------|----------|
+| **UX Designers** | Create research-based personas to guide design decisions |
+| **Product Managers** | Prioritize features based on persona importance and usage frequency |
+| **UX Researchers** | Systematic persona creation from interview and survey data |
+| **Design Teams** | Align team around shared, credible user representations |
+| **AI Agents** | Zero-dependency Python package for automated persona workflows |
+
+### 🔧 Practical Examples
+
+```python
+from persona import PersonaSkill
+
+# Example 1: Full persona creation workflow
+skill = PersonaSkill("Travel Booking App")
+
+# Step 1: Generate research instruments
+interview = skill.generate_interview("User Research",
+    ["goals", "behaviors", "pain_points", "technology_usage"])
+survey = skill.generate_survey("Needs Assessment", "needs",
+    pain_points=["Long search time", "Price opacity"])
+
+# Step 2: Create primary persona
+skill.add_persona("Xiao Ming", "Efficiency-Seeking User", "primary",
+    "I just want to book and go",
+    goals=["Complete booking in under 3 minutes"],
+    behaviors=["Uses mobile app during commute"],
+    attitudes=["Values speed over discovery"],
+    bio="Xiao Ming is a busy sales rep who travels weekly")
+
+# Step 3: Create secondary persona
+skill.add_persona("Xiao Hong", "Explorer User", "secondary",
+    "I love discovering hidden gems",
+    goals=["Find unique experiences"],
+    behaviors=["Browses for 30+ minutes per session"],
+    attitudes=["Curious, price-sensitive"],
+    bio="Xiao Hong is a college student planning budget trips")
+
+# Step 4: Quality review
+review = skill.review_personas()
+print(review)
+
+# Step 5: Feature prioritization
+skill.add_feature("One-click rebooking", importance=5, effort=2, persona="Xiao Ming")
+skill.add_feature("Curated travel guides", importance=5, effort=4, persona="Xiao Hong")
+print(skill.render_feature_matrix())
+
+# Example 2: Bug prioritization based on persona impact
+skill.add_bug("Homepage loads slowly", "Xiao Ming", is_primary=True, blocks_core=True)
+# → P0: Affects primary persona's core task — fix immediately
+
+skill.add_bug("Guide images are low-res", "Xiao Hong", is_primary=False, blocks_core=False)
+# → P2: Affects secondary persona's non-core task — can defer
+```
+
+### 🛠️ Troubleshooting
+
+#### Problem 1: Persona lacks credibility
+
+**Symptoms**: Team members question whether personas are "real."
+
+**Solution**: Ground personas in actual data.
+```python
+# Use real interview data, not assumptions
+skill.add_persona("Xiao Ming", "Efficiency-Seeking User", "primary",
+    "I just want to book and go",
+    goals=["Complete booking in under 3 minutes"],
+    behaviors=["Uses mobile app during commute"],
+    attitudes=["Values speed over discovery"],
+    bio="Xiao Ming is a busy sales rep who travels weekly",
+    data_sources=["6 interviews", "200 survey responses", "analytics data"])
+```
+
+#### Problem 2: Too many personas
+
+**Solution**: Aim for 3-5 personas total — 1 primary, 1-2 secondary, and optionally 1-2 negative personas (who your product is NOT for). More than 5 becomes unworkable; fewer than 3 risks missing key segments.
+
+#### Problem 3: Personas gather dust
+
+**Solution**: Integrate personas into your workflow.
+```python
+# Use persona-based feature prioritization before every sprint
+skill.add_feature("New feature", importance=5, effort=3, persona="Primary Persona Name")
+print(skill.render_feature_matrix())  # Should inform sprint planning
+```
+
+### 💡 Best Practices
+
+#### Persona Creation Workflow
+
+```
+1. User Segmentation → 2. Data Collection → 3. Persona Creation → 4. Quality Review → 5. Apply
+```
+
+#### Persona Quality Checklist
+
+- [ ] **Based on real data** — Not fictional or assumed
+- [ ] **Specific and identifiable** — Has name, photo, concrete description
+- [ ] **Clear goals** — Specific tasks and motivations
+- [ ] **Concrete behaviors** — Describes actual behaviors, not attitudes
+- [ ] **Actionable** — Can guide specific design decisions
+- [ ] **Right quantity** — 3-5 personas, 1 primary
+
+#### Feature Prioritization Matrix
+
+| Persona Importance | Feature Usage Frequency | Priority |
+|-------------------|------------------------|----------|
+| Primary | High | P0 (Must have) |
+| Primary | Low | P1 (Important) |
+| Secondary | High | P1 (Important) |
+| Secondary | Low | P2 (Optional) |
+
+#### Bug Prioritization Rules
+
+```python
+# P0: Affects primary persona's core task — fix immediately
+# P1: Affects primary persona's secondary task OR secondary persona's core task
+# P2: Affects secondary persona's secondary task — can defer
+```
+
+#### Common Mistakes
+
+- ❌ Create personas from assumptions → ✅ Base on real user data
+- ❌ Too many personas (10+) → ✅ Focus on 3-5 key personas
+- ❌ Personas sit in a drawer → ✅ Integrate into design review process
+- ❌ Only demographics → ✅ Focus on goals, behaviors, pain points
+
+### 📖 Extended Reading
+
+- **"The User Is Always Right"** by Steve Mulder & Ziv Yaar — The foundational persona book this skill is based on
+- **"Personas: Process and Methods"** — Additional persona creation methodologies
+- **[Universal Design Methods](https://github.com/AliDujie/universal-design-methods)** — 100 research methods for gathering persona data
+- **[JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)** — Enrich persona goals with JTBD motivations
+- **[Value Proposition Design](https://github.com/AliDujie/value-proposition-design)** — Map persona profiles to customer profile canvas
+
+### 🌐 Skill Ecosystem Workflow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│         AliDujie Skill Ecosystem — Persona Workflow         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   📖 Universal Design Methods ──→ 👤 Web Persona ──→ 💎 VPD│
+│         (Gather data)       (Create personas) (Design value)│
+│              ↓                          ↑                   │
+│   🎯 JTBD Knowledge ←───────────────────┘                   │
+│         (Add motivations)                                   │
+│                                                             │
+│   📊 Quantitative UX Research ──→ 📈 Storytelling with Data │
+│         (Validate segments)    (Present persona data)       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ### ❓ FAQ
 
 **Q: How is this different from making personas in a slide deck?**
@@ -757,9 +930,10 @@ A: Start with 3-5 personas: 1 primary, 1-2 secondary, and optionally 1-2 negativ
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.2.1 | 2026-05-05 | Added English Features at a Glance, Who Is This For, Best Practices, Extended Reading, Skill Ecosystem Workflow, Troubleshooting, Practical Examples; added ecosystem badge |
 | v2.1.0 | 2026-05-05 | Added English section, FAQ, version badge, fixed ecosystem links, updated Last Updated |
 | v1.0 | 2026-04-23 | Initial release, 8 core capabilities |
 
 ---
 
-*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.1.0*
+*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.2.1*
