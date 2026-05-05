@@ -920,6 +920,26 @@ A: Yes — they complement each other beautifully. JTBD reveals the "why" behind
 **Q: How many personas should I create?**
 A: Start with 3-5 personas: 1 primary, 1-2 secondary, and optionally 1-2 negative personas (who your product is NOT for). More than 5 becomes hard to work with; fewer than 3 risks missing key segments.
 
+### 🌟 Why Choose AliDujie Skill Ecosystem?
+
+This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the complete ecosystem provides:
+
+- ✅ **Complete Coverage** — From user research to product design to data presentation, full-process tool support
+- ✅ **Seamless Integration** — All skills use consistent API design and data formats
+- ✅ **Best Practices** — Based on classic theories and practical experience, avoid common pitfalls
+- ✅ **Active Maintenance** — Regularly updated with new features and improvements
+- ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
+- ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
+
+👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
+
+### 🏷️ GitHub Topics (Recommended)
+
+```
+persona user-research user-segmentation design-research
+feature-prioritization python-toolkit openclaw-skill alicloud
+```
+
 ### 📦 Dependencies
 
 - Python >= 3.8
