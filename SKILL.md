@@ -1,6 +1,6 @@
 ---
 name: web-persona-skill
-version: "2.4.19"
+version: "2.2.2"
 description: Web人物角色(Personas)创建与应用专家技能。基于《赢在用户》全书知识体系，具备完整执行能力：方法选择决策、访谈提纲生成、问卷设计、用户细分、角色文档创建、质量评审、商业策略分析、功能优先级排序、设计指导、测试计划与衡量体系，以及CEO视角经济模型与增长策略。
 ---
 
@@ -242,6 +242,7 @@ cd web-persona-skill && python persona/tests/test_all.py
 | 价值主张验证 | Value Proposition Design | Persona目标 -> VPD画布 -> Persona验证 |
 | JTBD 研究整合 | JTBD Knowledge Skill | JTBD Jobs -> Persona细分映射 -> 角色文档 |
 | 定量研究支撑 | Quantitative UX Research | UXR数据 -> Persona定量验证 -> 角色精化 |
+| 角色战略分析 | Structured Thinking Model | STM 竞争分析 → Persona 市场定位 → STM 战略建议 |
 
 ---
 
