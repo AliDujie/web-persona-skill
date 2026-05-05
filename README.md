@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
-[![Version](https://img.shields.io/badge/version-2.2.2-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.3-green.svg)](CHANGELOG.md)
 
 基于《赢在用户：Web 人物角色创建和应用实践指南》(The User Is Always Right) 的完整人物角色工具包。
 
@@ -181,8 +181,75 @@ for topic, paragraphs in results.items():
 
 纯 Python 标准库实现，无外部依赖，兼容 Python 3.8+。
 
-## 📚 原书信息
+### 🚀 完整端到端工作流：从角色到决策 (End-to-End Workflow)
 
+以下是一个真实场景中，6 个技能如何协作完成从用户研究到产品决策的完整工作流：
+
+**场景**: 电商 APP 需要创建用户角色并指导产品设计
+
+```
+Phase 1: 用户研究
+  UDM: 用 UDM 访谈方法收集用户行为数据 (n=12)
+  JTBD: 发现用户核心"工作"和四力分析
+
+Phase 2: 角色创建 (Persona — 本技能)
+  → add_segment("效率型用户", size="35%", characteristics=["平均使用<3分钟"])
+  → add_persona("小明", "效率型用户", "primary", motto="我只想快速完成")
+  → add_persona("小红", "探索型用户", "secondary", motto="发现好物才开心")
+  → review_personas()  # 12 项质量评审
+  → render_feature_matrix()  # 基于角色自动计算功能优先级
+
+Phase 3: 价值设计与验证
+  VPD: 基于 Persona 客户画像填充价值主张画布
+  QuantUX: 定量验证角色行为假设
+
+Phase 4: 呈现与决策
+  SWD: 将角色数据转化为高管级数据叙事
+  CEO 视角: Persona 经济模型 (LTV/CAC) + 获客策略 + 留存策略
+```
+
+> 💡 **Persona 是工作流的用户定义层**: UDM/JTBD 收集数据 → Persona 创建角色 → 角色驱动全流程设计决策
+
+👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
+### 💡 Pro Tips / 专业提示
+
+- **永远基于真实数据创建角色** — 不从人口统计入手，聚焦目标/行为/观点三维度
+- **首要角色最多 2 个** — 保证设计决策有明确优先级
+- **角色文档一页纸原则** — 控制在一页内，便于团队传播和引用
+- **功能优先级矩阵自动计算** — 用角色重要性驱动 P0-P3 排序，减少主观争议
+- **Bug 优先级规则** — P0=首要角色核心阻塞 | P1=首要角色非核心 | P2=次要角色
+- **CEO 视角不可省略** — 角色创建后务必做经济模型和获客/留存策略分析
+
+---
+
+### 🌟 为什么选择 AliDujie 技能生态系统？
+
+本技能是 **AliDujie UX 研究技能生态系统** 的用户洞察层，与其他技能无缝协作：
+
+| 技能 | 角色 | 协作方式 |
+|------|------|----------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法核心 | UDM 研究数据 → Persona 角色创建 |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | JTBD 动机 → Persona 角色目标定义 |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量验证 | Persona 假设 → QuantUX 定量验证 |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | Persona 客户画像 → VPD 画布对接 |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | Persona 角色数据 → SWD 可视化呈现 |
+
+**使用完整生态系统的优势：**
+
+- ✅ **全流程覆盖** — 从发现需求 → 角色创建 → 研究验证 → 价值设计 → 数据呈现
+- ✅ **一致 API 设计** — 所有技能使用统一的 Skill("产品名") 入口
+- ✅ **零外部依赖** — 纯 Python 标准库实现，开箱即用
+- ✅ **双语支持** — 完整中英文文档，适合国际化团队
+- ✅ **积极维护** — 定期更新新功能和改进文档
+
+👉 **探索完整生态系统**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
+## 📚 原书信息
 - **书名**: The User Is Always Right: A Practical Guide to Creating and Using Personas
 - **作者**: Steve Mulder and Ziv Yaar
 - **出版**: New Riders, 2007
