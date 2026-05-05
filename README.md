@@ -1023,6 +1023,16 @@ feature-prioritization python-toolkit openclaw-skill alicloud
 | v2.1.0 | 2026-05-05 | Added English section, FAQ, version badge, fixed ecosystem links, updated Last Updated |
 | v1.0 | 2026-04-23 | Initial release, 8 core capabilities |
 
+### 📚 About This Skill
+
+Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007), the definitive guide to creating research-based personas. Personas bridge the gap between abstract user data and concrete design decisions, ensuring every feature serves real user needs.
+
+**Applicable to:** UX Designers, Product Managers, UX Researchers, Design Teams, AI Agents
+
+### 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.2.2*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.2.3*
