@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.24 - 2026-05-07
+
+- Repo maintenance: added anti-persona Pro Tip (CN+EN), enhanced Persona-UDM research integration example
+
 ## v2.4.23 - 2026-05-06
 
 - Repo maintenance: fixed English changelog table missing markdown separator, added Contributing link to footer, enhanced cross-skill collaboration examples with Persona-to-VPD workflow code snippet, aligned all version references

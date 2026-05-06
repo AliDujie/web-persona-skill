@@ -4,8 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.23-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.24-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -955,13 +955,14 @@ Phase 4: 设计执行
 - **3 步规则验证路径** — 首要角色完成核心任务不应超过 3 步
 - **角色需要定期更新** — 每 6-12 个月用新研究验证角色有效性
 - **Persona + QuantUX 量化验证** — 用日志分析验证角色行为模式的规模和真实性
+- **创建反角色（Anti-Persona）** — 明确不服务的用户类型，避免产品范围无限扩展
 
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.4.21 | 2026-05-06 | 仓库维护：修复 README 底部版本不一致（底部比徽章落后 2 个版本），对齐所有版本引用，验证生态交叉引用和双语一致性 |
-| v2.4.22 | 2026-05-06 | 仓库维护：更新版本至 2.4.22，验证生态交叉引用和双语一致性 |
+| v2.4.24 | 2026-05-07 | Repo maintenance: added anti-persona Pro Tip, enhanced Persona-UDM research integration example |
+| v2.4.23 | 2026-05-06 | 仓库维护：更新版本至 2.4.23，验证生态交叉引用和双语一致性 |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
@@ -996,12 +997,13 @@ Phase 4: 设计执行
 - **3-Step Rule for Paths** — Primary personas shouldn't need more than 3 steps for core tasks
 - **Update Personas Regularly** — Validate personas with new research every 6-12 months
 - **Persona + QuantUX for validation** — Use log analysis to validate persona behavior patterns at scale
+- **Create Anti-Personas** — Explicitly define who you DON'T serve to prevent scope creep
 
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.4.23 | 2026-05-06 | Repo maintenance: fixed English changelog table missing separator, added Contributing link to footer, enhanced cross-skill collaboration examples with Persona-to-VPD workflow code snippet
+| v2.4.24 | 2026-05-07 | Repo maintenance: added anti-persona Pro Tip, enhanced Persona-UDM research integration example |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references
 | v2.4.17 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
@@ -1039,4 +1041,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.23*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.24*
