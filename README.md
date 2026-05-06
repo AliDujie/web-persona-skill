@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.24-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.25-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -750,6 +750,12 @@ persona user-research user-segmentation design-guidance
 python-toolkit openclaw-skill alicloud
 ```
 
+### 📦 Dependencies
+
+- Python >= 3.8
+- **No external dependencies** (pure standard library)
+- Cross-platform: macOS / Linux / Windows
+
 ### 📋 Changelog
 
 | Version | Date | Changes |
@@ -961,6 +967,7 @@ Phase 4: 设计执行
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.25 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.4.24 | 2026-05-07 | Repo maintenance: added anti-persona Pro Tip, enhanced Persona-UDM research integration example |
 | v2.4.23 | 2026-05-06 | 仓库维护：更新版本至 2.4.23，验证生态交叉引用和双语一致性 |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
@@ -1003,6 +1010,7 @@ Phase 4: 设计执行
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.25 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.4.24 | 2026-05-07 | Repo maintenance: added anti-persona Pro Tip, enhanced Persona-UDM research integration example |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references
