@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.20-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.21-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -753,6 +753,8 @@ python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+|---------|------|--------|
+| v2.4.21 | 2026-05-06 | Repo maintenance: fixed README footer version mismatch (footer was 2 versions behind badge), aligned all version references, verified ecosystem cross-references and bilingual consistency |
 | v2.4.7 | 2026-05-03 | Repo maintenance: improved Quick Start scenario 4-7 code comment formatting, aligned SKILL.md version with README.md |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -956,6 +958,8 @@ Phase 4: 设计执行
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+|------|------|------|
+| v2.4.21 | 2026-05-06 | 仓库维护：修复 README 底部版本不一致（底部比徽章落后 2 个版本），对齐所有版本引用，验证生态交叉引用和双语一致性 |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
@@ -1027,4 +1031,4 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.18*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.21*
