@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.2.4 - 2026-05-06
+
+- Added Chinese Quick Decision Guide table for bilingual consistency
+- Added English End-to-End Workflow section (e-commerce persona workflow)
+- Updated SKILL.md version to v2.2.4
+
 ## v2.2.2 - 2026-05-06
 
 - Fixed version mismatch: SKILL.md (v2.4.19) and pyproject.toml (v2.1.0) aligned to v2.2.2

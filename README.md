@@ -731,6 +731,7 @@ P2: 分数 < 3.0
 
 ## 📝 更新日志 (Changelog)
 
+- **v2.2.4** — 2026-05-06 — 仓库维护：添加中文快速决策指南、英文端到端工作流章节，增强双语一致性
 - **v2.2.2** — 修复 SKILL.md 和 pyproject.toml 版本不一致 (v2.4.19/v2.1.0→v2.2.2)，对齐所有版本引用；添加 Quantitative UX Research 协作引用
 - **v2.2.1** — 英文文档增强：添加 Features at a Glance、Who Is This For、Best Practices、Extended Reading、Skill Ecosystem Workflow、Troubleshooting 章节；添加生态系统徽章
 - **v2.1.0** — 添加英文章节、FAQ、版本徽章、修复生态系统链接
@@ -795,6 +796,17 @@ skill.add_feature("One-click booking", importance=5, effort=3, persona="Xiao Min
 skill.add_feature("Price comparison", importance=4, effort=4, persona="Xiao Ming")
 print(skill.render_feature_matrix())
 ```
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "我需要知道我的用户是谁" | → **Web Persona** (本技能) — 创建具体人物角色 |
+| "我不知道该用什么研究方法" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐 |
+| "我想知道用户为什么做这个选择" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 发现底层动机 |
+| "我需要验证一个假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试 & 样本量 |
+| "我的产品价值够不够强？" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 适配诊断 |
+| "我怎么清晰呈现研究结果？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事 |
 
 ### 🧭 Quick Decision Guide
 
@@ -977,6 +989,37 @@ print(skill.render_feature_matrix())  # Should inform sprint planning
 └─────────────────────────────────────────────────────────────┘
 ```
 
+### 🚀 End-to-End Workflow: From Persona to Decision
+
+Here's how Web Persona integrates with the full AliDujie ecosystem in a real-world scenario:
+
+**Scenario**: E-commerce app needs to create user personas and guide product design
+
+```
+Phase 1: User Research
+  UDM: Collect user behavior data with structured interviews (n=12)
+  JTBD: Discover core "jobs" and run Four Forces analysis
+
+Phase 2: Persona Creation (Persona — this skill)
+  → add_segment("Efficiency user", size="35%", characteristics=["<3 min avg session"])
+  → add_persona("Xiao Ming", "Efficiency User", "primary", motto="I just want to finish fast")
+  → review_personas()  # 12-item quality review
+  → render_feature_matrix()  # Prioritize features by persona importance
+
+Phase 3: Value Design & Validation
+  VPD: Map persona profiles to Value Proposition Canvas
+  QuantUX: A/B test persona-informed design changes
+
+Phase 4: Presentation & Decision
+  SWD: Transform persona data into compelling stakeholder presentations
+  CEO View: ROI estimation, competitive moat analysis
+```
+
+> 💡 **Personas are the bridge**: They connect research insights to concrete design decisions.
+
+👉 **Try the full workflow**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+
 ### ❓ FAQ
 
 **Q: How is this different from making personas in a slide deck?**
@@ -1018,6 +1061,7 @@ feature-prioritization python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.2.4 | 2026-05-06 | Added CN Quick Decision Guide, EN End-to-End Workflow section, improved bilingual consistency
 | v2.2.2 | 2026-05-06 | Fixed SKILL.md and pyproject.toml version mismatch (v2.4.19/v2.1.0→v2.2.2), aligned all version references; added Quantitative UX Research collaboration reference |
 | v2.2.1 | 2026-05-05 | Added English Features at a Glance, Who Is This For, Best Practices, Extended Reading, Skill Ecosystem Workflow, Troubleshooting, Practical Examples; added ecosystem badge |
 | v2.1.0 | 2026-05-05 | Added English section, FAQ, version badge, fixed ecosystem links, updated Last Updated |
@@ -1035,4 +1079,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.2.3*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.2.4*
