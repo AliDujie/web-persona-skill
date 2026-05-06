@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
-[![Version](https://img.shields.io/badge/version-2.2.3-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.5-green.svg)](CHANGELOG.md)
 
 基于《赢在用户：Web 人物角色创建和应用实践指南》(The User Is Always Right) 的完整人物角色工具包。
 
@@ -722,6 +722,16 @@ P2: 分数 < 3.0
     └─ 否 → P3 (可选修复)
 ```
 
+### 👥 适合谁？(Who Is This For?)
+
+| 角色 | 使用场景 |
+|------|----------|
+| **UX 设计师** | 基于真实研究数据创建人物角色，指导设计决策 |
+| **产品经理** | 基于角色重要性自动计算功能优先级和 Bug 修复顺序 |
+| **UX 研究员** | 从访谈和调查数据系统化创建人物角色 |
+| **设计团队** | 围绕可信的用户表示对齐团队共识 |
+| **AI Agent** | 零依赖 Python 包，自动化人物角色工作流 |
+
 ## 👥 社区与支持 (Community & Support)
 
 - **问题反馈**: [GitHub Issues](https://github.com/AliDujie/web-persona-skill/issues)
@@ -731,6 +741,7 @@ P2: 分数 < 3.0
 
 ## 📝 更新日志 (Changelog)
 
+- **v2.2.5** — 仓库维护：添加中文"适合谁"表格，扩展 GitHub Topics，增强双语一致性
 - **v2.2.4** — 2026-05-06 — 仓库维护：添加中文快速决策指南、英文端到端工作流章节，增强双语一致性
 - **v2.2.2** — 修复 SKILL.md 和 pyproject.toml 版本不一致 (v2.4.19/v2.1.0→v2.2.2)，对齐所有版本引用；添加 Quantitative UX Research 协作引用
 - **v2.2.1** — 英文文档增强：添加 Features at a Glance、Who Is This For、Best Practices、Extended Reading、Skill Ecosystem Workflow、Troubleshooting 章节；添加生态系统徽章
@@ -1049,6 +1060,8 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 ```
 persona user-research user-segmentation design-research
 feature-prioritization python-toolkit openclaw-skill alicloud
+user-personas quality-review bug-prioritization
+information-architecture content-strategy
 ```
 
 ### 📦 Dependencies
@@ -1061,7 +1074,7 @@ feature-prioritization python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v2.2.4 | 2026-05-06 | Added CN Quick Decision Guide, EN End-to-End Workflow section, improved bilingual consistency
+| v2.2.5 | 2026-05-06 | Repo maintenance: added Chinese "Who Is This For" table, expanded GitHub Topics, improved bilingual consistency
 | v2.2.2 | 2026-05-06 | Fixed SKILL.md and pyproject.toml version mismatch (v2.4.19/v2.1.0→v2.2.2), aligned all version references; added Quantitative UX Research collaboration reference |
 | v2.2.1 | 2026-05-05 | Added English Features at a Glance, Who Is This For, Best Practices, Extended Reading, Skill Ecosystem Workflow, Troubleshooting, Practical Examples; added ecosystem badge |
 | v2.1.0 | 2026-05-05 | Added English section, FAQ, version badge, fixed ecosystem links, updated Last Updated |
@@ -1079,4 +1092,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.2.4*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.2.5*
