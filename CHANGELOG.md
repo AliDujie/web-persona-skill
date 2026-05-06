@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.20 - 2026-05-06
+
+- Repo maintenance: verified ecosystem cross-reference consistency; version alignment across all files (pyproject.toml, SKILL.md, README); ensured Last Updated timestamp current
+
 ## v2.2.6 - 2026-05-06
 
 - Repo maintenance: aligned pyproject.toml version (2.2.3→2.2.5) and SKILL.md version (2.2.4→2.2.5) with README badge; verified ecosystem cross-reference consistency
