@@ -1,3 +1,9 @@
+## v2.4.32 (2026-05-08)
+- Enhanced persona validation workflow with step-by-step checklist
+- Improved cross-skill Persona→VPD→QuantUX pipeline integration examples
+- Verified version alignment across README.md, SKILL.md, and pyproject.toml
+- No breaking changes
+
 ## v2.4.31 (2026-05-07)
 - Added Structured Thinking Model to Quick Decision Guide (CN + EN) for better cross-skill discoverability
 - Verified version alignment across README.md, SKILL.md, and pyproject.toml
