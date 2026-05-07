@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.28 - 2026-05-07
+
+- Repo maintenance: added references/README.md index, standardized ecosystem documentation
+
 ## v2.4.27 - 2026-05-07
 
 - Repo maintenance: aligned footer version badge with SKILL.md (v2.4.26→v2.4.27), added end-to-end ecosystem integration workflow example
