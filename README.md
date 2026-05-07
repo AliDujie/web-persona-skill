@@ -1063,14 +1063,18 @@ canvas = vpd.analyze_canvas(
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.29 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.4.29，验证生态交叉引用一致性 |
+| v2.4.28 | 2026-05-07 | 仓库维护：版本升级至 v2.4.28，对齐 SKILL.md 和 pyproject.toml 版本号，对齐变更日志条目 |
+| v2.4.27 | 2026-05-07 | 仓库维护：修复页脚版本不一致，添加生态系统工作流 Pro Tip，版本升级至 v2.4.27 |
+| v2.4.26 | 2026-05-07 | 仓库维护：在 SKILL.md 末尾添加 AliDujie 技能生态协作表，增强跨技能一致性 |
 | v2.4.25 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.4.24 | 2026-05-07 | Repo maintenance: added anti-persona Pro Tip, enhanced Persona-UDM research integration example |
 | v2.4.23 | 2026-05-06 | 仓库维护：更新版本至 2.4.23，验证生态交叉引用和双语一致性 |
-| v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
+| v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links |
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
-| v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
-| v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；优化英文版 Quick Start 示例代码，增强 Features at a Glance 表格描述
-| v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
+| v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接 |
+| v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；优化英文版 Quick Start 示例代码，增强 Features at a Glance 表格描述 |
+| v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用 |
 | v2.4.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.4.8→v2.4.10 顺序校正），增强英文版 Quick Start 场景注释 |
 | v2.4.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从角色创建到设计指导的 6 技能协作流程） |
 | v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），强化角色创建原则 |
