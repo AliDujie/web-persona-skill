@@ -1,12 +1,25 @@
 ---
 name: web-persona-skill
-version: "2.4.29"
+version: "2.4.30"
 description: Web人物角色(Personas)创建与应用专家技能。基于《赢在用户》全书知识体系，具备完整执行能力：方法选择决策、访谈提纲生成、问卷设计、用户细分、角色文档创建、质量评审、商业策略分析、功能优先级排序、设计指导、测试计划与衡量体系，以及CEO视角经济模型与增长策略。
 ---
 
 # Web Persona 人物角色创建与应用专家 Skill
 
 基于《赢在用户：Web人物角色创建和应用实践指南》(The User Is Always Right) 全书知识体系构建。
+
+## 🧭 快速决策：什么时候使用 Persona？
+
+| 你的需求 | 推荐技能 |
+|---------|---------|
+| 需要创建人物角色、用户细分、设计指导 | ✅ **Persona（本技能）** |
+| 需要选择研究方法、设计访谈、执行可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 需要理解用户"工作"、机会评分、竞争分析 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 需要定量验证假设、设计 A/B 测试、计算样本量 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 需要价值主张画布、实验验证、优先级排序 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 Persona 是用户定义层：为所有其他技能提供证据驱动的用户视角。
 
 ## 🌐 AliDujie 技能生态系统
 

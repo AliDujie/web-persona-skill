@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.30 - 2026-05-07
+
+- Repo maintenance: added "When to use Persona" decision guide to SKILL.md, added cross-skill workflow examples to README, version bump to 2.4.30
+
 ## v2.4.28 - 2026-05-07
 
 - Repo maintenance: added references/README.md index, standardized ecosystem documentation
