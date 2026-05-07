@@ -985,6 +985,70 @@ Phase 4: 设计执行
 
 ---
 
+### 💻 实用集成示例 (Practical Integration Examples)
+
+#### 示例 1: Persona + UDM — 基于角色的研究设计
+
+```python
+# Persona 定义目标用户 → UDM 针对性设计研究
+from persona import PersonaSkill
+from udm import UDMSkill
+
+persona_skill = PersonaSkill("电商平台")
+persona_skill.add_persona(
+    name="忙碌妈妈",
+    short_desc="碎片时间购物，重视效率和信任",
+    priority="primary",
+    goals=["快速找到所需商品", "确保商品质量"]
+)
+
+udm = UDMSkill("电商平台")
+methods = udm.recommend_methods("了解忙碌妈妈的购物痛点", phase=1)
+```
+
+#### 示例 2: Persona + QuantUX — 用数据验证角色
+
+```python
+# Persona 创建角色假设 → QuantUX 用日志数据验证
+from persona import PersonaSkill
+from quantux import QuantUXSkill
+
+persona_skill = PersonaSkill("电商平台")
+persona_skill.add_segment(
+    name="高频用户",
+    description="每周购买 3+ 次",
+    behaviors=["移动端优先", "复购率高"]
+)
+
+quantux = QuantUXSkill("电商平台")
+logs = quantux.analyze_logs()  # 验证角色行为模式
+```
+
+#### 示例 3: Persona + VPD — 从角色到价值主张
+
+```python
+from persona import PersonaSkill
+from vpd import VPDSkill
+
+persona_skill = PersonaSkill("电商平台")
+persona_skill.add_persona(
+    name="时间敏感型买家",
+    short_desc="追求效率，愿意为便利付费",
+    priority="primary",
+    goals=["快速结账", "减少决策时间"]
+)
+
+vpd = VPDSkill("电商平台", "时间敏感型买家")
+canvas = vpd.analyze_canvas(
+    product_name="一键结账",
+    jobs=["快速完成购买"],
+    pains=["步骤太多"],
+    gains=["一键购买", "自动填充"]
+)
+```
+
+> 💡 **Persona 是决策锚点** — 所有后续技能 (UDM 研究、JTBD 分析、VPD 设计) 都应以验证过的角色为基础。
+
 ### 💡 Pro Tips / 专业提示
 
 - **不从人口统计入手** — 聚焦目标/行为/观点三维度，而非年龄/性别/收入
@@ -1083,4 +1147,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.26*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.27*

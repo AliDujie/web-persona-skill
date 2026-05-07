@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.4.27 - 2026-05-07
+
+- Repo maintenance: aligned footer version badge with SKILL.md (v2.4.26→v2.4.27), added end-to-end ecosystem integration workflow example
+
+## v2.4.26 - 2026-05-07
+
+- Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.4.26
+
+## v2.4.25 - 2026-05-07
+
+- Repo maintenance: added English Dependencies section, verified ecosystem cross-references
+
 ## v2.4.24 - 2026-05-07
 
 - Repo maintenance: added anti-persona Pro Tip (CN+EN), enhanced Persona-UDM research integration example
