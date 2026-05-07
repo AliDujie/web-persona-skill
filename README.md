@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.26-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.27-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -333,6 +333,22 @@ web-persona-skill/
 | **场景具体** | 角色在特定场景下才有意义 | "工作日午餐时" vs "一般购物" |
 | **可区分** | 角色之间行为模式明显不同 | 效率型 vs 探索型 |
 
+### 💡 专业技巧
+
+- **给角色起名** — "小明"和"小红"比"角色 1"和"角色 2"更容易记住。名字让角色在设计讨论中变得真实可引用
+- **每个角色给一句引言** — 一句话捕捉核心需求，让角色在设计讨论中容易被引用和参考
+- **每次设计评审都用角色** — 问"这个决定服务于哪个角色？"如果答案是"所有人"，可能没有服务好任何人
+- **将角色映射到商业价值** — 不是所有角色同等重要。量化每个角色的经济影响来优先设计投资
+- **也创建反角色** — 定义你不为谁设计。这防止范围蔓延，让团队保持聚焦
+
+### ❌ 常见错误
+
+- **仅人口统计的角色** — 年龄、性别和收入不告诉你任何行为信息。关注目标、行为和痛点
+- **角色太多** — 超过 4-5 个角色会分散焦点。优先选择 1 个主要角色、2-3 个次要角色，做艰难选择
+- **角色落灰** — 如果角色不在日常决策中使用，它们就是墙上的壁纸。打印出来贴在墙上，在会议中引用
+- **跳过 12 项质量评审** — 使用内置质量检查清单，在弱角色误导团队之前发现它们
+- **混淆细分和角色** — 细分告诉你每类"有多少"；角色告诉你"他们需要什么"。两者有价值但不同
+
 ### ❓ 常见问题 (FAQ)
 
 **Q: 人物角色 (Persona) 和用户细分 (Segmentation) 有什么区别？**
@@ -657,6 +673,22 @@ print(result)  # Pass/Fail with actionable feedback
 3. **Include design guidance** — Each persona should inform specific design decisions
 4. **Keep it to 3-5 personas** — More personas dilute focus; prioritize primary users
 5. **Update regularly** — Personas decay; validate with new research every 6-12 months
+
+### 💡 Pro Tips
+
+- **Name your personas** — "小明" and "小红" are more memorable than "Persona 1" and "Persona 2." Names make personas real for the team.
+- **Give each persona a quote** — A single sentence that captures their core need makes the persona sticky and referenceable in design discussions.
+- **Use personas in every design review** — Ask "Which persona does this decision serve?" If the answer is "everyone," it probably serves no one well.
+- **Map personas to business value** — Not all personas are equally valuable. Quantify the economic impact of each persona to prioritize design investment.
+- **Create anti-personas too** — Define who you're NOT designing for. This prevents scope creep and keeps the team focused.
+
+### ❌ Common Mistakes to Avoid
+
+- **Demographic-only personas** — Age, gender, and income tell you nothing about behavior. Focus on goals, behaviors, and pain points instead.
+- **Too many personas** — More than 4-5 personas dilutes focus. Prioritize 1 primary, 2-3 secondary personas and make hard choices.
+- **Personas on the shelf** — If personas aren't used in daily decisions, they're wallpaper. Print them, put them on the wall, reference them in meetings.
+- **Skipping the 12-item quality review** — Use the built-in quality checklist to catch weak personas before they mislead the team.
+- **Confusing segmentation with personas** — Segmentation tells you "how many" of each type; personas tell you "what they need." Both are valuable but different.
 
 ### ❓ FAQ
 
