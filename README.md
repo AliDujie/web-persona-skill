@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.32-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.33-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -472,6 +472,7 @@ guidance = skill.generate_design_guidance(segments)
 - [User Reviews](#-user-reviews)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
+- [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -857,6 +858,40 @@ Persona (user feedback) → SWD (chart makeover) → VPD (value adjustment)
 3. Use VPD to adjust value proposition based on targeted feedback
 
 > 💡 **Tip**: Personas pair naturally with UDM — use UDM interview and observation methods to collect persona research data, building evidence-driven personas.
+
+### 🔄 End-to-End Workflow: All 6 Skills
+
+A complete persona-to-design-guidance workflow using the full AliDujie ecosystem:
+
+```
+Step 1          Step 2          Step 3          Step 4          Step 5          Step 6
+┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐
+│Persona│  ──►  │ JTBD │  ──►  │ UDM  │  ──►  │QuantUX│  ──►  │ VPD  │  ──►  │ SWD  │
+│ 👤   │       │ 🎯   │       │ 📖   │       │ 📊   │       │ 💎   │       │ 📈   │
+│角色定义│       │需求洞察│       │定性研究│       │定量验证│       │价值验证│       │数据汇报│
+└──────┘       └──────┘       └──────┘       └──────┘       └──────┘       └──────┘
+```
+
+**Real-World Scenario: Online Education Platform Redesign**
+
+1. **Persona**: Create "Career Switcher Amy" (goal-driven) and "Hobby Learner Bob" (exploration-driven)
+2. **JTBD**: Discover Amy's Job is "gain skills to land a new job within 6 months" (Opp Score: 8.7)
+3. **UDM**: Journey mapping + usability testing → find onboarding friction and course discovery issues
+4. **QuantUX**: HEART metrics + A/B test redesigned onboarding (n=6,000) → Task Success +30%
+5. **VPD**: Value proposition canvas → "Land your dream job in 6 months" — fit score 0.86
+6. **SWD**: Transform into board presentation → before/after journey maps, HEART dashboard → strategic investment approved
+
+```python
+# Persona as the foundation — everything starts with knowing your users
+from persona import PersonaSkill; persona = PersonaSkill("在线教育平台")
+from jtbd import JTBDSkill; jtbd = JTBDSkill("职业技能提升")
+from udm import UDMSkill; udm = UDMSkill("在线教育")
+from quantux import QuantUXSkill; quantux = QuantUXSkill("在线教育")
+from vpd import VPDSkill; vpd = VPDSkill("在线教育平台", "职业转型者")
+from swd import SWDSkill; swd = SWDSkill("Q4 教育平台改进汇报")
+
+# Persona insights feed every subsequent skill in the pipeline
+```
 
 ---
 

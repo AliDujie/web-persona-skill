@@ -1,4 +1,8 @@
+## v2.4.33 (2026-05-08)
 ## v2.4.32 (2026-05-08)
+
+Repo maintenance: added English "End-to-End Workflow: All 6 Skills" section with online education scenario and ecosystem code example, updated English TOC, enhanced cross-skill discoverability.
+
 - Enhanced persona validation workflow with step-by-step checklist
 - Improved cross-skill Persona→VPD→QuantUX pipeline integration examples
 - Verified version alignment across README.md, SKILL.md, and pyproject.toml
