@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.38-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.39-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -83,8 +83,11 @@ python-toolkit openclaw-skill alicloud
 #### 步骤 1: 安装技能
 
 ```bash
-# 复制到你的 AI Agent skills 目录
+# 方式 A: 复制到你的 AI Agent skills 目录
 cp -r web-persona-skill /your/agent/skills/
+
+# 方式 B: 作为 Python 包安装（支持 pip import）
+cd web-persona-skill && pip install -e .
 ```
 
 > 📖 详细安装指南请查看 [INSTALL.md](INSTALL.md)
@@ -649,7 +652,11 @@ heart = quant.build_heart_framework()
 #### Step 1: Install
 
 ```bash
+# Option A: Copy to your AI Agent skills directory
 cp -r web-persona-skill /your/agent/skills/
+
+# Option B: Install as a Python package (enables pip import)
+cd web-persona-skill && pip install -e .
 ```
 
 > 📖 See [INSTALL.md](INSTALL.md) for detailed installation guide
@@ -831,6 +838,14 @@ web-persona-skill/
 - **Use personas in every design review** — Ask "Which persona does this decision serve?" If the answer is "everyone," it probably serves no one well.
 - **Map personas to business value** — Not all personas are equally valuable. Quantify the economic impact of each persona to prioritize design investment.
 - **Create anti-personas too** — Define who you're NOT designing for. This prevents scope creep and keeps the team focused.
+
+### ⛔ When NOT to Use This Skill
+
+- **Choosing research methods or designing studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for research design
+- **Statistical analysis or A/B testing** — Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) for quantitative validation
+- **Understanding user Jobs-to-be-Done** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) for deep need analysis
+- **Value proposition and canvas analysis** — Use [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) for canvas-based analysis
+- **Data visualization and presentation design** — Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) for chart design and narratives
 
 ### ❌ Common Mistakes to Avoid
 
@@ -1441,4 +1456,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.38*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.39*
