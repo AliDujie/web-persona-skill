@@ -4,10 +4,26 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.40-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.41-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-10-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
+
+---
+
+## 🌐 技能生态系统 (Skill Ecosystem)
+
+本技能是 AliDujie 用户研究技能生态系统的**人物角色核心**，负责创建证据驱动的用户角色。与其他技能协同使用，效果更佳：
+
+| 技能 | 角色 | 协同场景 |
+|------|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 研究方法 | UDM 研究数据 → Persona 角色创建 → 设计指导 |
+| [📊 Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量验证 | Persona 假设 → QuantUX 行为验证 → 角色精化 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | Persona 数据 → SWD 可视化 → 团队对齐 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | Persona 角色 → JTBD 工作映射 → 深层需求 |
+| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | Persona 细分 → VPD 画布分析 → 价值匹配 |
+
+---
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -791,6 +807,40 @@ result = skill.validate_path("Team Lead Maria", "Review team status",
                              ["Dashboard", "Team Overview", "Reports"])
 print(result)  # Pass/Fail with actionable feedback
 ```
+
+### 🔄 End-to-End Ecosystem Workflow
+
+Persona is the **user understanding hub** of the ecosystem. Here's how it connects with the other 5 skills:
+
+```python
+# ===== From Research to Personas to Strategy (All 6 Skills) =====
+# Step 1: UDM conducts research → Step 2: JTBD maps jobs per segment
+# Step 3: QuantUX validates behavior → Step 4: VPD designs per persona
+# Step 5: Persona creates evidence-based roles → Step 6: SWD presents to team
+
+from persona import PersonaSkill
+persona = PersonaSkill("Project Management Tool")
+
+# Add personas based on research data
+persona.add_persona(
+    name="Startup Sarah",
+    archetype="Innovator",
+    goals=["Ship features fast", "Keep team aligned"],
+    behaviors=["Daily standups", "Weekly retros"]
+)
+persona.add_persona(
+    name="Enterprise Eric",
+    archetype="Guardian",
+    goals=["Compliance first", "Scale securely"],
+    behaviors=["Quarterly audits", "SLA monitoring"]
+)
+
+# Analyze segments and generate CEO-perspective report
+segments = persona.analyze_segments()
+report = persona.generate_persona(include_ceo_analysis=True)
+```
+
+> 💡 **Pro Tip**: Evidence-based personas drive better product decisions. Try: UDM (research) → Persona (segment) → JTBD (define needs) → VPD (design solutions)
 
 ### 📁 Project Structure
 
