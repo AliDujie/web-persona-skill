@@ -919,6 +919,71 @@ A: Reference them in product design, feature prioritization, marketing messaging
 A: Validate behavior patterns with new research data. Use QuantUX log analysis to confirm persona assumptions with real behavior data. Recommend updating every 6-12 months.
 
 
+### 📋 Cheat Sheet / Quick Reference Cards
+
+#### Persona Creation Checklist
+
+| Step | Action | Validation |
+|------|--------|------------|
+| 1. Research | Collect data from 5-8 interviews or 50+ surveys | Minimum sample met? |
+| 2. Segment | Group by goals/behaviors/attitudes | Clear behavioral differences? |
+| 3. Create | Build persona card with name, quote, goals, behaviors | Passes 12-item quality review? |
+| 4. Prioritize | Designate Primary / Secondary / Anti-persona | Max 2 primary personas? |
+| 5. Validate | Test with QuantUX log analysis or new research | Behavior patterns hold? |
+
+#### 3-Step Rule for User Paths
+
+| Rule | Description | Example |
+|------|-------------|---------|
+| **3-Step Max** | Primary persona core task ≤ 3 steps | Home → Search → Checkout ✅ |
+| **Path Validation** | `validate_path(persona, task, steps)` | Returns Pass/Fail with feedback |
+| **Exception** | Complex tasks may need more steps | Admin setup: 5-7 steps acceptable |
+
+#### Feature Prioritization by Persona Impact
+
+| Impact Level | Priority | Example |
+|-------------|----------|---------|
+| Blocks Primary core task | **P0** (immediate) | Homepage loading for efficiency user |
+| Enhances Primary experience | **P1** (next sprint) | Personalization for explorer user |
+| Benefits Secondary personas | **P2** (backlog) | Social sharing features |
+| Nice-to-have for all | **P3** (icebox) | Theme customization |
+
+#### Bug Prioritization Framework
+
+| Condition | Priority |
+|-----------|----------|
+| Blocks Primary persona + core task | **P0** |
+| Blocks Primary persona + non-core task | **P1** |
+| Blocks Secondary persona + core task | **P1** |
+| Affects Secondary persona + non-core | **P2** |
+| Edge case / cosmetic | **P3** |
+
+#### Persona Quality Review (12 Items)
+
+- [ ] Based on real research data
+- [ ] Has a memorable name
+- [ ] Has a defining quote
+- [ ] Clear goals and motivations
+- [ ] Specific behaviors documented
+- [ ] Pain points identified
+- [ ] Technology comfort level noted
+- [ ] Distinct from other personas
+- [ ] Actionable for design decisions
+- [ ] Primary/Secondary designation clear
+- [ ] Represents significant user segment
+- [ ] Not based solely on demographics
+
+#### Cross-Skill Quick Reference
+
+| Need | Skill | Key Method |
+|------|-------|------------|
+| Choose research methods | [UDM](https://github.com/AliDujie/universal-design-methods) | `recommend_methods()` |
+| Validate quantitatively | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | `calculate_ab_sample_size()` |
+| Understand user "jobs" | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | `analyze()` |
+| Create personas | **Persona** (this skill) | `add_persona()` |
+| Design value prop | [VPD](https://github.com/AliDujie/value-proposition-design) | `analyze_canvas()` |
+| Present findings | [SWD](https://github.com/AliDujie/storytelling-with-data) | `build_story()` |
+
 ### 🏆 Case Studies
 
 #### Case Study 1: E-commerce Platform Persona Creation
@@ -1446,8 +1511,9 @@ canvas = vpd.analyze_canvas(
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.4.32 | 2026-05-08 | Repo maintenance: enhanced persona validation workflow, improved cross-skill Persona→VPD→QuantUX pipeline examples, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
+| v2.4.41 | 2026-05-10 | Repo maintenance: added English cheat sheet (persona creation checklist, 3-step rule reference, feature prioritization guide), updated Last Updated badge |
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
+| v2.4.32 | 2026-05-08 | Repo maintenance: enhanced persona validation workflow, improved cross-skill Persona→VPD→QuantUX pipeline examples, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
 | v2.4.30 | 2026-05-07 | Repo maintenance: added "When to use Persona" decision guide to SKILL.md, added cross-skill workflow examples to README, version bump to 2.4.30 |
 | v2.4.31 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.4.31 |
 | v2.4.29 | 2026-05-07 | Repo maintenance: SKILL.md version bump to 2.4.29, verified cross-skill ecosystem consistency
@@ -1505,4 +1571,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.4.40*
+*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.4.41*
