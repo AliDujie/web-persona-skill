@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.35-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.36-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -452,6 +452,133 @@ guidance = skill.generate_design_guidance(segments)
 - Python >= 3.8
 - **无外部依赖**（纯标准库实现）
 - 兼容 macOS / Linux / Windows
+
+---
+
+
+---
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "需要创建用户画像" | → **Web Persona (本技能)** — 人物角色创建与细分 |
+| "不知道选什么研究方法" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐与执行 |
+| "想理解用户背后的「工作」" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 用户"工作"挖掘、机会评分 |
+| "需要定量验证假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试、HEART 指标、样本量计算 |
+| "验证价值主张够不够强" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — 价值主张画布、实验验证 |
+| "研究结果怎么讲给高管听" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事与图表呈现 |
+| "需要结构化商业分析框架" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL、五力模型、决策树 |
+
+---
+
+### 🔄 完整端到端工作流：从角色到设计指导 (End-to-End Workflow)
+
+> Persona 是用户研究的输出、产品设计的输入 — 连接定性发现和定量验证的桥梁。
+
+#### 阶段 1: 角色研究
+1. **Universal Design Methods** → 用户访谈、观察法收集原始数据
+2. **Web Persona (本技能)** → 创建人物角色、用户细分、信息架构
+
+#### 阶段 2: 验证与设计
+3. **JTBD Knowledge** → 基于 Persona 挖掘深层需求
+4. **Quantitative UX Research** → 用行为数据验证角色假设
+5. **Value Proposition Design** → 为每个角色定制价值主张
+
+#### 阶段 3: 呈现
+6. **Storytelling with Data** → 向团队呈现角色驱动的设计决策
+
+```python
+# 示例：Persona 端到端工作流
+from udm import UDMSkill
+from persona import PersonaSkill
+from vpd import VPDSkill
+
+# 阶段 1: UDM 收集数据 → 创建 Persona
+udm = UDMSkill("电商平台")
+guide = udm.generate_interview("用户访谈", "contextual")
+
+persona = PersonaSkill("电商平台")
+persona.add_persona(name="小明", archetype="效率型用户", type="primary",
+    goals=["快速完成任务"], behaviors=["频繁搜索"])
+persona.add_persona(name="小红", archetype="探索型用户", type="secondary",
+    goals=["发现新品"], behaviors=["浏览推荐"])
+
+# 阶段 2: 为每个角色设计价值主张
+vpd = VPDSkill("电商平台", "小明")
+vpd.analyze_canvas(product_name="电商平台",
+    jobs=[{"job": "快速找到商品", "importance": "高"}]
+)
+
+# 阶段 3: 角色驱动的设计决策
+print(persona.render_all_personas())
+print(persona.render_feature_matrix())
+```
+
+---
+
+### 💻 实用集成示例 (Practical Integration Examples)
+
+#### 集成 1: UDM → Persona
+
+```python
+from udm import UDMSkill
+from persona import PersonaSkill
+
+# UDM 访谈收集数据
+udm = UDMSkill("产品名")
+guide = udm.generate_interview("用户访谈", "contextual")
+
+# 基于访谈发现创建 Persona
+persona = PersonaSkill("产品名")
+persona.add_persona(name="用户 A", archetype="效率型", type="primary",
+    goals=["快速完成任务"],
+    pain_points=["流程复杂"],
+    behaviors=["搜索优先"])
+```
+
+#### 集成 2: Persona → VPD
+
+```python
+from persona import PersonaSkill
+from vpd import VPDSkill
+
+persona = PersonaSkill("产品名")
+persona.add_persona(name="商务用户", archetype="效率型", type="primary",
+    goals=["省时"], pain_points=["信息过载"])
+
+# 基于 Persona 定义价值主张
+vpd = VPDSkill("产品名", "商务用户")
+vpd.analyze_canvas(product_name="产品名",
+    jobs=[{"job": "快速完成任务", "importance": "高"}],
+    pains=[{"pain": "信息过载", "severity": "高"}]
+)
+```
+
+#### 集成 3: Persona → QuantUX 验证
+
+```python
+from persona import PersonaSkill
+from quantux import QuantUXSkill
+
+persona = PersonaSkill("产品名")
+persona.add_persona(name="小明", archetype="效率型", type="primary")
+
+# 用 QuantUX 验证角色假设
+quant = QuantUXSkill("产品名")
+heart = quant.build_heart_framework()
+# 分析不同角色的行为数据
+```
+
+---
+
+### 🚀 下一步 (Next Steps)
+
+1. **快速上手** — 复制技能到你的 skills 目录，5 分钟内完成首次调用
+2. **阅读 SKILL.md** — 了解 AI Agent 触发条件和完整 API 文档
+3. **安装 INSTALL.md** — 详细的安装和配置指南
+4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
+5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
 
 ---
 
