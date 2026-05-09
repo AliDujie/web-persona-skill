@@ -4,8 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.33-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.34-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--09-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -794,6 +794,7 @@ python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.34 | 2026-05-09 | Repo maintenance: fixed footer version mismatch (v2.4.32→v2.4.34), enhanced cross-skill ecosystem workflow clarity, updated ecosystem links to all 5 sibling skills, aligned version across README/SKILL.md/pyproject.toml |
 | v2.4.32 | 2026-05-08 | Repo maintenance: enhanced persona validation workflow, improved cross-skill Persona→VPD→QuantUX pipeline examples, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
 | v2.4.21 | 2026-05-06 | Repo maintenance: fixed README footer version mismatch (footer was 2 versions behind badge), aligned all version references, verified ecosystem cross-references and bilingual consistency |
 | v2.4.22 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, version bump to 2.4.22, verified ecosystem cross-references and bilingual consistency |
@@ -1186,6 +1187,19 @@ canvas = vpd.analyze_canvas(
 
 ---
 
+### 🚀 Next Steps / 下一步
+
+Ready to go deeper? Here's what to try next:
+
+1. **Explore persona validation** — Check [persona/validator.py](persona/validator.py) for evidence-based persona quality checks
+2. **Ground personas in research** — Feed [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) interview data into persona creation for authenticity
+3. **Define jobs per persona** — Map each persona's key jobs with [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) for deeper understanding
+4. **Design for each persona** — Build tailored value propositions with [Value Proposition Design](https://github.com/AliDujie/value-proposition-design)
+5. **Test persona hypotheses** — Validate persona segments with [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) clustering and surveys
+6. **Present personas** — Share persona profiles through compelling narratives with [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+
+> 💡 **Pro Tip**: Evidence-based personas drive better product decisions. Try: UDM (research) → Persona (segment) → JTBD (define needs) → VPD (design solutions)
+
 ### 👨‍💻 Credits
 
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007), covering evidence-based persona creation and application.
@@ -1198,4 +1212,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-08 | AliDujie Skill Ecosystem | v2.4.32*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.34*
