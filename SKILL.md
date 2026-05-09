@@ -328,6 +328,25 @@ swd = SWDSkill("用户画像汇报")
 ctx = swd.build_context(audience="产品团队", cta="按首要角色优化设计")
 ```
 
+**协作示例（Persona → VPD）**：
+```python
+# Step 1: Persona 定义目标用户
+from persona import PersonaSkill
+persona = PersonaSkill("SaaS 平台")
+persona.add_persona("团队负责人", "效率型", "primary",
+    goals=["减少会议时间", "追踪项目进度"],
+    pain_points=["信息分散在多个工具"])
+
+# Step 2: VPD 基于 Persona 设计价值主张
+from vpd import VPDSkill
+vpd = VPDSkill("SaaS 协作平台", "团队负责人")
+canvas = vpd.analyze_canvas(product_name="TeamFlow",
+    jobs=[{"job": "减少会议时间", "importance": "高"}],
+    pains=[{"pain": "信息分散", "severity": "高"}],
+    gains=[{"gain": "一站式工作空间", "relevance": "高"}])
+print(f"匹配度: {canvas.fit_score}")
+```
+
 ## 十、参考资料
 
 | 书名 | 作者 | 说明 |
