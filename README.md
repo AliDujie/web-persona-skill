@@ -662,6 +662,15 @@ heart = quant.build_heart_framework()
 | **Service Designers** | Map services to persona journeys and touchpoints |
 | **AI Agents** | Zero-dependency Python package for automated persona workflows |
 
+### ✅ 5-Minute Quick Start Checklist
+
+- [ ] **Install** — `cp -r web-persona-skill /your/agent/skills/`
+- [ ] **Import** — `from persona import PersonaSkill`
+- [ ] **Initialize** — `skill = PersonaSkill("your product")`
+- [ ] **Create persona** — `skill.add_persona("Alex", "Power User", "primary", goals=[...])`
+- [ ] **Quality review** — `skill.review_personas()` (12-item checklist)
+- [ ] **Feature priority** — `skill.add_feature("feature name", {"Alex": "high"}, "high", "low")`
+
 ### 🚀 Quick Start
 
 #### Step 1: Install
