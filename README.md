@@ -1468,6 +1468,7 @@ canvas = vpd.analyze_canvas(
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
 | v2.4.42 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（validator.py→persona_builder.py），增强跨技能集成示例，更新 Last Updated
 | v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 8 个常见使用场景和快捷命令
 
@@ -1524,6 +1525,9 @@ canvas = vpd.analyze_canvas(
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
+| v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
+| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 8 common use cases and quick commands |
 | v2.4.41 | 2026-05-10 | Repo maintenance: added English cheat sheet (persona creation checklist, 3-step rule reference, feature prioritization guide), updated Last Updated badge |
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
 | v2.4.32 | 2026-05-08 | Repo maintenance: enhanced persona validation workflow, improved cross-skill Persona→VPD→QuantUX pipeline examples, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
@@ -1601,4 +1605,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.42*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.45*
