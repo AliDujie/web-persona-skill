@@ -660,13 +660,13 @@ heart = quant.build_heart_framework()
 
 ### 👥 Who Is This For?
 
-| Role | Use Case |
-|------|----------|
-| **UX Designers** | Create evidence-based personas from real user data |
-| **Product Managers** | Align product decisions with user segments |
-| **Marketing Teams** | Target messaging to specific persona needs |
-| **Service Designers** | Map services to persona journeys and touchpoints |
-| **AI Agents** | Zero-dependency Python package for automated persona workflows |
+| Role | Use Case | Next Skill to Try |
+|------|----------|-------------------|
+| **UX Designers** | Create evidence-based personas from real user data | → [VPD](https://github.com/AliDujie/value-proposition-design) for value canvas per persona |
+| **Product Managers** | Align product decisions with user segments | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) for job mapping |
+| **Marketing Teams** | Target messaging to specific persona needs | → [SWD](https://github.com/AliDujie/storytelling-with-data) for persona presentations |
+| **Service Designers** | Map services to persona journeys and touchpoints | → [UDM](https://github.com/AliDujie/universal-design-methods) for journey mapping |
+| **AI Agents** | Zero-dependency Python package for automated persona workflows | → Any of the 5 companion skills for full workflow |
 
 ### ✅ 5-Minute Quick Start Checklist
 
