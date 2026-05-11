@@ -1,3 +1,11 @@
+## v2.4.47 (2026-05-12)
+
+Repo maintenance: added "Next Skill to Try" column to English "Who Is This For?" table with ecosystem cross-references.
+
+- Added "Next Skill to Try" column to English "Who Is This For?" table
+- Each role now has a recommended next skill for deeper workflow
+- Version already aligned (v2.4.47 in both badge and footer)
+
 ## v2.4.47 (2026-05-11)
 
 Repo maintenance: updated API examples to match actual method signatures, fixed add_persona/generate_interview/add_segment/add_feature/add_test_script examples, ensured README/code alignment.
