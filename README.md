@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.48-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.49-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -904,6 +904,25 @@ web-persona-skill/
 - **Map personas to business value** — Not all personas are equally valuable. Quantify the economic impact of each persona to prioritize design investment.
 - **Create anti-personas too** — Define who you're NOT designing for. This prevents scope creep and keeps the team focused.
 
+### ✅ Persona Quality Checklist (12-Item Quick Reference)
+
+Before finalizing your personas, run through this checklist:
+
+- [ ] **Named and memorable** — Each persona has a real name and memorable quote
+- [ ] **Goal-driven** — Primary goals are clearly stated, not feature lists
+- [ ] **Behavior-based** — Created from observed behaviors, not assumptions
+- [ ] **Data-grounded** — Backed by at least 5 research data points
+- [ ] **Distinct from others** — No two personas share the same primary goal
+- [ ] **Priority-ranked** — One primary persona, 2-3 secondary, rest are excluded
+- [ ] **Pain points specific** — Pains are concrete, not generic complaints
+- [ ] **Design guidance** — Each persona leads to at least one design decision
+- [ ] **Realistic scope** — 3-5 personas total (not 10+)
+- [ ] **Anti-persona defined** — Who you're NOT building for is explicit
+- [ ] **Business impact** — Each persona's revenue/contribution potential is estimated
+- [ ] **Team-validated** — At least 2 team members have reviewed and agreed
+
+> 💡 **Quick check**: Run `skill.review_personas()` for an automated 12-item quality assessment.
+
 ### ⛔ When NOT to Use This Skill
 
 - **Choosing research methods or designing studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for research design
@@ -1639,4 +1658,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.48*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.49*

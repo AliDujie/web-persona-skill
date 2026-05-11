@@ -1,3 +1,7 @@
+## v2.4.49 (2026-05-12)
+
+Repo maintenance: added "Persona Quality Checklist" (12-item quick reference) in English README, made quality review more accessible and actionable.
+
 ## v2.4.48 (2026-05-12)
 
 Repo maintenance: updated README footer date (2026-05-11→2026-05-12), version bump, verified ecosystem cross-references and version alignment across README/SKILL.md/pyproject.toml.
