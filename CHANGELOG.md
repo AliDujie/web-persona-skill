@@ -1,3 +1,12 @@
+## v2.4.45 (2026-05-11)
+
+Repo maintenance: updated API examples to match actual method signatures, fixed add_persona/generate_interview/add_segment/add_feature/add_test_script examples, ensured README/code alignment.
+
+- Updated quick start checklist with correct API signatures
+- Fixed code examples: add_persona positional args, generate_interview sections parameter
+- Updated add_feature, add_test_script examples to match actual API
+- 128 insertions, 116 deletions in README.md
+
 ## v2.4.44 (2026-05-11)
 
 Repo maintenance: added English 5-minute Quick Start checklist to improve onboarding, enhanced discoverability for English-speaking users, verified all ecosystem cross-references.
