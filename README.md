@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.46-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.47-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -1162,9 +1162,12 @@ python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.47 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
+| v2.4.46 | 2026-05-11 | Repo maintenance: updated API examples to match actual method signatures (add_persona, generate_interview, add_segment, add_feature, add_test_script), added missing v2.4.45 CHANGELOG entry |
+| v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
+| v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
+| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 8 common use cases and quick commands |
 | v2.4.42 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (validator.py→persona_builder.py), enhanced cross-skill integration examples, updated Last Updated |
-| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 8 common use cases and quick commands
-
 | v2.4.38 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.4.37 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
@@ -1539,6 +1542,7 @@ canvas = vpd.analyze_canvas(
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.47 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
 | v2.4.46 | 2026-05-11 | Repo maintenance: updated API examples to match actual method signatures (add_persona, generate_interview, add_segment, add_feature, add_test_script), added missing v2.4.45 CHANGELOG entry |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
 | v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
@@ -1620,4 +1624,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.46*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.47*
