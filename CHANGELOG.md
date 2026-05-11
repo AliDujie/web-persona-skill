@@ -1,3 +1,7 @@
+## v2.4.50 (2026-05-12)
+
+Repo maintenance: fixed `__init__.py` version mismatch (1.0.0→2.4.50), verified all Python module exports are importable, confirmed ecosystem cross-references.
+
 ## v2.4.49 (2026-05-12)
 
 Repo maintenance: added "Persona Quality Checklist" (12-item quick reference) in English README, made quality review more accessible and actionable.
