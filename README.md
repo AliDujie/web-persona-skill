@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.45-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.46-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -1480,10 +1480,12 @@ canvas = vpd.analyze_canvas(
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
-| v2.4.42 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（validator.py→persona_builder.py），增强跨技能集成示例，更新 Last Updated
-| v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 8 个常见使用场景和快捷命令
-
+|------|------|------|
+| v2.4.46 | 2026-05-11 | 仓库维护：更新 API 示例以匹配实际方法签名（add_persona, generate_interview, add_segment, add_feature, add_test_script），补齐缺失的 CHANGELOG v2.4.45 条目 |
+| v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.43–v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
+| v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 8 个常见使用场景和快捷命令 |
+| v2.4.42 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（validator.py→persona_builder.py），增强跨技能集成示例，更新 Last Updated |
+| v2.4.41 | 2026-05-10 | 仓库维护：添加英文速查表（角色创建清单、3步规则参考、功能优先级指南），更新 Last Updated 徽章 |
 | v2.4.38 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.4.37 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 | v2.4.32 | 2026-05-08 | 仓库维护：增强角色验证工作流，改进跨技能 Persona→VPD→QuantUX 流水线示例，更新 Last Updated 至 2026-05-08，版本升级至 2.4.32 |
@@ -1537,6 +1539,7 @@ canvas = vpd.analyze_canvas(
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.46 | 2026-05-11 | Repo maintenance: updated API examples to match actual method signatures (add_persona, generate_interview, add_segment, add_feature, add_test_script), added missing v2.4.45 CHANGELOG entry |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
 | v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
 | v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 8 common use cases and quick commands |
@@ -1617,4 +1620,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.45*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.46*
