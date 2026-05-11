@@ -620,6 +620,7 @@ heart = quant.build_heart_framework()
 - [Best Practices](#-best-practices)
 - [FAQ](#-faq)
 - [User Reviews](#-user-reviews)
+- [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
 - [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
@@ -1617,6 +1618,20 @@ Ready to go deeper? Here's what to try next:
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007), covering evidence-based persona creation and application.
 
 **Applicable to:** UX Designers, Product Managers, Interaction Designers, Marketers
+
+### 🆘 Getting Help
+
+- 📖 Check the [Troubleshooting](#-troubleshooting) section for common issues
+- 📚 Read the methodology guides in [references/](references/)
+- 💬 Open an issue on [GitHub](https://github.com/AliDujie/web-persona-skill/issues)
+
+### 📖 Extended Reading
+
+| Book | Author | Related Capability |
+|------|--------|--------------------|
+| *The User Is Always Right* | Steve Mulder & Ziv Yaar | Full persona methodology — evidence-based personas |
+| *Just Enough Research* | Erika Hall | Research planning for persona creation |
+| *Observing the User Experience* | Elizabeth Goodman et al. | Ethnographic research for persona development |
 
 ### 🤝 Contributing
 
