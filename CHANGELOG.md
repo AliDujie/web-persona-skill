@@ -1,4 +1,4 @@
-## v2.4.45 (2026-05-11)
+## v2.4.47 (2026-05-11)
 
 Repo maintenance: updated API examples to match actual method signatures, fixed add_persona/generate_interview/add_segment/add_feature/add_test_script examples, ensured README/code alignment.
 
