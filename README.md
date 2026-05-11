@@ -30,9 +30,9 @@
 - [ ] **安装** — `cp -r web-persona-skill /your/agent/skills/`
 - [ ] **导入** — `from persona import PersonaSkill`
 - [ ] **初始化** — `skill = PersonaSkill("你的产品")`
-- [ ] **人物角色** — `skill.add_persona(name="...", archetype="...", goals=[...])`
-- [ ] **访谈提纲** — `skill.generate_interview("访谈", dimensions=[...])`
-- [ ] **用户细分** — `skill.analyze_segments(data=[...])`
+- [ ] **人物角色** — `skill.add_persona("小明", "效率型用户", "primary", "我只想快速完成", goals=["..."], behaviors=["..."], attitudes=["..."], bio="...")`
+- [ ] **访谈提纲** — `skill.generate_interview("访谈", sections=["goals", "behaviors", "pain_points"])`
+- [ ] **用户细分** — `skill.add_segment("效率型", "追求速度", ["快速完成"], ["高频使用"], ["效率优先"])`
 - [ ] **角色渲染** — `skill.render_all_personas()`
 - [ ] **CEO 分析** — `skill.generate_persona(include_ceo_analysis=True)`
 
@@ -123,21 +123,21 @@ skill = PersonaSkill("电商平台")
 ```python
 # ===== 场景 1: 创建人物角色 =====
 skill.add_persona(
-    name="小明",
-    archetype="效率型用户",
-    type="primary",
+    "小明", "效率型用户", "primary",
     quote="我只想快速找到想要的商品",
     goals=["快速完成任务", "获得个性化推荐"],
-    behaviors=["频繁使用搜索", "比价后再购买"]
+    behaviors=["频繁使用搜索", "比价后再购买"],
+    attitudes=["追求效率"],
+    bio="忙碌的白领，重视时间"
 )
 
 skill.add_persona(
-    name="小红",
-    archetype="探索型用户",
-    type="secondary",
+    "小红", "探索型用户", "secondary",
     quote="我喜欢发现新品和优惠",
     goals=["发现新品", "获取优惠信息"],
-    behaviors=["浏览推荐", "关注直播"]
+    behaviors=["浏览推荐", "关注直播"],
+    attitudes=["喜欢探索"],
+    bio="年轻用户，喜欢发现新事物"
 )
 
 print(skill.render_all_personas())
@@ -146,12 +146,12 @@ print(skill.render_all_personas())
 # ===== 场景 2: 访谈提纲与问卷设计 =====
 guide = skill.generate_interview(
     "新用户上手体验访谈",
-    dimensions=["goals", "behaviors", "pain_points", "motivations"]
+    sections=["goals", "behaviors", "pain_points", "motivations"]
 )
 print(guide)
 
-survey = skill.design_survey("用户细分问卷", sample_size=500)
-print(f"问卷题目数: {survey.question_count}")
+survey = skill.generate_survey("用户细分问卷", "needs", pain_points=["搜索不精准"])
+print(survey)
 
 # ===== 场景 3: CEO 视角用户经济模型 =====
 report = skill.generate_persona(include_ceo_analysis=True)
@@ -159,8 +159,8 @@ print(report)
 # 输出：用户经济模型 + 获取策略 + 留存策略
 
 # ===== 场景 4: 功能优先级 + Bug 优先级 =====
-skill.add_feature("快速下单", {"小明": "高", "小红": "低"}, business_value="高", tech_difficulty="低")
-skill.add_feature("个性化推荐", {"小明": "中", "小红": "高"}, business_value="高", tech_difficulty="中")
+skill.add_feature("快速下单", {"小明": "高", "小红": "低"}, "高", "低")
+skill.add_feature("个性化推荐", {"小明": "中", "小红": "高"}, "高", "中")
 print(skill.render_feature_matrix())  # P0-P3 功能优先级矩阵
 
 # Bug 优先级 — 按角色影响面自动定级
@@ -178,7 +178,7 @@ result = skill.validate_path("小明", "完成购物", ["首页", "搜索", "详
 print(result)  # 路径是否通过 3 步规则
 
 # ===== 场景 7: 测试计划 + 衡量体系 =====
-skill.add_test_script("小明", steps=["打开首页", "搜索商品", "查看详情", "完成下单"])
+skill.add_test_script("小明", [{"action": "打开首页", "expected": "显示推荐"}, {"action": "搜索商品", "expected": "展示结果"}, {"action": "查看详情", "expected": "加载详情"}, {"action": "完成下单", "expected": "确认页面"}])
 skill.add_metric("小明", metric="任务完成率", target="90%", source="GA", method="数据分析")
 print(skill.render_test_plan())     # 测试计划
 print(skill.render_measure_system())  # 衡量体系
@@ -210,31 +210,29 @@ skill = PersonaSkill("电商平台")
 
 # 步骤 1: 定义主要角色
 skill.add_persona(
-    name="小明",
-    archetype="效率型用户",
-    type="primary",
+    "小明", "效率型用户", "primary",
     quote="我只想快速找到想要的商品",
     goals=["快速完成任务", "获得个性化推荐"],
     behaviors=["频繁使用搜索", "比价后再购买"],
-    pain_points=["搜索结果不准确", "信息过载"]
+    attitudes=["追求效率"],
+    bio="忙碌的白领"
 )
 
 # 步骤 2: 定义次要角色
 skill.add_persona(
-    name="小红",
-    archetype="探索型用户",
-    type="secondary",
+    "小红", "探索型用户", "secondary",
     quote="我喜欢发现新品和优惠",
     goals=["发现新品", "获取优惠信息"],
     behaviors=["浏览推荐", "关注直播", "分享好物"],
-    pain_points=["推荐不够精准", "优惠规则复杂"]
+    attitudes=["喜欢探索"],
+    bio="年轻用户，喜欢发现新事物"
 )
 
 # 步骤 3: 渲染所有角色
 print(skill.render_all_personas())
 
-# 步骤 4: 生成设计指导
-design_guide = skill.generate_design_guide()
+# 步骤 4: 生成内容策略与设计指导
+design_guide = skill.render_content_strategy()
 print(design_guide)
 ```
 
@@ -242,19 +240,15 @@ print(design_guide)
 
 ```python
 # 生成用户细分问卷
-survey = skill.design_survey("用户细分问卷", sample_size=500)
-print(f"问卷题目数: {survey.question_count}")
-print(f"预计完成时间: {survey.estimated_time} 分钟")
+survey = skill.generate_survey("用户细分问卷", "needs", pain_points=["搜索不精准"])
+print(survey)
 
 # 用户细分分析
-segments = skill.analyze_segments(
-    data=[
-        {"user": "u001", "frequency": "high", "value": "high"},
-        {"user": "u002", "frequency": "low", "value": "high"},
-        {"user": "u003", "frequency": "high", "value": "low"},
-    ]
-)
-print(segments)
+skill.add_user("u001", goals=["快速购买"], behaviors=["高频使用"], attitudes=["效率优先"])
+skill.add_user("u002", goals=["发现好物"], behaviors=["低频浏览"], attitudes=["价格敏感"])
+skill.add_segment("效率型", "追求速度", ["快速完成"], ["高频使用"], ["效率优先"], 60)
+skill.add_segment("探索型", "喜欢发现", ["发现新品"], ["低频浏览"], ["价格敏感"], 40)
+print(skill.render_segments())
 ```
 
 #### 示例 3: CEO 视角用户经济模型
@@ -421,17 +415,18 @@ skill = PersonaSkill("电商平台")
 
 # 步骤 1: 创建人物角色
 skill.add_persona(
-    name="精明的比价妈妈",
-    archetype="目标导向型",
+    "精明的比价妈妈", "目标导向型", "primary",
+    quote="我要为家人找到最划算的商品",
     goals=["找到性价比最高的商品", "确保商品安全可靠"],
-    frustrations=["商品信息不透明", "评价真假难辨"],
-    behaviors=["购买前花 30 分钟比较", "看重其他妈妈的评价"]
+    behaviors=["购买前花 30 分钟比较", "看重其他妈妈的评价"],
+    attitudes=["重视性价比"],
+    bio="两位孩子的妈妈，注重家庭开支"
 )
 
 # 步骤 2: 生成访谈提纲验证角色假设
 interview = skill.generate_interview(
     "人物角色验证",
-    dimensions=["购物目标", "决策流程", "痛点", "信息渠道"]
+    sections=["goals", "behaviors", "pain_points"]
 )
 
 # 步骤 3: CEO 视角 — 用户经济模型
@@ -451,13 +446,12 @@ from persona import PersonaSkill
 skill = PersonaSkill("B2B 协作 SaaS")
 
 # 用户细分分析
-segments = skill.analyze_segments(
-    data=[
-        {"role": "团队负责人", "usage": "高", "pain": "看不到团队进度"},
-        {"role": "执行成员", "usage": "中", "pain": "任务太多不知道先做哪个"},
-        {"role": "外部协作者", "usage": "低", "pain": "找不到需要的文件"}
-    ]
-)
+skill.add_user("u001", goals=["跟踪团队进度"], behaviors=["每日查看仪表盘"], attitudes=["结果导向"])
+skill.add_user("u002", goals=["明确任务优先级"], behaviors=["中等频率使用"], attitudes=["注重效率"])
+skill.add_user("u003", goals=["快速找到文件"], behaviors=["低频使用"], attitudes=["需要简单体验"])
+skill.add_segment("团队负责人", "管理团队需要可视化", ["跟踪进度"], ["每日查看仪表盘"], ["结果导向"], 30)
+skill.add_segment("执行成员", "执行任务需要清晰指引", ["明确优先级"], ["中等频率使用"], ["注重效率"], 50)
+skill.add_segment("外部协作者", "偶尔参与需要快速上手", ["快速查找"], ["低频使用"], ["简单体验"], 20)
 
 # 为每个细分创建设计指导
 guidance = skill.generate_design_guidance(segments)
@@ -517,10 +511,14 @@ udm = UDMSkill("电商平台")
 guide = udm.generate_interview("用户访谈", "contextual")
 
 persona = PersonaSkill("电商平台")
-persona.add_persona(name="小明", archetype="效率型用户", type="primary",
-    goals=["快速完成任务"], behaviors=["频繁搜索"])
-persona.add_persona(name="小红", archetype="探索型用户", type="secondary",
-    goals=["发现新品"], behaviors=["浏览推荐"])
+persona.add_persona("小明", "效率型用户", "primary",
+    quote="我只想快速完成任务",
+    goals=["快速完成任务"], behaviors=["频繁搜索"],
+    attitudes=["追求效率"], bio="忙碌的用户")
+persona.add_persona("小红", "探索型用户", "secondary",
+    quote="我喜欢发现新品",
+    goals=["发现新品"], behaviors=["浏览推荐"],
+    attitudes=["喜欢探索"], bio="喜欢发现的用户")
 
 # 阶段 2: 为每个角色设计价值主张
 vpd = VPDSkill("电商平台", "小明")
@@ -549,10 +547,11 @@ guide = udm.generate_interview("用户访谈", "contextual")
 
 # 基于访谈发现创建 Persona
 persona = PersonaSkill("产品名")
-persona.add_persona(name="用户 A", archetype="效率型", type="primary",
+persona.add_persona("用户 A", "效率型", "primary",
+    quote="快速完成任务最重要",
     goals=["快速完成任务"],
-    pain_points=["流程复杂"],
-    behaviors=["搜索优先"])
+    behaviors=["搜索优先"],
+    attitudes=["效率优先"], bio="注重效率的用户")
 ```
 
 #### 集成 2: Persona → VPD
@@ -562,8 +561,11 @@ from persona import PersonaSkill
 from vpd import VPDSkill
 
 persona = PersonaSkill("产品名")
-persona.add_persona(name="商务用户", archetype="效率型", type="primary",
-    goals=["省时"], pain_points=["信息过载"])
+persona.add_persona("商务用户", "效率型", "primary",
+    quote="我需要省时",
+    goals=["省时"],
+    behaviors=["快速操作"],
+    attitudes=["效率优先"], bio="忙碌的商务人士")
 
 # 基于 Persona 定义价值主张
 vpd = VPDSkill("产品名", "商务用户")
@@ -580,7 +582,10 @@ from persona import PersonaSkill
 from quantux import QuantUXSkill
 
 persona = PersonaSkill("产品名")
-persona.add_persona(name="小明", archetype="效率型", type="primary")
+persona.add_persona("小明", "效率型", "primary",
+    quote="快就是好",
+    goals=["快速完成"], behaviors=["高效操作"],
+    attitudes=["效率优先"], bio="效率型用户")
 
 # 用 QuantUX 验证角色假设
 quant = QuantUXSkill("产品名")
@@ -763,33 +768,31 @@ print(result)  # Pass/Fail with explanation
 skill = PersonaSkill("Healthcare Platform")
 
 skill.add_persona(
-    name="Dr. Sarah Chen",
-    archetype="Efficiency-Driven Professional",
-    type="primary",
+    "Dr. Sarah Chen", "Efficiency-Driven Professional", "primary",
     quote="I need to access patient records quickly between appointments",
     goals=["Reduce admin time", "Access records from mobile", "Secure data sharing"],
-    behaviors=["Uses tablet during rounds", "Checks email on phone", "Values speed over features"]
+    behaviors=["Uses tablet during rounds", "Checks email on phone", "Values speed over features"],
+    attitudes=["Efficiency-focused", "Security-conscious"],
+    bio="Attending physician at a busy hospital"
 )
 
 skill.add_persona(
-    name="Nurse James Park",
-    archetype="Care-Focused Coordinator",
-    type="secondary",
+    "Nurse James Park", "Care-Focused Coordinator", "secondary",
     quote="I need to coordinate care across multiple patients",
     goals=["Track patient progress", "Communicate with doctors", "Manage shift handoffs"],
-    behaviors=["Uses shared dashboard", "Relies on notifications", "Works in shifts"]
+    behaviors=["Uses shared dashboard", "Relies on notifications", "Works in shifts"],
+    attitudes=["Team-oriented", "Detail-focused"],
+    bio="Registered nurse managing 8-12 patients per shift"
 )
 
 print(skill.render_all_personas())
 
 # Example 2: User segmentation analysis
-segments = skill.analyze_segments(
-    data=[
-        {"user": "A", "frequency": "daily", "features": ["search", "bookmarks"]},
-        {"user": "B", "frequency": "weekly", "features": ["dashboard", "reports"]},
-    ]
-)
-print(f"Identified {len(segments)} distinct segments")
+skill.add_user("A", goals=["Quick search"], behaviors=["Daily use"], attitudes=["Efficiency-first"])
+skill.add_user("B", goals=["Track progress"], behaviors=["Weekly use"], attitudes=["Detail-oriented"])
+skill.add_segment("Power Users", "Daily active users", ["Quick search"], ["Daily use"], ["Efficiency-first"], 60)
+skill.add_segment("Casual Users", "Weekly users", ["Track progress"], ["Weekly use"], ["Detail-oriented"], 40)
+print(skill.render_segments())
 
 # Example 3: CEO perspective with acquisition strategy
 report = skill.generate_persona(include_ceo_analysis=True)
@@ -798,17 +801,17 @@ print(report)  # User economics + acquisition + retention strategies
 # Example 4: End-to-end persona workflow for a SaaS product
 skill = PersonaSkill("Project Management SaaS")
 skill.add_persona(
-    name="Team Lead Maria",
-    archetype="Results-Driven Manager",
-    type="primary",
+    "Team Lead Maria", "Results-Driven Manager", "primary",
     quote="I need visibility into what my team is working on without micromanaging",
     goals=["Track team progress", "Identify blockers early", "Report to stakeholders"],
-    behaviors=["Checks dashboard daily", "Uses weekly reports", "Delegates via tool"]
+    behaviors=["Checks dashboard daily", "Uses weekly reports", "Delegates via tool"],
+    attitudes=["Results-focused"],
+    bio="Manages a 15-person engineering team"
 )
 
 # Feature prioritization based on persona impact
 skill.add_feature("Automated Status Reports", {"Team Lead Maria": "high"},
-                  business_value="high", tech_difficulty="medium")
+                  "high", "medium")
 print(skill.render_feature_matrix())
 
 # Validate user journey (3-step rule)
@@ -832,20 +835,23 @@ persona = PersonaSkill("Project Management Tool")
 
 # Add personas based on research data
 persona.add_persona(
-    name="Startup Sarah",
-    archetype="Innovator",
+    "Startup Sarah", "Innovator", "primary",
+    quote="Ship fast, iterate faster",
     goals=["Ship features fast", "Keep team aligned"],
-    behaviors=["Daily standups", "Weekly retros"]
+    behaviors=["Daily standups", "Weekly retros"],
+    attitudes=["Move fast"],
+    bio="Startup founder, 15-person team"
 )
 persona.add_persona(
-    name="Enterprise Eric",
-    archetype="Guardian",
+    "Enterprise Eric", "Guardian", "secondary",
+    quote="Compliance and scale matter most",
     goals=["Compliance first", "Scale securely"],
-    behaviors=["Quarterly audits", "SLA monitoring"]
+    behaviors=["Quarterly audits", "SLA monitoring"],
+    attitudes=["Risk-averse"],
+    bio="Enterprise IT director, 500+ employees"
 )
 
 # Analyze segments and generate CEO-perspective report
-segments = persona.analyze_segments()
 report = persona.generate_persona(include_ceo_analysis=True)
 ```
 
@@ -1006,22 +1012,22 @@ skill = PersonaSkill("E-commerce Platform")
 
 # Step 1: Create primary persona
 skill.add_persona(
-    name="Bargain-Hunting Mom",
-    archetype="Goal-oriented",
-    priority="primary",
+    "Bargain-Hunting Mom", "Goal-oriented", "primary",
     quote="I need the best value for my family",
     goals=["Find best-value products", "Ensure product safety"],
-    behaviors=["Spends 30 min comparing before buying", "Values other moms' reviews"]
+    behaviors=["Spends 30 min comparing before buying", "Values other moms' reviews"],
+    attitudes=["Value-conscious"],
+    bio="Mother of two, manages household budget"
 )
 
 # Step 2: Create secondary persona
 skill.add_persona(
-    name="Tech-Savvy Young Pro",
-    archetype="Explorer",
-    priority="secondary",
+    "Tech-Savvy Young Pro", "Explorer", "secondary",
     quote="I love discovering new brands",
     goals=["Discover trending products", "Get deal alerts"],
-    behaviors=["Browses recommendations", "Follows live streams"]
+    behaviors=["Browses recommendations", "Follows live streams"],
+    attitudes=["Trend-focused"],
+    bio="Young professional, early adopter"
 )
 
 # Step 3: Generate interview guide to validate persona assumptions
@@ -1043,25 +1049,27 @@ from persona import PersonaSkill
 skill = PersonaSkill("B2B Collaboration SaaS")
 
 # User segmentation analysis
+# User segmentation analysis
+skill.add_user("u001", goals=["Track team progress"], behaviors=["Daily dashboard check"], attitudes=["Results-oriented"])
+skill.add_user("u002", goals=["Know what to do next"], behaviors=["Task list driven"], attitudes=["Efficiency-first"])
 skill.add_segment(
-    name="Team Leads",
-    description="Manage 5-15 people, need visibility",
-    core_goals=["Track team progress", "Report to stakeholders"],
-    typical_behaviors=["Check dashboard daily", "Use weekly reports"]
+    "Team Leads", "Manage 5-15 people, need visibility",
+    ["Track team progress", "Report to stakeholders"],
+    ["Check dashboard daily", "Use weekly reports"],
+    ["Results-oriented"], 30
 )
-
 skill.add_segment(
-    name="Individual Contributors",
-    description="Execute tasks, need clarity",
-    core_goals=["Know what to do next", "Minimize context switching"],
-    typical_behaviors=["Use task list", "Prefer async communication"]
+    "Individual Contributors", "Execute tasks, need clarity",
+    ["Know what to do next", "Minimize context switching"],
+    ["Use task list", "Prefer async communication"],
+    ["Efficiency-first"], 70
 )
 
 print(skill.render_segments())  # Segmentation matrix + evaluation
 
 # Feature prioritization by persona impact
 skill.add_feature("Auto status reports", {"Team Leads": "high", "Individual Contributors": "low"},
-                  business_value="high", tech_difficulty="medium")
+                  "high", "medium")
 print(skill.render_feature_matrix())  # P0-P3 ranking
 ```
 
@@ -1402,10 +1410,12 @@ from udm import UDMSkill
 
 persona_skill = PersonaSkill("电商平台")
 persona_skill.add_persona(
-    name="忙碌妈妈",
-    short_desc="碎片时间购物，重视效率和信任",
-    priority="primary",
-    goals=["快速找到所需商品", "确保商品质量"]
+    "忙碌妈妈", "碎片时间购物，重视效率和信任", "primary",
+    quote="我需要快速找到可信的商品",
+    goals=["快速找到所需商品", "确保商品质量"],
+    behaviors=["移动端下单", "看重评价"],
+    attitudes=["信任驱动"],
+    bio="两位孩子的妈妈，时间碎片化"
 )
 
 udm = UDMSkill("电商平台")
@@ -1421,9 +1431,9 @@ from quantux import QuantUXSkill
 
 persona_skill = PersonaSkill("电商平台")
 persona_skill.add_segment(
-    name="高频用户",
-    description="每周购买 3+ 次",
-    behaviors=["移动端优先", "复购率高"]
+    "高频用户", "每周购买 3+ 次",
+    ["快速复购"], ["移动端优先", "复购率高"],
+    ["品牌忠诚"], 40
 )
 
 quantux = QuantUXSkill("电商平台")
@@ -1438,10 +1448,12 @@ from vpd import VPDSkill
 
 persona_skill = PersonaSkill("电商平台")
 persona_skill.add_persona(
-    name="时间敏感型买家",
-    short_desc="追求效率，愿意为便利付费",
-    priority="primary",
-    goals=["快速结账", "减少决策时间"]
+    "时间敏感型买家", "追求效率，愿意为便利付费", "primary",
+    quote="时间比钱更宝贵",
+    goals=["快速结账", "减少决策时间"],
+    behaviors=["一键购买", "使用收藏"],
+    attitudes=["效率优先"],
+    bio="高收入专业人士"
 )
 
 vpd = VPDSkill("电商平台", "时间敏感型买家")
