@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.53-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.54-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-13-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -1587,6 +1587,28 @@ canvas = vpd.analyze_canvas(
 - **Persona + QuantUX 量化验证** — 用日志分析验证角色行为模式的规模和真实性
 - **创建反角色（Anti-Persona）** — 明确不服务的用户类型，避免产品范围无限扩展
 
+### 🌟 为什么选择 AliDujie 技能生态系统？
+
+本技能是 **AliDujie UX 研究技能生态系统** 的用户定义层，与其他技能无缝协作：
+
+| 技能 | 角色 | 协作方式 |
+|------|------|----------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法论核心 | UDM 访谈收集数据 → Persona 创建角色 → 设计指导 |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | Persona 角色 → JTBD 任务聚类 → 角色精化 |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量研究 | Persona 角色假设 → QuantUX 行为验证 → 角色迭代 |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值验证 | Persona 目标/痛点 → VPD 画布填充 |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | Persona 角色数据 → SWD 可视化呈现 |
+
+**使用完整生态系统的优势：**
+
+- ✅ **全流程覆盖** — 从发现需求 → 角色创建 → 研究验证 → 价值设计 → 数据呈现
+- ✅ **一致 API 设计** — 所有技能使用统一的 Skill("产品名") 入口
+- ✅ **零外部依赖** — 纯 Python 标准库实现，开箱即用
+- ✅ **双语支持** — 完整中英文文档，适合国际化团队
+- ✅ **积极维护** — 定期更新新功能和改进文档
+
+👉 **探索完整生态系统**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
@@ -1769,4 +1791,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.53*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.54*

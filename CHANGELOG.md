@@ -1,3 +1,7 @@
+## v2.4.54 (2026-05-13)
+
+Repo maintenance: added Chinese "为什么选择 AliDujie 技能生态系统" promotional section to README, verified version alignment across all files, updated last-updated date.
+
 ## v2.4.51 (2026-05-12)
 
 Repo maintenance: added "Power Workflow: Research-Driven Persona Creation" code example in English README; removed duplicate "最佳实践" section from SKILL.md.
