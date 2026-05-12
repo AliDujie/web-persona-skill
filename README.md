@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.50-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.51-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -1645,6 +1645,30 @@ Ready to go deeper? Here's what to try next:
 
 > 💡 **Pro Tip**: Evidence-based personas drive better product decisions. Try: UDM (research) → Persona (segment) → JTBD (define needs) → VPD (design solutions)
 
+### ⚡ Power Workflow: Research-Driven Persona Creation
+
+```python
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+
+# 1. Persona: Create evidence-based persona
+persona = PersonaSkill("电商平台")
+persona.add_persona(name="价格敏感型妈妈",
+    goals=["找到性价比最高的商品", "节省购物时间"],
+    behaviors=["比价", "查看评价", "使用优惠券"],
+    demographics={"age": "30-40", "gender": "female"})
+
+# 2. Persona: Generate actionable insights
+insights = persona.generate_insights("价格敏感型妈妈")
+
+# 3. JTBD: Map jobs to this persona
+jtbd = JTBDSkill("电商平台")
+jobs = jtbd.analyze(jobs=[{"description": "快速找到最划算的商品",
+    "importance": 5, "satisfaction": 2}])
+
+# → From raw user data to actionable, job-mapped personas
+```
+
 ### 👨‍💻 Credits
 
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007), covering evidence-based persona creation and application.
@@ -1671,4 +1695,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.50*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.51*

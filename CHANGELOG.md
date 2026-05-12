@@ -1,3 +1,7 @@
+## v2.4.51 (2026-05-12)
+
+Repo maintenance: added "Power Workflow: Research-Driven Persona Creation" code example in English README; removed duplicate "最佳实践" section from SKILL.md.
+
 ## v2.4.50 (2026-05-12)
 
 Repo maintenance: fixed `__init__.py` version mismatch (1.0.0→2.4.50), verified all Python module exports are importable, confirmed ecosystem cross-references.
