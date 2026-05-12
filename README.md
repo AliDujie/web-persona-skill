@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.51-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.52-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -84,6 +84,18 @@
 persona user-research user-segmentation design-guidance
 python-toolkit openclaw-skill alicloud
 ```
+
+### 🌍 实战场景指南
+
+| 你的场景 | 调用方式 | 输出结果 |
+|----------|---------|----------|
+| "为产品创建人物角色" | `add_persona(name, type, "they want to...", goals=[...])` | 完整角色档案：目标、行为、痛点 |
+| "该问用户什么问题？" | `generate_interview("访谈", sections=["goals", "behaviors"])` | 对齐角色需求的研究访谈指南 |
+| "细分用户群" | `add_segment("效率型", "追求速度", ["快速完成"])` | 行为细分 + 区分特征 |
+| "获取角色设计指导" | `generate_design_guidance("小明")` | 可执行的设计建议与禁忌 |
+| "这个角色的商业价值？" | `generate_economic_model("小明")` | 用户经济模型：获客、LTV、留存 |
+
+> 💡 **提示**: 基于真实数据创建角色——使用 UDM 研究发现作为每个角色属性的证据支撑。
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
 
@@ -759,6 +771,20 @@ print(skill.render_content_strategy())
 result = skill.validate_path("Xiao Ming", "Complete purchase", ["Home", "Search", "Checkout"])
 print(result)  # Pass/Fail with explanation
 ```
+
+### 🌍 Real-World Scenario Guide
+
+> **Need evidence-based user personas?** Here are common scenarios and exactly how to use this skill.
+
+| Scenario | What to Call | Expected Output |
+|----------|-------------|----------------|
+| "Create personas for our product" | `add_persona(name, type, "they want to...", goals=[...])` | Full persona with goals, behaviors, pain points |
+| "What questions should I ask users?" | `generate_interview("访谈", sections=["goals", "behaviors"])` | Research interview guide aligned to persona needs |
+| "Segment our user base" | `add_segment("效率型", "追求速度", ["快速完成"])` | Behavioral segments with distinguishing traits |
+| "Get design guidance for a persona" | `generate_design_guidance("小明")` | Actionable design dos and don'ts |
+| "What's the business impact of this persona?" | `generate_economic_model("小明")` | User economics: acquisition, LTV, retention |
+
+**Quick Tip:** Base personas on real data — use UDM research findings as evidence for each persona attribute.
 
 ### 💡 10 Core Capabilities
 
@@ -1695,4 +1721,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.51*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.52*
