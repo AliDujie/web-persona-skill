@@ -11,12 +11,13 @@ This directory contains methodology reference documents for the Web Persona skil
 | `01-persona-basics.md` | 人物角色基础（定义、类型、创建方法） |
 | `02-measuring-results.md` | 衡量人物角色效果（指标、验证方法、ROI） |
 | `03-persona-best-practices.md` | 人物角色最佳实践（常见陷阱、成功模式） |
+| `04-persona-driven-workflows.md` | Persona 驱动的研究工作流（跨技能协作指南） |
 
 ## 使用方法 / Usage
 
-这些参考文档供 AI Agent 在创建和使用人物角色时查阅。
+这些参考文档供 AI Agent 在创建和使用人物角色时查阅。`04-persona-driven-workflows.md` 提供 Persona 作为研究锚点的完整跨技能工作流。
 
-These reference documents are consulted by the AI Agent when creating and using personas.
+These reference documents are consulted by the AI Agent when creating and using personas. `04-persona-driven-workflows.md` provides complete cross-skill workflows with Persona as the research anchor.
 
 ## 🌐 技能生态关联 / Skill Ecosystem Connections
 

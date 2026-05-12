@@ -1,3 +1,6 @@
+## v2.4.55 (2026-05-13)
+
+- Repo maintenance: added persona-driven workflows reference doc (04-persona-driven-workflows.md), updated references README
 ## v2.4.54 (2026-05-13)
 
 Repo maintenance: added Chinese "为什么选择 AliDujie 技能生态系统" promotional section to README, verified version alignment across all files, updated last-updated date.
