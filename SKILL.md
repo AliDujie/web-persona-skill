@@ -389,3 +389,14 @@ Persona 是 **AliDujie UX 研究技能生态系统** 的用户定义层，为其
 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值验证 | Persona 目标/痛点 → VPD 画布 → Persona 验证 |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | Persona 数据 → SWD 可视化汇报 |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略框架 | STM 竞争分析 → Persona 市场定位 |
+
+### 🔗 扩展生态 (Extended Ecosystem)
+
+Persona 用户定义可与管理层技能结合，将用户洞察转化为组织决策：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona 用户经济模型 → CEO 资源分配 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona 细分 → CPO 产品受众优先级 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona 角色 → CMO 目标受众定位与 messaging |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Persona 技术行为 → CTO 技术投资优先级 |
