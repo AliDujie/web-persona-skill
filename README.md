@@ -32,12 +32,13 @@
 | [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | Persona 数据 → SWD 可视化 → 团队对齐 |
 | [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | Persona 角色 → JTBD 工作映射 → 深层需求 |
 | [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | Persona 细分 → VPD 画布分析 → 价值匹配 |
+| [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略分析 | Persona 洞察 → STM 商业框架 → 市场定位 |
 
 ---
 
 ### 🔗 Ecosystem Quick Start / 生态系统快速上手
 
-Persona 是 6 技能工作流的**起点**——定义 "为谁设计"，一切从人物角色开始。
+Persona 是 7 技能工作流的**起点**——定义 "为谁设计"，一切从人物角色开始。
 
 ```
 Persona (← 你在这里) → JTBD → UDM → QuantUX → VPD → SWD
@@ -70,6 +71,14 @@ score = jtbd.score_opportunity("快速完成预订", struggle=4, alternative=3, 
 ```
 
 > 💡 **提示**: Persona 是一切的基础——先用它定义 "为谁设计"，后续所有技能都基于这些角色展开。
+
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from persona import PersonaSkill
+> skill = PersonaSkill("你的产品")
+> skill.add_persona("示例用户", "核心用户群", "primary", "我的核心诉求", goals=["目标1"], behaviors=["行为1"], attitudes=["态度1"], bio="背景描述")
+> print(skill.render_all_personas())  # 立即渲染角色
+> ```
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -697,7 +706,7 @@ heart = quant.build_heart_framework()
 - [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
+- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-6-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -914,7 +923,7 @@ print(result)  # Pass/Fail with actionable feedback
 Persona is the **user understanding hub** of the ecosystem. Here's how it connects with the other 5 skills:
 
 ```python
-# ===== From Research to Personas to Strategy (All 6 Skills) =====
+# ===== From Research to Personas to Strategy (All 7 Skills) =====
 # Step 1: UDM conducts research → Step 2: JTBD maps jobs per segment
 # Step 3: QuantUX validates behavior → Step 4: VPD designs per persona
 # Step 5: Persona creates evidence-based roles → Step 6: SWD presents to team
@@ -1344,7 +1353,7 @@ Persona (user feedback) → SWD (chart makeover) → VPD (value adjustment)
 
 > 💡 **Tip**: Personas pair naturally with UDM — use UDM interview and observation methods to collect persona research data, building evidence-driven personas.
 
-### 🔄 End-to-End Workflow: All 6 Skills
+### 🔄 End-to-End Workflow: All 7 Skills
 
 A complete persona-to-design-guidance workflow using the full AliDujie ecosystem:
 
@@ -1477,7 +1486,7 @@ MIT License — 基于《The User Is Always Right》by Steve Mulder & Ziv Yaar
 
 ### 🚀 完整端到端工作流：从角色到设计指导 (End-to-End Workflow)
 
-以下是一个真实场景中，6 个技能如何协作完成从人物角色创建到设计指导的完整工作流：
+以下是一个真实场景中，7 个技能如何协作完成从人物角色创建到设计指导的完整工作流：
 
 **场景**: 电商平台需要基于数据的人物角色来指导产品改版
 
@@ -1787,7 +1796,7 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007
 
 ### 🌐 Explore the Full AliDujie UX Research Ecosystem
 
-This skill is part of a **6-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
+This skill is part of a **7-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
 
 | Skill | Role | When to Use |
 |-------|------|-------------|
