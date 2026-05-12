@@ -4,10 +4,19 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.52-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.53-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
+
+```text
+┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐
+│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │
+│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │
+└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘
+```
+
+**Persona is the foundation** — evidence-based user roles that anchor every other skill. Start here to define WHO you're designing for.
 
 ---
 
@@ -105,6 +114,9 @@ python-toolkit openclaw-skill alicloud
 - **零依赖** — 纯 Python 标准库实现，无外部依赖，5 分钟上手
 - **双语支持** — 完整中英文文档，适合国际化团队
 - **即插即用** — API 设计直观，代码示例丰富，即刻产出人物角色报告
+- **证据驱动** — 每个角色属性都基于真实研究数据，而非虚构的假设——让团队决策有据可依
+- **从角色到策略** — 不止是创建人物档案，更提供获取策略、留存策略、用户经济模型等可执行的商业建议
+- **团队对齐** — 用具体的人物角色取代抽象的"用户"讨论，让设计、产品、营销团队在同一个语境下协作
 
 ### ⚡ 5 分钟快速开始 (Quick Start)
 
@@ -1259,7 +1271,6 @@ Persona is the persona core of the **AliDujie UX Research Skills Ecosystem**. He
 | "Is my product value strong enough?" | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Fit diagnosis |
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
 | "I need a structured framework for analysis" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL, Five Forces, decision trees |
-| "I need to analyze a business problem systematically" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — Frameworks & strategic analysis |
 
 ### Workflow 1: Research → Persona → Value Design
 
