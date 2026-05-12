@@ -1806,6 +1806,7 @@ This skill is part of a **7-skill UX research ecosystem** — each covers a diff
 | 📊 [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Validation Engine | Prove qualitative hypotheses with data |
 | 💎 [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Value Design | Bridge user needs to testable value propositions |
 | 📈 [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Presentation Layer | Turn findings into executive-ready narratives |
+| 🧠 [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic Analysis | Apply business frameworks to research insights |
 
 > 💡 **Quick Tip**: Evidence-based personas drive better product decisions. Try: `UDM (research) → Persona (segment) → JTBD (define needs) → VPD (design solutions) → SWD (present findings)`
 
