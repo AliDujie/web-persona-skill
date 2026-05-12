@@ -5,6 +5,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.4.53-green.svg)](CHANGELOG.md)
+[![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
@@ -33,6 +34,42 @@
 | [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | 价值设计 | Persona 细分 → VPD 画布分析 → 价值匹配 |
 
 ---
+
+### 🔗 Ecosystem Quick Start / 生态系统快速上手
+
+Persona 是 6 技能工作流的**起点**——定义 "为谁设计"，一切从人物角色开始。
+
+```
+Persona (← 你在这里) → JTBD → UDM → QuantUX → VPD → SWD
+```
+
+**组合调用示例：**
+```python
+# Step 1: 创建人物角色
+from persona import PersonaSkill
+persona = PersonaSkill("旅行平台")
+
+# 基于真实数据创建角色
+persona.add_persona("小明", "效率型用户", "primary",
+                    "我只想快速完成预订",
+                    goals=["快速找到酒店", "一键支付"],
+                    behaviors=["工作日使用", "价格不敏感"],
+                    attitudes=["时间就是金钱"],
+                    bio="28岁，IT 行业，每月出差 2-3 次")
+
+# Step 2: 生成角色专属访谈提纲
+guide = persona.generate_interview("用户访谈", ["goals", "behaviors", "pain_points"])
+
+# Step 3: 获取设计指导
+advice = persona.generate_design_guidance("小明")
+
+# Step 4: 将 Persona 交给 JTBD 做深层需求分析
+from jtbd import JTBDSkill
+jtbd = JTBDSkill("旅行平台")
+score = jtbd.score_opportunity("快速完成预订", struggle=4, alternative=3, market=4, budget=4)
+```
+
+> 💡 **提示**: Persona 是一切的基础——先用它定义 "为谁设计"，后续所有技能都基于这些角色展开。
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -1732,4 +1769,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.52*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.53*
