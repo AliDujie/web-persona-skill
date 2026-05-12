@@ -1785,10 +1785,25 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (New Riders, 2007
 | *Just Enough Research* | Erika Hall | Research planning for persona creation |
 | *Observing the User Experience* | Elizabeth Goodman et al. | Ethnographic research for persona development |
 
+### 🌐 Explore the Full AliDujie UX Research Ecosystem
+
+This skill is part of a **6-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
+
+| Skill | Role | When to Use |
+|-------|------|-------------|
+| 👤 [Web Persona](https://github.com/AliDujie/web-persona-skill) | Foundation | Define WHO you're designing for |
+| 🎯 [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Needs Insight | Understand WHY users behave the way they do |
+| 🔍 [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Research Methods | Choose and execute research methods |
+| 📊 [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Validation Engine | Prove qualitative hypotheses with data |
+| 💎 [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Value Design | Bridge user needs to testable value propositions |
+| 📈 [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Presentation Layer | Turn findings into executive-ready narratives |
+
+> 💡 **Quick Tip**: Evidence-based personas drive better product decisions. Try: `UDM (research) → Persona (segment) → JTBD (define needs) → VPD (design solutions) → SWD (present findings)`
+
 ### 🤝 Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.54*
+*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.4.54*
