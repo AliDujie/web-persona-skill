@@ -11,10 +11,10 @@
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
 ```text
-┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐
-│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │
-│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │
-└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘
+┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
+│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │ →  │ STM │
+│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │    │ 战略分析 │
+└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘    └─────┘
 ```
 
 **Persona is the foundation** — evidence-based user roles that anchor every other skill. Start here to define WHO you're designing for.
