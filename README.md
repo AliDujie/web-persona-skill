@@ -1606,7 +1606,9 @@ Persona (User Roles) → JTBD (Job Mapping) → Product Design
 
 ### Workflow 2: Research Data → Persona Creation → VPD Segmented Canvas
 
-```nUDM (Research Data) → Persona (Persona Creation) → VPD (Segmented Canvas)n```
+```
+UDM (Research Data) → Persona (Persona Creation) → VPD (Segmented Canvas)
+```
 
 **Scenario**: Multi-segment product design
 1. Use UDM to conduct user interviews and usability tests, collecting qualitative data
@@ -1615,7 +1617,9 @@ Persona (User Roles) → JTBD (Job Mapping) → Product Design
 
 ### Workflow 3: Persona Hypotheses → QuantUX Behavior Validation → Persona Refinement
 
-```nPersona (Persona Hypotheses) → QuantUX (Behavior Validation) → Persona Refinementn```
+```
+Persona (Persona Hypotheses) → QuantUX (Behavior Validation) → Persona Refinement
+```
 
 **Scenario**: User segment validation
 1. Use Persona to create hypothetical personas
