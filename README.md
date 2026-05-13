@@ -344,14 +344,17 @@ web-persona-skill/
 ├── persona/              # Python 包（纯标准库）
 │   ├── __init__.py       # PersonaSkill 统一入口
 │   ├── config.py         # 配置与常量
+│   ├── utils.py          # 工具函数
+│   ├── templates.py      # 模板常量
 │   ├── interview.py      # 访谈提纲生成器
 │   ├── survey.py         # 问卷设计器
 │   ├── segment.py        # 用户细分分析器
 │   ├── persona_builder.py # 人物角色构建器
 │   ├── strategy.py       # 商业策略与功能优先级
 │   ├── design.py         # 信息架构与内容策略
-│   └── measure.py        # 测试计划与衡量体系
-└── references/           # 知识库文档
+│   ├── measure.py        # 测试计划与衡量体系
+│   └── tests/            # 测试套件
+└── references/           # 知识库文档（5 篇，含最佳实践和跨技能工作流）
 ```
 
 ### 🔗 相关技能
@@ -966,14 +969,17 @@ web-persona-skill/
 ├── persona/              # Python package (pure stdlib)
 │   ├── __init__.py       # PersonaSkill unified entry
 │   ├── config.py         # Config & constants
+│   ├── utils.py          # Utility functions
+│   ├── templates.py      # Template constants
 │   ├── interview.py      # Interview guide generator
 │   ├── survey.py         # Survey designer
 │   ├── segment.py        # User segmentation analyzer
 │   ├── persona_builder.py # Persona builder
 │   ├── strategy.py       # Business strategy & feature prioritization
 │   ├── design.py         # Information architecture & content strategy
-│   └── measure.py        # Test planning & measurement system
-└── references/           # Knowledge base documents
+│   ├── measure.py        # Test planning & measurement system
+│   └── tests/            # Test suite
+└── references/           # Knowledge base (5 documents incl. best practices & cross-skill workflows)
 ```
 
 ### 🛠️ Troubleshooting
