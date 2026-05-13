@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.55-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.56-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-13-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
@@ -1382,6 +1382,8 @@ python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.56 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
+| v2.4.56 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
 | v2.4.47 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
 | v2.4.46 | 2026-05-11 | Repo maintenance: updated API examples to match actual method signatures (add_persona, generate_interview, add_segment, add_feature, add_test_script), added missing v2.4.45 CHANGELOG entry |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
@@ -1783,6 +1785,8 @@ canvas = vpd.analyze_canvas(
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.56 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
+| v2.4.56 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
 | v2.4.47 | 2026-05-11 | Repo maintenance: verified English section completeness, confirmed all "When NOT to Use" and "Common Mistakes" sections present across ecosystem, verified cross-skill links, updated version badges |
 | v2.4.46 | 2026-05-11 | Repo maintenance: updated API examples to match actual method signatures (add_persona, generate_interview, add_segment, add_feature, add_test_script), added missing v2.4.45 CHANGELOG entry |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
@@ -1919,4 +1923,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.4.55*
+*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.4.56*
