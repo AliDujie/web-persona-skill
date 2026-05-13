@@ -20,6 +20,28 @@
 **Persona is the foundation** — evidence-based user roles that anchor every other skill. Start here to define WHO you're designing for.
 
 ---
+## 📑 目录 / Table of Contents
+
+- [中文说明](#中文说明)
+  - [🌐 技能生态系统](#-技能生态系统-skill-ecosystem)
+  - [🌟 为什么使用这个技能？](#-为什么使用这个技能why-use-this-skill)
+  - [⚡ 5 分钟快速开始](#-5-分钟快速开始-quick-start)
+  - [💡 9 大核心能力](#-9-大核心能力)
+  - [🔧 实用示例](#-实用示例)
+  - [📁 项目结构](#-项目结构)
+  - [👥 这个技能适合谁？](#-这个技能适合谁who-is-this-for)
+  - [🛠️ 疑难解答](#-疑难解答-troubleshooting)
+  - [🏆 案例研究](#-案例研究-case-studies)
+  - [🆘 获取帮助](#-获取帮助-getting-help)
+  - [🔗 相关技能](#-相关技能)
+- [English](#english)
+  - [🌟 Why Use This Skill?](#-why-use-this-skill)
+  - [🚀 Quick Start](#-quick-start)
+  - [🔗 Related Skills](#-related-skills-1)
+- [🤝 参与贡献](#-参与贡献-contributing)
+- [📜 许可](#-许可-license)
+- [🔗 技能生态工作流](#-技能生态工作流-skill-ecosystem-workflow)
+
 
 ## 🌐 技能生态系统 (Skill Ecosystem)
 
@@ -688,6 +710,81 @@ heart = quant.build_heart_framework()
 3. **安装 INSTALL.md** — 详细的安装和配置指南
 4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
 5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
+
+### 👥 这个技能适合谁？(Who Is This For?)
+
+| 角色 | 使用场景 | 下一步尝试 |
+|------|---------|-----------|
+| **UX 设计师** | 从真实用户数据创建证据驱动的人物角色 | → [VPD](https://github.com/AliDujie/value-proposition-design) 每个角色的价值画布 |
+| **产品经理** | 将产品决策与用户细分对齐 | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 工作映射 |
+| **营销团队** | 针对特定角色需求定制信息传递 | → [SWD](https://github.com/AliDujie/storytelling-with-data) 角色呈现 |
+| **服务设计师** | 为不同角色设计端到端服务流程 | → [UDM](https://github.com/AliDujie/universal-design-methods) 角色研究方法 |
+
+---
+
+### 🛠️ 疑难解答 (Troubleshooting)
+
+| 问题 | 解决方案 |
+|------|---------|
+| 人物角色感觉刻板 | 添加具体的行为数据和来自真实研究的直接引语 |
+| 人物角色太多 | 整合到 3-5 个主要角色;使用次要角色覆盖边缘情况 |
+| 细分重叠严重 | 重新审视细分标准——使用行为而非人口统计 |
+| 设计指导太泛泛 | 将每个设计建议与特定的角色目标或行为关联 |
+
+---
+
+### 🏆 案例研究 (Case Studies)
+
+#### 案例 1: 电商平台人物角色创建
+
+**背景**: 某电商平台需要数据驱动的人物角色来指导设计和营销决策。
+
+```python
+from persona import PersonaSkill
+
+skill = PersonaSkill("电商平台")
+
+# 步骤 1: 创建主要人物角色
+skill.add_persona(
+    "精明的妈妈", "目标导向型", "primary",
+    quote="我需要为家人找到最划算的产品",
+    goals=["找到性价比最高的产品", "确保产品安全"],
+    behaviors=["仔细阅读评价", "比较 3 个以上选项"],
+    attitudes=["性价比优先", "安全第一"],
+    bio="35岁，2个孩子，家庭采购决策者"
+)
+
+# 步骤 2: 生成角色专属访谈提纲
+guide = skill.generate_interview("角色深度访谈", sections=["goals", "behaviors", "pain_points"])
+
+# 步骤 3: 获取设计指导
+advice = skill.generate_design_guidance("精明的妈妈")
+```
+
+#### 案例 2: SaaS 产品用户细分
+
+**背景**: 某 SaaS 需要理解不同用户群体的需求差异。
+
+```python
+from persona import PersonaSkill
+
+skill = PersonaSkill("协作 SaaS")
+
+# 添加用户细分
+skill.add_segment("效率型", "追求速度", ["快速完成任务"], ["高频使用"], ["效率优先"])
+skill.add_segment("探索型", "追求功能", ["尝试新功能"], ["中频使用"], ["好奇心驱动"])
+```
+
+---
+
+### 🆘 获取帮助 (Getting Help)
+
+- 📖 **详细安装指南**: [INSTALL.md](INSTALL.md)
+- 🐛 **报告问题**: [GitHub Issues](https://github.com/AliDujie/web-persona-skill/issues)
+- 💬 **讨论与反馈**: 在项目仓库发起 Discussion
+- 📝 **贡献指南**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🔄 **版本历史**: [CHANGELOG.md](CHANGELOG.md)
+
 
 ---
 
