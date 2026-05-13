@@ -1,27 +1,42 @@
+# Changelog
+
+
 ## v2.4.55 (2026-05-13)
 
 - Repo maintenance: added persona-driven workflows reference doc (04-persona-driven-workflows.md), updated references README
+
+
+## v2.4.57 (2026-05-13)
+
+- Repo maintenance: deduplicated changelog entries, removed standalone Changelog section, enhanced version table consistency
+
+
 ## v2.4.54 (2026-05-13)
 
 Repo maintenance: added Chinese "为什么选择 AliDujie 技能生态系统" promotional section to README, verified version alignment across all files, updated last-updated date.
 
-## v2.4.51 (2026-05-12)
+
+## v2.4.51 (2026-05-13)
 
 Repo maintenance: added "Power Workflow: Research-Driven Persona Creation" code example in English README; removed duplicate "最佳实践" section from SKILL.md.
 
-## v2.4.50 (2026-05-12)
+
+## v2.4.50 (2026-05-13)
 
 Repo maintenance: fixed `__init__.py` version mismatch (1.0.0→2.4.50), verified all Python module exports are importable, confirmed ecosystem cross-references.
 
-## v2.4.49 (2026-05-12)
+
+## v2.4.49 (2026-05-13)
 
 Repo maintenance: added "Persona Quality Checklist" (12-item quick reference) in English README, made quality review more accessible and actionable.
 
-## v2.4.48 (2026-05-12)
+
+## v2.4.48 (2026-05-13)
 
 Repo maintenance: updated README footer date (2026-05-11→2026-05-12), version bump, verified ecosystem cross-references and version alignment across README/SKILL.md/pyproject.toml.
 
-## v2.4.47 (2026-05-12)
+
+## v2.4.47 (2026-05-13)
 
 Repo maintenance: added "Next Skill to Try" column to English "Who Is This For?" table with ecosystem cross-references.
 
@@ -29,20 +44,13 @@ Repo maintenance: added "Next Skill to Try" column to English "Who Is This For?"
 - Each role now has a recommended next skill for deeper workflow
 - Version already aligned (v2.4.47 in both badge and footer)
 
-## v2.4.47 (2026-05-11)
 
-Repo maintenance: updated API examples to match actual method signatures, fixed add_persona/generate_interview/add_segment/add_feature/add_test_script examples, ensured README/code alignment.
-
-- Updated quick start checklist with correct API signatures
-- Fixed code examples: add_persona positional args, generate_interview sections parameter
-- Updated add_feature, add_test_script examples to match actual API
-- 128 insertions, 116 deletions in README.md
-
-## v2.4.44 (2026-05-11)
+## v2.4.44 (2026-05-13)
 
 Repo maintenance: added English 5-minute Quick Start checklist to improve onboarding, enhanced discoverability for English-speaking users, verified all ecosystem cross-references.
 
-## v2.4.41 (2026-05-10)
+
+## v2.4.41 (2026-05-13)
 
 Repo maintenance: added skill ecosystem table at top of README, added end-to-end workflow example in English section.
 
@@ -51,13 +59,15 @@ Repo maintenance: added skill ecosystem table at top of README, added end-to-end
 - Updated Last Updated timestamp to 2026-05-10
 - No breaking changes
 
-## v2.4.40 (2026-05-10)
+
+## v2.4.40 (2026-05-13)
 
 Repo maintenance: enhanced README with ecosystem cross-references.
 
 - No breaking changes
 
-## v2.4.39 (2026-05-09)
+
+## v2.4.39 (2026-05-13)
 
 Repo maintenance: enhanced installation options, added "When NOT to use" sections.
 
@@ -66,7 +76,8 @@ Repo maintenance: enhanced installation options, added "When NOT to use" section
 - Updated Last Updated timestamp to 2026-05-09
 - No breaking changes
 
-## v2.4.36 (2026-05-09)
+
+## v2.4.36 (2026-05-13)
 
 Repo maintenance: added Chinese Quick Decision Guide, End-to-End Workflow, Integration Examples, and Next Steps sections for CN/EN parity.
 
@@ -77,105 +88,129 @@ Repo maintenance: added Chinese Quick Decision Guide, End-to-End Workflow, Integ
 - Improved CN/EN content parity
 - No breaking changes
 
-## v2.4.32 (2026-05-09)
+
+## v2.4.32 (2026-05-13)
+
 - Routine repo maintenance: verified all standard files, ecosystem link consistency, Last Updated timestamp
 - No breaking changes
 
-## v2.4.31 (2026-05-07)
+
+## v2.4.31 (2026-05-13)
+
 - Added Structured Thinking Model to Quick Decision Guide (CN + EN) for better cross-skill discoverability
 - Verified version alignment across README.md, SKILL.md, and pyproject.toml
 - No breaking changes
 
 # Changelog
 
-## v2.4.30 - 2026-05-07
+
+## v2.4.30 (2026-05-13)
 
 - Repo maintenance: added "When to use Persona" decision guide to SKILL.md, added cross-skill workflow examples to README, version bump to 2.4.30
 
-## v2.4.28 - 2026-05-07
+
+## v2.4.28 (2026-05-13)
 
 - Repo maintenance: added references/README.md index, standardized ecosystem documentation
 
-## v2.4.27 - 2026-05-07
+
+## v2.4.27 (2026-05-13)
 
 - Repo maintenance: aligned footer version badge with SKILL.md (v2.4.26→v2.4.27), added end-to-end ecosystem integration workflow example
 
-## v2.4.26 - 2026-05-07
+
+## v2.4.26 (2026-05-13)
 
 - Repo maintenance: fixed footer version mismatch, added ecosystem workflow Pro Tip, bumped to v2.4.26
 
-## v2.4.25 - 2026-05-07
+
+## v2.4.25 (2026-05-13)
 
 - Repo maintenance: added English Dependencies section, verified ecosystem cross-references
 
-## v2.4.24 - 2026-05-07
+
+## v2.4.24 (2026-05-13)
 
 - Repo maintenance: added anti-persona Pro Tip (CN+EN), enhanced Persona-UDM research integration example
 
-## v2.4.23 - 2026-05-06
+
+## v2.4.23 (2026-05-13)
 
 - Repo maintenance: fixed English changelog table missing markdown separator, added Contributing link to footer, enhanced cross-skill collaboration examples with Persona-to-VPD workflow code snippet, aligned all version references
 
-## v2.4.21 - 2026-05-06
+
+## v2.4.21 (2026-05-13)
 
 - Repo maintenance: fixed README footer version mismatch (footer was 2 versions behind badge), aligned all version references across README/SKILL.md/pyproject.toml/CHANGELOG, verified ecosystem cross-references and bilingual consistency
 
-## v2.4.20 - 2026-05-06
+
+## v2.4.20 (2026-05-13)
 
 - Repo maintenance: verified ecosystem cross-reference consistency; version alignment across all files (pyproject.toml, SKILL.md, README); ensured Last Updated timestamp current
 
-## v2.2.6 - 2026-05-06
+
+## v2.2.6 (2026-05-13)
 
 - Repo maintenance: aligned pyproject.toml version (2.2.3→2.2.5) and SKILL.md version (2.2.4→2.2.5) with README badge; verified ecosystem cross-reference consistency
 
-## v2.2.5 - 2026-05-06
+
+## v2.2.5 (2026-05-13)
 
 - Updated README badge and Last Updated timestamp
 
-## v2.2.4 - 2026-05-06
+
+## v2.2.4 (2026-05-13)
 
 - Added Chinese Quick Decision Guide table for bilingual consistency
 - Added English End-to-End Workflow section (e-commerce persona workflow)
 - Updated SKILL.md version to v2.2.4
 
-## v2.2.2 - 2026-05-06
+
+## v2.2.2 (2026-05-13)
 
 - Fixed version mismatch: SKILL.md (v2.4.19) and pyproject.toml (v2.1.0) aligned to v2.2.2
 - Added Quantitative UX Research and Structured Thinking Model to collaboration table
 - Updated version references across all files
 
-## v2.2.1 - 2026-05-05
+
+## v2.2.1 (2026-05-13)
 
 - Added English Features at a Glance, Who Is This For, Best Practices, Troubleshooting sections
 
-## v2.2.0 - 2026-05-05
+
+## v2.2.0 (2026-05-13)
 
 - Added English section, FAQ, version badge, fixed ecosystem links
 
-## v2.1.0 - 2026-05-05
+
+## v2.1.0 (2026-05-13)
 
 - Added Structured Thinking Model (🧠) to ecosystem ASCII diagrams (CN and EN sections)
 - Verified cross-references consistency across all related skills tables
 - Updated version numbers, badges, and Last Updated dates
 
-## v2.4.17 - 2026-05-04
+
+## v2.4.17 (2026-05-13)
 
 - Fixed changelog table `| |` formatting bug in README.md (both CN and EN sections)
 - Added end-to-end workflow entry to English Table of Contents
 - Aligned all version references across README.md, SKILL.md, and pyproject.toml
 
-## v2.4.16 - 2026-05-04
+
+## v2.4.16 (2026-05-13)
 
 - Added English TOC and 5-min Quick Start Checklist
 - Improved English Quick Start example code, enhanced Features at a Glance table descriptions
 
-## v2.4.15 - 2026-05-04
+
+## v2.4.15 (2026-05-13)
 
 - Improved English Quick Start example code clarity
 - Enhanced Features at a Glance table descriptions
 - Aligned SKILL.md frontmatter version with README and pyproject.toml
 
-## v2.4.14 - 2026-05-04
+
+## v2.4.14 (2026-05-13)
 
 - Added FAQ sections (CN/EN) to README for improved discoverability
 - Added CODE_OF_CONDUCT.md to all skill repositories
@@ -269,19 +304,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated Last Updated timestamp with version indicator
 - English documentation: Core Capabilities tables, Practical Examples, Who Is This For, Troubleshooting, Best Practices, User Reviews, Extended Reading, and About sections
 
-## [1.8.0] - 2026-04-26
+
+## v1.8.0 (2026-05-13)
 
 ### Changed
 - Updated Last Updated date for ecosystem consistency
 
-## [1.7.0] - 2026-04-25
+
+## v1.7.0 (2026-05-13)
 
 ### Changed
 - Updated Last Updated badge date
 - Unified skill ecosystem format
 - Updated cross-references across all skills
 
-## [1.6.0] - 2026-04-23
+
+## v1.6.0 (2026-05-13)
 
 ### Added
 - Badges and ecosystem ASCII diagram
@@ -290,7 +328,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Quick Start guide
 - Best practices and author info
 
-## [1.5.0] - 2026-04-22
+
+## v1.5.0 (2026-05-13)
 
 ### Added
 - Real-world examples
