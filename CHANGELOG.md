@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.4.58 (2026-05-14)
+
+- Repo maintenance: added "Why Teams Choose Persona" comparison tables (CN/EN) with specific before/after impact data, enhanced promotional content in "Why Use This Skill?" sections
+
 ## v2.4.55 (2026-05-13)
 
 - Repo maintenance: added persona-driven workflows reference doc (04-persona-driven-workflows.md), updated references README
