@@ -22,28 +22,91 @@ description: Web人物角色(Personas)创建与应用专家技能。基于《赢
 
 > 💡 Persona 是用户定义层：为所有其他技能提供证据驱动的用户视角。
 
+### 💼 为什么团队选择 Persona
+
+| 挑战 | 没有 Persona | 使用 Persona |
+|------|----------|----------|
+| 用户理解 | "我们的用户"——模糊概念 | 具体角色档案+目标+行为 |
+| 设计决策 | "我觉得用户想要..."——主观 | "Alex 需要快速完成任务"——证据驱动 |
+| 团队对齐 | 各想各的用户 | 共享角色档案，统一决策 |
+| 功能优先级 | 满足所有人=没人满意 | 按首要角色需求排序 |
+| 新人入职 | "让我告诉你用户是谁" | "这是我们的角色卡片"——秒懂 |
+
+### 🔗 Ecosystem Quick Start / 生态系统快速上手
+
+Persona 是 7 技能工作流的**用户定义层**——在所有研究之前使用，先明确"为谁设计"。
+
+```python
+# Step 1: 创建人物角色
+from persona import PersonaSkill
+persona = PersonaSkill("电商平台")
+persona.add_persona(name="小明", archetype="效率型用户", priority="primary",
+    quote="我只想快速完成", goals=["快速完成任务"],
+    behaviors=["频繁搜索"], attitudes=["效率优先"], bio="忙碌的白领")
+
+# Step 2: 质量评审
+review = persona.review_persona("小明")  # 12 项质量检查
+
+# Step 3: 为角色生成功能优先级
+persona.add_feature("快速下单", {"小明": "高"}, "高", "低")
+print(persona.render_feature_matrix())
+
+# Step 4: CEO 视角用户经济模型
+report = persona.generate_persona(include_ceo_analysis=True)
+```
+
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from persona import PersonaSkill
+> skill = PersonaSkill("你的产品")
+> skill.add_persona(name="Alex", archetype="Power User", priority="primary", goals=["快速完成任务"])
+> print(skill.render_all_personas())
+> ```
+
+### ✅ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r web-persona-skill /your/agent/skills/`
+- [ ] **导入** — `from persona import PersonaSkill`
+- [ ] **初始化** — `skill = PersonaSkill("你的产品")`
+- [ ] **创建角色** — `skill.add_persona(name="...", archetype="...", priority="primary", goals=[...])`
+- [ ] **质量评审** — `skill.review_personas()`
+- [ ] **功能优先级** — `skill.add_feature("功能名", {"角色": "高"}, "高", "低")`
+- [ ] **完整报告** — `skill.generate_persona(include_ceo_analysis=True)`
+
+[English](#english) | [中文](#中文说明)
+
 ## 🌐 AliDujie 技能生态系统
 
 Persona 是 **用户定义层**，在研究流程最前端，为所有其他技能提供用户视角：
 
 ```
-┌────────────────┐
-│  Persona 本技能 │ 👤 用户定义 — 创建证据驱动的人物角色
-│  · 用户细分     │──────► JTBD (任务聚类 → 角色映射)
-│  · 角色创建     │──────► UDM (角色 → 研究数据采集)
-│  · 商业策略     │──────► VPD (角色目标/痛点 → 画布填充)
-└───────┬────────┘
-        │ 角色假设验证
-        ▼
-   ┌─────────┐
-   │ QuantUX │ 行为数据验证角色假设
-   └────┬────┘
-        │ 验证结果
-        ▼
-   ┌─────────┐         ┌─────────┐
-   │   SWD   │───────► │   STM   │
-   │ 数据叙事 │         │ 战略分析 │
-   └─────────┘         └─────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    AliDujie UX Research Ecosystem            │
+│                                                             │
+│   ┌──────────────┐                                          │
+│   │Persona 本技能│ 👤 用户定义层 — 创建证据驱动的人物角色      │
+│   └──────┬───────┘                                          │
+│          │ 研究数据                                           │
+│   ┌──────▼───────┐    ┌──────────────┐                      │
+│   │  JTBD Skill  │◄──►│  UDM Skill   │ 📖 方法论核心 — 100种 │
+│   └──────┬───────┘    └──────┬───────┘    设计研究方法       │
+│          │ 需求洞察           │ 定性发现                      │
+│   ┌──────▼───────┐    ┌──────▼───────┐                      │
+│   │  VPD Skill   │◄──►│  QuantUX     │ 📊 定量研究 — HEART/  │
+│   └──────┬───────┘    └──────┬───────┘    A-B/MaxDiff        │
+│          │ 价值主张           │ 定量验证                      │
+│          └──────────┬────────┘                               │
+│                     │ 研究发现                                │
+│              ┌──────▼───────┐                                │
+│              │  SWD Skill   │ 📈 数据叙事 — 数据可视化与汇报    │
+│              └──────┬───────┘                                │
+│                     │ 数据洞察                                │
+│              ┌──────▼───────┐                                │
+│              │  STM Skill   │ 🧠 战略分析 — 商业框架与决策      │
+│              └──────────────┘                                │
+│                                                             │
+│  工作流: Persona → JTBD/UDM → QuantUX → VPD → SWD → STM    │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 **Persona 的典型协作**：UDM 访谈收集数据 → Persona 创建角色 → JTBD 任务聚类 → VPD 画布填充 → QuantUX 验证 → SWD 汇报 → STM 战略决策
