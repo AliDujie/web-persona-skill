@@ -4,11 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.62-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.64-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
+
+> 🆕 **What's New in v2.4.64**: Cross-skill reference added to measuring results doc. Enhanced persona-driven workflows with JTBD job mapping and VPD segmentation patterns.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -1414,6 +1416,42 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 - **Persona + VPD** → Drive value proposition design from persona goals and pains
 - **Persona + SWD** → Present persona stories with data-driven narratives
 
+#### 💡 Cross-Skill Quick Recipes
+
+```python
+# Recipe: From persona creation to targeted research and design
+from persona import PersonaSkill; from jtbd import JTBDSkill; from vpd import VPDSkill
+
+persona = PersonaSkill("SaaS platform")
+
+# Step 1: Create evidence-based personas
+persona.add_persona("Sarah", "growth marketer", "primary",
+                    goals=["prove ROI to leadership", "scale campaigns efficiently"],
+                    behaviors=["uses data dashboards daily", "prefers automated reports"],
+                    bio="Marketing manager at a 50-person startup, reports to VP")
+
+# Step 2: Generate targeted interview guide
+guide = persona.generate_interview(
+    "Sarah's needs", ["goals", "behaviors", "pain_points", "decision_criteria"]
+)
+
+# Step 3: Enrich with JTBD analysis
+jtbd = JTBDSkill("SaaS platform")
+score = jtbd.score_opportunity(
+    "generate executive-ready reports automatically",
+    struggle=4, alternative=3, market=5, budget=4
+)
+
+# Step 4: Create persona-specific value proposition
+vpd = VPDSkill("SaaS platform", "growth marketers")
+canvas = vpd.analyze_canvas(
+    product_name="SaaS Analytics",
+    jobs=["generate executive-ready reports automatically"],
+    pains=["manual data gathering", "stale dashboards"],
+    gains=["auto-generated PDF reports", "real-time KPI alerts"]
+)
+```
+
 - **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
 - **[JTBD-Knowledge-Skill](https://github.com/AliDujie/jtbd-knowledge-skill)** — Jobs-to-be-Done theory
 - **[Quantitative-UX-Research](https://github.com/AliDujie/Quantitative-UX-Research)** — Quantitative research, HEART framework
@@ -1689,4 +1727,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.62*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.64*
