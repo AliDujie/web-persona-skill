@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.65-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.66-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
-> 🆕 **What's New in v2.4.65**: Enhanced persona-driven workflows with JTBD job mapping and VPD segmentation patterns. Updated cross-skill reference docs for Persona→JTBD→VPD design workflow.
+> 🆕 **What's New in v2.4.66**: Repository maintenance. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified ecosystem cross-references and bilingual consistency.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -1488,6 +1488,10 @@ python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| 2.4.66 | 2026-05-15 | 仓库维护：添加人物角色质量检查清单（12 项）速查卡；增强设计指导示例（真实产品场景）；验证生态交叉引用完整性和双语一致性 |
+| 2.4.65 | 2026-05-14 | 仓库维护：增强角色驱动工作流（JTBD 工作映射和 VPD 细分模式），更新跨技能参考文档（Persona→JTBD→VPD 设计工作流） |
+| 2.4.64 | 2026-05-14 | 仓库维护：版本升级，对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
+| 2.4.63 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐版本，更新 Last Updated |
 | 2.4.62 | 2026-05-14 | 仓库维护：删除技能生态工作流章节中重复的快速决策指南表，提升文档简洁性和可读性 |
 |------|------|------|| 2.4.59 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
@@ -1548,6 +1552,10 @@ python-toolkit openclaw-skill alicloud
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.66 | 2026-05-15 | Repo maintenance: added Persona Quality Checklist (12-item) quick reference card; enhanced design guidance examples with real product scenarios; verified ecosystem cross-references and bilingual consistency |
+| v2.4.65 | 2026-05-14 | Repo maintenance: enhanced persona-driven workflows with JTBD job mapping and VPD segmentation patterns. Updated cross-skill reference docs for Persona→JTBD→VPD design workflow. |
+| v2.4.64 | 2026-05-14 | Repo maintenance: version bump, updated last_updated badge, aligned README+SKILL.md+pyproject.toml versions |
+| v2.4.63 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned versions, updated Last Updated |
 | v2.4.62 | 2026-05-14 | Repo maintenance: removed duplicate Quick Decision Guide table from ecosystem workflow section, improved documentation conciseness and readability |
 |---------|------|--------|| v2.4.59 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
@@ -1727,4 +1735,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.64*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.66*
