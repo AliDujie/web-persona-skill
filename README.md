@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.63-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.64-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
@@ -1543,6 +1543,8 @@ python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.64 | 2026-05-14 | Repo maintenance: added cross-skill references to 02-measuring-results.md |
+| v2.4.63 | 2026-05-14 | Repo maintenance: added cross-skill references to 01-persona-basics.md, 04-persona-driven-workflows.md |
 | v2.4.62 | 2026-05-14 | Repo maintenance: fixed changelog table formatting (merged separator + data rows), standardized badge ordering, verified ecosystem cross-reference completeness
 | v2.4.61 | 2026-05-14 | Repo maintenance: synced version badges/footers to pyproject.toml (v2.4.61), fixed CN TOC capability count (9→10), fixed ruff target-version
 | v2.4.60 | 2026-05-14 | Repo maintenance: fixed TOC anchor link, version bump to v2.4.60
@@ -1724,4 +1726,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.63*
+*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.64*

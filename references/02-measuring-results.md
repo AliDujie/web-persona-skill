@@ -299,4 +299,14 @@
 
 ---
 
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+人物角色衡量与生态系统技能的协同：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [📊 Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Persona 细分 → QuantUX 按角色分析指标 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Persona 结果 → SWD 角色数据故事 |
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 研究 → Persona 衡量数据收集 |
+
 *注：本章为全书最后一章（第12章），标志着《赢在用户》一书正文部分的结束。页码范围：189-195页。*
