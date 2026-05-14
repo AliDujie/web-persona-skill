@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.4.62 (2026-05-14)
+
+- Repo maintenance: standardize badge ordering (Python → License) and License badge format across all 6 AliDujie skill repos for visual consistency
+
 ## v2.4.61 (2026-05-14)
 
 - Repo maintenance: sync README version badges/footers to pyproject.toml (2.4.59→2.4.60), fix CN TOC capability count (9→10), update changelog
