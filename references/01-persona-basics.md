@@ -253,3 +253,17 @@
 ---
 
 *笔记整理完成 | 基于《赢在用户》第1部分（第1-2章，page-013至page-032）*
+
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+人物角色是整个研究工作流的**起点**——定义 "为谁设计" 后，一切才有焦点：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Persona 角色 → JTBD 挖掘每个角色的深层 Jobs |
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 研究数据 → Persona 角色创建和验证 |
+| [📊 Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Persona 行为假设 → QuantUX 数据验证 |
+| [💎 Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Persona 细分 → VPD 为每个角色定制画布 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Persona 故事 → SWD 向团队展示角色画像 |
+
+> 💡 **推荐工作流**: `UDM (用户研究) → Persona (角色创建) → JTBD (需求挖掘) → VPD (方案设计) → SWD (故事呈现)`

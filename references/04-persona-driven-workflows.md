@@ -149,3 +149,19 @@ Persona 不是一次性产物，需要定期更新：
 ---
 
 *本文档是 AliDujie Web Persona 技能生态系统的补充参考。*
+
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+Persona-driven workflows 与生态系统的集成方式：
+
+```
+Persona 创建 → JTBD 需求挖掘 → UDM 研究方法 → QuantUX 数据验证 → VPD 方案设计 → SWD 结果呈现
+```
+
+| 下游技能 | 使用 Persona 的方式 |
+|---------|-------------------|
+| JTBD | 为每个角色定制访谈提纲 |
+| UDM | 根据角色特征选择研究方法 |
+| QuantUX | 按角色细分行为数据 |
+| VPD | 为每个角色创建专属价值画布 |
+| SWD | 用角色故事驱动数据叙事 |

@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.4.63 (2026-05-14)
+
+- Repo maintenance: add cross-skill reference sections to key reference docs (01-persona-basics.md, 04-persona-driven-workflows.md), expand ecosystem collaboration coverage
+
 ## v2.4.62 (2026-05-14)
 
 - Repo maintenance: standardize badge ordering (Python → License) and License badge format across all 6 AliDujie skill repos for visual consistency
