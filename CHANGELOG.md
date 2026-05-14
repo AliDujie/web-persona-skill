@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.4.60 (2026-05-14)
+
+- Repo maintenance: fix broken TOC anchor link (#-end-to-end-workflow-all-7-skills → #-end-to-end-ecosystem-workflow)
+
 ## v2.4.58 (2026-05-14)
 
 - Repo maintenance: added "Why Teams Choose Persona" comparison tables (CN/EN) with specific before/after impact data, enhanced promotional content in "Why Use This Skill?" sections
