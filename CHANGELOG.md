@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.4.65 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.4.66 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.4.67 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.4.68 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
 ## v2.4.64 (2026-05-14)
 
 - Repo maintenance: add cross-skill reference section to 02-measuring-results.md, expand ecosystem collaboration coverage

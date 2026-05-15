@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.68-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.69-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
-🆕 **What's New in v2.4.68**: Repository maintenance. Updated version alignment across all files. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified all ecosystem cross-references and bilingual consistency. Repository maintenance. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified ecosystem cross-references and bilingual consistency.
+🆕 **What's New in v2.4.69**: Repository maintenance. Updated version alignment across all files. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified all ecosystem cross-references and bilingual consistency. Repository maintenance. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified ecosystem cross-references and bilingual consistency.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -103,6 +103,92 @@ score = jtbd.score_opportunity("快速完成预订", struggle=4, alternative=3, 
 > skill.add_persona("示例用户", "核心用户群", "primary", "我的核心诉求", goals=["目标1"], behaviors=["行为1"], attitudes=["态度1"], bio="背景描述")
 > print(skill.render_all_personas())  # 立即渲染角色
 > ```
+
+
+### 🔀 Cross-Skill Recipes (跨技能配方)
+
+| Recipe | Workflow | Output |
+|--------|----------|--------|
+| **Persona + Research** | Persona → UDM | Personas + targeted interview guides |
+| **Persona + Jobs** | Persona → JTBD | Evidence-based job stories |
+| **Persona + Testing** | Persona → UDM → QuantUX | Persona-segmented usability tests |
+| **Persona + Strategy** | Persona → VPD | Persona-specific value propositions |
+| **Persona + Reporting** | Persona → SWD | Data-driven persona presentations |
+
+#### Recipe: Evidence-Driven Persona Creation
+
+```python
+from persona import PersonaSkill
+
+ps = PersonaSkill("电商平台")
+
+# Step 1: Add personas from research data
+ps.add_persona(
+    name="小明",
+    archetype="效率型用户",
+    priority="primary",
+    quote="我只想快速完成任务",
+    goals=["3分钟内完成购买", "找到最优惠的价格"],
+    behaviors=["频繁搜索", "比价", "看评价"],
+    attitudes=["效率优先", "价格敏感"],
+    bio="28岁，上海，忙碌的产品经理"
+)
+
+ps.add_persona(
+    name="小红",
+    archetype="探索型用户",
+    priority="secondary",
+    quote="我喜欢发现好东西",
+    goals=["发现新品", "获得购物灵感"],
+    behaviors=["浏览推荐", "收藏商品", "分享"],
+    attitudes=["享受购物过程", "注重品质"],
+    bio="24岁，杭州，时尚博主"
+)
+
+# Step 2: Quality review (12-item checklist)
+review = ps.review_persona("小明")
+print(f"Quality Score: {review['score']}/100")
+
+# Step 3: Generate persona-specific interview guides
+guide = ps.generate_interview_guide("小明", "contextual")
+
+# Step 4: Pass to JTBD for deeper analysis
+from jtbd import JTBDSkill
+jtbd = JTBDSkill("电商平台")
+jtbd.analyze_persona_jobs("小明")
+```
+
+#### Recipe: Persona Quality Assessment
+
+```python
+from persona import PersonaSkill
+
+ps = PersonaSkill("SaaS产品")
+
+# Create persona with full attributes
+ps.add_persona(
+    name="Team Lead Alex",
+    archetype="管理者",
+    priority="primary",
+    goals=["团队效率", "项目透明度"],
+    behaviors=["定期检查进度", "主持站会"],
+    frustrations=["信息不透明", "工具太多"],
+    quote="我需要一眼看清团队状态"
+)
+
+# 12-item quality review
+review = ps.review_persona("Team Lead Alex")
+# Checks: data-driven? realistic? specific? differentiated? actionable?
+
+# Feature prioritization for persona
+priorities = ps.prioritize_features(
+    "Team Lead Alex",
+    features=[
+        {"name": "Dashboard", "value": 5, "cost": 3},
+        {"name": "Reports", "value": 4, "cost": 2},
+    ]
+)
+```
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -1781,4 +1867,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.68*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.69*
