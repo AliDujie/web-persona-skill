@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.4.70 (2026-05-15)
+
+- Repository maintenance: aligned `pyproject.toml` version with SKILL.md (v2.4.70)
+- Aligned package `__version__` in `persona/__init__.py` with SKILL.md (v2.4.70)
+- Verified all ecosystem cross-references and bilingual consistency
+- Refreshed last-updated date
+
+## v2.4.69 (2026-05-15)
+
+- Repository maintenance: aligned `pyproject.toml` version with SKILL.md
+
 ## v2.4.68 (2026-05-15)
 
 - Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
