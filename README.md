@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.75-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.76-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
@@ -1601,6 +1601,27 @@ canvas = vpd.analyze_canvas(
     pains=["manual data gathering", "stale dashboards"],
     gains=["auto-generated PDF reports", "real-time KPI alerts"]
 )
+```
+
+```python
+# Recipe: Persona-driven data narrative (Persona → QuantUX → SWD)
+from persona import PersonaSkill; from quantux import QuantUXSkill; from swd import SWDSkill
+
+persona = PersonaSkill("health app")
+persona.add_persona("ActiveSenior", "health-conscious retiree", "primary")
+persona.add_persona("FitnessNewbie", "beginner exerciser", "secondary")
+
+quantux = QuantUXSkill("health app")
+heart = quantux.build_heart_framework()
+# → Engagement metrics by persona segment
+
+swd = SWDSkill("Persona Segmentation Report")
+story = swd.build_story(
+    protagonist="Product growth team",
+    imbalance="ActiveSeniors show 3x retention but get zero feature updates",
+    call_to_action="Create a dedicated 55+ product track"
+)
+# → Persona-validated data story for resource allocation decisions
 ```
 
 - **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
