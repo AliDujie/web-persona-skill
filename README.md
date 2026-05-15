@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.69-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.70-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
-🆕 **What's New in v2.4.69**: Repository maintenance. Updated version alignment across all files. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified all ecosystem cross-references and bilingual consistency. Repository maintenance. Added Persona Quality Checklist (12-item) quick reference card. Enhanced design guidance examples with real product scenarios. Verified ecosystem cross-references and bilingual consistency.
+🆕 **What's New in v2.4.70**: Repository maintenance v2.4.70. Fixed duplicated 'What's New' paragraph in README.md. Verified all ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
