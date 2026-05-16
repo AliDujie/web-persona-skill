@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.78-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.79-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
 > 👤 **一句话介绍**: 基于 Steve Mulder《The User Is Always Right》的完整人物角色工具包。从用户研究到角色创建，从商业策略到设计指导，内置 CEO 视角的用户经济模型分析。
 
-🆕 **What's New in v2.4.78**: Added `__version__` to `__all__` export list. Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`.: Added persona creation usage example. Verified ecosystem cross-references and bilingual consistency across all 7 skills.
+🆕 **What's New in v2.4.79**: Added `__version__` to `__all__` export list. Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`.: Added persona creation usage example. Verified ecosystem cross-references and bilingual consistency across all 7 skills.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -1660,6 +1660,7 @@ python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| 2.4.79 | 2026-05-16 | 仓库维护：修复页脚版本不一致，验证生态交叉引用完整性和双语一致性，全文件版本对齐 |
 | 2.4.75 | 2026-05-16 | 仓库维护：版本升级，验证生态交叉引用完整性和双语一致性 |
 | 2.4.66 | 2026-05-15 | 仓库维护：添加人物角色质量检查清单（12 项）速查卡；增强设计指导示例（真实产品场景）；验证生态交叉引用完整性和双语一致性 |
 | 2.4.65 | 2026-05-14 | 仓库维护：增强角色驱动工作流（JTBD 工作映射和 VPD 细分模式），更新跨技能参考文档（Persona→JTBD→VPD 设计工作流） |
@@ -1725,6 +1726,8 @@ python-toolkit openclaw-skill alicloud
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.79 | 2026-05-16 | Repo maintenance: fixed footer version mismatch, verified ecosystem cross-references and bilingual consistency across all 7 skills, version alignment across all config files |
+| v2.4.79 | 2026-05-16 | Repo maintenance: fixed footer version mismatch (v2.4.75→v2.4.78), verified ecosystem cross-references and bilingual consistency across all 7 skills, version alignment across all config files |
 | v2.4.66 | 2026-05-15 | Previous maintenance
 | v2.4.67 | 2026-05-15 | Repo maintenance: added 3rd English case study (e-commerce persona-driven redesign with evidence-based persona creation and feature prioritization matrix); enhanced persona quality checklist examples | Repo maintenance: added Persona Quality Checklist (12-item) quick reference card; enhanced design guidance examples with real product scenarios; verified ecosystem cross-references and bilingual consistency |
 | v2.4.65 | 2026-05-14 | Repo maintenance: enhanced persona-driven workflows with JTBD job mapping and VPD segmentation patterns. Updated cross-skill reference docs for Persona→JTBD→VPD design workflow. |
@@ -1909,4 +1912,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.75*
+*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.79*

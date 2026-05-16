@@ -1,3 +1,8 @@
+## v2.4.79 (2026-05-16)
+- Fixed footer version mismatch (v2.4.75 → v2.4.78) in README.md
+- Verified ecosystem cross-references and bilingual consistency across all 7 skills
+- Version alignment: pyproject.toml, __init__.py, SKILL.md, README.md badge
+
 # Changelog
 
 ## v2.4.78 (2026-05-16)
