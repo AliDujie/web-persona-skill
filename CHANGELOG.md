@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.4.77 (2026-05-16)
+
+- Repo maintenance: enhanced English Features at a Glance
+- Improved What's New callout formatting
+- Verified ecosystem cross-references and bilingual consistency
+- Confirmed all persona reference docs linked in CN+EN
+
+
 ## v2.4.73 (2026-05-16)
 
 - Synced Python `__version__` with SKILL.md version
