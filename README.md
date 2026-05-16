@@ -43,6 +43,8 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complet
 cp -r web-persona-skill /your/agent/skills/
 ```
 
+For detailed installation steps, configuration options, and agent integration guides, see [INSTALL.md](INSTALL.md).
+
 ### Use in Python
 
 ```python
@@ -232,6 +234,24 @@ python persona/tests/test_all.py
 python -m pytest persona/tests/test_all.py -v
 ```
 
+## 📋 Real-World Use Cases
+
+### 🏢 SaaS Product Segmentation
+*Goal: Understand who uses your product before designing new features.*
+→ Use `segment_analyzer()` with goal/behavior/attitude dimensions to create a 2×2 matrix. Generate interview guides with `generate_interview()` to validate each segment, then build persona cards with `add_persona()` for the top 3-4 segments. Run `review_personas()` to ensure quality.
+
+### 🛒 E-commerce Persona Refresh
+*Goal: Update outdated personas with fresh behavioral data.*
+→ Feed analytics data into the `SegmentAnalyzer` to identify behavioral shifts. Use `generate_survey("needs")` to validate findings with a representative sample. Update persona cards with new `bio`, `goals`, and `behaviors` fields.
+
+### 🎯 B2B Persona-Driven Roadmap
+*Goal: Prioritize features by primary persona needs.*
+→ After creating personas, use `add_feature()` to build a feature × persona matrix. Apply `render_feature_matrix()` to see which features serve the primary persona. Use `add_bug()` to auto-prioritize bugs that block primary persona core tasks (P0).
+
+### 🏥 Healthcare Portal Persona Creation
+*Goal: Create personas for a multi-stakeholder healthcare system.*
+→ Start with `segment_analyzer()` to identify patient, provider, and admin segments. Generate contextual interview guides with `generate_interview("User Interview", ["goals", "behaviors", "pain_points"])`. Build 4-5 persona cards and run `review_personas()` for a quality score above 80/100.
+
 ## 📋 Classic Cases
 
 | Case | Industry | Key Insight |
@@ -301,6 +321,13 @@ Call `generate_persona(include_ceo_analysis=True, total_users=100000)` to auto-g
 
 **Q: How does Persona connect to the rest of the AliDujie ecosystem?**
 Persona is the starting point: it tells you *who* you're designing for. Then [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers *what they need*, [UDM](https://github.com/AliDujie/universal-design-methods) tells you *how to research them*, [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) *validates* your hypotheses, [VPD](https://github.com/AliDujie/value-proposition-design) maps *how to deliver value*, and [SWD](https://github.com/AliDujie/storytelling-with-data) *presents* it all to stakeholders.
+
+## 📚 Resources
+
+- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
+- [CHANGELOG.md](CHANGELOG.md) — Version history
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
 
 ## 📄 License
 
