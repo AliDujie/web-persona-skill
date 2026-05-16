@@ -21,7 +21,7 @@
     print(skill.render_all_personas())
 """
 
-__version__ = "2.4.77"
+__version__ = "2.4.78"
 
 from .config import AnalysisConfig, PERSONA_PRIORITIES, PRIORITY_LABELS, KNOWLEDGE_FILES
 from .config import RESEARCH_METHODS, PERSONA_DIMENSIONS, INTERVIEW_SECTIONS, SURVEY_TYPES
@@ -601,6 +601,7 @@ class PersonaSkill:
 
 
 __all__ = [
+    "__version__",
     "PersonaSkill",
     "AnalysisConfig", "PERSONA_PRIORITIES", "PRIORITY_LABELS", "KNOWLEDGE_FILES",
     "RESEARCH_METHODS", "PERSONA_DIMENSIONS", "INTERVIEW_SECTIONS", "SURVEY_TYPES",
