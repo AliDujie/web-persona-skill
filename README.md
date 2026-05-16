@@ -6,6 +6,14 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
+![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🇨🇳 中文概览
+
+- **基于证据的用户画像**: 摒弃空想人物设定，用目标、行为、态度三个维度构建真实用户画像
+- **11 项可执行能力**: 方法选择、访谈提纲、问卷设计、用户分群、画像生成、质量审查、商业策略、功能优先级、设计指导、测试规划、CEO 经济模型
+- **零依赖纯 Python**: 无需 `pip install`，`from persona import PersonaSkill` 即可使用
+- **生态起点**: 作为用户定义层，为 JTBD、UDM、QuantUX、VPD、SWD 提供用户基础数据
 
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complete toolkit for **web user persona creation and application**, with **10+ executable capabilities** covering method selection, interview guides, survey design, user segmentation, persona document creation, quality review, business strategy, feature prioritization, design guidance, test planning, and CEO-level economic modeling.
 
@@ -255,6 +263,26 @@ python -m pytest persona/tests/test_all.py -v
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## ❓ FAQ / Troubleshooting
+
+**Q: How many personas should I create?**
+Aim for 3-6. Fewer than 3 means you haven't captured enough diversity. More than 6 and nobody will remember them. Max 2 should be marked as "primary" for clear prioritization.
+
+**Q: What makes a good persona bio?**
+Tell a story, not a list. "Alex is a 32-year-old project manager who juggles 5 teams and loses 2 hours daily to status meetings" is better than "Age: 32, Role: PM, Pain: Meetings". Make it memorable.
+
+**Q: How do I know my personas are good quality?**
+Use `review_personas()` — it runs a 12-item quality check covering evidence-based creation, distinctiveness, actionability, memorability, and more. Scores above 80/100 indicate strong personas.
+
+**Q: Can I use Persona with analytics data?**
+Yes. Start with behavioral data from analytics, then layer on qualitative insights from [UDM](https://github.com/AliDujie/universal-design-methods) interviews. The `SegmentAnalyzer` supports goal/behavior/attitude-based segmentation that maps directly to analytics cohorts.
+
+**Q: What's the CEO economic model?**
+Call `generate_persona(include_ceo_analysis=True, total_users=100000)` to auto-generate persona scale estimates, CAC, LTV, LTV/CAC ratio, acquisition strategy, and retention analysis — turning personas into business cases.
+
+**Q: How does Persona connect to the rest of the AliDujie ecosystem?**
+Persona is the starting point: it tells you *who* you're designing for. Then [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers *what they need*, [UDM](https://github.com/AliDujie/universal-design-methods) tells you *how to research them*, [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) *validates* your hypotheses, [VPD](https://github.com/AliDujie/value-proposition-design) maps *how to deliver value*, and [SWD](https://github.com/AliDujie/storytelling-with-data) *presents* it all to stakeholders.
 
 ## 📄 License
 
