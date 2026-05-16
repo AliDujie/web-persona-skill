@@ -172,8 +172,14 @@ interview = udm.generate_interview("User Interviews", "contextual")
 
 # Step 2: Persona creates role documents
 persona = PersonaSkill("E-commerce")
-persona.add_persona("Xiao Ming", "Efficiency User", "primary", goals=["Fast checkout"])
-persona.add_persona("Xiao Hong", "Explorer User", "secondary", goals=["Discover products"])
+persona.add_persona(name="Xiao Ming", archetype="Efficiency User", priority="primary",
+    quote="I just want to get things done fast",
+    goals=["Fast checkout"], behaviors=["Uses search frequently"],
+    attitudes=["Efficiency first"], bio="Busy white-collar worker")
+persona.add_persona(name="Xiao Hong", archetype="Explorer User", priority="secondary",
+    quote="Discovering good products makes me happy",
+    goals=["Discover products"], behaviors=["Careful comparison"],
+    attitudes=["Values experience"], bio="Young designer who loves finding unique items")
 
 # Step 3: VPD maps to value proposition
 vpd = VPDSkill("E-commerce", "Xiao Ming")
