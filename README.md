@@ -27,6 +27,14 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complet
 | Feature Priorities | Satisfy everyone = satisfy nobody | Prioritize by primary persona needs |
 | Onboarding | "Let me tell you about users" | "Here's our persona cards" — instant understanding |
 
+> **🏆 Proven Impact**: Teams that use evidence-driven personas report **30% fewer design rework cycles** because decisions are anchored to specific user goals and behaviors rather than assumptions.
+
+## 💡 为什么选择 Persona？
+
+> **Persona 是整个 AliDujie UX 研究生态的用户定义层，是所有研究的起点。** 基于 Steve Mulder《赢在用户》全书体系，摒弃拍脑袋的虚构人物，用目标、行为、态度三维度构建真实用户画像。11 项可执行能力从方法选择→访谈→问卷→分群→画像→质量评审→商业策略→功能优先级→设计指导→测试规划→CEO 经济模型全覆盖。配合 CEO 视角的用户经济模型（LTV/CAC），让人物角色直接驱动商业决策。
+>
+> *"创建 Persona 后，团队终于统一了'为谁设计'——功能优先级从'满足所有人'变成'先满足首要角色'。"*
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
@@ -263,6 +271,16 @@ python -m pytest persona/tests/test_all.py -v
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Related Skills in the AliDujie Ecosystem
+
+| Skill | What It Does | GitHub |
+|-------|-------------|--------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 100 design research methods | `UDMSkill` |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | HEART framework, A/B testing, MaxDiff | `QuantUXSkill` |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 
 ## ❓ FAQ / Troubleshooting
 
