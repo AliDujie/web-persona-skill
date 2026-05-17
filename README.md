@@ -140,6 +140,25 @@ print(report)
 5. **Bio should be a narrative** — not a list, tell a story people remember
 6. **One-page principle** — keep persona documents to one page for sharing
 
+## 🔗 生态快速开始
+
+Persona 是研究管道最前端的用户定义层——回答"我们为谁设计？"：
+
+```python
+# Persona（谁）→ JTBD（需要什么）→ UDM（怎么研究）→ VPD（价值）→ SWD（呈现）
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+from udm import UDMSkill
+from vpd import VPDSkill
+from swd import SWDSkill
+
+p = PersonaSkill("电商平台")      # 定义目标用户
+j = JTBDSkill("电商平台")         # 发现用户任务
+u = UDMSkill("电商平台")         # 设计研究方法
+v = VPDSkill("电商平台", "用户")   # 验证价值主张
+s = SWDSkill("用户报告")          # 向高管呈现
+```
+
 ## 🌐 Ecosystem Integration
 
 Persona is the **user definition layer** at the very front of the research pipeline — it answers "who are we designing for?":
