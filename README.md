@@ -105,6 +105,14 @@ print(report)
 
 **Zero dependencies** — pure Python standard library. No `pip install` needed.
 
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from persona import PersonaSkill
+> skill = PersonaSkill("你的产品")
+> skill.add_persona(name="Alex", archetype="Power User", priority="primary", goals=["快速完成任务"])
+> print(skill.review_personas())
+> ```
+
 ## 🧩 10+1 Capabilities
 
 ### Core Capabilities (10)
