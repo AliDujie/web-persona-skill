@@ -362,6 +362,18 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic business frameworks | `STMSkill` |
 
+### 🔗 Extended Ecosystem
+
+Persona user definition can be combined with management skills to turn user insights into organizational decisions:
+
+| Extended Skill | Collaboration Scenario |
+|---------------|----------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona user economics → CEO resource allocation |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona segments → CPO audience prioritization |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona roles → CMO target audience positioning |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Persona tech behaviors → CTO tech investment priorities |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona quarterly updates → CEO plan review |
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: How many personas should I create?**
