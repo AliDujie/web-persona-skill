@@ -337,16 +337,6 @@ python -m pytest persona/tests/test_all.py -v
 | The Inmates Are Running the Asylum | Alan Cooper (1999) | Origin of the persona concept |
 | Storytelling with Data | Cole Nussbaumer Knaflic (2015) | Data visualization of research findings |
 
-## 🔗 Extended Ecosystem
-
-| Extended Skill | Collaboration Scenario |
-|---------------|----------------------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona user economics → CEO resource allocation |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona segments → CPO audience prioritization |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona roles → CMO target audience positioning |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Persona tech behaviors → CTO tech investment priorities |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona quarterly updates → CEO plan review |
-
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
