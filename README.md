@@ -292,6 +292,17 @@ python -m pytest persona/tests/test_all.py -v
 - [ ] **Feature matrix** — `skill.render_feature_matrix()`
 - [ ] **CEO analysis** — `skill.generate_persona(include_ceo_analysis=True, total_users=100000)`
 
+### ⏱️ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r web-persona-skill /your/agent/skills/`
+- [ ] **导入** — `from persona import PersonaSkill`
+- [ ] **初始化** — `skill = PersonaSkill("你的产品")`
+- [ ] **访谈提纲** — `skill.generate_interview("用户访谈", ["goals", "behaviors", "pain_points"])`
+- [ ] **创建角色** — `skill.add_persona(name="Alex", archetype="Power User", priority="primary", ...)`
+- [ ] **质量评审** — `skill.review_personas()`（12 项检查）
+- [ ] **功能矩阵** — `skill.render_feature_matrix()`
+- [ ] **CEO 分析** — `skill.generate_persona(include_ceo_analysis=True, total_users=100000)`
+
 ## 📋 Real-World Use Cases
 
 ### 🏢 SaaS Product Segmentation
