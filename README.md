@@ -141,6 +141,19 @@ print(report)
 
 ## 📐 Golden Rules
 
+```
+┌─────────────────────────────────────────────────────────┐
+│  PERSONA GOLDEN RULES  (6 Rules to Follow)              │
+├─────────────────────────────────────────────────────────┤
+│  1. Start from goals/behaviors, NOT demographics        │
+│  2. What users DO > what they SAY                       │
+│  3. Max 2 primary personas per product                  │
+│  4. Total: 3-6 personas (enough to cover, not forget)   │
+│  5. Bio = a story, not a list                           │
+│  6. One-page per persona for sharing                    │
+└─────────────────────────────────────────────────────────┘
+```
+
 1. **Never start from demographics** — focus on goals, behaviors, attitudes
 2. **What users DO matters more than what they SAY**
 3. **Primary persona: max 2** — ensure clear design decision priorities
@@ -379,3 +392,9 @@ Persona is the starting point: it tells you *who* you're designing for. Then [JT
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
+
+[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
