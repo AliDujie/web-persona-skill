@@ -464,6 +464,50 @@ canvas = vpd.analyze_canvas(product_name="TeamFlow",
 print(f"匹配度: {canvas.fit_score}")
 ```
 
+### 🔀 完整端到端流程：Persona → JTBD → UDM → QuantUX → VPD → SWD
+
+一个完整的从用户定义到数据叙事的管道示例：
+
+```python
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from vpd import VPDSkill
+from swd import SWDSkill
+
+# 1. Persona — 定义"为谁设计"
+persona = PersonaSkill("电商平台")
+persona.add_persona(name="小明", archetype="效率型用户", priority="primary",
+    goals=["快速下单"], behaviors=["频繁搜索"],
+    bio="忙碌白领，时间就是金钱")
+persona.add_persona(name="小红", archetype="探索型用户", priority="secondary",
+    goals=["发现独特商品"], behaviors=["仔细比较"],
+    bio="年轻设计师，喜欢淘好物")
+
+# 2. JTBD — 发现用户想要完成的"工作"
+jtbd = JTBDSkill("电商平台")
+score = jtbd.score_opportunity("快速找到想要的商品", struggle=4, alternative=3, market=4, budget=4)
+
+# 3. UDM — 定性研究验证
+udm = UDMSkill("电商平台")
+interview = udm.generate_interview("用户深访", "contextual", context="购物体验")
+
+# 4. QuantUX — 定量验证
+quantux = QuantUXSkill("电商平台")
+heart = quantux.build_heart_framework()
+
+# 5. VPD — 价值主张验证
+vpd = VPDSkill("电商平台", "效率型用户")
+canvas = vpd.analyze_canvas(product_name="电商平台",
+    jobs=[{"description": "快速下单", "importance": 5}])
+
+# 6. SWD — 向高管呈现
+swd = SWDSkill("用户研究汇报")
+story = swd.build_story(protagonist="产品委员会",
+    imbalance="效率型用户流失率高", call_to_action="优化搜索和下单流程")
+```
+
 ## 十、参考资料
 
 | 书名 | 作者 | 说明 |
