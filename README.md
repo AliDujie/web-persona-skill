@@ -240,6 +240,18 @@ python persona/tests/test_all.py
 python -m pytest persona/tests/test_all.py -v
 ```
 
+
+### ⏱️ 5-Minute Quick-Start Checklist
+
+- [ ] **Install** — `cp -r web-persona-skill /your/agent/skills/`
+- [ ] **Import** — `from persona import PersonaSkill`
+- [ ] **Initialize** — `skill = PersonaSkill("Your Product")`
+- [ ] **Interview guide** — `skill.generate_interview("User Interview", ["goals", "behaviors", "pain_points"])`
+- [ ] **Create persona** — `skill.add_persona(name="Alex", archetype="Power User", priority="primary", ...)`
+- [ ] **Quality review** — `skill.review_personas()` (12-item check)
+- [ ] **Feature matrix** — `skill.render_feature_matrix()`
+- [ ] **CEO analysis** — `skill.generate_persona(include_ceo_analysis=True, total_users=100000)`
+
 ## 📋 Real-World Use Cases
 
 ### 🏢 SaaS Product Segmentation
