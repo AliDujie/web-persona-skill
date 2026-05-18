@@ -540,3 +540,7 @@ Persona 用户定义可与管理层技能结合，将用户洞察转化为组织
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona 细分 → CPO 产品受众优先级 |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona 角色 → CMO 目标受众定位与 messaging |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Persona 技术行为 → CTO 技术投资优先级 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona 季度更新 → CEO 计划审查 |
+
+### 💡 Pro Tip / 专业技巧
+Persona 是 AliDujie 生态系统的**用户定义层**，是所有研究的起点。推荐流程：先用 Persona 创建 2-3 个证据驱动的角色，再用 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现每个角色的 Jobs，用 [UDM](https://github.com/AliDujie/universal-design-methods) 设计研究方法，用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 定量验证，用 [VPD](https://github.com/AliDujie/value-proposition-design) 映射价值主张，最后用 [SWD](https://github.com/AliDujie/storytelling-with-data) 向高管呈现。从角色定义到数据故事，6 个技能串联覆盖完整用户研究生命周期。
