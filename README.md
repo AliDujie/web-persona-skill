@@ -426,6 +426,18 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic business frameworks | `STMSkill` |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
+### 🔗 扩展生态 (Extended Ecosystem)
+
+Persona 用户定义可与管理技能结合，将用户洞察转化为组织决策：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色经济模型 → CEO 资源分配 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色细分 → CPO 受众优先级 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色定位 → CMO 目标受众定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 角色技术行为 → CTO 技术投资优先级 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色季度更新 → CEO 计划审查 |
+
 ### 🔗 Extended Ecosystem
 
 Persona user definition can be combined with management skills to turn user insights into organizational decisions:
