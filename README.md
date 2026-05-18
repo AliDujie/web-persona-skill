@@ -421,6 +421,18 @@ Persona user definition can be combined with management skills to turn user insi
 - **Max 2 primary personas**: If everyone is primary, no one is — force prioritization to drive clearer design decisions
 - **Behavioral evidence wins**: What users *do* (analytics data, task flows) trumps what they *say* in surveys
 - **P0 bug rule**: Any bug blocking a primary persona's core task is P0 — use this to cut through prioritization debates
+- **Story bios beat bullet points**: "Alex loses 2 hours daily to status meetings" is more actionable than "Age: 32, Role: PM"
+- **Use the quality review early**: Run `review_personas()` before presenting — scores below 80 mean you need more evidence
+
+## 🛡️ Common Pitfalls & How to Avoid Them
+
+| Pitfall | How Persona Helps |
+|---------|---------------|
+| Fictional personas nobody trusts | `review_personas()` runs 12-item quality check to catch evidence gaps |
+| Too many personas to remember | Enforces max 2 primary, 3-6 total — forces real prioritization |
+| Personas gathering dust in a folder | `generate_acquisition_strategy()` + promotion plans keep them alive |
+| Design decisions still subjective | `render_feature_matrix()` ties every feature to a specific persona need |
+| Personas that don't drive decisions | `add_bug()` auto-prioritizes by persona impact — P0/P1/P2 |
 
 ## ❓ FAQ / Troubleshooting
 
