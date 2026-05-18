@@ -113,6 +113,46 @@ print(report)
 > print(skill.review_personas())
 > ```
 
+## 🤖 AI Agent Integration
+
+Persona is the **starting point** of the AliDujie ecosystem — making it an ideal first skill to integrate into any agent workflow:
+
+```python
+# Example: Persona as agent tools
+from persona import PersonaSkill
+
+persona = PersonaSkill("E-commerce Platform")
+
+@tool
+def create_user_persona(name: str, archetype: str, priority: str, goals: list, behaviors: list, attitudes: list, bio: str):
+    """Create an evidence-driven user persona card."""
+    return persona.add_persona(name=name, archetype=archetype, priority=priority, goals=goals, behaviors=behaviors, attitudes=attitudes, bio=bio)
+
+@tool
+def generate_user_interview(topic: str, sections: list):
+    """Generate a structured user interview guide covering goals, behaviors, pain points."""
+    return persona.generate_interview(topic, sections)
+
+@tool
+def prioritize_features(feature_name: str, persona_needs: dict, importance: str, effort: str):
+    """Build a feature × persona priority matrix."""
+    return persona.add_feature(feature_name, persona_needs, importance, effort)
+```
+
+### Agent Workflow Pattern
+```
+Product brief → Persona.add_persona() → Evidence-driven persona cards
+     ↓
+Persona review → Persona.review_personas() → Quality score + improvement suggestions
+     ↓
+Persona data → JTBD discovery → UDM research design → Full pipeline
+```
+
+### Prompt Engineering Tips
+- **Evidence-first**: When creating personas via LLM, always reference real user data — use `review_personas()` to catch fiction masquerading as evidence
+- **Golden Rules as guardrails**: Inject the 6 Persona Golden Rules into system prompts to guide LLM persona creation
+- **Pipeline anchor**: Persona output feeds every downstream skill — start here for consistent research pipelines
+
 ## 🧩 10+1 Capabilities
 
 ### Core Capabilities (10)
@@ -362,6 +402,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic business frameworks | `STMSkill` |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
 ### 🔗 Extended Ecosystem
 
