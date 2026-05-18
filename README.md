@@ -416,6 +416,12 @@ Persona user definition can be combined with management skills to turn user insi
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Persona tech behaviors → CTO tech investment priorities |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona quarterly updates → CEO plan review |
 
+### 💡 Pro Tips / 专业技巧
+- **Goals > demographics**: Never start persona creation with age/gender — start with what users are trying to accomplish
+- **Max 2 primary personas**: If everyone is primary, no one is — force prioritization to drive clearer design decisions
+- **Behavioral evidence wins**: What users *do* (analytics data, task flows) trumps what they *say* in surveys
+- **P0 bug rule**: Any bug blocking a primary persona's core task is P0 — use this to cut through prioritization debates
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: How many personas should I create?**
