@@ -2,7 +2,7 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.79-blue)
+![Version](https://img.shields.io/badge/version-2.4.80-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -510,7 +510,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.79)**: Added cross-skill collaboration table linking to all 5 ecosystem skills, improved Pro Tips section with persona creation guidance.
+**Latest (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
+
+**Previous (v2.4.79)**: Added cross-skill collaboration table linking to all 5 ecosystem skills, improved Pro Tips section with persona creation guidance.
 
 ## 📚 Resources
 
