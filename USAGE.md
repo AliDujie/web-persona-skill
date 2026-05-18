@@ -2,6 +2,18 @@
 
 > 用户画像 · 使用指南
 
+## 📐 Where Persona Fits in the Pipeline
+
+```
+Persona (Who) → JTBD (What) → UDM (Research) → QuantUX (Validate) → VPD (Value) → SWD (Present)
+↑
+Persona sits here — the starting point
+```
+
+- **First in the pipeline** — defines who you're designing for before anything else
+- **Before** JTBD discovers Jobs, UDM plans research, and all other skills
+- **Persona** provides evidence-driven user profiles that anchor every downstream decision
+
 ## ⚡ 5-Minute Quick Start / 5分钟快速开始
 
 ```bash
