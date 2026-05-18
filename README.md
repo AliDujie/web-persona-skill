@@ -465,6 +465,29 @@ Call `generate_persona(include_ceo_analysis=True, total_users=100000)` to auto-g
 **Q: How does Persona connect to the rest of the AliDujie ecosystem?**
 Persona is the starting point: it tells you *who* you're designing for. Then [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers *what they need*, [UDM](https://github.com/AliDujie/universal-design-methods) tells you *how to research them*, [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) *validates* your hypotheses, [VPD](https://github.com/AliDujie/value-proposition-design) maps *how to deliver value*, and [SWD](https://github.com/AliDujie/storytelling-with-data) *presents* it all to stakeholders.
 
+## 🏗️ Advanced: Custom Configuration
+
+Persona supports runtime configuration via the `AnalysisConfig` class:
+
+```python
+from persona import PersonaSkill, AnalysisConfig
+
+config = AnalysisConfig()
+config.set_max_personas(6)      # Cap total personas
+config.set_primary_persona_limit(2)  # Max 2 primary personas
+config.set_review_threshold(80)  # Minimum quality score to pass
+
+skill = PersonaSkill("My Product", config=config)
+```
+
+See [INSTALL.md](INSTALL.md) for full configuration options and agent integration guides.
+
+## 📊 Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for full release notes.
+
+**Latest (v2.4.79)**: Added cross-skill collaboration table linking to all 5 ecosystem skills, improved Pro Tips section with persona creation guidance.
+
 ## 📚 Resources
 
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
@@ -480,4 +503,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
-[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+**Persona** · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [UDM](https://github.com/AliDujie/universal-design-methods) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
