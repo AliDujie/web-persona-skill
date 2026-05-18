@@ -35,6 +35,17 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complet
 >
 > *"创建 Persona 后，团队终于统一了'为谁设计'——功能优先级从'满足所有人'变成'先满足首要角色'。"*
 
+
+### 🔗 Cross-Skill Collaboration / 跨技能协作
+
+| Persona 产出 → | 下游技能用它做... | 示例调用 |
+|---------------|-----------------|----------|
+| 角色档案 | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 按角色做 Jobs 聚类 | `jtbd.score_opportunity()` per persona |
+| 角色目标/痛点 | [VPD](https://github.com/AliDujie/value-proposition-design) 填充价值主张画布 | `vpd.analyze_canvas(jobs=persona.goals)` |
+| 角色细分 | [UDM](https://github.com/AliDujie/universal-design-methods) 按角色设计研究方案 | `udm.generate_interview(persona.archetype)` |
+| 角色行为数据 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 定量验证假设 | `quantux.heart_framework(persona.behaviors)` |
+| 角色统计数据 | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化汇报 | `swd.build_story(protagonist=persona.name)` |
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
