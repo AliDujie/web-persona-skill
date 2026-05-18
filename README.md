@@ -502,10 +502,22 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 ## 📚 Resources
 
+- [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
+- [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
+- [SECURITY.md](SECURITY.md) — Security policy and responsible use
+- [references/](references/) — Persona template files and interview guides
+- [persona/](persona/) — Core Python module source code
+
+## ⚠️ When NOT to Use Persona
+
+- **Choosing research methods** → Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
+- **JTBD analysis and opportunity scoring** → Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
+- **Value proposition canvas and PMF validation** → Use [Value Proposition Design](https://github.com/AliDujie/value-proposition-design)
+- **Statistical analysis / A/B testing** → Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research)
+- **Data visualization and storytelling** → Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
 
 ## 📄 License
 
