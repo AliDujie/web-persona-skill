@@ -502,6 +502,7 @@ Persona user definition can be combined with management skills to turn user insi
 - **P0 bug rule**: Any bug blocking a primary persona's core task is P0 — use this to cut through prioritization debates
 - **Story bios beat bullet points**: "Alex loses 2 hours daily to status meetings" is more actionable than "Age: 32, Role: PM"
 - **Use the quality review early**: Run `review_personas()` before presenting — scores below 80 mean you need more evidence
+- **Start with segmentation**: Before creating personas, run the `SegmentAnalyzer` with goal/behavior/attitude dimensions to identify natural user groups — then build persona cards for the most important segments
 - **Chain with ecosystem**: Persona defines who → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers what → [UDM](https://github.com/AliDujie/universal-design-methods) validates how → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) quantifies → [VPD](https://github.com/AliDujie/value-proposition-design) maps value → [SWD](https://github.com/AliDujie/storytelling-with-data) presents
 
 ## 🛡️ Common Pitfalls & How to Avoid Them
