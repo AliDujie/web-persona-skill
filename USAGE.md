@@ -162,6 +162,57 @@ cd web-persona-skill
 python persona/tests/test_all.py
 ```
 
+## 🎯 Persona Anti-Patterns / 画像常见误区
+
+Below are the most common persona mistakes — and what to do instead.
+
+### ❌ Mistake 1: Demographic-Based Personas / 基于人口统计的画像
+
+**Wrong:** "Female, 25-34, urban, college-educated, income ¥10k+"
+**Right:** "Needs to compare products across 3+ stores before buying; uses mobile during commute; abandons cart if shipping > ¥15"
+
+> **Demographics describe *who* — personas need *why* and *how*.**  Start from goals, behaviors, and attitudes. Demographics can supplement, but never lead.
+
+### ❌ Mistake 2: Too Many Primary Personas / 首要角色过多
+
+**Wrong:** Marking all 5 personas as "primary" because "every user matters."
+**Right:** Max **2 primary personas**. If everyone is primary, no one is — you lose the ability to make clear prioritization decisions.
+
+> **Primary personas drive design decisions.**  When trade-offs arise, ask: "What does our primary persona need?" If there's no primary, there's no answer.
+
+### ❌ Mistake 3: Fictional Instead of Evidence-Based / 虚构而非基于证据
+
+**Wrong:** Inventing personas from team assumptions or stakeholder guesses with no user data behind them.
+**Right:** Every persona element (goals, behaviors, pain points) traces back to real evidence — interviews, analytics, survey data, or support tickets. Use `review_personas()` to catch evidence gaps (12-item quality check, scores < 80 need more data).
+
+> **A persona without evidence is just a stereotype with a name.**  没有证据的画像只是贴了标签的刻板印象。
+
+### ❌ Mistake 4: Personas That Gather Dust / 创建后束之高阁
+
+**Wrong:** Creating beautiful persona cards, printing them, and never referencing them again.
+**Right:** Tie every feature decision, bug priority, and design review back to personas. Use `render_feature_matrix()` to force persona-driven prioritization. Run quarterly persona refreshes with new data.
+
+> **Personas are decision tools, not wall art.**  画像是决策工具，不是墙上的装饰画。
+
+### ❌ Mistake 5: Bio as a Bullet List / 画像简介写成清单
+
+**Wrong:** "Age: 32. Role: PM. Pain: Meetings. Tech: iPhone."
+**Right:** "Alex is a senior PM juggling 5 teams. She loses 2 hours daily to status meetings and switches between 4 tools just to check if a feature shipped."
+
+> **A bio should tell a story people remember.**  简介应该是一个让人记住的故事，而不是一堆干巴巴的条目。
+
+---
+
+### 🛡️ Quick Reference: Anti-Pattern Checklist / 速查清单
+
+| Anti-Pattern | Red Flag | Fix |
+|-------------|----------|-----|
+| Demographic-led | Persona starts with age/gender/income | Start with goals, behaviors, attitudes |
+| Too many primaries | > 2 personas marked "primary" | Force prioritization — pick top 1-2 |
+| Fictional | No data source cited for any attribute | Run `review_personas()` — score must be ≥ 80 |
+| Unused | Last referenced > 30 days ago | Embed in feature reviews, bug triage, roadmap planning |
+| List-style bio | Bio reads like a résumé | Rewrite as a 2-3 sentence narrative with context |
+
 ## 📚 Resources / 资源
 
 - [README.md](README.md) — Full documentation
