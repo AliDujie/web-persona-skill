@@ -52,6 +52,32 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complet
 | 角色行为数据 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 定量验证假设 | `quantux.heart_framework(persona.behaviors)` |
 | 角色统计数据 | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化汇报 | `swd.build_story(protagonist=persona.name)` |
 
+## 🧭 Quick Decision: When to Use Persona?
+
+| Your Need | Recommended Skill |
+|-----------|------------------|
+| Create user personas, user segmentation, design guidance | ✅ **Persona (this skill)** |
+| Choose research methods, design interviews, usability testing | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| Understand user "Jobs", opportunity scoring | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| Quantitative A/B testing, HEART metrics | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| Value proposition canvas, PMF validation | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 Persona is the user definition layer: start by answering "who are we designing for?" before any research.
+
+## 🧭 快速决策：什么时候使用 Persona？
+
+| 你的需求 | 推荐技能 |
+|---------|---------|
+| 需要创建人物角色、用户细分、设计指导 | ✅ **Persona（本技能）** |
+| 需要选择研究方法、设计访谈、执行可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 需要理解用户"工作"、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 需要定量 A/B 测试、HEART 指标 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 需要价值主张画布、PMF 验证 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 需要将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 Persona 是用户定义层：先回答"为谁设计"，再开始任何研究。
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
