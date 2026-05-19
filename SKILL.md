@@ -544,3 +544,17 @@ Persona 用户定义可与管理层技能结合，将用户洞察转化为组织
 
 ### 💡 Pro Tip / 专业技巧
 Persona 是 AliDujie 生态系统的**用户定义层**，是所有研究的起点。推荐流程：先用 Persona 创建 2-3 个证据驱动的角色，再用 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现每个角色的 Jobs，用 [UDM](https://github.com/AliDujie/universal-design-methods) 设计研究方法，用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 定量验证，用 [VPD](https://github.com/AliDujie/value-proposition-design) 映射价值主张，最后用 [SWD](https://github.com/AliDujie/storytelling-with-data) 向高管呈现。从角色定义到数据故事，6 个技能串联覆盖完整用户研究生命周期。
+
+## ❓ FAQ / 常见问题
+
+**Q: 我应该创建多少个角色？**
+建议 3-6 个。少于 3 个意味着覆盖不够，超过 6 个团队记不住。首要角色最多 2 个——保证设计决策有明确优先级。
+
+**Q: 怎么判断角色质量好不好？**
+使用 `review_personas()` 运行 12 项质量检查，涵盖证据驱动性、区分度、可执行性、可记忆性等维度。分数 > 80/100 表示质量良好。
+
+**Q: Persona 和 JTBD 有什么区别？**
+Persona 回答"为谁设计"（用户是谁），JTBD 回答"要完成什么工作"（用户想要什么结果）。两者互补：先定义角色，再发现角色的 Jobs。
+
+**Q: 可以用分析数据创建角色吗？**
+可以。从行为数据（访问频率、功能使用率）开始，再用 [UDM](https://github.com/AliDujie/universal-design-methods) 访谈补充定性洞察。`SegmentAnalyzer` 支持基于目标/行为/态度的细分，直接映射到分析数据群组。
