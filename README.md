@@ -393,6 +393,51 @@ python -m pytest persona/tests/test_all.py -v
 | Best Buy | Retail | Personas guided store optimization, target customer spending increased 30% |
 | Sony Boom Box | Consumer electronics | Users said they wanted yellow but picked black — proved actions ≠ words |
 
+### 🔀 Complete Pipeline Example: Persona → JTBD → VPD → QuantUX → SWD
+
+A full end-to-end workflow chaining all 6 AliDujie skills:
+
+```python
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from vpd import VPDSkill
+from swd import SWDSkill
+
+# 1. Persona — define who we're designing for
+persona = PersonaSkill("SaaS Platform")
+persona.add_persona(name="Alex", archetype="Power User", priority="primary",
+    goals=["Complete workflows fast"], behaviors=["Daily tool usage"],
+    bio="Alex is a senior PM managing cross-functional teams")
+
+# 2. JTBD — discover what they're trying to accomplish
+jtbd = JTBDSkill("SaaS Platform")
+opportunity = jtbd.score_opportunity("Track project status efficiently",
+    struggle=4, alternative=3, market=4, budget=4)
+
+# 3. UDM — validate with qualitative research
+udm = UDMSkill("SaaS Platform")
+interview = udm.generate_interview("Power Users", "contextual", context="Team collaboration")
+
+# 4. QuantUX — validate with data
+quantux = QuantUXSkill("SaaS Platform")
+n = quantux.calculate_ab_sample_size(baseline=0.45, mde=0.05)
+ab = quantux.analyze_ab_test("Old Dashboard", 3000, 1350, "New Dashboard", 3000, 1620)
+
+# 5. VPD — map to value proposition
+vpd = VPDSkill("SaaS Platform", "Power Users")
+canvas = vpd.analyze_canvas(product_name="TeamFlow",
+    jobs=[{"description": "Track project status efficiently", "importance": 5}])
+
+# 6. SWD — communicate to stakeholders
+swd = SWDSkill("Q1 Product Review")
+story = swd.build_story(protagonist="Product Committee",
+    imbalance="Power users struggle with status tracking",
+    evidence=["Opportunity score 7.6/10", "A/B test: +6% conversion, p<0.01"],
+    call_to_action="Prioritize dashboard redesign in Q2")
+```
+
 ## 📋 When NOT to Use Persona
 
 - **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
@@ -510,7 +555,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
+**Latest (v2.4.81)**: Added complete 6-skill pipeline example (Persona→JTBD→UDM→QuantUX→VPD→SWD), improved cross-skill collaboration documentation.
+
+**Previous (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
 **Previous (v2.4.79)**: Added cross-skill collaboration table linking to all 5 ecosystem skills, improved Pro Tips section with persona creation guidance.
 
