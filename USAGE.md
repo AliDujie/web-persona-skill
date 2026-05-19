@@ -213,6 +213,53 @@ Below are the most common persona mistakes — and what to do instead.
 | Unused | Last referenced > 30 days ago | Embed in feature reviews, bug triage, roadmap planning |
 | List-style bio | Bio reads like a résumé | Rewrite as a 2-3 sentence narrative with context |
 
+## 🔗 Related Skills in the Ecosystem / 生态系统中的相关技能
+
+Persona is the **user definition layer** — the starting point that anchors every downstream skill:
+
+| Skill | Role | How It Connects with Persona |
+|-------|------|----------------------------|
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Demand insight | JTBD task clusters → Persona segment definition → evidence-driven profiles |
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Methodology core | UDM interviews/observation → Persona data collection → persona creation |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Quantitative validation | Persona hypotheses → QuantUX behavioral analysis → persona iteration |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | Product-market fit | Persona goals/pains → VPD canvas → persona validation |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data storytelling | Persona data → SWD chart selection → executive narrative |
+
+> 💡 **Recommended chain:** Persona (define who) → JTBD (discover what Jobs) → UDM (research how) → QuantUX (validate) → VPD (map value) → SWD (present)
+
+### Quick Cross-Skill Example / 跨技能示例
+
+```python
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from swd import SWDSkill
+
+# Persona defines who we're designing for
+persona = PersonaSkill("E-commerce Platform")
+persona.add_persona(name="Alex", archetype="Efficiency Seeker", priority="primary",
+    goals=["Complete purchase in under 2 minutes"],
+    behaviors=["Uses search, rarely browses"],
+    attitudes=["Values time over discovery"],
+    bio="Alex is a busy professional who shops online during commute")
+
+# JTBD discovers what Jobs this persona needs done
+jtbd = JTBDSkill("E-commerce Platform")
+score = jtbd.score_opportunity("Find and purchase quickly", struggle=4, alternative=3, market=4, budget=4)
+
+# VPD maps persona needs to value proposition
+vpd = VPDSkill("E-commerce Platform", "Efficiency Seekers")
+vpd.analyze_canvas(product_name="ShopFast",
+    jobs=[{"description": "Quick purchase"}],
+    pains=[{"description": "Too many steps to checkout", "severity": "critical"}])
+
+# SWD presents persona data to stakeholders
+swd = SWDSkill("Persona Report")
+story = swd.build_story(protagonist="Product Team",
+    imbalance="Efficiency seekers abandon at checkout",
+    call_to_action="Reduce checkout to 2 steps")
+```
+
 ## 📚 Resources / 资源
 
 - [README.md](README.md) — Full documentation
