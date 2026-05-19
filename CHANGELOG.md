@@ -1,3 +1,17 @@
+## v2.4.83 (2026-05-19)
+- Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
+- Added segmentation-first pro tip workflow before persona creation
+- Enhanced anti-patterns section with concrete examples
+
+## v2.4.82 (2026-05-19)
+- Added segmentation-first pro tip before persona creation, improved version history
+
+## v2.4.81 (2026-05-19)
+- Added persona anti-patterns to USAGE.md and improved README completeness
+
+## v2.4.80 (2026-05-19)
+- Synced SKILL.md version + ecosystem improvements
+
 ## v2.4.79 (2026-05-16)
 - Fixed footer version mismatch (v2.4.75 → v2.4.78) in README.md
 - Verified ecosystem cross-references and bilingual consistency across all 7 skills

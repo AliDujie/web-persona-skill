@@ -2,11 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.80-blue)
+![Version](https://img.shields.io/badge/version-2.4.83-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.83
+
+- **Segmentation-First Pro Tip**: Added workflow guidance for segmenting before creating personas
+- **Anti-Patterns Guide**: Added common persona creation pitfalls and how to avoid them
+- **Version Sync**: Aligned all version numbers across README/SKILL.md/pyproject.toml
 
 ## 🇨🇳 中文概览
 
