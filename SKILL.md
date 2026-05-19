@@ -74,7 +74,7 @@ report = persona.generate_persona(include_ceo_analysis=True)
 - [ ] **功能优先级** — `skill.add_feature("功能名", {"角色": "高"}, "高", "低")`
 - [ ] **完整报告** — `skill.generate_persona(include_ceo_analysis=True)`
 
-[English](#english) | [中文](#中文说明)
+[English](README.md#quick-start-5-minutes) | [中文](#中文说明)
 
 ## 🌐 AliDujie 技能生态系统
 
