@@ -621,7 +621,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.84)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency.
+**Latest (v2.4.85)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency, added Impact Metrics Table.
 
 **Previous (v2.4.83)**: Added segmentation-first workflow guidance, anti-patterns guide, version sync across all files.
 
