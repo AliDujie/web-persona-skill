@@ -2,7 +2,7 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.83-blue)
+![Version](https://img.shields.io/badge/version-2.4.84-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -588,11 +588,25 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.81)**: Added complete 6-skill pipeline example (Persona→JTBD→UDM→QuantUX→VPD→SWD), improved cross-skill collaboration documentation.
+**Latest (v2.4.84)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency.
+
+**Previous (v2.4.83)**: Added segmentation-first workflow guidance, anti-patterns guide, version sync across all files.
+
+**Previous (v2.4.82)**: Segmentation-first workflow guidance and anti-patterns guide.
+
+**Previous (v2.4.81)**: Added complete 6-skill pipeline example (Persona→JTBD→UDM→QuantUX→VPD→SWD), improved cross-skill collaboration documentation.
 
 **Previous (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
 **Previous (v2.4.79)**: Added cross-skill collaboration table linking to all 5 ecosystem skills, improved Pro Tips section with persona creation guidance.
+
+### 📖 Recommended Learning Path
+
+1. **Start with the README** — Quick start + 30-second example
+2. **Read USAGE.md** — Detailed workflows for all 10+1 capabilities with code examples
+3. **Explore references/** — Deep dive into 5 knowledge base documents covering persona basics, measurement, best practices, workflows, and ecosystem collaboration
+4. **Try the full pipeline** — Chain Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end (see [Complete Pipeline Example](#-complete-pipeline-example-persona--jtbd--vpd--quantux--swd))
+5. **Customize via config** — Adjust persona limits and review thresholds (see [INSTALL.md](INSTALL.md))
 
 ## 📚 Resources
 
