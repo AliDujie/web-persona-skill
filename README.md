@@ -488,13 +488,22 @@ story = swd.build_story(protagonist="Product Committee",
     call_to_action="Prioritize dashboard redesign in Q2")
 ```
 
-## 📋 When NOT to Use Persona
+## 📋 When NOT to Use Persona / 什么时候不该用 Persona
 
-- **Choosing research methods or designing interviews** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
-- **Statistical analysis or A/B testing** → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research)
-- **Understanding user Jobs-to-be-Done** → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
-- **Value proposition canvas analysis** → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design)
-- **Data visualization & storytelling** → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+| Your Need | Recommended Skill |
+|-----------|------------------|
+| Choosing research methods or designing interviews | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| Statistical analysis or A/B testing | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| Understanding user Jobs-to-be-Done | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| Value proposition canvas analysis | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
+| 选择研究方法、设计访谈 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 定量统计分析、A/B 测试 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 理解用户 Jobs、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 价值主张画布分析 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 数据可视化与故事化呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 商业框架分析 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 ## 📚 References
 
@@ -621,7 +630,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.85)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency, added Impact Metrics Table.
+**Latest (v2.4.86)**: Repo maintenance — converted "When NOT to Use Persona" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+
+**Previous (v2.4.85)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency, added Impact Metrics Table.
 
 **Previous (v2.4.83)**: Added segmentation-first workflow guidance, anti-patterns guide, version sync across all files.
 
