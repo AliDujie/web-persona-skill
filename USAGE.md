@@ -260,6 +260,38 @@ story = swd.build_story(protagonist="Product Team",
     call_to_action="Reduce checkout to 2 steps")
 ```
 
+## 💡 Best Practices / 最佳实践
+
+1. **Segment before you create / 先分群再创建画像**
+   Run `segment_analyzer()` first — don't guess personas, let actual behavioral data reveal clusters. Then create personas from the strongest segments.
+   *先用 `segment_analyzer()` 跑数据——不要拍脑袋猜画像，让真实的行为数据揭示聚类，再从最强的分群创建画像。*
+
+2. **Evidence over imagination / 用证据代替想象**
+   Every persona should trace back to interview or survey data. Use `generate_interview()` to validate goals and behaviors before adding them to a persona card.
+   *每个画像都应该追溯到访谈或问卷数据——用 `generate_interview()` 验证目标和行为后再加入画像卡片。*
+
+3. **3 dimensions, not demographics / 三维度，不是人口统计**
+   Goals → Behaviors → Attitudes. Demographics (age, gender) don't drive design decisions — these three dimensions do.
+   *目标→行为→态度。人口统计特征（年龄、性别）不驱动设计决策，这三个维度才驱动。*
+
+4. **Persona → JTBD → VPD pipeline / Persona→JTBD→VPD 流水线**
+   Define who (Persona) → discover what they need (JTBD) → map to value (VPD). Each skill's output is the next skill's input.
+   *定义谁（Persona）→ 发现需要什么（JTBD）→ 映射到价值（VPD）——每个技能的产出是下一个的输入。*
+
+## ⛔ When NOT to Use Persona / 何时不使用
+
+Persona is the user definition layer — answer "who are we designing for?" before anything else. Use other AliDujie skills when:
+
+| Need | Use Instead | Why |
+|------|-------------|-----|
+| Choose research methods, run interviews | [UDM](https://github.com/AliDujie/universal-design-methods) | Persona data → UDM interview design |
+| Understand user Jobs, opportunity scoring | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | Persona goals → JTBD Jobs discovery |
+| Quantitative A/B testing, HEART metrics | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | Persona behavioral hypotheses → QuantUX validation |
+| Value proposition canvas, PMF | [VPD](https://github.com/AliDujie/value-proposition-design) | Persona goals/pains → VPD canvas filling |
+| Data visualization, executive stories | [SWD](https://github.com/AliDujie/storytelling-with-data) | Persona statistics → SWD executive narrative |
+
+> 💡 **Better together**: Persona defines who → JTBD discovers what → UDM plans research → QuantUX validates → VPD maps value → SWD presents.
+
 ## 📚 Resources / 资源
 
 - [README.md](README.md) — Full documentation
