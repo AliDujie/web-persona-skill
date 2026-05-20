@@ -2,11 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.85-blue)
+![Version](https://img.shields.io/badge/version-2.4.87-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.87
+
+- **Persona Validation Checklist**: Added golden rules reference table for evidence-driven persona quality
+- **Segmentation Quick Guide**: Added 3-step user segmentation workflow with examples
+- **Version Sync**: Aligned version across all files
 
 ## 🆕 What's New in v2.4.85
 
@@ -596,7 +602,6 @@ Persona user definition can be combined with management skills to turn user insi
 - **Use the quality review early**: Run `review_personas()` before presenting — scores below 80 mean you need more evidence
 - **Start with segmentation**: Before creating personas, run the `SegmentAnalyzer` with goal/behavior/attitude dimensions to identify natural user groups — then build persona cards for the most important segments
 - **Chain with ecosystem**: Persona defines who → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers what → [UDM](https://github.com/AliDujie/universal-design-methods) validates how → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) quantifies → [VPD](https://github.com/AliDujie/value-proposition-design) maps value → [SWD](https://github.com/AliDujie/storytelling-with-data) presents
-
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
 | Pitfall | How Persona Helps |
@@ -606,6 +611,17 @@ Persona user definition can be combined with management skills to turn user insi
 | Personas gathering dust in a folder | `generate_acquisition_strategy()` + promotion plans keep them alive |
 | Design decisions still subjective | `render_feature_matrix()` ties every feature to a specific persona need |
 | Personas that don't drive decisions | `add_bug()` auto-prioritizes by persona impact — P0/P1/P2 |
+
+
+## 📊 Segmentation Quick Guide / 用户分群速查
+
+3-step workflow to go from raw users to evidence-driven personas:
+
+1. **Segment** — Group users by behavior (not demographics): `skill.select_segmentation_method("behavioral")`
+2. **Profile** — For each segment, add goals, pains, and behaviors: `skill.add_persona(name, archetype, goals, pains, bio)`
+3. **Validate** — Run quality review and get improvement suggestions: `skill.review_personas()`
+
+> 💡 **Pro tip**: Start with 3-5 qualitative interviews per segment before writing any persona card. Evidence beats assumptions every time.
 
 ## ❓ FAQ / Troubleshooting
 
@@ -663,7 +679,10 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.87)**: Repo maintenance — converted "When NOT to Use Persona" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+
+**Latest (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
+
+**Previous (v2.4.86)**: Repo maintenance — converted "When NOT to Use Persona" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
 **Previous (v2.4.85)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency, added Impact Metrics Table.
 
