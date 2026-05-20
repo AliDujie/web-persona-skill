@@ -488,6 +488,39 @@ story = swd.build_story(protagonist="Product Committee",
     call_to_action="Prioritize dashboard redesign in Q2")
 ```
 
+## ✅ Persona Validation Checklist / 角色验证检查清单
+
+Before sharing personas with stakeholders, run through this checklist:
+
+### 🔍 Evidence Check (Run `review_personas()` automatically)
+```python
+from persona import PersonaSkill
+p = PersonaSkill("My Product")
+p.add_persona(name="Alex", archetype="Power User", priority="primary",
+    goals=["Complete tasks fast"], behaviors=["Daily usage"], bio="Alex manages 5 teams...")
+
+review = p.review_personas()  # 12-item quality check
+# Score ≥ 80 = Ready to share
+# Score 60-79 = Needs more evidence
+# Score < 60 = Redo with real data
+```
+
+### 🎯 Golden Rules Quick Reference
+| Rule | ✅ Pass | ❌ Fail |
+|------|---------|---------|
+| Starts from goals/behaviors | "Alex wants to complete tasks fast" | "Alex is a 32-year-old male" |
+| What users DO > SAY | Backed by analytics data | Based on survey opinions |
+| Max 2 primary personas | 1 primary, 2 secondary | 5 "primary" personas |
+| Total 3-6 personas | 4 personas covering key segments | 12 personas nobody remembers |
+| Bio is a story | "Alex loses 2 hours daily to status meetings" | "Age: 32, Role: PM, Skills: Agile" |
+| One-page format | Single-page summary card | 5-page document per persona |
+
+### 💡 Pro Tip / 专业技巧
+> **The "Would you recognize them?" test**: Show your persona card to a user researcher who has talked to real users. If they say "yes, I've met this person" — you've nailed it. If they say "this feels made up" — back to research.
+>
+> **"你能认出这个人吗"测试**: 把角色卡片给和真实用户聊过的研究员看。如果说"是的，我遇到过这样的人"——成功了。如果说"感觉像是编的"——回去做研究。
+
+
 ## 📋 When NOT to Use Persona / 什么时候不该用 Persona
 
 | Your Need | Recommended Skill |
@@ -630,7 +663,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.86)**: Repo maintenance — converted "When NOT to Use Persona" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+**Latest (v2.4.87)**: Repo maintenance — converted "When NOT to Use Persona" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
 **Previous (v2.4.85)**: Repo maintenance — added Recommended Learning Path, unified ecosystem pipeline references, improved version consistency, added Impact Metrics Table.
 
