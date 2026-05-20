@@ -298,3 +298,25 @@ Persona is the user definition layer — answer "who are we designing for?" befo
 - [SKILL.md](SKILL.md) — Agent-facing skill definition
 - [INSTALL.md](INSTALL.md) — Installation guide
 - [CHANGELOG.md](CHANGELOG.md) — Version history
+
+## ❓ FAQ / Troubleshooting
+
+**Q: How many personas should I create?**
+3-4 is the sweet spot. One primary persona (your main target), one secondary, and optionally one "anti-persona" (who you're explicitly NOT designing for). More than 5 dilutes focus.
+*3-4 个最合适：一个首要角色（主要目标）、一个次要角色，可选一个"反角色"（你明确不为之设计的用户）。超过 5 个会分散注意力。*
+
+**Q: My personas feel generic — how do I make them specific?**
+Ground each persona in real data. Use `generate_survey()` to collect behavioral data, then segment with `segment_users()`. Personas should differ meaningfully in goals and behaviors, not just demographics.
+*每个角色都要基于真实数据。用 `generate_survey()` 收集行为数据，用 `segment_users()` 分群。角色应在目标和行为上有实质性差异，不只是人口统计学差异。*
+
+**Q: Can I use Persona without doing user research first?**
+You'll get "proto-personas" — useful starting points but anchored in assumptions, not evidence. Run at least 3-5 contextual interviews via UDM to ground your personas in reality.
+*不做研究也能创建"原型角色"，但这是基于假设而非证据。至少做 3-5 次 UDM 情境访谈来锚定真实性。*
+
+**Q: How often should I update my personas?**
+Review annually, or whenever your product undergoes a major pivot. Track persona-specific metrics (e.g., primary persona's conversion rate) to detect when personas drift from reality.
+*每年审查一次，或产品重大转型时更新。追踪角色专属指标（如首要角色的转化率）来检测角色是否偏离现实。*
+
+**Q: How does Persona chain with other skills?**
+Persona defines who → JTBD discovers what they need → UDM plans research → QuantUX validates → VPD maps value → SWD presents. See the ecosystem pipeline in README.md.
+*Persona 定义用户→JTBD 发现需求→UDM 规划研究→QuantUX 验证→VPD 映射价值→SWD 呈现。*
