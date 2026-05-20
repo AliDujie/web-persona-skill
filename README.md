@@ -602,6 +602,21 @@ skill = PersonaSkill("My Product", config=config)
 
 See [INSTALL.md](INSTALL.md) for full configuration options and agent integration guides.
 
+## ✅ Best Practices / 最佳实践
+
+1. **Research before writing** — Don't guess personas. Run `select_method()` to determine your research approach, then use `generate_interview_guide()` or `design_survey()` to gather real data before creating personas.
+2. **3-5 personas max** — More than 5 personas dilutes focus. Use `segment_users()` to find natural clusters, then pick the 3-5 most strategically important segments.
+3. **Review persona quality before using** — Always run `review_persona()` (10 dimensions, 100-point score) before sharing with stakeholders. A score below 70 means your persona needs more research data.
+4. **Tie personas to business metrics** — Use `create_ceo_economic_model()` to show how each persona segment contributes to revenue. This turns personas from "nice-to-have" into business-critical tools.
+5. **Chain downstream** — Personas are the starting point. Feed them into JTBD (what they need), UDM (how to research), and VPD (value proposition) for a complete insight pipeline.
+
+## ⚠️ Limitations / 局限性
+
+- **Data-dependent quality** — Persona quality depends entirely on the quality of underlying user research. Personas created without real data are stereotypes, not actionable tools.
+- **Static representation** — Personas capture a point-in-time snapshot. User behavior, goals, and contexts evolve; refresh personas annually or after major product changes.
+- **Not a segmentation algorithm** — The skill guides persona creation methodology but doesn't run statistical clustering. Use real survey data or analytics for data-driven segmentation.
+- **Bilingual documentation only** — Pro Tips and guides are provided in CN/EN only; localization to other languages requires community contributions.
+
 ## 📊 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
