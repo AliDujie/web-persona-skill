@@ -1,3 +1,9 @@
+## v2.4.90 (2026-05-22)
+- Repo maintenance: added 'Persona Anti-Patterns Quick Reference' (CN/EN) to Pro Tips
+- Enhanced ecosystem cross-reference with 6-skill pipeline code recipes
+- Added 'Segmentation → Persona → Validation' 3-step workflow guide
+- Updated version across README/SKILL.md/pyproject.toml/__init__.py
+
 ## v2.4.88 (2026-05-21)
 - Added Persona Anti-Patterns Table with before/after examples
 - Enhanced ecosystem cross-references with ASCII pipeline diagram
