@@ -1,3 +1,13 @@
+## v2.4.88 (2026-05-21)
+- Added Persona Anti-Patterns Table with before/after examples
+- Enhanced ecosystem cross-references with ASCII pipeline diagram
+- Version sync across README/SKILL.md/pyproject.toml/__init__.py
+
+## v2.4.87 (2026-05-20)
+- Added Persona Validation Checklist (golden rules table)
+- Added Segmentation Quick Guide (3-step workflow)
+- Version sync across all files
+
 ## v2.4.83 (2026-05-19)
 - Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
 - Added segmentation-first pro tip workflow before persona creation

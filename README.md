@@ -2,11 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.87-blue)
+![Version](https://img.shields.io/badge/version-2.4.88-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.88
+
+- **Persona Anti-Patterns Table**: Added expanded anti-pattern guide with before/after examples
+- **Ecosystem Pipeline Enhancement**: Added full 6-skill ASCII diagram to README
+- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.4.87
 
@@ -680,7 +686,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
+**Latest (v2.4.88)**: Repo maintenance — added Persona Anti-Patterns Table, enhanced ecosystem cross-references, synced versions.
+
+**Previous (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
 
 **Previous (v2.4.86)**: Repo maintenance — converted "When NOT to Use Persona" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
