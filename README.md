@@ -2,11 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.88-blue)
+![Version](https://img.shields.io/badge/version-2.4.89-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.89
+
+- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
+- **Segmentation Enhancement**: Added 3-segment mini-example with clear before/after persona differentiation
+- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.4.88
 
@@ -107,6 +113,15 @@ _Results based on aggregated team adoption data across design-driven organizatio
 | 需要将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
 
 > 💡 Persona 是用户定义层：先回答"为谁设计"，再开始任何研究。
+
+> 💡 **Try Before You Decide / 先试后决定**:
+> ```python
+> from persona import PersonaSkill
+> # One line → instant persona creation + review
+> p = PersonaSkill("My Product")
+> p.add_persona(name="Alex", archetype="Power User", priority="primary", goals=["Complete tasks fast"])
+> print(p.review_personas())
+> ```
 
 ## ⚡ Quick Start (5 Minutes)
 
@@ -210,6 +225,32 @@ def generate_user_interview(topic: str, sections: list):
 def prioritize_features(feature_name: str, persona_needs: dict, importance: str, effort: str):
     """Build a feature × persona priority matrix."""
     return persona.add_feature(feature_name, persona_needs, importance, effort)
+```
+
+### 🧪 Instant Examples (Copy-Paste & Run)
+
+**Create a persona:**
+```python
+from persona import PersonaSkill
+p = PersonaSkill("E-commerce")
+p.add_persona(name="Xiao Ming", archetype="Efficiency-focused", priority="primary",
+    goals=["Place orders fast"], behaviors=["Uses search, skips browsing"])
+print(p.render_all_personas())
+```
+
+**Segment users:**
+```python
+p.segment_analyzer(users=[
+    {"name": "U1", "goals": "speed", "behaviors": "search-heavy", "attitudes": "efficiency"},
+    {"name": "U2", "goals": "discovery", "behaviors": "browse-heavy", "attitudes": "experience"},
+])
+```
+
+**Feature × persona matrix:**
+```python
+p.add_feature("Quick checkout", {"Xiao Ming": "high", "Xiao Hong": "low"}, "high", "low")
+p.add_feature("Product discovery", {"Xiao Ming": "low", "Xiao Hong": "high"}, "medium", "medium")
+print(p.render_feature_matrix())
 ```
 
 ### Agent Workflow Pattern
