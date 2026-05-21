@@ -1,4 +1,5 @@
 ## v2.4.90 (2026-05-22)
+- SKILL.md frontmatter: synced version to 2.4.90, added `author` field, moved badge outside YAML boundary
 - Repo maintenance: added 'Persona Anti-Patterns Quick Reference' (CN/EN) to Pro Tips
 - Enhanced ecosystem cross-reference with 6-skill pipeline code recipes
 - Added 'Segmentation → Persona → Validation' 3-step workflow guide
