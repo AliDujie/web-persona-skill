@@ -2,11 +2,16 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.90-blue)
+![Version](https://img.shields.io/badge/version-2.4.91-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.91
+
+- **Ecosystem Badge Update**: Updated AliDujie ecosystem badge consistency check across all 6 skills
+- **Version Bump**: Synced version to 2.4.91 across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.4.90
 

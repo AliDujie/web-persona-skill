@@ -1,3 +1,7 @@
+## v2.4.91 (2026-05-22)
+- Ecosystem badge consistency check across all 6 AliDujie skills
+- Version bump to 2.4.91 across README/SKILL.md/pyproject.toml/__init__.py
+
 ## v2.4.90 (2026-05-22)
 - SKILL.md frontmatter: synced version to 2.4.90, added `author` field, moved badge outside YAML boundary
 - Repo maintenance: added 'Persona Anti-Patterns Quick Reference' (CN/EN) to Pro Tips
