@@ -2,11 +2,16 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.91-blue)
+![Version](https://img.shields.io/badge/version-2.4.92-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.93
+
+- **Quick Recipes**: Added 2 copy-paste-and-run recipes (3-persona creation in 10 min, user segmentation for feature launch)
+- **Version Bump**: Synced version to 2.4.92 across README badge and SKILL.md frontmatter
 
 ## 🆕 What's New in v2.4.92
 
@@ -67,6 +72,10 @@
 - **生态起点**: 作为用户定义层，为 JTBD、UDM、QuantUX、VPD、SWD 提供用户基础数据
 
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complete toolkit for **web user persona creation and application**, with **10+ executable capabilities** covering method selection, interview guides, survey design, user segmentation, persona document creation, quality review, business strategy, feature prioritization, design guidance, test planning, and CEO-level economic modeling.
+
+## 🎯 Why Teams Choose Persona
+
+*New here?* Persona creates **evidence-driven user profiles** — not fictional characters, but real user archetypes based on goals, behaviors, and attitudes. Based on Steve Mulder & Ziv Yaar (2006).
 
 ## 🌟 Why Persona?
 
@@ -140,6 +149,38 @@ _Results based on aggregated team adoption data across design-driven organizatio
 > p.add_persona(name="Alex", archetype="Power User", priority="primary", goals=["Complete tasks fast"])
 > print(p.review_personas())
 > ```
+
+### 🍳 Quick Recipes
+
+**Recipe 1: Create 3 Personas in 10 Minutes (Startup Mode)**
+```python
+from persona import PersonaSkill
+skill = PersonaSkill("Travel App")
+
+# Add primary persona
+skill.add_persona(name="Sarah", archetype="Planner", priority="primary",
+                  goals=["Plan trips efficiently", "Compare prices"],
+                  pain_points=["Too many tabs open", "Can't trust reviews"])
+
+# Add secondary persona
+skill.add_persona(name="Mike", archetype="Explorer", priority="secondary",
+                  goals=["Discover new destinations"],
+                  pain_points=["Overwhelming options", "Budget constraints"])
+
+# Review quality
+print(skill.review_personas())
+```
+
+**Recipe 2: User Segmentation for a Feature Launch (5 min)**
+```python
+from persona import PersonaSkill
+skill = PersonaSkill("Product Feature")
+# Quick 3-segment split by behavior
+skill.add_persona(name="Heavy User", archetype="Power User", priority="primary")
+skill.add_persona(name="Occasional User", archetype="Casual User", priority="secondary")
+skill.add_persona(name="New User", archetype="Beginner", priority="tertiary")
+print(skill.review_personas())
+```
 
 ## ⚡ Quick Start (5 Minutes)
 
