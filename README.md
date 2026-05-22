@@ -14,12 +14,12 @@
 - **Ecosystem Cross-Reference Verification**: Verified all 6-skill pipeline links across AliDujie skills
 - **Version Bump**: Synced version to 2.4.93
 
-## 🆕 What's New in v2.4.93
+## 🆕 What's New in v2.4.92
 
 - **Quick Recipes**: Added 2 copy-paste-and-run recipes (3-persona creation in 10 min, user segmentation for feature launch)
 - **Version Bump**: Synced version to 2.4.92 across README badge and SKILL.md frontmatter
 
-## 🆕 What's New in v2.4.92
+## 🆕 What's New in v2.4.91
 
 - **Structured Thinking Model Cross-Reference**: Added explicit STM skill link in ecosystem footer and pipeline diagram
 - **Ecosystem Pipeline Enhancement**: Added forward/backward reference arrows showing STM→Persona strategic analysis loop
@@ -822,7 +822,15 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.88)**: Repo maintenance — added Persona Anti-Patterns Table, enhanced ecosystem cross-references, synced versions.
+**Latest (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
+
+**Previous (v2.4.92)**: Added Quick Recipes (3-persona creation in 10 min + user segmentation for feature launch), version sync.
+
+**Previous (v2.4.91)**: Ecosystem badge consistency check, version sync across all files.
+
+**Previous (v2.4.90)**: Added `author` field to SKILL.md, fixed badge placement, moved markdown badge outside YAML frontmatter.
+
+**Previous (v2.4.89)**: Added one-line runnable examples under Quick Start, added 3-segment mini-example with clear before/after persona differentiation.
 
 **Previous (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
 
