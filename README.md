@@ -2,22 +2,23 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.93-blue)
+![Version](https://img.shields.io/badge/version-2.4.94-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.94
+
+- **Ecosystem Pipeline Diagram**: Added ASCII visual showing full 6-skill flow with Persona as the starting point
+- **Persona→JTBD Handoff Example**: Added explicit example showing how persona data feeds into JTBD Jobs clustering
+- **Version Bump**: Synced version to 2.4.94
 
 ## 🆕 What's New in v2.4.93
 
 - **Repo Maintenance**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py
 - **Ecosystem Cross-Reference Verification**: Verified all 6-skill pipeline links across AliDujie skills
 - **Version Bump**: Synced version to 2.4.93
-
-## 🆕 What's New in v2.4.93
-
-- **Quick Recipes**: Added 2 copy-paste-and-run recipes (3-persona creation in 10 min, user segmentation for feature launch)
-- **Version Bump**: Synced version to 2.4.92 across README badge and SKILL.md frontmatter
 
 ## 🆕 What's New in v2.4.92
 
