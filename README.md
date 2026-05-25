@@ -2,11 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.93-blue)
+![Version](https://img.shields.io/badge/version-2.4.94-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.94
+
+- **Deduplication**: Removed duplicate "What's New in v2.4.91" entry from README (appeared twice with overlapping content)
+- **Repo Maintenance**: Verified ecosystem cross-references across all 6 AliDujie skills (UDM, JTBD, QuantUX, VPD, SWD + C-suite advisors)
+- **Version Bump**: Synced version to 2.4.94 across README badge, SKILL.md, pyproject.toml, __init__.py
 
 ## 🆕 What's New in v2.4.93
 
@@ -18,13 +24,6 @@
 
 - **Quick Recipes**: Added 2 copy-paste-and-run recipes (3-persona creation in 10 min, user segmentation for feature launch)
 - **Version Bump**: Synced version to 2.4.92 across README badge and SKILL.md frontmatter
-
-## 🆕 What's New in v2.4.91
-
-- **Structured Thinking Model Cross-Reference**: Added explicit STM skill link in ecosystem footer and pipeline diagram
-- **Ecosystem Pipeline Enhancement**: Added forward/backward reference arrows showing STM→Persona strategic analysis loop
-- **References Directory Enhancement**: Added explicit references/ and persona/ source links to Resources section
-- **Version Bump**: Synced version to 2.4.92 across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.4.91
 
@@ -822,7 +821,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
+**Latest (v2.4.94)**: Deduplicated duplicate v2.4.91 entry in README, verified ecosystem cross-references across all 6 AliDujie skills.
+
+**Previous (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
 **Previous (v2.4.92)**: Added Quick Recipes (3-persona creation in 10 min + user segmentation for feature launch), version sync.
 
