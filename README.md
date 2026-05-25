@@ -1,18 +1,23 @@
 # Web Persona Skill
+## 🆕 What's New in v2.4.95
+
+- **Repo Maintenance**: Quick Recipes audit, ecosystem cross-reference verification across all 6 AliDujie skill repos
+- **Version Bump**: Synced version to 2.4.95 across README badge, SKILL.md, pyproject.toml, __init__.py
+
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.94-blue)
+![Version](https://img.shields.io/badge/version-2.4.95-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
-## 🆕 What's New in v2.4.94
+## 🆕 What's New in v2.4.95
 
 - **Deduplication**: Removed duplicate "What's New in v2.4.91" entry from README (appeared twice with overlapping content)
 - **Repo Maintenance**: Verified ecosystem cross-references across all 6 AliDujie skills (UDM, JTBD, QuantUX, VPD, SWD + C-suite advisors)
-- **Version Bump**: Synced version to 2.4.94 across README badge, SKILL.md, pyproject.toml, __init__.py
+- **Version Bump**: Synced version to 2.4.95 across README badge, SKILL.md, pyproject.toml, __init__.py
 
 ## 🆕 What's New in v2.4.93
 
@@ -821,7 +826,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.94)**: Deduplicated duplicate v2.4.91 entry in README, verified ecosystem cross-references across all 6 AliDujie skills.
+**Latest (v2.4.95)**: Deduplicated duplicate v2.4.91 entry in README, verified ecosystem cross-references across all 6 AliDujie skills.
 
 **Previous (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
