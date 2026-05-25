@@ -2,12 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.97-blue)
+![Version](https://img.shields.io/badge/version-2.4.98-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.98
+
+- **Duplicate Header Fix**: Removed residual `💡 为什么选择 Persona？` section that was still present alongside the bilingual `🎯 Why Teams Choose Persona / 为什么选择 Persona` section (previous consolidation was incomplete)
+- **Version Bump**: Synced to 2.4.98
 
 ## 🆕 What's New in v2.4.97
 
@@ -115,12 +120,6 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complet
 | User research ROI | Scattered focus | Persona-targeted | 2× efficiency |
 
 _Results based on aggregated team adoption data across design-driven organizations._
-
-## 💡 为什么选择 Persona？
-
-> **Persona 是整个 AliDujie UX 研究生态的用户定义层，是所有研究的起点。** 基于 Steve Mulder《赢在用户》全书体系，摒弃拍脑袋的虚构人物，用目标、行为、态度三维度构建真实用户画像。11 项可执行能力从方法选择→访谈→问卷→分群→画像→质量评审→商业策略→功能优先级→设计指导→测试规划→CEO 经济模型全覆盖。配合 CEO 视角的用户经济模型（LTV/CAC），让人物角色直接驱动商业决策。
->
-> *"创建 Persona 后，团队终于统一了'为谁设计'——功能优先级从'满足所有人'变成'先满足首要角色'。"*
 
 
 ### 🔗 Cross-Skill Collaboration / 跨技能协作
