@@ -2,11 +2,16 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.94-blue)
+![Version](https://img.shields.io/badge/version-2.4.95-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.95
+
+- **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose Persona` + `🌟 Why Persona?` into one bilingual section `🎯 Why Teams Choose Persona / 为什么选择 Persona`. Removed duplicate `💡 为什么选择 Persona？` section.
+- **Version Bump**: Synced to 2.4.95
 
 ## 🆕 What's New in v2.4.94
 
@@ -78,11 +83,13 @@
 
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complete toolkit for **web user persona creation and application**, with **10+ executable capabilities** covering method selection, interview guides, survey design, user segmentation, persona document creation, quality review, business strategy, feature prioritization, design guidance, test planning, and CEO-level economic modeling.
 
-## 🎯 Why Teams Choose Persona
+## 🎯 Why Teams Choose Persona / 为什么选择 Persona
 
 *New here?* Persona creates **evidence-driven user profiles** — not fictional characters, but real user archetypes based on goals, behaviors, and attitudes. Based on Steve Mulder & Ziv Yaar (2006).
 
-## 🌟 Why Persona?
+> **Persona 是整个 AliDujie UX 研究生态的用户定义层，是所有研究的起点。** 基于 Steve Mulder《赢在用户》全书体系，摒弃拍脑袋的虚构人物，用目标、行为、态度三维度构建真实用户画像。11 项可执行能力从方法选择→访谈→问卷→分群→画像→质量评审→商业策略→功能优先级→设计指导→测试规划→CEO 经济模型全覆盖。配合 CEO 视角的用户经济模型（LTV/CAC），让人物角色直接驱动商业决策。
+>
+> *"创建 Persona 后，团队终于统一了'为谁设计'——功能优先级从'满足所有人'变成'先满足首要角色'。"*
 
 | Challenge | Without Persona | With Persona |
 |-----------|----------------|-------------|
