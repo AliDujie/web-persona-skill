@@ -2,11 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.96-blue)
+![Version](https://img.shields.io/badge/version-2.4.97-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
+![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.97
+
+- **Repo Maintenance**: Added Examples badge (3 runnable scripts: persona creation, segmentation, feature prioritization), added examples/ reference to Resources section, ecosystem cross-reference audit
+- **Version Bump**: Synced to 2.4.97
 
 ## 🆕 What's New in v2.4.95
 
@@ -869,6 +875,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
 - [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [examples/](examples/) — Runnable Python examples (persona creation, user segmentation, feature prioritization)
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
