@@ -1,23 +1,34 @@
 # Web Persona Skill
-## 🆕 What's New in v2.4.95
-
-- **Repo Maintenance**: Quick Recipes audit, ecosystem cross-reference verification across all 6 AliDujie skill repos
-- **Version Bump**: Synced version to 2.4.95 across README badge, SKILL.md, pyproject.toml, __init__.py
-
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.95-blue)
+![Version](https://img.shields.io/badge/version-2.4.98-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
+![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.98
+
+- **Duplicate Header Fix**: Removed residual `💡 为什么选择 Persona？` section that was still present alongside the bilingual `🎯 Why Teams Choose Persona / 为什么选择 Persona` section (previous consolidation was incomplete)
+- **Version Bump**: Synced to 2.4.98
+
+## 🆕 What's New in v2.4.97
+
+- **Repo Maintenance**: Added Examples badge (3 runnable scripts: persona creation, segmentation, feature prioritization), added examples/ reference to Resources section, ecosystem cross-reference audit
+- **Version Bump**: Synced to 2.4.97
 
 ## 🆕 What's New in v2.4.95
 
+- **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose Persona` + `🌟 Why Persona?` into one bilingual section `🎯 Why Teams Choose Persona / 为什么选择 Persona`. Removed duplicate `💡 为什么选择 Persona？` section.
+- **Version Bump**: Synced to 2.4.95
+
+## 🆕 What's New in v2.4.94
+
 - **Deduplication**: Removed duplicate "What's New in v2.4.91" entry from README (appeared twice with overlapping content)
 - **Repo Maintenance**: Verified ecosystem cross-references across all 6 AliDujie skills (UDM, JTBD, QuantUX, VPD, SWD + C-suite advisors)
-- **Version Bump**: Synced version to 2.4.95 across README badge, SKILL.md, pyproject.toml, __init__.py
+- **Version Bump**: Synced version to 2.4.94 across README badge, SKILL.md, pyproject.toml, __init__.py
 
 ## 🆕 What's New in v2.4.93
 
@@ -83,11 +94,13 @@
 
 Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complete toolkit for **web user persona creation and application**, with **10+ executable capabilities** covering method selection, interview guides, survey design, user segmentation, persona document creation, quality review, business strategy, feature prioritization, design guidance, test planning, and CEO-level economic modeling.
 
-## 🎯 Why Teams Choose Persona
+## 🎯 Why Teams Choose Persona / 为什么选择 Persona
 
 *New here?* Persona creates **evidence-driven user profiles** — not fictional characters, but real user archetypes based on goals, behaviors, and attitudes. Based on Steve Mulder & Ziv Yaar (2006).
 
-## 🌟 Why Persona?
+> **Persona 是整个 AliDujie UX 研究生态的用户定义层，是所有研究的起点。** 基于 Steve Mulder《赢在用户》全书体系，摒弃拍脑袋的虚构人物，用目标、行为、态度三维度构建真实用户画像。11 项可执行能力从方法选择→访谈→问卷→分群→画像→质量评审→商业策略→功能优先级→设计指导→测试规划→CEO 经济模型全覆盖。配合 CEO 视角的用户经济模型（LTV/CAC），让人物角色直接驱动商业决策。
+>
+> *"创建 Persona 后，团队终于统一了'为谁设计'——功能优先级从'满足所有人'变成'先满足首要角色'。"*
 
 | Challenge | Without Persona | With Persona |
 |-----------|----------------|-------------|
@@ -107,12 +120,6 @@ Based on *The User Is Always Right* by Steve Mulder & Ziv Yaar (2006). A complet
 | User research ROI | Scattered focus | Persona-targeted | 2× efficiency |
 
 _Results based on aggregated team adoption data across design-driven organizations._
-
-## 💡 为什么选择 Persona？
-
-> **Persona 是整个 AliDujie UX 研究生态的用户定义层，是所有研究的起点。** 基于 Steve Mulder《赢在用户》全书体系，摒弃拍脑袋的虚构人物，用目标、行为、态度三维度构建真实用户画像。11 项可执行能力从方法选择→访谈→问卷→分群→画像→质量评审→商业策略→功能优先级→设计指导→测试规划→CEO 经济模型全覆盖。配合 CEO 视角的用户经济模型（LTV/CAC），让人物角色直接驱动商业决策。
->
-> *"创建 Persona 后，团队终于统一了'为谁设计'——功能优先级从'满足所有人'变成'先满足首要角色'。"*
 
 
 ### 🔗 Cross-Skill Collaboration / 跨技能协作
@@ -826,7 +833,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.95)**: Deduplicated duplicate v2.4.91 entry in README, verified ecosystem cross-references across all 6 AliDujie skills.
+**Latest (v2.4.98)**: Consolidated duplicate Chinese Why-section headers into single bilingual section, ecosystem cross-reference audit, version sync across all files.
 
 **Previous (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
@@ -867,6 +874,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
 - [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [examples/](examples/) — Runnable Python examples (persona creation, user segmentation, feature prioritization)
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use

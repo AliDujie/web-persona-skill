@@ -1,7 +1,13 @@
-## v2.4.95 (2026-05-26)
+## v2.4.97 (2026-05-26)
 
-- Quick Recipes audit and ecosystem cross-reference verification across all 6 AliDujie skill repos
+- Repo maintenance: added Examples badge (3 runnable scripts), added examples/ reference to Resources section, ecosystem cross-reference audit
 - Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
+
+## v2.4.96 (2026-05-25)
+- Version bump to 2.4.96 across all files, duplicate header consolidation in README
+
+## v2.4.95 (2026-05-25)
+- Version sync across all files, ecosystem cross-reference verification
 
 ## v2.4.93 (2026-05-22)
 - Repo maintenance: version sync across README badge, SKILL.md, pyproject.toml, __init__.py
