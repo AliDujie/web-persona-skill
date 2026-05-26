@@ -2,12 +2,17 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.98-blue)
+![Version](https://img.shields.io/badge/version-2.4.99-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.99
+
+- **Who This Skill Is For**: Added dedicated audience section targeting PMs, UX researchers, marketers, designers, and AI agent developers
+- **Version Bump**: Synced to 2.4.99
 
 ## 🆕 What's New in v2.4.98
 
@@ -573,6 +578,14 @@ python -m pytest persona/tests/test_all.py -v
 - [ ] **质量评审** — `skill.review_personas()`（12 项检查）
 - [ ] **功能矩阵** — `skill.render_feature_matrix()`
 - [ ] **CEO 分析** — `skill.generate_persona(include_ceo_analysis=True, total_users=100000)`
+
+## 👥 Who This Skill Is For
+
+- **Product Managers** — Create evidence-driven personas that guide feature prioritization and roadmap decisions
+- **UX Researchers** — Turn research data into validated persona cards with quality scoring
+- **Marketers** — Define target audience segments for campaign targeting and messaging
+- **Designers** — Ground design decisions in real user archetypes, not assumptions
+- **AI Agent Developers** — Drop into any Python agent, generate personas from raw data automatically
 
 ## 📋 Real-World Use Cases
 
