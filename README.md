@@ -833,7 +833,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.94)**: Deduplicated duplicate v2.4.91 entry in README, verified ecosystem cross-references across all 6 AliDujie skills.
+**Latest (v2.4.98)**: Consolidated duplicate Chinese Why-section headers into single bilingual section, ecosystem cross-reference audit, version sync across all files.
 
 **Previous (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills.
 
