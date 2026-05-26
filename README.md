@@ -9,6 +9,21 @@
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
 
+## 📑 Table of Contents
+
+- [Why Teams Choose Persona](#-why-teams-choose-persona)
+- [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
+- [Quick Start](#-quick-start-5-minutes)
+- [Ecosystem Quick Start](#-ecosystem-quick-start)
+- [Core Capabilities](#-101-capabilities)
+- [Real-World Use Cases](#-real-world-use-cases)
+- [AI Agent Integration](#-ai-agent-integration)
+- [Golden Rules](#-golden-rules)
+- [FAQ / Troubleshooting](#-faq--troubleshooting)
+- [Resources](#-resources)
+
+---
+
 ## 🆕 What's New in v2.4.95
 
 - **Repo Maintenance**: Corrected Version History "Latest" entry (v2.4.88 → v2.4.94), ecosystem cross-reference audit across all 6 AliDujie skills
