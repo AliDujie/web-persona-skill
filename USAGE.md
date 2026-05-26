@@ -289,6 +289,9 @@ Persona is the user definition layer — answer "who are we designing for?" befo
 | Quantitative A/B testing, HEART metrics | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | Persona behavioral hypotheses → QuantUX validation |
 | Value proposition canvas, PMF | [VPD](https://github.com/AliDujie/value-proposition-design) | Persona goals/pains → VPD canvas filling |
 | Data visualization, executive stories | [SWD](https://github.com/AliDujie/storytelling-with-data) | Persona statistics → SWD executive narrative |
+| Business framework analysis (SWOT, PESTEL) | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM strategic frames → Persona market positioning |
+
+> 💡 **Extended Ecosystem**: Persona user insights can be combined with management skills — [CEO Advisor](https://github.com/AliDujie/ceo-advisor) for resource allocation, [CPO Advisor](https://github.com/AliDujie/cpo-advisor) for audience prioritization, [CMO Advisor](https://github.com/AliDujie/cmo-advisor) for target audience positioning, and [CTO Advisor](https://github.com/AliDujie/cto-advisor) for tech investment priorities.
 
 > 💡 **Better together**: Persona defines who → JTBD discovers what → UDM plans research → QuantUX validates → VPD maps value → SWD presents.
 
