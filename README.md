@@ -602,6 +602,18 @@ python -m pytest persona/tests/test_all.py -v
 - **Designers** — Ground design decisions in real user archetypes, not assumptions
 - **AI Agent Developers** — Drop into any Python agent, generate personas from raw data automatically
 
+## 🚫 Common Mistakes / 常见错误
+
+| Mistake | What Happens | Fix |
+|---------|-------------|----- |
+| Creating personas from assumptions | Fictional personas lead to wrong design decisions | Always run `generate_interview()` first, build personas from real data |
+| Too many personas (6+) | No focus, team ignores all of them | Aim for 3-4 personas; mark exactly one as `primary` |
+| Personas without quantitative validation | Qualitative archetypes may not represent real segments | Run `review_personas()` (12-item check) and validate with survey data |
+| Ignoring the primary persona in prioritization | Features optimized for edge cases | Use `render_feature_matrix()` — P0 blocks the primary persona's core task |
+| Personas go stale after 6 months | User behavior shifts, personas become misleading | Re-run persona generation quarterly after new research rounds |
+
+> **凭空创建人物画像？先跑 `generate_interview()` 收集真实数据。画像太多（6个以上）？聚焦3-4个，标记1个为primary。不量化验证？跑 `review_personas()` 做12项质量检查。忽略primary做优先级？用 `render_feature_matrix()`——P0阻断primary核心任务。画像半年不更新？每季度重跑。**
+
 ## 📋 Real-World Use Cases
 
 ### 🏢 SaaS Product Segmentation
