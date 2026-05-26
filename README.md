@@ -123,6 +123,22 @@ _Results based on aggregated team adoption data across design-driven organizatio
 | 角色行为数据 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 定量验证假设 | `quantux.heart_framework(persona.behaviors)` |
 | 角色统计数据 | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化汇报 | `swd.build_story(protagonist=persona.name)` |
 
+## 👥 Who This Skill Is For
+
+- **UX Designers** — Need evidence-driven user personas to anchor design decisions to real user goals and behaviors
+- **Product Managers** — Want to prioritize features by primary persona needs instead of satisfying everyone equally
+- **Researchers** — Need structured interview guides and survey templates to gather persona creation data
+- **Startup Founders** — Want to define their target users before writing a single line of code
+- **AI Agent Developers** — Need a persona toolkit for structured user modeling and quality review
+
+### 👥 这个技能适合谁
+
+- **UX 设计师** — 需要用证据驱动的用户画像来锚定设计决策
+- **产品经理** — 想按首要角色需求排功能优先级，而非平等满足所有人
+- **研究员** — 需要结构化的访谈提纲和问卷模板来收集画像创建数据
+- **创业者** — 想在写第一行代码前定义目标用户
+- **AI Agent 开发者** — 需要结构化的用户建模和质量评审工具包
+
 ## 🧭 Quick Decision: When to Use Persona?
 
 | Your Need | Recommended Skill |
