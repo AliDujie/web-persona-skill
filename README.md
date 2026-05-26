@@ -586,6 +586,19 @@ python -m pytest persona/tests/test_all.py -v
 - [ ] **功能矩阵** — `skill.render_feature_matrix()`
 - [ ] **CEO 分析** — `skill.generate_persona(include_ceo_analysis=True, total_users=100000)`
 
+## 🚫 Common Mistakes / 常见错误
+
+| Mistake | What Happens | Fix |
+|---------|-------------|-----|
+| Starting personas from demographics | "32-year-old male PM" — tells you nothing about design decisions | Start from goals, behaviors, and attitudes — `add_persona(name, archetype, goals, behaviors)` |
+| Creating too many personas | 10 personas = nobody remembers any of them | Max 2 primary, 3-6 total — `config.set_max_personas(6)` |
+| Personas based on opinions | "I think users want..." — no evidence | Run `generate_interview()` or `generate_survey()` first, then create from real data |
+| Personas gathering dust | Created once, never referenced | Use `render_feature_matrix()` and `add_bug()` to anchor every decision to persona impact |
+| Skipping quality review | Low-quality personas mislead the whole team | Always run `review_personas()` (12-item check, score ≥ 80 to share) |
+
+> **从人口统计开始创建角色？从目标、行为和态度开始。10个角色没人记得住？最多2个首要角色，总共3-6个。拍脑袋的角色？先跑访谈或问卷。角色积灰？用功能矩阵和Bug优先级锚定每个决策。**
+
+
 ## 📋 Real-World Use Cases
 
 ### 🏢 SaaS Product Segmentation
