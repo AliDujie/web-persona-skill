@@ -2,7 +2,7 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
-![Version](https://img.shields.io/badge/version-2.4.95-blue)
+![Version](https://img.shields.io/badge/version-2.4.96-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -26,6 +26,16 @@
 - [Resources](#-resources)
 
 ---
+
+## 🆕 What's New in v2.4.96
+
+- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.4.96
+
+## 🆕 What's New in v2.4.96
+
+- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.4.96
 
 ## 🆕 What's New in v2.4.95
 
@@ -876,7 +886,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.94)**: Added Ecosystem Pipeline Diagram, explicit Persona→JTBD handoff example, version sync across all files.
+**Latest (v2.4.95)**: Added Ecosystem Pipeline Diagram, explicit Persona→JTBD handoff example, version sync across all files.
 
 **Previous (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
 
