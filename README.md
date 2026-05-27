@@ -11,12 +11,15 @@
 
 ## 📑 Table of Contents
 
+- [What's New](#-whats-new-in-v2495)
 - [Why Teams Choose Persona](#-why-teams-choose-persona)
+- [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
 - [Quick Start](#-quick-start-5-minutes)
 - [Ecosystem Quick Start](#-ecosystem-quick-start)
 - [Core Capabilities](#-101-capabilities)
 - [Real-World Use Cases](#-real-world-use-cases)
+- [Common Mistakes](#-common-mistakes--常见错误)
 - [AI Agent Integration](#-ai-agent-integration)
 - [Golden Rules](#-golden-rules)
 - [FAQ / Troubleshooting](#-faq--troubleshooting)
