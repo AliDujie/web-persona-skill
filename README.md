@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v2496)
+- [What's New](#-whats-new-in-v2497)
 - [Why Teams Choose Persona](#-why-teams-choose-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -886,7 +886,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.96)**: Fixed duplicate What's New section (v2.4.96 appeared twice), fixed stale TOC link (v2495 → v2496), updated Version History latest entry, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.97)**: Fixed duplicate What's New section (v2.4.96 appeared twice), fixed stale TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
 
