@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v2495)
+- [What's New](#-whats-new-in-v2496)
 - [Why Teams Choose Persona](#-why-teams-choose-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -27,14 +27,14 @@
 
 ---
 
+## 🆕 What's New in v2.4.97
+
+- **Repo Maintenance**: Fixed duplicate What's New section (v2.4.96 appeared twice), fixed stale TOC link (v2495 → v2496), updated Version History "Latest" entry (v2.4.95 → v2.4.96), ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.97
+
 ## 🆕 What's New in v2.4.96
 
-- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.4.96
-
-## 🆕 What's New in v2.4.96
-
-- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Duplicate Section Fix**: Removed duplicate v2.4.96 What's New entry, fixed stale TOC link (v2495 → v2496), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.96
 
 ## 🆕 What's New in v2.4.95
@@ -886,7 +886,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.95)**: Added Ecosystem Pipeline Diagram, explicit Persona→JTBD handoff example, version sync across all files.
+**Latest (v2.4.96)**: Fixed duplicate What's New section (v2.4.96 appeared twice), fixed stale TOC link (v2495 → v2496), updated Version History latest entry, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.87)**: Repo maintenance — added Persona Validation Checklist (golden rules table), added Segmentation Quick Guide (3-step workflow), synced versions across all files.
 
