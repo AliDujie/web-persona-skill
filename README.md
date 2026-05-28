@@ -2,6 +2,8 @@
 
 > **Evidence-Driven User Personas — Know Who You're Designing For.**
 
+📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
+
 ![Version](https://img.shields.io/badge/version-2.4.97-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)

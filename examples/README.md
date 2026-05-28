@@ -8,6 +8,9 @@ These examples demonstrate Web Persona capabilities with real-world scenarios.
 ```bash
 cd examples/
 python 01_persona_creation.py
+python 02_survey_and_segmentation.py
+python 03_feature_prioritization.py
+python 04_segmentation.py
 ```
 
 All examples use **zero dependencies** — pure Python standard library only.
@@ -35,9 +38,37 @@ Generate user research surveys and segment audiences.
 python 02_survey_and_segmentation.py
 ```
 
+### 03_feature_prioritization.py
+Prioritize features using persona-weighted importance scores.
+使用角色加权重要性评分进行功能优先级排序。
+
+**Use when / 适用场景**: Deciding which features to build next based on target personas.
+
+```bash
+python 03_feature_prioritization.py
+```
+
+### 04_segmentation.py
+User segmentation with behavioral clustering.
+基于行为聚类的用户分群。
+
+**Use when / 适用场景**: Discovering natural user segments from behavioral data.
+
+```bash
+python 04_segmentation.py
+```
+
 ## Tips / 提示
 
 - All examples use relative imports — just run from the `examples/` directory
 - No `pip install` required — Persona is zero-dependency
 - Feed Persona insights into JTBD for deeper motivation analysis
 - See [USAGE.md](../USAGE.md) for detailed API documentation
+
+## 🔗 Ecosystem Integration / 生态集成
+
+Persona is the "who" layer of the AliDujie UX Research Ecosystem:
+- **Persona → JTBD**: Feed persona segments into [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) for motivation analysis
+- **Persona → UDM**: Use [UDM](https://github.com/AliDujie/universal-design-methods) to plan research methods targeting each persona
+- **Persona → VPD**: Map [VPD](https://github.com/AliDujie/value-proposition-design) value propositions to persona segments
+- **Persona → SWD**: Present persona findings with [SWD](https://github.com/AliDujie/storytelling-with-data) executive narratives
