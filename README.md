@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-2.5.0-blue)
+![Version](https://img.shields.io/badge/version-2.6.0-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v250)
+- [What's New](#-whats-new-in-v260)
 - [Why Teams Choose Persona](#-why-teams-choose-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -28,6 +28,57 @@
 - [Resources](#-resources)
 
 ---
+
+## 🆕 What's New in v2.6.0
+
+> **Major release — From "multi-perspective meta-decider" to "meta-decider + quantitative engine + behavioral psychology + ethics + engineering code".**
+>
+> v2.6 ABCD 深化迭代：在 v2.5 多书系融合基础上，叠加四大新维度——**16 部新经典 reference + 4 个配套 Python 模块**。
+
+### What's added
+
+**16 new reference documents** (`references/16-31`) + **4 new Python modules** (`persona/clustering.py`, `persona/llm_prompts.py`, `persona/okr_bridge.py`, `persona/measurement_toolkit.py`).
+
+| Track | New References | Source |
+|------|----------------|--------|
+| 🟢 A · Quantitative | `16-mikkelson-statistical-personas` | Mikkelson / Salminen / Brickey statistical persona literature |
+| 🟢 A | `17-revella-buyer-personas` | Adele Revella《Buyer Personas》 |
+| 🟢 A | `18-synthetic-ai-personas` | Park《Generative Agents》/ Salminen 2024 / PersonaHub |
+| 🟢 A | `19-service-design-personas` | Stickdorn《This Is Service Design Doing》 |
+| 🟣 B · Psychology | `20-kahneman-dual-system` | Kahneman《Thinking Fast and Slow》《Noise》 |
+| 🟣 B | `21-fogg-behavior-model` | BJ Fogg《Tiny Habits》/ Eyal《Hooked》 |
+| 🟣 B | `22-jtbd-persona-integration` | Christensen / Klement / Wunker / Ulwick |
+| 🟣 B | `23-thick-data-ethnography` | Tricia Wang / Geertz / Madsbjerg |
+| 🟠 C · Ethics | `24-kat-holmes-mismatch` | Kat Holmes《Mismatch》 |
+| 🟠 C | `25-cababa-systems-second-order` | Sheryl Cababa《Closing the Loop》/ Meadows |
+| 🟠 C | `26-hofstede-cross-cultural` | Hofstede / Hall / Meyer |
+| 🟠 C | `27-bias-audit-personas` | Marsden & Haag / Buolamwini / Costanza-Chock |
+| 🔵 D · Engineering | `28-clustering-engineering` + `persona/clustering.py` | scikit-learn / stepmix |
+| 🔵 D | `29-llm-prompt-library` + `persona/llm_prompts.py` | LLM prompt engineering best practices |
+| 🔵 D | `30-okr-roadmap-bridge` + `persona/okr_bridge.py` | Doerr《Measure What Matters》/ Wodtke / Cagan |
+| 🔵 D | `31-measurement-toolkit` + `persona/measurement_toolkit.py` | Reichheld NPS / Dixon CES / Pendo & Amplitude |
+
+### What's improved
+
+- **SKILL.md**: Decision tree extended with v2.6 deep-dive branches (16 new branches), directory tree adds 16 new references + 4 new modules with Tier annotations, knowledge base `§5.3` adds A/B/C/D 4-segment table; frontmatter description rewritten to multi-dimensional positioning
+- **references/README.md**: Adds v2.6 four-segment index table + situation-based lookup table extension + 12 new books in academic citations
+- **persona/**: 4 new modules total ~1300 lines of code, all data-class driven, optional sklearn/stepmix dependencies, fully integrated with existing PersonaBuilder
+- **Version**: Synced to 2.6.0 across SKILL.md / pyproject.toml / `__init__.py` / README.md / CHANGELOG.md
+
+### Why this matters
+
+v2.5 made the skill a **multi-perspective meta-decider**. v2.6 adds:
+
+1. **Quantitative engine** — `clustering.py` lets the skill auto-cluster 1k+ samples to draft personas, defending against statistical-rigor critiques
+2. **Behavioral explanatory power** — Kahneman / Fogg / JTBD integration give personas a "why-they-act-this-way" theory layer instead of just describing demographics
+3. **Ethics by default** — Bias audit checklist + Kat Holmes Mismatch + Cababa second-order are now first-class citizens, not afterthoughts
+4. **Knowledge becomes code** — D-track references each pair with a runnable Python module: clustering, LLM prompts, OKR bridge, NPS/CES/CSAT toolkit. The skill is no longer just methodology docs — it's an executable persona toolchain.
+
+## 🕘 Earlier Releases
+
+### v2.5.0
+
+> Multi-book methodology integration — 10 new references (`06-15`) covering Cooper / Pruitt-Adlin / Goodwin / Indi Young / Lene Nielsen / Lean UX / Just Enough Research / User Story Mapping / Norman / Chapman critique. Skill upgraded from single-source Mulder executor to multi-perspective meta-decider with method-selection decision tree.
 
 ## 🆕 What's New in v2.5.0
 
@@ -62,8 +113,6 @@ This release expands the skill from a single-source methodology (Mulder's *The U
 ### Why this matters
 
 Previously the skill executed Mulder's quantitative web-persona method as the only path. Now the skill becomes a **meta-decision engine** — when facing a complex enterprise software project, it can pull Cooper's Goal-Directed Design; for a startup MVP, it can pull Lean UX Proto-Personas; for an inclusive design challenge, it can pull Microsoft Persona Spectrum. The Mulder default remains, but ten new lenses are available on demand.
-
-## 🕘 Earlier Releases
 
 ### v2.4.97
 

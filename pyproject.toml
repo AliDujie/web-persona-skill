@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "2.5.0"
-description = "Web Persona toolkit — multi-book persona methodology system, integrating Mulder + Cooper + Pruitt-Adlin + Goodwin + Indi Young + Lene Nielsen + Lean UX + 5 more classic works (多书系融合的人物角色方法论体系)"
+version = "2.6.0"
+description = "Web Persona toolkit v2.6 — multi-book persona methodology + quantitative engine + behavioral psychology + ethics + engineering modules. Integrates Mulder/Cooper/Pruitt-Adlin/Goodwin/Indi Young/Lene Nielsen/Lean UX + 12 v2.6 classics (Mikkelson statistical / Revella buyer / Synthetic AI / Stickdorn service / Kahneman dual-system / Fogg behavior / JTBD integration / Wang thick data / Holmes mismatch / Cababa systems / Hofstede cross-cultural / bias audit) + 4 engineering modules (clustering / llm_prompts / okr_bridge / measurement_toolkit)."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}

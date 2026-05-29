@@ -1,3 +1,36 @@
+## v2.6.0 (2026-05-29) — ABCD deep-dive: quantitative + psychology + ethics + engineering
+
+**Major release — from "multi-perspective meta-decider" to "meta-decider + quantitative engine + behavioral psychology + ethics + engineering code".**
+
+### Added
+- **16 new reference documents** in `references/16-31`, organized into 4 tracks:
+  - 🟢 **A · Quantitative & Modern** (4): `16-mikkelson-statistical-personas.md`, `17-revella-buyer-personas.md`, `18-synthetic-ai-personas.md`, `19-service-design-personas.md`
+  - 🟣 **B · Psychology & Behavioral Science** (4): `20-kahneman-dual-system.md`, `21-fogg-behavior-model.md`, `22-jtbd-persona-integration.md`, `23-thick-data-ethnography.md`
+  - 🟠 **C · Ethics & Diversity** (4): `24-kat-holmes-mismatch.md`, `25-cababa-systems-second-order.md`, `26-hofstede-cross-cultural.md`, `27-bias-audit-personas.md`
+  - 🔵 **D · Engineering** (4): `28-clustering-engineering.md`, `29-llm-prompt-library.md`, `30-okr-roadmap-bridge.md`, `31-measurement-toolkit.md`
+- **4 new Python modules** in `persona/` (paired with D-track refs):
+  - `persona/clustering.py` — `PersonaClusterer` + `ClusteringResult`, three methods (KMeans / LCA / Factor+Cluster) with auto-selection, bootstrap stability, `to_persona_drafts()` feeding PersonaBuilder; sklearn required, stepmix optional
+  - `persona/llm_prompts.py` — `PersonaPromptLibrary` + `PersonaPrompt`, 4 prompt classes (simulated_interview / copy_evaluation / devils_advocate / multi_persona_tournament), Constitutional bilingual templates, decoupled from any LLM SDK
+  - `persona/okr_bridge.py` — `OKRBridge` + `Objective`/`KeyResult`/`RoadmapItem`/`OKRPlan` dataclasses, `derive_okrs(profiles)` auto-Objective + 4 KR templates, `score_roadmap` RICE/ICE with persona-priority weighting
+  - `persona/measurement_toolkit.py` — `MeasurementToolkit` + `Metric`/`MetricSnapshot`, 6 metric types (NPS/CES/CSAT/goal_conversion/activation/retention/custom), `register_from_kr` OKR bridge, `report_okr_progress` review
+- **SKILL.md decision tree extension** with 16 v2.6 deep-dive branches covering each new methodology
+- **SKILL.md `§5.3` knowledge base** with A/B/C/D 4-segment table and reference→code mapping
+- **references/README.md v2.6 four-segment index** with situation-based lookup table extension
+
+### Changed
+- SKILL.md frontmatter `description` rewritten to reflect 23+ books and 4-dimensional positioning (meta-decider + quantitative + psychology + engineering)
+- SKILL.md directory tree extended with all 16 new references and 4 new persona modules
+- pyproject.toml description rewritten with v2.6 module list
+- Version synced to 2.6.0 across `SKILL.md` / `pyproject.toml` / `persona/__init__.py` / `README.md`
+
+### Sources integrated (v2.6 new)
+- **A · Quantitative**: Mikkelson / Salminen / Brickey statistical persona literature; Adele Revella《Buyer Personas》; Park《Generative Agents》(UIST 2023); Salminen *From 2,772 Segments to Five Personas* (CSCW 2024); Microsoft Research *PersonaHub*; Stickdorn《This Is Service Design Doing》
+- **B · Psychology**: Daniel Kahneman《Thinking, Fast and Slow》《Noise》; Thaler & Sunstein《Nudge》; BJ Fogg《Tiny Habits》; Nir Eyal《Hooked》; Christensen《Competing Against Luck》; Klement《When Coffee and Kale Compete》; Wunker《Jobs to be Done》; Ulwick ODI; Tricia Wang *Why Big Data Needs Thick Data*; Geertz《Interpretation of Cultures》; Madsbjerg《The Moment of Clarity》
+- **C · Ethics**: Kat Holmes《Mismatch》; Microsoft Inclusive Design Toolkit; Sheryl Cababa《Closing the Loop》; Donella Meadows《Thinking in Systems》; Sasha Costanza-Chock《Design Justice》; Hofstede《Cultures and Organizations》; Erin Meyer《The Culture Map》; Edward Hall《Beyond Culture》; Marsden & Haag *Stereotypes and Politics*; Buolamwini & Gebru *Gender Shades*; Eubanks《Automating Inequality》
+- **D · Engineering**: John Doerr《Measure What Matters》; Christina Wodtke《Radical Focus》; Marty Cagan《Inspired》; Frederick Reichheld《The Ultimate Question 2.0》; Matthew Dixon《The Effortless Experience》; scikit-learn / stepmix; OpenAI/Anthropic prompt-engineering best practices
+
+---
+
 ## v2.5.0 (2026-05-29) — Multi-book methodology integration
 
 **Major release — expanded from single-source (Mulder) to multi-book persona methodology system.**
