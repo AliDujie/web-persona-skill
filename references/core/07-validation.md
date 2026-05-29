@@ -134,6 +134,59 @@
 
 不是给建议——直接产出修改后的版本。如果审查发现问题，直接重写有问题的 Persona 卡片部分，标注修改点。
 
+**修改循环上限**：审查 → 修改 → 复审 最多 **3 轮**。连续 2 轮无新增问题 → 强制结束（防止 LLM 自我循环挑刺）。
+
+### Step 5：evidence_map 机械验证
+
+借鉴 deep-research-iterative 的 source-traceback 思路，对 T6 产出的 `evidence_map` 做 4 项机械检查：
+
+```python
+# 伪代码：可在 SKILL agent 内做规则化校验
+for persona in personas:
+    for field, ids in persona["evidence_map"].items():
+        # 检查 1：非空
+        assert len(ids) >= 1, f"{persona.name}.{field} 缺 evidence_id"
+        # 检查 2：格式合法
+        for evid in ids:
+            assert "#" in evid or evid.startswith("survey_") or evid.startswith("cluster_"), \
+                f"非法 evidence_id 格式：{evid}"
+        # 检查 3：引用源真实存在（在 T3/T5 输入中可找到）
+        for evid in ids:
+            assert evid in known_evidence_ids, f"虚构来源：{evid}"
+    # 检查 4：关键引语必须精确到段落
+    for quote, evid in persona["evidence_map"].get("关键引语", {}).items():
+        assert "#para" in evid, f"引语来源不精确到段落：{quote}"
+```
+
+**报告格式**：
+
+| Persona | 字段总数 | 有源字段 | 缺源字段 | 虚构源 | 通过率 |
+|---------|---------|---------|---------|-------|-------|
+| 李薇 | 12 | 12 | 0 | 0 | 100% |
+| 张磊 | 11 | 9 | 2 | 0 | 81% ⚠️ |
+
+通过阈值：≥ 90%。低于 90% 的 Persona 必须补 evidence 或删除无源字段。
+
+## Pitfalls
+
+| 症状 | 修复 |
+|------|------|
+| 审查只检查"看起来合理" → 漏掉系统性偏差 | Step 1 强制 6 项 System 1 偏差自检 |
+| 修改循环 5+ 轮还在挑刺 → LLM 钻牛角尖 | Step 4 硬上限 3 轮 + 连续 2 轮无新增问题强制结束 |
+| evidence_map 只查存在性不查精度 → 关键引语来源虚标到 "interview_01" 整篇 | Step 5 检查 4 强制引语精确到段落 #para |
+| Pre-mortem 跳过 → 失败模式无人预警 | 报告必含"如果失败原因是什么"段 |
+| 修改后没记录 changelog → 团队不知道改了什么 | 修改报告强制 "本次改动" 列表 |
+
+## Verification（产出后机械检查）
+
+- [ ] 6 项 System 1 偏差全部检查（不能跳过任何一项）
+- [ ] 4 项 System 2 慢思维清单全部 ✅ 或明确说"未做+原因"
+- [ ] 每个 Persona 的内容审查清单 6 项全部检查
+- [ ] evidence_map 通过率 ≥ 90%
+- [ ] 包含 Pre-mortem 段（最可能失败原因 + 防范措施）
+- [ ] 修改循环 ≤ 3 轮
+- [ ] 输出三档结论之一：[通过 / 需修改 / 需重做]，不能模糊
+
 ## 自动衔接
 审查通过或修改完成后：
 > "Persona 已审查通过。需要我做什么？\n1. 应用落地（T8）——功能优先级/OKR映射/度量方案\n2. 可用性测试设计（T9）——生成测试脚本+招募条件\n3. 旅程地图（T10）——基于场景输出 Journey Map"

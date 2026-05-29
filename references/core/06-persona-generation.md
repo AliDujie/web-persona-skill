@@ -151,6 +151,34 @@
 - 市场占比：约 28%
 - 数据来源：8 场深度访谈 + 500 份问卷聚类
 
+### evidence_map（可审计来源）
+
+每条行为/动机/痛点必须能追溯回 T3/T5 的原始 evidence_id，让 T7 能机械化验证。
+
+```yaml
+evidence_map:
+  核心行为:
+    比价行为: [interview_01#para12, interview_03#para8, interview_07#para3, survey_Q15_clusterA]
+    优惠券叠加关注: [interview_01#para18, interview_05#para22]
+    截图比价: [interview_01#para14, interview_07#para9]
+  动机:
+    "省钱优于省时间": [interview_01#para12, interview_03#para11]
+    "怕买贵后悔": [interview_05#para7, interview_07#para15]
+  痛点:
+    比价耗时: [interview_01#para18, interview_05#para25, survey_Q22_meanA=4.1]
+    信息分散: [interview_03#para14, interview_07#para8]
+  关键引语:
+    "同样的酒店差 200 块，不比怎么行？": interview_01#para12
+  量化字段:
+    占比 28%: cluster_A_size=140/500
+```
+
+**规则**：
+- 每条结构化字段（行为/动机/痛点）至少 1 个 evidence_id
+- 关键引语必须有精确 evidence_id（精确到段落）
+- 量化字段（占比/比例）必须有 survey/cluster evidence_id
+- **禁止凭空生成**：没 evidence 的描述要么删除要么明确标注 "推断（无直接证据）"
+
 ---
 
 ### 使用场景
@@ -184,3 +212,26 @@
 ## 自动衔接
 Persona 生成完成后，提示：
 > "Persona 卡片和使用场景写好了。需要我做以下哪个？\n1. 验证审查（T7）——检查这些 Persona 是否有偏见/遗漏\n2. 应用落地（T8）——生成功能优先级矩阵 / OKR 映射\n3. 可用性测试设计（T9）——基于场景生成测试脚本\n4. 旅程地图（T10）——基于场景生成 Journey Map\n5. 都不需要，先到这里"
+
+## Pitfalls
+
+| 症状 | 修复 |
+|------|------|
+| 命名带刻板印象（"宝妈丽丽"/"屌丝小王"）→ 团队产生偏见 | 命名规则：去职业、去阶层、用 2-4 字行为标签 |
+| 场景故事虚构感强（"她每天起床都先想 ROI"）→ 团队不信 | 场景必须基于 evidence_id 中的真实片段重组，不能纯虚构 |
+| evidence_map 全是空的或挤在一处（"interview_01"无段落号）→ T7 无法验证 | Step 1.5 强制每条字段单独追溯，精确到段落 |
+| Primary/Secondary 都设了但没有 Negative → 团队会"什么人都想满足" | 至少标注 1 个 Negative Persona（明确不为 TA 设计） |
+| 使用场景只写"核心场景"没写"极端/首次场景" → T9 测试覆盖度不足 | Step 3 强制 2-3 个场景（核心 + 极端 + 首次） |
+| 5+ 个 Persona 全是 Primary → 等于没分优先级 | 严格 1 个 Primary + 1-2 Secondary + 其余 Supplemental |
+
+## Verification（产出后机械检查）
+
+- [ ] 每个 Persona 卡片包含 8 个固定字段（标签/引语/一句话/场景故事/目标/行为/痛点/启示/元数据/evidence_map）
+- [ ] 有且仅有 1 个 Primary
+- [ ] Secondary 数量 1-2 个
+- [ ] 至少 1 个 Negative Persona（或明确说明"不需要 Negative"理由）
+- [ ] 每个 Persona 至少 2 个使用场景
+- [ ] evidence_map 每条字段都有非空 ID 列表
+- [ ] 所有 evidence_id 格式合法（src#location）
+- [ ] 关键引语 100% 来自 evidence（不是 LLM 生造）
+- [ ] 命名通过偏见检查（无职业/阶层/性别刻板词）

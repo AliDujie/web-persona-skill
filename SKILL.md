@@ -1,7 +1,7 @@
 ---
 name: web-persona-skill
-version: "3.2.0"
-description: "Persona 全流程执行 Skill（T1-T10）。给定输入（访谈稿/问卷数据/业务描述），直接产出 Persona 卡片、行为分群、访谈提纲、问卷、验证方案、应用矩阵、可用性测试脚本、旅程地图等交付物。不是教程——是执行器。"
+version: "3.3.0"
+description: "Persona 全流程执行 Skill（T1-T10）。给定输入（访谈稿/问卷数据/业务描述），直接产出 Persona 卡片、行为分群、访谈提纲、问卷、验证方案、应用矩阵、可用性测试脚本、旅程地图等交付物。每个任务带 Pitfalls + Verification 双闭环 + 全局 Guardrails。不是教程——是可审计的执行器。"
 author: "渡劫"
 ---
 
@@ -40,6 +40,26 @@ author: "渡劫"
 3. **直接给交付物** — 输出是可直接使用的文档/卡片/代码结果，不是"建议你这样做"
 4. **每步有明确产出** — 每个任务结束都要产出具体文件/结构化内容
 5. **自动衔接** — 如果上一步的输出是下一步的输入，自动继续（除非用户叫停）
+
+---
+
+## 全局 Guardrails（v3.3 新增，借鉴 deep-research-iterative）
+
+每个任务在 LLM 自循环时遵守以下硬上限——防止失控、Token 浪费、自我钻牛角尖。
+
+| 任务 | 循环类型 | 硬上限 | 早停规则 |
+|------|---------|-------|---------|
+| T2 | 单次访谈中追问轮数 | 8 轮/题 | 同一题连续 2 轮无新信息 → 切下一题 |
+| T3 | 编码迭代（提取↔变量↔饱和度） | 3 轮 | 连续 2 轮新增变量 < 1 → 强制 `<done>` |
+| T3 | 段落预筛 Yes/No | 不限轮数 | Yes 段落直接进 Step 1；No 段落丢弃 |
+| T5 | K 值扫描 | K=3-7 | 轮廓 > 0.5 + 簇均衡 → 直接选用；连续两 K 变化 < 0.02 → 早停 |
+| T7 | 审查 ↔ 修改 ↔ 复审 | 3 轮 | 连续 2 轮无新增问题 → 强制结束 |
+| T9 | 测试脚本细化 | 不需循环 | 一次性产出，不做迭代 |
+
+**通用兜底**（所有任务）：
+- 如 LLM 连续 2 次返回相同/极相似产出 → 视为已收敛，强制 `<done>`
+- 任何 JSON 解析失败 → 重试 1 次 + 更严格的系统提示；2 次失败 → 用当前已有内容收尾，不再继续
+- 输出报告底部强制添加运行元信息：`_循环轮数: X/Y. 输入样本: N. 产出条目: M._`
 
 ---
 
@@ -196,3 +216,46 @@ tk = MeasurementToolkit(product="你的产品")
 | 旅程地图方法 | `advanced/19-service-design-personas.md` |
 
 完整 39 篇索引见 `references/README.md`。
+
+---
+
+## Tool Mapping（host-agent agnostic · v3.3 新增）
+
+每个能力声明 Preferred 和 Fallback——任何 host agent（Claude Code / QoderWork / Cursor / 通用 OpenAI tool-calling agent / 纯对话场景）都能用这个 skill。
+
+| 能力 | Preferred | Fallback |
+|------|----------|---------|
+| 行为分群（数值数据） | `persona/clustering.py` + sklearn KMeans | LLM 启发式分群（N ≤ 30 时） |
+| 高级聚类（潜类别 LCA） | `persona/clustering.py` + stepmix | 降级 KMeans + 后验解读 |
+| 稳定性检验 | clustering.py 内置 bootstrap_n=20 | 跳过稳定性，用 K-1/K+1 双结果对比代替 |
+| LLM Prompt 库 | `persona/llm_prompts.py` + 任意 LLM SDK | 直接内联本文件中的 prompt 模板 |
+| OKR 桥接 | `persona/okr_bridge.py` 自动派生 | 用 T8 模板 B 手填 |
+| 度量套件 | `persona/measurement_toolkit.py` + 实时数据流 | 用 T8 模板 D + 模板 F 手填 |
+| 数据读取 | pandas read_csv/read_excel | LLM 直接从用户贴入的表格文本解析 |
+| 文档输入 | host 的 file API | 用户复制粘贴文本到对话 |
+
+**Python 依赖最小集**（仅 T5/T8 工程化路径需要）：
+- 必须：`pandas`, `numpy`
+- 推荐：`scikit-learn>=1.3`
+- 可选：`stepmix`（LCA），`scipy`（统计检验）
+
+**纯对话 fallback**：所有 T1-T10 任务在无 Python 环境下，仅通过 LLM 推理和模板化产出仍可运行——只是 T5 的统计准确性下降（启发式分群代替 KMeans）。
+
+---
+
+## 元信息脚（产出报告必含 · v3.3 新增）
+
+借鉴 deep-research-iterative 的产出元信息惯例。每个 T 任务产出报告末尾都强制添加一行：
+
+```
+---
+_任务: T[N] · [任务名]. 循环轮数: [X]/[上限]. 输入: [样本量]. 产出: [条目数]. 工具: [Preferred/Fallback]._
+```
+
+例如：
+```
+---
+_任务: T3 · 定性分析. 循环轮数: 2/3. 输入: 12 份访谈/108 段落. 产出: 9 个行为变量 / 4 个分群. 工具: LLM only._
+```
+
+让用户/审计者一眼看出任务是否健康运行（轮数是否撞上限、是否触发 fallback）。
