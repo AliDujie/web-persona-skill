@@ -1,3 +1,25 @@
+## v3.0.0 (2026-05-29) — Complete architectural restructure
+
+**From "book index" to "execution manual" — organized by what you DO, not what you READ.**
+
+### Added
+- **8 core operation manuals** (`references/core/01-08`): project-setup, qualitative-research, quantitative-research, mixed-method, analysis-clustering, persona-creation, validation, application
+- New `references/core/` and `references/advanced/` directory structure
+
+### Changed
+- All 39 existing reference files moved to `references/advanced/` (preserved as deep-dive dictionary)
+- **SKILL.md** completely rewritten: 864 lines → ~120 lines focused quick-reference
+- **README.md** rewritten for v3.0 structure
+- Each core doc cross-references relevant advanced files
+- Knowledge organized by execution lifecycle stage, not by book/author
+
+### Why
+- v2.5–v2.7 grew to 39 references organized by book — comprehensive but hard to navigate
+- Users needed to know "which book" instead of "what step am I at"
+- v3.0 puts execution flow first, keeps all depth accessible via advanced/
+
+---
+
 ## v2.7.0 (2026-05-29) — Research craft & continuous discovery expansion
 
 **Completing the full upstream-to-downstream persona lifecycle: from interview technique to narrative expression.**

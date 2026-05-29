@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "2.7.0"
-description = "Web Persona toolkit v2.7 — 30+ classic books persona methodology. v2.7 adds upstream research craft (Portigal interviewing / Fitzpatrick Mom Test / Torres continuous discovery / Alvarez lean CustDev) + experience mapping & narrative (Kalbach mapping / Quesenbery storytelling / Kuniavsky observing / Christensen JTBD origin). Integrates Mulder/Cooper/Pruitt-Adlin/Goodwin/Indi Young/Lean UX + v2.6 quantitative/psychology/ethics/engineering + 4 Python modules (clustering / llm_prompts / okr_bridge / measurement_toolkit)."
+version = "3.0.0"
+description = "Web Persona toolkit v3.0 — Complete restructure. 8 core operation manuals (project setup → qualitative/quantitative/mixed → analysis → creation → validation → application) + 39 advanced references + 4 Python modules (clustering / llm_prompts / okr_bridge / measurement_toolkit). Integrates 30+ classic works (Cooper/Mulder/NNGroup/Portigal/Kahneman/etc.) organized by execution stage, not by book."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
