@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-2.6.0-blue)
+![Version](https://img.shields.io/badge/version-2.7.0-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v260)
+- [What's New](#-whats-new-in-v270)
 - [Why Teams Choose Persona](#-why-teams-choose-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -29,11 +29,55 @@
 
 ---
 
-## 🆕 What's New in v2.6.0
+## 🆕 What's New in v2.7.0
+
+> **Research Craft & Discovery expansion — Completing the full upstream-to-downstream persona lifecycle.**
+>
+> v2.7 adds 8 new references covering "how to gather data" (upstream research) and "how to express personas" (narrative & mapping). The skill now spans from interview technique → data collection → persona creation → validation → storytelling → measurement — the complete arc.
+
+### What's added
+
+**8 new reference documents** (`references/32-39`) across two new tracks:
+
+| Track | New References | Source |
+|------|----------------|--------|
+| 📗 E · Research Craft | `32-portigal-interviewing-users` | Steve Portigal《Interviewing Users》2nd ed. (2024) |
+| 📗 E | `33-fitzpatrick-mom-test` | Rob Fitzpatrick《The Mom Test》(2013) |
+| 📗 E | `34-torres-continuous-discovery` | Teresa Torres《Continuous Discovery Habits》(2021) |
+| 📗 E | `35-alvarez-lean-customer-development` | Cindy Alvarez《Lean Customer Development》(2014) |
+| 📘 F · Mapping & Narrative | `36-kalbach-mapping-experiences` | Jim Kalbach《Mapping Experiences》2nd ed. (2021) |
+| 📘 F | `37-quesenbery-storytelling-ux` | Quesenbery & Brooks《Storytelling for UX》(2010) |
+| 📘 F | `38-kuniavsky-observing-user-experience` | Mike Kuniavsky《Observing the User Experience》2nd ed. (2012) |
+| 📘 F | `39-christensen-competing-against-luck` | Clayton Christensen《Competing Against Luck》(2016) |
+
+### What's improved
+
+- **SKILL.md**: v2.7 decision tree (8 new branches for upstream research/discovery/mapping/narrative), directory tree adds 32-39, knowledge base `§5.4` adds E/F two-segment table
+- **references/README.md**: v2.7 E/F index + extended situation-based lookup + 8 new academic citations
+- **Version**: Synced to 2.7.0 across all metadata files
+
+### Why this matters
+
+v2.6 gave the skill quantitative power, behavioral theory, ethics, and code. v2.7 completes the **upstream** gap:
+
+1. **Interview mastery** — Portigal's 6-stage + Fitzpatrick's Mom Test ensure raw data quality before any persona work begins
+2. **Continuous discovery** — Torres + Alvarez turn personas from one-shot deliverables into continuously-calibrated hypotheses
+3. **Expression & communication** — Kalbach journeys + Quesenbery storytelling solve "persona written but never read"
+4. **Theoretical completeness** — Christensen's original JTBD theory complements Klement's practitioner view (#22), giving the full theoretical arc
+5. **Method selection** — Kuniavsky's method encyclopedia helps teams pick the right research method for each persona lifecycle stage
+
+---
+
+## 🕘 Earlier Releases
+
+### v2.6.0
 
 > **Major release — From "multi-perspective meta-decider" to "meta-decider + quantitative engine + behavioral psychology + ethics + engineering code".**
 >
 > v2.6 ABCD 深化迭代：在 v2.5 多书系融合基础上，叠加四大新维度——**16 部新经典 reference + 4 个配套 Python 模块**。
+
+<details>
+<summary>Expand v2.6.0 details</summary>
 
 ### What's added
 
@@ -58,23 +102,7 @@
 | 🔵 D | `30-okr-roadmap-bridge` + `persona/okr_bridge.py` | Doerr《Measure What Matters》/ Wodtke / Cagan |
 | 🔵 D | `31-measurement-toolkit` + `persona/measurement_toolkit.py` | Reichheld NPS / Dixon CES / Pendo & Amplitude |
 
-### What's improved
-
-- **SKILL.md**: Decision tree extended with v2.6 deep-dive branches (16 new branches), directory tree adds 16 new references + 4 new modules with Tier annotations, knowledge base `§5.3` adds A/B/C/D 4-segment table; frontmatter description rewritten to multi-dimensional positioning
-- **references/README.md**: Adds v2.6 four-segment index table + situation-based lookup table extension + 12 new books in academic citations
-- **persona/**: 4 new modules total ~1300 lines of code, all data-class driven, optional sklearn/stepmix dependencies, fully integrated with existing PersonaBuilder
-- **Version**: Synced to 2.6.0 across SKILL.md / pyproject.toml / `__init__.py` / README.md / CHANGELOG.md
-
-### Why this matters
-
-v2.5 made the skill a **multi-perspective meta-decider**. v2.6 adds:
-
-1. **Quantitative engine** — `clustering.py` lets the skill auto-cluster 1k+ samples to draft personas, defending against statistical-rigor critiques
-2. **Behavioral explanatory power** — Kahneman / Fogg / JTBD integration give personas a "why-they-act-this-way" theory layer instead of just describing demographics
-3. **Ethics by default** — Bias audit checklist + Kat Holmes Mismatch + Cababa second-order are now first-class citizens, not afterthoughts
-4. **Knowledge becomes code** — D-track references each pair with a runnable Python module: clustering, LLM prompts, OKR bridge, NPS/CES/CSAT toolkit. The skill is no longer just methodology docs — it's an executable persona toolchain.
-
-## 🕘 Earlier Releases
+</details>
 
 ### v2.5.0
 

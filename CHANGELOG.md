@@ -1,3 +1,28 @@
+## v2.7.0 (2026-05-29) — Research craft & continuous discovery expansion
+
+**Completing the full upstream-to-downstream persona lifecycle: from interview technique to narrative expression.**
+
+### Added
+- **8 new reference documents** in `references/32-39`, organized into 2 tracks:
+  - 📗 **E · Research Craft & Continuous Discovery** (4): `32-portigal-interviewing-users.md`, `33-fitzpatrick-mom-test.md`, `34-torres-continuous-discovery.md`, `35-alvarez-lean-customer-development.md`
+  - 📘 **F · Experience Mapping, Narrative & Theory** (4): `36-kalbach-mapping-experiences.md`, `37-quesenbery-storytelling-ux.md`, `38-kuniavsky-observing-user-experience.md`, `39-christensen-competing-against-luck.md`
+- **SKILL.md v2.7 decision tree** with 8 new branches covering research craft, continuous discovery, journey mapping, UX storytelling, observation methods, and JTBD origin theory
+- **SKILL.md `§5.4` knowledge base** with E/F two-segment tables
+- **references/README.md v2.7 E/F index** + extended situation-based lookup table
+
+### Changed
+- SKILL.md frontmatter `description` rewritten: 30+ books, adds Portigal/Fitzpatrick/Torres/Alvarez/Kalbach/Quesenbery/Kuniavsky/Christensen
+- SKILL.md title paragraph adds E/F tracks (upstream research + mapping/narrative)
+- SKILL.md directory tree adds `references/32-39` with E/F track annotations
+- pyproject.toml description rewritten with v2.7 scope
+- Version synced to 2.7.0 across `SKILL.md` / `pyproject.toml` / `persona/__init__.py` / `README.md`
+
+### Sources integrated (v2.7 new)
+- **E · Research Craft**: Steve Portigal《Interviewing Users》(2nd ed., 2024); Rob Fitzpatrick《The Mom Test》(2013); Teresa Torres《Continuous Discovery Habits》(2021); Cindy Alvarez《Lean Customer Development》(2014)
+- **F · Mapping & Narrative**: Jim Kalbach《Mapping Experiences》(2nd ed., 2021); Whitney Quesenbery & Kevin Brooks《Storytelling for User Experience》(2010); Mike Kuniavsky《Observing the User Experience》(2nd ed., 2012); Clayton Christensen, Taddy Hall, Karen Dillon & David S. Duncan《Competing Against Luck》(2016)
+
+---
+
 ## v2.6.0 (2026-05-29) — ABCD deep-dive: quantitative + psychology + ethics + engineering
 
 **Major release — from "multi-perspective meta-decider" to "meta-decider + quantitative engine + behavioral psychology + ethics + engineering code".**

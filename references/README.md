@@ -81,6 +81,26 @@ This directory contains methodology reference documents for the Web Persona skil
 | `30-okr-roadmap-bridge.md` | Persona→Objective→KR / RICE 4 字段 / 4 类 KR 模板 / 路线图 Persona 加权 | `persona/okr_bridge.py` |
 | `31-measurement-toolkit.md` | NPS/CES/CSAT/Funnel/Activation/Retention 6 类指标 / 时序追踪 / 与 OKR Bridge 联动 | `persona/measurement_toolkit.py` |
 
+### 四、研究手艺与持续发现（v2.7.0：上游采集 + 产品发现）
+
+#### E 档 · 上游研究手艺 + 持续发现（访谈、验证、发现习惯）
+
+| 文件 | 内容 | 来源 |
+|------|------|------|
+| `32-portigal-interviewing-users.md` | 访谈六阶段 / 6 大提问类型 / Rapport 四层 / Debrief 三阶段 / 远程访谈 | Steve Portigal《Interviewing Users》(2nd ed., 2024) |
+| `33-fitzpatrick-mom-test.md` | Mom Test 三铁律 / 好问题公式 / 承诺三类 / Meta-label 笔记法 / Slicing | Rob Fitzpatrick《The Mom Test》(2013) |
+| `34-torres-continuous-discovery.md` | OST 框架 / Weekly Touchpoints / Assumption 4 类 / Compare&Contrast / Product Trio | Teresa Torres《Continuous Discovery Habits》(2021) |
+| `35-alvarez-lean-customer-development.md` | Problem Hypothesis Canvas / Early Adopter 5 特征 / Pivot 6 信号 / MVP 类型 / CustDev→Persona 数据流 | Cindy Alvarez《Lean Customer Development》(2014) |
+
+#### F 档 · 体验地图、叙事与理论源头（Journey Map、UX Story、观察法、JTBD）
+
+| 文件 | 内容 | 来源 |
+|------|------|------|
+| `36-kalbach-mapping-experiences.md` | 10 种地图类型 / Journey Map 五行 / Service Blueprint 五线 / MoT 五类 / Persona×Journey 闭环 | Jim Kalbach《Mapping Experiences》(2nd ed., 2021) |
+| `37-quesenbery-storytelling-ux.md` | UX 故事五类型 / 故事五要素 / Persona Story 写作六原则 / 30 秒电梯版 / 受众适配 | Quesenbery & Brooks《Storytelling for User Experience》(2010) |
+| `38-kuniavsky-observing-user-experience.md` | 研究方法四象限 / Contextual Inquiry 4 原则 / Diary Study / 可用性测试×Persona / 多方法组合 | Mike Kuniavsky《Observing the User Experience》(2nd ed., 2012) |
+| `39-christensen-competing-against-luck.md` | JTBD 原版理论 / Milkshake Story / Forces of Progress 四力 / 情境分类 / 非消费 / Hiring&Firing | Clayton Christensen《Competing Against Luck》(2016) |
+
 ---
 
 ## 使用方法 / Usage
@@ -119,6 +139,19 @@ This directory contains methodology reference documents for the Web Persona skil
 | 出海/入华 / 跨地域 / 跨文化品牌 | `26-hofstede` |
 | 任何对外发布的 Persona / 公平性合规 | `27-bias-audit` |
 | 想用代码实现聚类/Prompt/OKR/测量 | `28-31` 的 D 档 + `persona/` 新模块 |
+
+### 当遇到以下情况时，进入 v2.7 研究手艺与发现档：
+
+| 情境 | 优先查阅 |
+|------|---------|
+| 如何做好深度用户访谈 / 提问技巧 / Rapport | `32-portigal` |
+| 客户验证对话 / 防止被恭维陷阱 / 承诺验证 | `33-fitzpatrick` |
+| 建立持续发现习惯 / OST / 假设检验 | `34-torres` |
+| 冷启动验证 / Early Adopter / Pivot 决策 | `35-alvarez` |
+| 体验地图 / Journey Map / Service Blueprint | `36-kalbach` |
+| Persona 叙事化 / UX 故事写作 / 利益相关者沟通 | `37-quesenbery` |
+| 研究方法选择 / CI / Diary Study / 多方法组合 | `38-kuniavsky` |
+| JTBD 原始理论 / 情境分类 / Forces / 非消费 | `39-christensen` |
 
 详细决策路径见 `SKILL.md` 中的"方法论谱系（Methodology Lineage）"和"方法选择决策树"。
 
@@ -183,3 +216,17 @@ Persona 是用户研究的起点，为其他技能提供角色锚点：
 **D 档 · 工程化（伴随代码）**
 - John Doerr.《Measure What Matters》Portfolio, 2018；Christina Wodtke《Radical Focus》(2nd ed., 2021)；Marty Cagan《Inspired》(2nd ed.)。
 - scikit-learn 官方文档；OpenAI/Anthropic system-prompt 最佳实践；Frederick Reichheld《The Ultimate Question 2.0》HBR Press, 2011；Matthew Dixon et al.《The Effortless Experience》(2013)。
+
+### 研究手艺与持续发现（v2.7.0 新增）
+
+**E 档 · 上游研究手艺 + 持续发现**
+- Steve Portigal.《Interviewing Users: How to Uncover Compelling Insights》(2nd ed.) Rosenfeld Media, 2024.
+- Rob Fitzpatrick.《The Mom Test: How to Talk to Customers & Learn If Your Business Is a Good Idea When Everyone Is Lying to You》Robfitz Ltd, 2013.
+- Teresa Torres.《Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value》Product Talk LLC, 2021.
+- Cindy Alvarez.《Lean Customer Development: Building Products Your Customers Will Buy》O'Reilly, 2014.
+
+**F 档 · 体验地图、叙事与理论源头**
+- Jim Kalbach.《Mapping Experiences: A Complete Guide to Customer Alignment Through Journeys, Blueprints, and Diagrams》(2nd ed.) O'Reilly, 2021.
+- Whitney Quesenbery & Kevin Brooks.《Storytelling for User Experience: Crafting Stories for Better Design》Rosenfeld Media, 2010.
+- Mike Kuniavsky.《Observing the User Experience: A Practitioner's Guide to User Research》(2nd ed.) Morgan Kaufmann, 2012.
+- Clayton Christensen, Taddy Hall, Karen Dillon & David S. Duncan.《Competing Against Luck: The Story of Innovation and Customer Choice》HarperBusiness, 2016.

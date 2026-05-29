@@ -1,7 +1,7 @@
 ---
 name: web-persona-skill
-version: "2.6.0"
-description: Web人物角色(Personas)创建与应用专家技能。融合《赢在用户》《About Face》《Persona Lifecycle》《Designing for the Digital Age》《Mental Models》《Lean UX》《Buyer Personas》《Mismatch》《Closing the Loop》《Thinking Fast and Slow》《Tiny Habits》等 23+ 经典著作的多书系方法论体系。v2.6.0 新增"量化引擎+心理学解释力+伦理审查+工程化代码"四大维度——统计 Persona / Buyer Personas / 合成 AI Personas / 服务设计 / 双系统决策 / 行为模型 / JTBD 整合 / 厚数据 / 包容性设计 / 二阶后果系统 / 跨文化 / 偏差审计；并附 4 个新 Python 模块：clustering（KMeans/LCA 聚类）、llm_prompts（Persona LLM Prompt 库）、okr_bridge（Persona→OKR→Roadmap）、measurement_toolkit（NPS/CES/CSAT/Funnel）。
+version: "2.7.0"
+description: Web人物角色(Personas)创建与应用专家技能。融合《赢在用户》《About Face》《Persona Lifecycle》《Designing for the Digital Age》《Mental Models》《Lean UX》《Buyer Personas》《Mismatch》《Interviewing Users》《The Mom Test》《Continuous Discovery Habits》《Mapping Experiences》《Competing Against Luck》等 30+ 经典著作的多书系方法论体系。v2.7.0 新增"上游研究手艺+持续发现+体验地图+叙事+JTBD理论源头"——Portigal 深度访谈 / Fitzpatrick Mom Test 客户验证 / Torres 持续发现 / Alvarez 精益客户开发 / Kalbach 体验地图 / Quesenbery UX 叙事 / Kuniavsky 观察方法 / Christensen JTBD 原版。含 4 个 Python 模块：clustering / llm_prompts / okr_bridge / measurement_toolkit。
 author: "渡劫"
 ---
 
@@ -9,14 +9,16 @@ author: "渡劫"
 
 # Web Persona 人物角色创建与应用专家 Skill
 
-融合 23+ 经典著作的多视角元决策器 + 量化引擎 + 心理学解释力 + 工程化代码。以 Steve Mulder《赢在用户》(The User Is Always Right) 为执行主轴，整合 Cooper 目标导向、Pruitt-Adlin 生命周期、Goodwin 端到端框架、Indi Young 心智模型、Lean UX Proto-Persona、Lene Nielsen 十步法等基础书系（v2.5.0），再叠加 v2.6.0 四大新维度：
+融合 30+ 经典著作的多视角元决策器 + 量化引擎 + 心理学解释力 + 上游研究手艺 + 工程化代码。以 Steve Mulder《赢在用户》(The User Is Always Right) 为执行主轴，整合 Cooper 目标导向、Pruitt-Adlin 生命周期、Goodwin 端到端框架、Indi Young 心智模型、Lean UX Proto-Persona、Lene Nielsen 十步法等基础书系（v2.5.0），叠加 v2.6.0 四大维度（量化/心理学/伦理/工程化），再于 v2.7.0 补全上游研究手艺与持续发现：
 
 - **量化与现代化（A 档）**：Mikkelson 统计 Persona / Revella Buyer Personas (B2B) / 合成 AI Personas / Stickdorn 服务设计
 - **心理学与行为科学（B 档）**：Kahneman 双系统 / Fogg 行为模型 / JTBD-Persona 整合 / Wang 厚数据
 - **伦理与多元（C 档）**：Holmes Mismatch 包容设计 / Cababa 二阶后果 / Hofstede 跨文化 / 偏差审计
 - **工程化执行（D 档）**：4 个配套 Python 模块 — `persona/clustering.py` · `persona/llm_prompts.py` · `persona/okr_bridge.py` · `persona/measurement_toolkit.py`
+- **上游研究手艺（E 档）**：Portigal 深度访谈 / Fitzpatrick Mom Test / Torres 持续发现 / Alvarez 精益客户开发
+- **体验地图与叙事（F 档）**：Kalbach 体验地图 / Quesenbery UX 叙事 / Kuniavsky 观察方法 / Christensen JTBD 原版
 
-> 📚 **方法论谱系（Methodology Lineage）** — 详见 `references/06-15`（v2.5）+ `references/16-31`（v2.6），决策树见下文"§ 一、核心方法论"。
+> 📚 **方法论谱系（Methodology Lineage）** — 详见 `references/06-15`（v2.5）+ `references/16-31`（v2.6）+ `references/32-39`（v2.7），决策树见下文"§ 一、核心方法论"。
 
 ## 🧭 快速决策：什么时候使用 Persona？
 
@@ -280,6 +282,44 @@ profile = persona.profile_persona("效率型用户")
          └─► persona/measurement_toolkit.py（6 类指标 + OKR 联动）
 ```
 
+#### v2.7.0 研究手艺与发现决策树（上游采集 / 持续发现 / 体验地图 / JTBD 源头）
+
+```
+你的上游/表达诉求是？
+│
+├── 要做深度用户访谈 / 提问技巧 / Rapport 建立
+│   └─► 🔘 Portigal 访谈方法论（32-portigal）
+│        └─► 六阶段模型 + 6 大提问类型 + 3 层追问
+│
+├── 客户验证对话 / 防止恭维陷阱 / 承诺信号
+│   └─► 🔘 Fitzpatrick Mom Test（33-fitzpatrick）
+│        └─► 三铁律 + 过去行为 + 承诺三类（Time/Reputation/Money）
+│
+├── 建立持续发现习惯 / OST / 假设检验
+│   └─► 🔘 Torres 持续发现（34-torres）
+│        └─► Opportunity Solution Tree + Weekly Touchpoints + Assumption 4 类
+│
+├── 冷启动验证 / Early Adopter 画像 / Pivot 决策
+│   └─► 🔘 Alvarez 精益客户开发（35-alvarez）
+│        └─► Problem Hypothesis Canvas + Pivot 6 信号 + MVP 菜单
+│
+├── 旅程地图 / Journey Map / Service Blueprint 制图
+│   └─► 🔘 Kalbach 体验地图（36-kalbach）
+│        └─► 10 种图型 + 五行 Journey Map + Persona×Journey 闭环
+│
+├── Persona 叙事化 / 让 Persona 被记住 / 利益相关者沟通
+│   └─► 🔘 Quesenbery UX 叙事（37-quesenbery）
+│        └─► 五种故事类型 + 30 秒电梯版 + 故事验证
+│
+├── 研究方法选择 / CI / Diary Study / 多方法组合
+│   └─► 🔘 Kuniavsky 观察方法（38-kuniavsky）
+│        └─► 四象限方法选择 + Contextual Inquiry + 三阶段组合
+│
+└── JTBD 原版理论 / 情境分类 / Forces / 非消费
+    └─► 🔘 Christensen Competing Against Luck（39-christensen）
+         └─► Milkshake Story + 四力模型 + Circumstance-Based 分类
+```
+
 ### 1.3 默认执行模块
 
 | 模块 | 核心问题 | 关键行动 |
@@ -334,7 +374,7 @@ profile = persona.profile_persona("效率型用户")
 ```
 web-persona-skill/
 ├── SKILL.md                     # 本文件
-├── references/                  # 知识库文档（多书系融合 v2.5.0 + v2.6.0 深化）
+├── references/                  # 知识库文档（v2.5.0 + v2.6.0 + v2.7.0）
 │   ├── 01-persona-basics.md         # Mulder 主轴：基础概念
 │   ├── 02-measuring-results.md      # Mulder 主轴：成果衡量
 │   ├── 03-persona-best-practices.md # Mulder 主轴：最佳实践
@@ -365,7 +405,15 @@ web-persona-skill/
 │   ├── 28-clustering-engineering.md         # v2.6 D1: PersonaClusterer 工程化
 │   ├── 29-llm-prompt-library.md             # v2.6 D2: LLM Prompt 库
 │   ├── 30-okr-roadmap-bridge.md             # v2.6 D3: Persona→OKR→Roadmap
-│   └── 31-measurement-toolkit.md            # v2.6 D4: 测量工具包
+│   ├── 31-measurement-toolkit.md            # v2.6 D4: 测量工具包
+│   ├── 32-portigal-interviewing-users.md    # v2.7 E1: 深度访谈方法论
+│   ├── 33-fitzpatrick-mom-test.md           # v2.7 E2: Mom Test 客户验证
+│   ├── 34-torres-continuous-discovery.md    # v2.7 E3: 持续发现习惯
+│   ├── 35-alvarez-lean-customer-development.md # v2.7 E4: 精益客户开发
+│   ├── 36-kalbach-mapping-experiences.md    # v2.7 F1: 体验地图
+│   ├── 37-quesenbery-storytelling-ux.md     # v2.7 F2: UX 叙事
+│   ├── 38-kuniavsky-observing-user-experience.md # v2.7 F3: 观察方法百科
+│   └── 39-christensen-competing-against-luck.md  # v2.7 F4: JTBD 原版
 ├── persona/                     # Python 工具包
 │   ├── __init__.py              # PersonaSkill 统一入口类
 │   ├── config.py                # 全局配置
@@ -472,6 +520,26 @@ web-persona-skill/
 | `references/29-llm-prompt-library.md` | `persona/llm_prompts.py` | 4 类 Prompt / Constitutional / 不耦合 LLM SDK |
 | `references/30-okr-roadmap-bridge.md` | `persona/okr_bridge.py` | Persona→Objective→KR / RICE/ICE / 4 类 KR 模板 |
 | `references/31-measurement-toolkit.md` | `persona/measurement_toolkit.py` | NPS/CES/CSAT/Funnel/Activation/Retention / OKR 联动 |
+
+### 5.4 研究手艺与持续发现（v2.7.0 新增 — 上游 + 叙事 + 理论）
+
+#### E 档 · 上游研究手艺 + 持续发现
+
+| 文件 | 核心内容 | 来源 |
+|------|---------|------|
+| `references/32-portigal-interviewing-users.md` | 访谈六阶段 / 6 大提问类型 / Rapport 四层 / 远程访谈 / Debrief 三阶段 | Portigal《Interviewing Users》2nd ed. |
+| `references/33-fitzpatrick-mom-test.md` | Mom Test 三铁律 / 过去行为好问题 / 承诺三类 / Meta-label 笔记 / Slicing | Fitzpatrick《The Mom Test》 |
+| `references/34-torres-continuous-discovery.md` | OST / Weekly Touchpoints / Assumption 4 类 / Compare&Contrast / Product Trio | Torres《Continuous Discovery Habits》 |
+| `references/35-alvarez-lean-customer-development.md` | Problem Hypothesis Canvas / Early Adopter 5 特征 / Pivot 6 信号 / MVP 类型 | Alvarez《Lean Customer Development》 |
+
+#### F 档 · 体验地图、叙事与理论源头
+
+| 文件 | 核心内容 | 来源 |
+|------|---------|------|
+| `references/36-kalbach-mapping-experiences.md` | 10 种地图类型 / Journey Map 五行 / Blueprint 五线 / MoT / Persona×Journey | Kalbach《Mapping Experiences》2nd ed. |
+| `references/37-quesenbery-storytelling-ux.md` | UX 故事五类型 / 故事五要素 / 30 秒电梯版 / 六原则 / 受众适配 | Quesenbery & Brooks《Storytelling for UX》 |
+| `references/38-kuniavsky-observing-user-experience.md` | 四象限方法选择 / CI 4 原则 / Diary Study / 可用性测试 / 多方法组合 | Kuniavsky《Observing the User Experience》2nd ed. |
+| `references/39-christensen-competing-against-luck.md` | JTBD 原版 / Milkshake Story / Forces 4 力 / Circumstance / 非消费 / Hiring | Christensen《Competing Against Luck》 |
 
 > 💡 **何时查阅扩展知识库**：默认执行 Mulder 主轴即可。当遇到决策树中的特殊情境（创业早期、复杂企业、多边平台、伦理敏感等），按需查阅对应文档。
 
