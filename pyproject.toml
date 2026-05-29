@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "2.4.97"
-description = "Web Persona toolkit — evidence-based persona creation and application, based on 'The User Is Always Right' (人物角色创建与应用工具包 - 基于《赢在用户》)"
+version = "2.5.0"
+description = "Web Persona toolkit — multi-book persona methodology system, integrating Mulder + Cooper + Pruitt-Adlin + Goodwin + Indi Young + Lene Nielsen + Lean UX + 5 more classic works (多书系融合的人物角色方法论体系)"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}

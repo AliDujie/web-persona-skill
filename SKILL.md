@@ -1,7 +1,7 @@
 ---
 name: web-persona-skill
-version: "2.4.97"
-description: Web人物角色(Personas)创建与应用专家技能。基于《赢在用户》全书知识体系，具备完整执行能力：方法选择决策、访谈提纲生成、问卷设计、用户细分、角色文档创建、质量评审、商业策略分析、功能优先级排序、设计指导、测试计划与衡量体系，以及CEO视角经济模型与增长策略。
+version: "2.5.0"
+description: Web人物角色(Personas)创建与应用专家技能。融合《赢在用户》《About Face》《Persona Lifecycle》《Designing for the Digital Age》《Mental Models》《Lean UX》等 12+ 经典著作的多书系方法论体系，具备完整执行能力：方法选择决策、访谈提纲生成、问卷设计、用户细分、角色文档创建、质量评审、商业策略分析、功能优先级排序、设计指导、测试计划与衡量体系，以及CEO视角经济模型与增长策略。支持根据项目阶段/复杂度/组织成熟度自动推荐适配方法论。
 author: "渡劫"
 ---
 
@@ -9,7 +9,9 @@ author: "渡劫"
 
 # Web Persona 人物角色创建与应用专家 Skill
 
-基于《赢在用户：Web人物角色创建和应用实践指南》(The User Is Always Right) 全书知识体系构建。
+融合 12+ 经典著作的多书系 Persona 方法论体系。以 Steve Mulder《赢在用户：Web人物角色创建和应用实践指南》(The User Is Always Right) 为执行主轴，并整合 Cooper 目标导向设计、Pruitt-Adlin 生命周期、Goodwin 端到端框架、Indi Young 心智模型、Lean UX Proto-Persona、Lene Nielsen 十步法等扩展方法论，覆盖创业到企业全场景。
+
+> 📚 **方法论谱系（Methodology Lineage）** — 详见 `references/06-15`，决策树见下文"§ 一、核心方法论"。
 
 ## 🧭 快速决策：什么时候使用 Persona？
 
@@ -153,6 +155,63 @@ profile = persona.profile_persona("效率型用户")
 
 ## 一、核心方法论
 
+### 1.1 方法论谱系（Methodology Lineage）— v2.5.0+ 新增
+
+本技能融合的 5 大方法论流派与 12+ 经典著作：
+
+| 流派 | 代表著作 | 核心贡献 | 参考文档 |
+|---|---|---|---|
+| 🟦 **定量分群派** (Mulder/IBM) | 《The User Is Always Right》(2007) | 调研驱动 + 角色卡片 + 衡量体系 | `01-05`（默认主轴） |
+| 🟥 **目标导向派** (Cooper) | 《About Face 4》《Inmates》 | Goal-Directed Design / 六类角色 / 三联场景 | `06-cooper-goal-directed-design` |
+| 🟨 **生命周期派** (Pruitt & Adlin) | 《The Persona Lifecycle》(2006) | 五阶段治理 / Foundation Document | `07-persona-lifecycle` |
+| 🟩 **端到端实操派** (Goodwin) | 《Designing for the Digital Age》(2009) | 七阶段框架 / 五模型并用 / Skeleton 优先 | `08-goodwin-digital-age` |
+| 🟪 **认知/思维派** (Young/Norman) | 《Mental Models》《DOET》 | 反人口学 / Mental Model Diagram / 三模型框架 | `09-indi-young` `14-norman` |
+| 🟫 **学术系统派** (Nielsen) | 《Personas - User Focused Design》(2019) | 四视角分类 / 十步法 / 包容性设计 | `10-lene-nielsen-10steps` |
+| ⬜ **轻量假设派** (Gothelf/Hall) | 《Lean UX》《Just Enough Research》 | Proto-Persona / 假设清单 / Saturation 判断 | `11-lean-ux` `12-just-enough` |
+| 🟧 **旅程衔接派** (Patton) | 《User Story Mapping》(2014) | 角色 × 故事地图 / 横切发布 | `13-user-story-mapping` |
+| 🔴 **批判防御派** (Chapman & Microsoft) | 《Personas' New Clothes》《Inclusive Design》 | 五大批评 / 19 项防御评审 / Persona Spectrum | `15-personas-critique-and-defense` |
+
+### 1.2 方法选择决策树
+
+```
+你的情境是？
+│
+├── 创业 < 18 个月 / 调研预算 = 0
+│   └─► 🔘 Lean UX Proto-Persona（11-lean-ux）
+│        └─► 6 个月后升级 → Mulder 主轴
+│
+├── 时间紧 (< 2 周) / 决策驱动
+│   └─► 🔘 Just Enough Research（12-just-enough）
+│        └─► 用 5 字段轻量 Persona
+│
+├── Web/电商/消费级 / 有调研预算
+│   └─► 🔘 Mulder 主轴（01-05，本技能默认）
+│        └─► 加 Lifecycle 治理（07-persona-lifecycle）
+│
+├── 复杂企业软件 / SaaS / 设计驱动
+│   └─► 🔘 Cooper + Goodwin（06+08）
+│        └─► Foundation Document + 五模型并用
+│
+├── 多边平台 / 多角色协作复杂
+│   └─► 🔘 Patton Story Map 泳道（13-user-story-mapping）
+│        └─► 加 Persona × Story Map 整合
+│
+├── 决策驱动 / 行为差异 >> 人口差异
+│   └─► 🔘 Indi Young Mental Model + Thinking Style（09-indi-young）
+│
+├── 学术研究 / 伦理敏感 / 包容性要求高
+│   └─► 🔘 Lene Nielsen 十步法（10-lene-nielsen）
+│        └─► 加 Persona Spectrum（15-critique-and-defense）
+│
+├── 团队需要理论根基（向高管/质疑者解释）
+│   └─► 🔘 Norman 三模型 + 七步行动（14-norman）
+│
+└── 已有 Persona 但效果不佳 / 反模式诊断
+    └─► 🔘 Chapman 批判 + 19 项防御评审（15-critique-and-defense）
+```
+
+### 1.3 默认执行模块
+
 | 模块 | 核心问题 | 关键行动 |
 |------|---------|---------|
 | A. 方法选择 | 该用定性/定量/混合路径？ | 评估预算/时间/团队 -> 推荐路径 + 执行计划 |
@@ -205,9 +264,22 @@ profile = persona.profile_persona("效率型用户")
 ```
 web-persona-skill/
 ├── SKILL.md                     # 本文件
-├── references/                  # 知识库文档
-│   ├── 01-persona-basics.md     # 人物角色基础概念与价值
-│   └── 02-measuring-results.md  # 成果衡量方法论
+├── references/                  # 知识库文档（多书系融合 v2.5.0+）
+│   ├── 01-persona-basics.md         # Mulder 主轴：基础概念
+│   ├── 02-measuring-results.md      # Mulder 主轴：成果衡量
+│   ├── 03-persona-best-practices.md # Mulder 主轴：最佳实践
+│   ├── 04-persona-driven-workflows.md # Mulder 主轴：研究工作流
+│   ├── 05-ecosystem-collaboration.md # Mulder 主轴：跨技能协作
+│   ├── 06-cooper-goal-directed-design.md  # Tier 1: Cooper 派
+│   ├── 07-persona-lifecycle.md            # Tier 1: Pruitt-Adlin 派
+│   ├── 08-goodwin-digital-age.md          # Tier 1: Goodwin 派
+│   ├── 09-indi-young-mental-models.md     # Tier 2: Young 派（反人口学）
+│   ├── 10-lene-nielsen-10steps.md         # Tier 2: 欧洲学派
+│   ├── 11-lean-ux-proto-personas.md       # Tier 2: Lean UX
+│   ├── 12-just-enough-research.md         # Tier 3: Hall 决策驱动
+│   ├── 13-user-story-mapping.md           # Tier 3: Patton 衔接
+│   ├── 14-norman-mental-conceptual-models.md # Tier 3: 认知科学根基
+│   └── 15-personas-critique-and-defense.md  # Tier 3: 批判 + 防御
 ├── persona/                     # Python 工具包
 │   ├── __init__.py              # PersonaSkill 统一入口类
 │   ├── config.py                # 全局配置
@@ -236,10 +308,44 @@ web-persona-skill/
 
 ## 五、知识库
 
+### 5.1 主体方法论（Mulder 派 — 默认）
+
 | 文件 | 核心内容 |
 |------|---------|
 | `references/01-persona-basics.md` | 人物角色基础概念、三种创建路径、细分原则、角色构成要素、优先级体系 |
 | `references/02-measuring-results.md` | 发布前测试、发布后衡量、按角色分析指标、定量衡量体系 |
+| `references/03-persona-best-practices.md` | 人物角色最佳实践、常见陷阱、成功模式 |
+| `references/04-persona-driven-workflows.md` | Persona 驱动的研究工作流（跨技能协作） |
+| `references/05-ecosystem-collaboration.md` | 跨技能协作完整流程（Persona → JTBD/UDM/QuantUX/VPD/SWD） |
+
+### 5.2 扩展方法论（v2.5.0+ 新增 — 多书系融合）
+
+#### Tier 1 · 方法论根基
+
+| 文件 | 来源 | 核心内容 |
+|------|------|---------|
+| `references/06-cooper-goal-directed-design.md` | Cooper《About Face 4》 | Goal-Directed Design / 六类角色 / 三联式场景 / Foundation Document |
+| `references/07-persona-lifecycle.md` | Pruitt & Adlin《Persona Lifecycle》 | 五阶段生命周期 / 7 类反模式 / 治理流程 |
+| `references/08-goodwin-digital-age.md` | Goodwin《Designing for the Digital Age》 | 七阶段框架 / 五模型并用 / Persona Skeleton 优先 |
+
+#### Tier 2 · 现代方法对照
+
+| 文件 | 来源 | 核心内容 |
+|------|------|---------|
+| `references/09-indi-young-mental-models.md` | Indi Young《Mental Models》《Practical Empathy》 | Mental Model Diagram / Thinking Style Segments / 反人口学 |
+| `references/10-lene-nielsen-10steps.md` | Lene Nielsen《Personas - User Focused Design》| 四视角分类 / 十步法 / 叙事五要素 / 包容性设计 |
+| `references/11-lean-ux-proto-personas.md` | Gothelf《Lean UX》| Proto-Persona / 假设句式 / MVE 实验类型 / 演化路径 |
+
+#### Tier 3 · 延伸视角
+
+| 文件 | 来源 | 核心内容 |
+|------|------|---------|
+| `references/12-just-enough-research.md` | Erika Hall《Just Enough Research》| 五类研究问题 / Saturation 判断 / 反 Research Theater |
+| `references/13-user-story-mapping.md` | Patton《User Story Mapping》| Story Map 三层结构 / Now/Later Map / 多边泳道 |
+| `references/14-norman-mental-conceptual-models.md` | Norman《DOET》| 三模型框架 / 七步行动 / 七大设计原则 |
+| `references/15-personas-critique-and-defense.md` | Chapman & Milham + Microsoft Inclusive Design | 五大批评 / 19 项防御评审 / Persona Spectrum |
+
+> 💡 **何时查阅扩展知识库**：默认执行 Mulder 主轴即可。当遇到决策树中的特殊情境（创业早期、复杂企业、多边平台、伦理敏感等），按需查阅对应文档。
 
 ---
 

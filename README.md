@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-2.4.97-blue)
+![Version](https://img.shields.io/badge/version-2.5.0-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v2497)
+- [What's New](#-whats-new-in-v250)
 - [Why Teams Choose Persona](#-why-teams-choose-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -29,7 +29,43 @@
 
 ---
 
-## 🆕 What's New in v2.4.97
+## 🆕 What's New in v2.5.0
+
+> **Major release — Multi-book methodology integration. 多书系方法论体系融合。**
+
+This release expands the skill from a single-source methodology (Mulder's *The User Is Always Right*) to a **comprehensive multi-book persona methodology system** integrating 12+ classic works.
+
+### What's added
+
+**10 new reference documents** (`references/06-15`) covering:
+
+| Tier | New References | Source |
+|------|----------------|--------|
+| 🟦 Tier 1 (Foundation) | `06-cooper-goal-directed-design` | Alan Cooper《About Face 4》《Inmates》|
+| 🟦 Tier 1 | `07-persona-lifecycle` | Pruitt & Adlin《The Persona Lifecycle》|
+| 🟦 Tier 1 | `08-goodwin-digital-age` | Kim Goodwin《Designing for the Digital Age》|
+| 🟨 Tier 2 (Modern) | `09-indi-young-mental-models` | Indi Young《Mental Models》《Practical Empathy》|
+| 🟨 Tier 2 | `10-lene-nielsen-10steps` | Lene Nielsen《Personas - User Focused Design》|
+| 🟨 Tier 2 | `11-lean-ux-proto-personas` | Gothelf《Lean UX》|
+| 🟧 Tier 3 (Specialized) | `12-just-enough-research` | Erika Hall《Just Enough Research》|
+| 🟧 Tier 3 | `13-user-story-mapping` | Jeff Patton《User Story Mapping》|
+| 🟧 Tier 3 | `14-norman-mental-conceptual-models` | Don Norman《DOET》|
+| 🟧 Tier 3 | `15-personas-critique-and-defense` | Chapman & Milham + Microsoft Inclusive Design |
+
+### What's improved
+
+- **SKILL.md**: Added "Methodology Lineage" section and "Method Selection Decision Tree" — the skill now auto-recommends the right methodology based on project stage / complexity / org maturity
+- **references/README.md**: Restructured to three-tier organization with situation-based lookup table
+- **Frontmatter description**: Updated to reflect multi-book scope
+- **Version**: Synced to 2.5.0 across SKILL.md / pyproject.toml / `__init__.py` / README.md
+
+### Why this matters
+
+Previously the skill executed Mulder's quantitative web-persona method as the only path. Now the skill becomes a **meta-decision engine** — when facing a complex enterprise software project, it can pull Cooper's Goal-Directed Design; for a startup MVP, it can pull Lean UX Proto-Personas; for an inclusive design challenge, it can pull Microsoft Persona Spectrum. The Mulder default remains, but ten new lenses are available on demand.
+
+## 🕘 Earlier Releases
+
+### v2.4.97
 
 - **Repo Maintenance**: Fixed duplicate What's New section (v2.4.96 appeared twice), fixed stale TOC link (v2495 → v2496), updated Version History "Latest" entry (v2.4.95 → v2.4.96), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.97

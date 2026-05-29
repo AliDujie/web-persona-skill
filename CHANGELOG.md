@@ -1,3 +1,36 @@
+## v2.5.0 (2026-05-29) — Multi-book methodology integration
+
+**Major release — expanded from single-source (Mulder) to multi-book persona methodology system.**
+
+### Added
+- **10 new reference documents** in `references/`:
+  - Tier 1 (Foundation): `06-cooper-goal-directed-design.md`, `07-persona-lifecycle.md`, `08-goodwin-digital-age.md`
+  - Tier 2 (Modern): `09-indi-young-mental-models.md`, `10-lene-nielsen-10steps.md`, `11-lean-ux-proto-personas.md`
+  - Tier 3 (Specialized): `12-just-enough-research.md`, `13-user-story-mapping.md`, `14-norman-mental-conceptual-models.md`, `15-personas-critique-and-defense.md`
+- **SKILL.md "Methodology Lineage"** section listing 9 methodology schools and 12+ classic works
+- **SKILL.md "Method Selection Decision Tree"** — auto-recommends methodology based on project stage / complexity / org maturity
+- **references/README.md** restructured into three-tier index with situation-based lookup table
+
+### Changed
+- SKILL.md frontmatter `description` updated to reflect multi-book scope
+- SKILL.md "Five · Knowledge Base" section expanded from 2 entries to 15
+- SKILL.md "Four · Directory Structure" updated to show all 15 reference files
+- README.md "What's New" section restructured with v2.5.0 release highlights and "Earlier Releases" archive
+- Version synced to 2.5.0 across `SKILL.md` / `pyproject.toml` / `persona/__init__.py` / `README.md`
+
+### Sources integrated
+- Alan Cooper et al.《About Face 4》《Inmates》
+- Pruitt & Adlin《The Persona Lifecycle》
+- Kim Goodwin《Designing for the Digital Age》
+- Indi Young《Mental Models》《Practical Empathy》
+- Lene Nielsen《Personas - User Focused Design》(2nd ed.)
+- Gothelf & Seiden《Lean UX》(2nd ed.)
+- Erika Hall《Just Enough Research》(2nd ed.)
+- Jeff Patton《User Story Mapping》
+- Don Norman《The Design of Everyday Things》
+- Chapman & Milham《The Personas' New Clothes》(HFES 2006)
+- Microsoft Design Team《Inclusive Design》(Persona Spectrum)
+
 ## v2.4.97 (2026-05-26)
 
 - Repo maintenance: added Examples badge (3 runnable scripts), added examples/ reference to Resources section, ecosystem cross-reference audit
