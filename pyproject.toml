@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "3.0.0"
-description = "Web Persona toolkit v3.0 — Complete restructure. 8 core operation manuals (project setup → qualitative/quantitative/mixed → analysis → creation → validation → application) + 39 advanced references + 4 Python modules (clustering / llm_prompts / okr_bridge / measurement_toolkit). Integrates 30+ classic works (Cooper/Mulder/NNGroup/Portigal/Kahneman/etc.) organized by execution stage, not by book."
+version = "3.1.0"
+description = "Persona full-lifecycle execution skill. Given inputs (interview transcripts / survey data / product description), directly produces persona cards, behavior clusters, interview guides, surveys, validation reports, priority matrices. 8 task protocols + 39 advanced refs + 4 Python modules."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
