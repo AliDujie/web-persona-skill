@@ -4,14 +4,19 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.0.0-blue)
+![Version](https://img.shields.io/badge/version-3.3.1-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
 ---
 
-## What's New in v3.0.0
+## What's New
+
+### v3.3.1 - Version sync and consistency fix
+- Fixed version inconsistency across pyproject.toml (3.1.0), README badge (3.0.0), and SKILL.md (3.3.0)
+- All files now consistently report v3.3.1
+
 
 **Complete architectural restructure — from "book index" to "execution manual".**
 
