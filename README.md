@@ -4,15 +4,16 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.3-blue)
+![Version](https://img.shields.io/badge/version-3.3.4-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-5%20runnable%20scripts-brightgreen)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v331)
+- [What's New](#-whats-new-in-v334)
 - [Why Teams Choose Persona](#-why-teams-choose-persona--为什么选择-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -20,15 +21,21 @@
 - [Ecosystem Quick Start](#-ecosystem-quick-start)
 - [Core Capabilities](#-core-capabilities)
 - [Real-World Use Cases](#-real-world-use-cases)
+- [Common Mistakes](#-common-mistakes--常见错误)
 - [Quick Recipes](#-quick-recipes--快速食谱)
 - [Ecosystem Integration](#-ecosystem-integration)
 - [AI Agent Integration](#-ai-agent-integration)
-- [FAQ / Troubleshooting](#-faq--troubleshooting)
+- [FAQ / Troubleshooting](#faq--troubleshooting)
+- [When NOT to Use Persona](#-when-not-to-use-persona--什么时候不该用-persona)
 - [Best Practices](#-best-practices--最佳实践)
 - [Limitations](#-limitations--局限性)
 - [Resources](#-resources)
 
 ---
+
+## 🆕 What's New in v3.3.4
+
+- **Repo maintenance 2026-06-01**: Added missing standard sections — Zero Dependencies badge, Common Mistakes table, "When NOT to Use Persona" bilingual guide, 30-Second Quick Start, Persona Quality Score Quick-Ref table, and Version History section. Added ecosystem cross-reference audit across all 6 AliDujie skills.
 
 ## 🆕 What's New in v3.3.3
 
@@ -161,6 +168,23 @@ print(report)
 > print(skill.render_all_personas())
 > ```
 
+## ⚡ 30-Second Quick Start / 30秒快速开始
+
+```python
+from persona import PersonaSkill
+
+# One-liner: create and render a persona
+p = PersonaSkill("你的产品")
+p.add_persona("效率用户", "primary", "快就是好", goals=["快速完成"])
+print(p.render_all_personas())
+
+# Two-liners: interview guide
+p = PersonaSkill("你的产品")
+print(p.generate_interview("用户访谈", ["goals", "behaviors"]))
+```
+
+**零依赖纯 Python — 无需 `pip install`。** Copy any line above to explore Persona immediately.
+
 ## 🔗 Ecosystem Quick Start
 
 Persona is the **first skill** in the AliDujie UX Research Ecosystem pipeline:
@@ -276,6 +300,18 @@ print(p.generate_persona(include_ceo_analysis=True, total_users=100000))
 
 > 💡 **Pro Tip**: Start with T1 (project setup) if you're unsure whether personas are needed — it'll tell you which method fits your situation. Skip directly to T3/T5 if you already have interview transcripts or survey data.
 > **专业技巧**: 如果不确定是否需要做 Persona，先从 T1（立项）开始——它会告诉你哪种方法适合你的情况。如果已有访谈稿或数据，直接跳到 T3 或 T5。
+
+## 🚫 Common Mistakes / 常见错误
+
+| Mistake | What Happens | Fix |
+|---------|-------------|-----|
+| Demographic-only personas | "30-year-old male" — no behavioral insight | Use behavior variables (T3/T5), not age/gender, for clustering |
+| Too many personas (>5) | Diluted focus, nobody remembers them | Run `review_personas()` — it flags coverage gaps vs. bloat |
+| Personas without scenarios | Pretty profiles that nobody references | Always add `add_test_script()` scenarios — persona decisions start with action |
+| Skipping validation | Biased or outdated personas drive wrong decisions | Run T7 validation every 6 months; check against real usage data |
+| Personas stored in a drawer | Nobody uses them in daily work | Link to OKRs via `okr_bridge.py` and reference in sprint planning |
+
+> **只做人口统计角色？用行为变量聚类。超过5个角色？跑 `review_personas()` 自动识别臃肿。没有场景的角色？加 `add_test_script()` 让角色可行动。不验证？每6个月跑T7验证。角色锁抽屉？用 `okr_bridge.py` 链接到OKR。**
 
 ## 🌐 Ecosystem Integration
 
@@ -404,6 +440,19 @@ web-persona-skill/
 └── .github/              # CI/CD workflows & issue templates
 ```
 
+## 📊 Persona Quality Quick-Ref / 角色质量速查
+
+Use `review_personas()` to score your personas on these criteria:
+
+| Score | Quality Level | What It Means | Next Step |
+|-------|--------------|---------------|-----------|
+| ≥ 8/10 | Strong | Evidence-based, distinct, actionable | Deploy to team |
+| 6-7.9 | Moderate | Minor gaps in coverage or specificity | Refine top 3 gaps |
+| 4-5.9 | Weak | Missing data or too similar to each other | Revisit research |
+| < 4 | Invalid | Demographic-only or no differentiation | Restart from T1/T2 |
+
+> 📌 Run `p.review_personas()` after T6 to catch issues early.
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: Do I need quantitative data to create personas?**
@@ -418,6 +467,23 @@ A: Yes. The skill is compatible with Cooper's Goal-Directed Design, Mulder's Web
 **Q: 可以用中文吗？**
 A: 可以。所有输出（角色卡、访谈提纲、问卷、报告）均支持中文。SKILL.md 本身就是中文执行手册。
 
+**Q: How does Persona integrate with other AliDujie skills?**
+A: Persona is the ecosystem starting point. Persona → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) (Jobs discovery) → [UDM](https://github.com/AliDujie/universal-design-methods) (research methods) → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) (validation) → [VPD](https://github.com/AliDujie/value-proposition-design) (value mapping) → [SWD](https://github.com/AliDujie/storytelling-with-data) (presentation).
+
+## 🧭 When NOT to Use Persona / 什么时候不该用 Persona
+
+> Persona 擅长**定义"为谁做"**，但不擅长生成定性洞察或定量验证。以下场景应使用其他技能：
+> Persona excels at defining **who your users are**, but not at generating qualitative insights or quantitative validation. Use these skills instead:
+
+| Your Need | Recommended Skill | Why / 为什么 |
+|-----------|------------------|-------------|
+| Choose research methods or design interviews | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 有 100 种研究方法可选 / UDM has 100 methods to choose from |
+| Understand user "Jobs" and opportunity scoring | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 揭示用户想完成什么 / JTBD reveals what users want to accomplish |
+| Quantitative A/B testing, HEART metrics | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | QuantUX 提供统计验证 / QuantUX provides statistical validation |
+| Value proposition canvas, PMF validation | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD 映射客户画像到价值主张 / VPD maps profile to value proposition |
+| Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | SWD 将发现转化为高管就绪叙事 / SWD turns findings into executive stories |
+| Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 提供战略分析框架 / STM provides strategic frameworks |
+
 ## ✅ Best Practices / 最佳实践
 
 1. **Start with data, not assumptions** — let user behavior drive segmentation, not demographics
@@ -426,6 +492,7 @@ A: 可以。所有输出（角色卡、访谈提纲、问卷、报告）均支�
 4. **Review quality** — always run `review_personas()` to check for gaps
 5. **Link to OKRs** — use `okr_bridge.py` to ensure personas drive real decisions
 6. **Validate regularly** — personas drift; run validation every 6 months
+7. **Chain with ecosystem** — [Persona](#) defines who → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers what → [UDM](https://github.com/AliDujie/universal-design-methods) validates how → [VPD](https://github.com/AliDujie/value-proposition-design) maps value → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) quantifies → [SWD](https://github.com/AliDujie/storytelling-with-data) presents
 
 ## ⚠️ Limitations / 局限性
 
@@ -433,6 +500,19 @@ A: 可以。所有输出（角色卡、访谈提纲、问卷、报告）均支�
 - **Quantitative clustering needs sufficient data** — KMeans requires n > 100 for stable segments
 - **CEO economics are estimates** — CAC/LTV figures are illustrative benchmarks, not actual business data
 - **Single-language clustering** — Chinese persona names work best with Chinese input data
+- **Bilingual documentation only** — Pro Tips and guides are provided in CN/EN only; localization to other languages requires community contributions
+
+## 📊 Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for full release notes.
+
+**Latest (v3.3.4)**: Added missing standard sections (Zero Dependencies badge, Common Mistakes, "When NOT to Use Persona", 30-Second Quick Start, Quality Quick-Ref table, Version History). Ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v3.3.2)**: Major README expansion — from ~95 lines to ~500+ lines with full ecosystem standard documentation. Version sync across all files.
+
+**Previous (v3.3.1)**: Fixed version inconsistency across pyproject.toml/README/SKILL.md. Added full bilingual documentation.
+
+**Previous (v3.3.0)**: Complete architectural restructure — from "book index" to "execution manual" with 8 core operation manuals and 39 advanced references.
 
 ## 📚 Resources
 
@@ -445,6 +525,19 @@ A: 可以。所有输出（角色卡、访谈提纲、问卷、报告）均支�
 | [references/advanced/](references/advanced/) | 39 deep-dive references |
 | [examples/](examples/) | 5 runnable scripts with bilingual comments |
 
+### 📖 Recommended Learning Path
+
+1. **Start with the README** — Quick start + 30-second example
+2. **Read USAGE.md or INSTALL.md** — Detailed installation and integration guide
+3. **Explore references/core/** — Deep dive into 10 persona lifecycle steps
+4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#-complete-pipeline-example))
+
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
+
+[**Persona**](https://github.com/AliDujie/web-persona-skill) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [UDM](https://github.com/AliDujie/universal-design-methods) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [VPD](https://github.com/AliDujie/value-proposition-design) · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)

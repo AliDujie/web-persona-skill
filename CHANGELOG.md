@@ -1,3 +1,14 @@
+## v3.3.4 (2026-06-01)
+
+- Added Zero Dependencies badge to README
+- Added Common Mistakes table (bilingual CN/EN)
+- Added "When NOT to Use Persona" bilingual guide with cross-skill references
+- Added 30-Second Quick Start section
+- Added Persona Quality Score Quick-Ref table
+- Added Version History section to README
+- Added ecosystem cross-reference audit across all 6 AliDujie skills
+- Version sync across README badge, SKILL.md, pyproject.toml, and __init__.py
+
 ## v3.3.2 (2026-05-31)
 
 - Major README expansion — from ~95 to ~500+ lines: added TOC, Why Teams Choose Persona, Who This Skill Is For, Quick Decision guide, Quick Start (5 min), Ecosystem Quick Start, Core Capabilities table (10 tasks), Real-World Use Cases, Quick Recipes (4 copy-paste scripts), Ecosystem Integration diagram, AI Agent Integration, FAQ, Best Practices, Limitations, and full bilingual (CN/EN) coverage
