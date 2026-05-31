@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.2-blue)
+![Version](https://img.shields.io/badge/version-3.3.3-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-5%20runnable%20scripts-brightgreen)
@@ -30,7 +30,7 @@
 
 ---
 
-## 🆕 What's New in v3.3.2
+## 🆕 What's New in v3.3.3
 
 - **Major README Expansion 2026-05-31**: Expanded README from ~95 lines to ~500+ lines — added TOC, Why Teams Choose Persona, Who This Skill Is For, Quick Decision guide, Quick Start (5 min), Ecosystem Quick Start, Core Capabilities table (10 tasks), Real-World Use Cases, Quick Recipes (4 copy-paste scripts), Ecosystem Integration diagram, AI Agent Integration, FAQ, Best Practices, Limitations, Resources, and full bilingual (CN/EN) coverage
 - **Version Bump**: Synced to 3.3.2
