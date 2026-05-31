@@ -484,6 +484,22 @@ A: Persona is the ecosystem starting point. Persona → [JTBD](https://github.co
 | Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | SWD 将发现转化为高管就绪叙事 / SWD turns findings into executive stories |
 | Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 提供战略分析框架 / STM provides strategic frameworks |
 
+## 🤝 Contributing
+
+We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Related Skills in the AliDujie Ecosystem
+
+| Skill | What It Does | GitHub |
+|-------|-------------|--------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 100 design research methods | `UDMSkill` |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | HEART framework, A/B testing, MaxDiff | `QuantUXSkill` |
+| [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) | VPD canvas, Blue Ocean strategy | `VPDSkill` |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
+
 ## ✅ Best Practices / 最佳实践
 
 1. **Start with data, not assumptions** — let user behavior drive segmentation, not demographics
@@ -506,7 +522,11 @@ A: Persona is the ecosystem starting point. Persona → [JTBD](https://github.co
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.4)**: Added missing standard sections (Zero Dependencies badge, Common Mistakes, "When NOT to Use Persona", 30-Second Quick Start, Quality Quick-Ref table, Version History). Ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v3.3.4)**: Version History sync, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v3.3.2)**: Major README expansion — from ~95 lines to ~500+ lines with full ecosystem standard documentation. Version sync across all files.
+
+**Previous (v3.3.2)**: Major README expansion — from ~95 lines to ~500+ lines with full ecosystem standard documentation. Version sync across all files.
 
 **Previous (v3.3.2)**: Major README expansion — from ~95 lines to ~500+ lines with full ecosystem standard documentation. Version sync across all files.
 
