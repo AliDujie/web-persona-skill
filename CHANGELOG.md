@@ -1,3 +1,8 @@
+## v3.3.2 (2026-05-31)
+
+- Major README expansion — from ~95 to ~500+ lines: added TOC, Why Teams Choose Persona, Who This Skill Is For, Quick Decision guide, Quick Start (5 min), Ecosystem Quick Start, Core Capabilities table (10 tasks), Real-World Use Cases, Quick Recipes (4 copy-paste scripts), Ecosystem Integration diagram, AI Agent Integration, FAQ, Best Practices, Limitations, and full bilingual (CN/EN) coverage
+- Version sync across README badge, SKILL.md, pyproject.toml, and __init__.py
+
 ## v3.0.0 (2026-05-29) — Complete architectural restructure
 
 **From "book index" to "execution manual" — organized by what you DO, not what you READ.**
