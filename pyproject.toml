@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-persona-skill"
-version = "3.3.8"
+version = "3.3.9"
 description = "Persona full-lifecycle execution skill. Given inputs (interview transcripts / survey data / product description), directly produces persona cards, behavior clusters, interview guides, surveys, validation reports, priority matrices. 8 task protocols + 39 advanced refs + 4 Python modules."
 readme = "README.md"
 requires-python = ">=3.8"
