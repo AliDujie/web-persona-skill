@@ -27,7 +27,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v338)
+- [What's New](#-whats-new-in-v339)
 - [Why Teams Choose Persona](#-why-teams-choose-persona--为什么选择-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
