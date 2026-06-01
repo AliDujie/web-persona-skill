@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.5-blue)
+![Version](https://img.shields.io/badge/version-3.3.6-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-5%20runnable%20scripts-brightgreen)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v334)
+- [What's New](#-whats-new-in-v336)
 - [Why Teams Choose Persona](#-why-teams-choose-persona--为什么选择-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -33,13 +33,13 @@
 
 ---
 
+## 🆕 What's New in v3.3.6
+
+- **README maintenance 2026-06-01**: Merged duplicate What's New v3.3.5 sections, fixed TOC anchor mismatch, added Chinese Quick Decision section (🧭 快速决策：什么时候使用 Persona？), and version bump across all files.
+
 ## 🆕 What's New in v3.3.5
 
 - **Repo maintenance 2026-06-01 (v3.3.5)**: Added impact metrics table with before/after statistics, 2-week research sprint template, extended ecosystem collaboration section (CEO/CPO/CMO advisors), interview prompt library, and enhanced cross-skill recipes. Version bump and ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v3.3.5
-
-- **Repo maintenance 2026-06-01**: Added impact metrics table, Research Sprint Template (2-week plan), Interview Prompt Library (10 prompts), Extended Ecosystem section (CEO/CPO/CMO/CTO advisors), and ecosystem cross-reference audit across all 6 AliDujie skills.
 
 ## 🆕 What's New in v3.3.3
 
@@ -129,6 +129,19 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 | Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
 
 > 💡 Persona is the ecosystem starting point: use it when you need to **define who your users are**.
+
+## 🧭 快速决策：什么时候使用 Persona？
+
+| 你的需求 | 推荐技能 |
+|---------|---------|
+| 创建人物角色、用户细分 | ✅ **Persona（本技能）** |
+| 选择研究方法、设计访谈 | → [UDM](https://github.com/AliDujie/universal-design-methods) |
+| 理解用户"工作"、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 定量 A/B 测试、HEART 指标 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 价值主张画布、PMF 验证 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
+| 将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 Persona 是生态起点：当你需要**定义你的用户是谁**时使用。
 
 ## ⚡ Quick Start (5 Minutes)
 
@@ -592,7 +605,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.4)**: Version History sync, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v3.3.6)**: README maintenance — duplicate What's New merge, TOC anchor fix, added CN Quick Decision section, version bump.
 
 **Previous (v3.3.2)**: Major README expansion — from ~95 lines to ~500+ lines with full ecosystem standard documentation. Version sync across all files.
 
