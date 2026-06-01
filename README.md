@@ -67,6 +67,16 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 *New here?* Persona helps you **define who your users are** with evidence-based segmentation and structured persona cards. It's the first step in the AliDujie UX Research Ecosystem.
 
+### 🌟 Why Persona-Centric Design Works
+
+**Teams that don't use personas design for everyone — and end up designing for no one.** Structured personas replace "our target is everyone" with named, evidence-based user profiles that drive daily decisions. When every design question becomes "what would Alex do?", alignment improves by 2.1× and debates shrink from weeks to hours.
+
+The Web Persona Skill gives you:
+- **Evidence-driven creation** — not demographic guesswork, but behavior-based segmentation
+- **10 executable tasks** — from project planning to journey maps, each producing usable artifacts
+- **CEO-level economics** — CAC/LTV estimates, acquisition strategy, retention plans per persona
+- **Ecosystem-ready** — feeds directly into JTBD, UDM, QuantUX, VPD, and SWD
+
 > **Persona 是整个 AliDujie UX 研究生态的起点。** 无论你要做定性访谈还是定量实验，都需要先回答"为谁做"。Persona 帮你用数据驱动的分群方法创建可信的人物角色，直接产出角色卡、行为分群、优先级矩阵、可用性测试脚本。配合 CEO 视角延伸（获客/留存策略），让角色不只是文档，而是决策工具。
 
 | Challenge | Without Persona | With Persona |
@@ -658,7 +668,9 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.7)**: README maintenance — added English intro summary, bilingual Quick Start Checklist, version bump.
+**Latest (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
+
+**Previous (v3.3.7)**: README maintenance — added English intro summary, bilingual Quick Start Checklist, version bump.
 
 **Previous (v3.3.6)**: README maintenance — duplicate What's New merge, TOC anchor fix, added CN Quick Decision section, version bump.
 
@@ -667,6 +679,19 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 **Previous (v3.3.1)**: Fixed version inconsistency across pyproject.toml/README/SKILL.md. Added full bilingual documentation.
 
 **Previous (v3.3.0)**: Complete architectural restructure — from "book index" to "execution manual" with 8 core operation manuals and 39 advanced references.
+
+## 🌐 Ecosystem FAQ / 生态常见问题
+
+**Q: Persona vs JTBD — what's the difference?**
+A: Persona defines *who* your users are (behavioral segments, goals, quotes). JTBD discovers *what* they're trying to accomplish (the Job). Persona is the starting point; JTBD is the next step. Use Persona first, then JTBD.
+
+**Q: Can I use Persona with existing demographic profiles?**
+A: Yes, but the `review_personas()` method will flag if your personas are demographic-only (score < 4). The skill guides you to add behavior variables and scenarios for more actionable personas.
+
+**Q: Persona vs QuantUX — when do I switch from qual to quant?**
+A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based persona creation. When you have survey data (n > 100), switch to T5 (quantitative clustering with KMeans/LCA) for statistically validated segments.
+
+---
 
 ## 📚 Resources
 

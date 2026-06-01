@@ -1,3 +1,7 @@
+## v3.3.8 (2026-06-01)
+
+- README maintenance: added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump 3.3.7->3.3.8
+
 ## v3.3.7 (2026-06-01)
 
 - README maintenance: added English intro summary below title, Quick Start Checklist (CN/EN), Research Sprint Options by Time/Budget table, TOC anchor fix (v336->v337), CHANGELOG version sync, version bump 3.3.6->3.3.7
