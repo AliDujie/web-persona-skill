@@ -27,7 +27,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v336)
+- [What's New](#-whats-new-in-v337)
 - [Why Teams Choose Persona](#-why-teams-choose-persona--为什么选择-persona)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
@@ -51,32 +51,8 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 - **README maintenance 2026-06-01**: Added English intro summary below title, Quick Start Checklist (CN/EN), Research Sprint Options by Time/Budget table, version bump.
 
-## 🆕 What's New in v3.3.6
+> **📦 Earlier versions (v3.3.6 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
-- **README maintenance 2026-06-01**: Merged duplicate What's New v3.3.5 sections, fixed TOC anchor mismatch, added Chinese Quick Decision section (🧭 快速决策：什么时候使用 Persona？), and version bump across all files.
-
-## 🆕 What's New in v3.3.5
-
-- **Repo maintenance 2026-06-01 (v3.3.5)**: Added impact metrics table with before/after statistics, 2-week research sprint template, extended ecosystem collaboration section (CEO/CPO/CMO advisors), interview prompt library, and enhanced cross-skill recipes. Version bump and ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v3.3.3
-
-- **Major README Expansion 2026-05-31**: Expanded README from ~95 lines to ~500+ lines — added TOC, Why Teams Choose Persona, Who This Skill Is For, Quick Decision guide, Quick Start (5 min), Ecosystem Quick Start, Core Capabilities table (10 tasks), Real-World Use Cases, Quick Recipes (4 copy-paste scripts), Ecosystem Integration diagram, AI Agent Integration, FAQ, Best Practices, Limitations, Resources, and full bilingual (CN/EN) coverage
-- **Version Bump**: Synced to 3.3.2
-
-## 🆕 What's New in v3.3.1
-
-- **Version Sync**: Fixed version inconsistency across pyproject.toml (3.1.0), README badge (3.0.0), and SKILL.md (3.3.0) — all now consistently report v3.3.1
-- **README Expansion**: Added full documentation matching ecosystem standard — TOC, Why Use This Skill, Quick Start, ecosystem integration, recipes, FAQ, and bilingual content
-
-## 🆕 What's New in v3.3.0
-
-- **Complete architectural restructure** — from "book index" to "execution manual"
-- **8 core operation manuals** (`references/core/01-08`) covering the entire persona lifecycle step-by-step
-- **39 advanced references** (`references/advanced/`) preserved as deep-dive dictionary
-- **SKILL.md reduced from 864 → ~120 lines** — quick reference only, details in core docs
-
-> **📦 Earlier versions (v2.7 → v2.4.97)**: Added upstream research craft (Portigal/Fitzpatrick/Torres/Alvarez), ABCD deep-dive (quantitative/psychology/ethics/engineering), 10 classic book references, and Mulder-based initial executor. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 ## 🇨🇳 中文概览
 
@@ -486,6 +462,52 @@ def generate_test_script(persona_name, steps):
 - **Context injection**: Pass persona profiles as system context when generating design requirements
 - **Structured output**: Use `render_all_personas()` to produce markdown cards that can be fed to other skills
 - **Cross-skill chaining**: Persona → JTBD (needs) → UDM (research plan) → QuantUX (validation)
+
+
+## 📐 Persona Lifecycle / 角色生命周期
+
+```
+Phase 1          Phase 2              Phase 3              Phase 4               Phase 5
+Project &       Research &           Analysis &           Generation &          Application &
+Planning ──────► Discovery  ──────►  Segmentation  ─────► Validation  ──────►  Measurement
+(T1)            (T2, T4)             (T3, T5)             (T6, T7)              (T8, T9, T10)
+  │                │                    │                    │                     │
+  ├─ Should we do  ├─ Interview design  ├─ Behavior vars     ├─ Persona cards      ├─ Feature matrix
+  ├─ Personas?     ├─ Survey design     ├─ Clustering        ├─ Quality review     ├─ OKR bridge
+  └─ Method choice └─ Data collection   └─ Segments          └─ Bias audit         ├─ Test scripts
+```
+
+1. **Project & Planning** (T1) — Decide if personas are needed, choose method
+2. **Research & Discovery** (T2, T4) — Interviews + surveys to collect data
+3. **Analysis & Segmentation** (T3, T5) — Qualitative analysis + quantitative clustering
+4. **Generation & Validation** (T6, T7) — Create persona cards, review quality, audit bias
+5. **Application & Measurement** (T8, T9, T10) — Prioritization, test scripts, journey maps
+
+## 📖 Knowledge Base / 知识库
+
+| Document | Topic | Linked Tasks |
+|----------|-------|-------------|
+| `references/core/01-project-plan.md` | Project planning and method selection | T1 |
+| `references/core/02-interview-design.md` | Interview guide design with probes | T2 |
+| `references/core/03-qualitative-analysis.md` | Behavior variable extraction + clustering | T3 |
+| `references/core/04-survey-design.md` | Questionnaire design (needs/attitudes/satisfaction) | T4 |
+| `references/core/05-quantitative-analysis.md` | KMeans/LCA/Factor clustering + segment scoring | T5 |
+| `references/core/06-persona-generation.md` | Persona card creation with scenarios | T6 |
+| `references/core/07-validation.md` | Bias audit + content review + validation plan | T7 |
+| `references/core/08-application.md` | Prioritization matrix + OKR bridge + metrics | T8 |
+| `references/core/09-usability-test-design.md` | Persona-screened recruitment + test scripts | T9 |
+| `references/core/10-journey-map.md` | Stage breakdown + emotion curve + opportunity points | T10 |
+
+## 🧪 Testing / 测试
+
+```bash
+cd web-persona-skill
+python -m pytest persona/tests/ -v
+# Or run individual test:
+python persona/tests/test_persona.py
+```
+
+**Zero dependencies** — pure Python standard library for core functionality. Clustering modules (KMeans, LCA) use scikit-learn when available but degrade gracefully to heuristic-based segmentation.
 
 ## 📁 Project Structure
 

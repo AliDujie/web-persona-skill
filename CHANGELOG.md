@@ -1,9 +1,10 @@
+## v3.3.7 (2026-06-01)
+
+- README maintenance: added English intro summary below title, Quick Start Checklist (CN/EN), Research Sprint Options by Time/Budget table, TOC anchor fix (v336->v337), CHANGELOG version sync, version bump 3.3.6->3.3.7
+
 ## v3.3.6 (2026-06-01)
 
-- Merged duplicate "What's New in v3.3.5" sections in README (two duplicate blocks → one)
-- Fixed TOC anchor: `#-whats-new-in-v334` → `#-whats-new-in-v336`
-- Added Chinese Quick Decision section (🧭 快速决策：什么时候使用 Persona？) with ecosystem skill comparison table
-- Version bump: 3.3.5 → 3.3.6 across README badge, pyproject.toml, SKILL.md, CHANGELOG.md
+- Merged duplicate What's New sections (v3.3.5 duplicates), fixed TOC anchor (v334->v336), added Chinese Quick Decision section, version bump 3.3.5->3.3.6
 
 ## v3.3.4 (2026-06-01)
 
