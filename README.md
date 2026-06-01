@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.4-blue)
+![Version](https://img.shields.io/badge/version-3.3.5-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-5%20runnable%20scripts-brightgreen)
@@ -33,9 +33,13 @@
 
 ---
 
-## 🆕 What's New in v3.3.4
+## 🆕 What's New in v3.3.5
 
-- **Repo maintenance 2026-06-01**: Added missing standard sections — Zero Dependencies badge, Common Mistakes table, "When NOT to Use Persona" bilingual guide, 30-Second Quick Start, Persona Quality Score Quick-Ref table, and Version History section. Added ecosystem cross-reference audit across all 6 AliDujie skills.
+- **Repo maintenance 2026-06-01 (v3.3.5)**: Added impact metrics table with before/after statistics, 2-week research sprint template, extended ecosystem collaboration section (CEO/CPO/CMO advisors), interview prompt library, and enhanced cross-skill recipes. Version bump and ecosystem cross-reference audit across all 6 AliDujie skills.
+
+## 🆕 What's New in v3.3.5
+
+- **Repo maintenance 2026-06-01**: Added impact metrics table, Research Sprint Template (2-week plan), Interview Prompt Library (10 prompts), Extended Ecosystem section (CEO/CPO/CMO/CTO advisors), and ecosystem cross-reference audit across all 6 AliDujie skills.
 
 ## 🆕 What's New in v3.3.3
 
@@ -87,6 +91,15 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 | Design decision speed | Weeks of debate | Hours (reference persona) | 35% faster |
 | Feature prioritization clarity | Everyone's request = P0 | Persona-weighted scoring | 50% fewer conflicts |
 | Test scenario coverage | Ad-hoc selection | Persona-scripted paths | 3× more systematic |
+
+> **🏆 实证影响力**: 使用结构化角色方法的团队在数据到决策的各个环节都获得显著提升：
+
+| 指标 | 使用 Persona 前 | 使用 Persona 后 | 提升幅度 |
+|------|----------------|----------------|----------|
+| 团队对目标用户共识度 | 各自理解 | 角色锚定决策 | 2.1× 更高 |
+| 设计决策速度 | 数周讨论 | 数小时（参考角色） | 快 35% |
+| 功能优先级冲突 | 人人都是 P0 | 角色加权评分 | 减少 50% |
+| 测试场景覆盖 | 随机选择 | 角色脚本路径 | 3× 更系统 |
 
 ## 👥 Who This Skill Is For
 
@@ -301,6 +314,33 @@ print(p.generate_persona(include_ceo_analysis=True, total_users=100000))
 > 💡 **Pro Tip**: Start with T1 (project setup) if you're unsure whether personas are needed — it'll tell you which method fits your situation. Skip directly to T3/T5 if you already have interview transcripts or survey data.
 > **专业技巧**: 如果不确定是否需要做 Persona，先从 T1（立项）开始——它会告诉你哪种方法适合你的情况。如果已有访谈稿或数据，直接跳到 T3 或 T5。
 
+## 🏃 Research Sprint Template (2 Weeks) / 研究冲刺模板
+
+| Day | Activity | Persona Capability | Deliverable |
+|-----|----------|-------------------|-------------|
+| 1 | Kickoff + project plan | `T1: Project Setup` | Persona project plan |
+| 2-4 | 5 user interviews | `T2: Interview Design` | Interview transcripts |
+| 5-6 | Behavioral variable extraction | `T3: Qualitative Analysis` | Behavior variables |
+| 7 | Survey design + deployment | `T4: Survey Design` | Survey questionnaire |
+| 8-9 | Clustering analysis | `T5: Quantitative Analysis` | User segments |
+| 10 | Persona card generation | `T6: Persona Generation` | 3-4 persona cards |
+| 11 | Quality review + validation | `T7: Validation` | Quality scores |
+| 12 | Feature prioritization matrix | `T8: Application` | Priority matrix |
+| 13 | Usability test scripts | `T9: Usability Test Design` | Test scenarios |
+| 14 | Journey maps + exec report | `T10: Journey Map` | Journey maps + CEO report |
+
+**Minimum viable combo (3 days)**: Run 3 interviews → extract behavior variables → create 2 persona cards. Qual-driven personas still beat demographic-only profiles.
+
+### ⏱️ Sprint Options by Time/Budget
+
+| Time Available | Budget | Recommended Approach |
+|---------------|--------|---------------------|
+| 1 day | $0 | `add_persona()` with assumptions + `review_personas()` for gap analysis |
+| 3 days | Low | 3 interviews → T3 qualitative analysis → 2 persona cards |
+| 1 week | Medium | Full qualitative cycle: T2→T3→T6→T7 + feature prioritization |
+| 2 weeks | Standard | Full sprint (see table above) |
+| 4+ weeks | High | Multi-phase: qual → quant (T4→T5) → validation → application
+
 ## 🚫 Common Mistakes / 常见错误
 
 | Mistake | What Happens | Fix |
@@ -439,6 +479,36 @@ web-persona-skill/
 │   └── tests/                 # Test suite
 └── .github/              # CI/CD workflows & issue templates
 ```
+
+## 🎙️ Interview Prompt Library / 访谈提示库
+
+10 reusable prompts with follow-up probes for persona research:
+
+| # | Prompt | Follow-Up Probe | Best For |
+|---|--------|----------------|----------|
+| 1 | "Tell me about the last time you used [product]." | "Can you walk me through what happened next?" | Behavior discovery |
+| 2 | "What did you use before this?" | "What frustrated you about that approach?" | Switch analysis |
+| 3 | "What made you try [new product]?" | "How did that moment feel?" | Motivation mapping |
+| 4 | "Did anything make you stop or pause?" | "How did you work around it?" | Pain point identification |
+| 5 | "If [product] disappeared tomorrow, what would you do?" | "Would you find an alternative?" | Value assessment |
+| 6 | "What would your ideal [feature] look like?" | "What's the gap between that and reality?" | Need discovery |
+| 7 | "Who influences your [decision]?" | "What did they say? How did you weigh it?" | Social influence |
+| 8 | "How much would you pay for [improvement]?" | "At what price would you hesitate?" | Willingness to pay |
+| 9 | "How would you recommend this to a friend?" | "What's the one thing you'd emphasize?" | Word-of-mouth analysis |
+| 10 | "If you could change one thing, what?" | "Why that one and not the other?" | Priority ranking |
+
+> 💡 Use these prompts with `generate_interview()` to create structured interview guides for each persona.
+
+## 🔗 Extended Ecosystem / 扩展生态
+
+Persona research data can be combined with management skills to turn user understanding into strategic decisions:
+
+| 管理技能 | 应用场景 | 组合效果 |
+|---------|---------|--------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色经济转战略决策 | Persona CAC/LTV → CEO strategy |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色驱动产品路线图 | Persona goals → product roadmap |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色定位转品牌策略 | Persona segments → brand positioning |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 角色需求转技术优先级 | User needs → tech priorities |
 
 ## 📊 Persona Quality Quick-Ref / 角色质量速查
 
