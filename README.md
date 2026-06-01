@@ -27,23 +27,23 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v3310)
-- [Why Teams Choose Persona](#-why-teams-choose-persona--为什么选择-persona)
-- [Who This Skill Is For](#-who-this-skill-is-for)
-- [Quick Decision: When to Use Persona?](#-quick-decision-when-to-use-persona)
-- [Quick Start (5 Minutes)](#-quick-start-5-minutes)
-- [Ecosystem Quick Start](#-ecosystem-quick-start)
-- [Core Capabilities](#-core-capabilities)
-- [Real-World Use Cases](#-real-world-use-cases)
-- [Common Mistakes](#-common-mistakes--常见错误)
-- [Quick Recipes](#-quick-recipes--快速食谱)
-- [Ecosystem Integration](#-ecosystem-integration)
-- [AI Agent Integration](#-ai-agent-integration)
-- [FAQ / Troubleshooting](#faq--troubleshooting)
-- [When NOT to Use Persona](#-when-not-to-use-persona--什么时候不该用-persona)
-- [Best Practices](#-best-practices--最佳实践)
-- [Limitations](#-limitations--局限性)
-- [Resources](#-resources)
+- [What's New](#whats-new-in-v3310)
+- [Why Teams Choose Persona](#why-teams-choose-persona-persona)
+- [Who This Skill Is For](#who-this-skill-is-for)
+- [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
+- [Quick Start (5 Minutes)](#quick-start-5-minutes)
+- [Ecosystem Quick Start](#ecosystem-quick-start)
+- [Core Capabilities](#core-capabilities)
+- [Real-World Use Cases](#real-world-use-cases)
+- [Common Mistakes](#common-mistakes)
+- [Quick Recipes](#quick-recipes)
+- [Ecosystem Integration](#ecosystem-integration)
+- [AI Agent Integration](#ai-agent-integration)
+- [FAQ / Troubleshooting](#faq-troubleshooting)
+- [When NOT to Use Persona](#when-not-to-use-persona-persona)
+- [Best Practices](#best-practices)
+- [Limitations](#limitations)
+- [Resources](#resources)
 
 ---
 
@@ -711,7 +711,7 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 1. **Start with the README** — Quick start + 30-second example
 2. **Read USAGE.md or INSTALL.md** — Detailed installation and integration guide
 3. **Explore references/core/** — Deep dive into 10 persona lifecycle steps
-4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#-complete-pipeline-example))
+4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
 
 ## 📄 License
 
