@@ -1,14 +1,19 @@
 ## [3.3.13] - 2026-06-03
 
 - Version sync: align SKILL.md and CHANGELOG with pyproject.toml/README badge (3.3.13)
+- Beginner's First Tutorial (60-min end-to-end Persona creation workflow)
 
-## v3.3.8 (2026-06-01)
-## [3.3.11] - 2026-06-02
+## [3.3.12] - 2026-06-02
+
+- Repo maintenance: Version bump to 3.3.12, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+## [3.3.11] - 2026-06-01
 
 - Repo maintenance: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
 
+## [3.3.8] - 2026-06-01
 
-- README maintenance: added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump 3.3.7->3.3.8
+- README maintenance: added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump 3.3.7→3.3.8
 
 ## v3.3.7 (2026-06-01)
 
