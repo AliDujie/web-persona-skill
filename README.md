@@ -533,9 +533,9 @@ web-persona-skill/
 ├── INSTALL.md            # Detailed installation guide
 ├── CHANGELOG.md          # Version history
 ├── LICENSE               # MIT License
-├── examples/             # 5 runnable scripts
+├── examples/             # 4 runnable scripts
 ├── references/           # Knowledge base
-│   ├── core/             # 8 core operation manuals (step-by-step)
+│   ├── core/             # 10 core operation manuals (step-by-step)
 │   │   ├── 01-project-plan.md
 │   │   ├── 02-interview-design.md
 │   │   ├── 03-qualitative-analysis.md
@@ -851,9 +851,9 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 | [SKILL.md](SKILL.md) | Agent-facing execution manual (T1-T10 trigger routing) |
 | [INSTALL.md](INSTALL.md) | Detailed installation guide |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
-| [references/core/](references/core/) | 8 core operation manuals — START HERE |
+| [references/core/](references/core/) | 10 core operation manuals — START HERE |
 | [references/advanced/](references/advanced/) | 39 deep-dive references |
-| [examples/](examples/) | 5 runnable scripts with bilingual comments |
+| [examples/](examples/) | 4 runnable scripts with bilingual comments |
 
 ### 📖 Recommended Learning Path
 

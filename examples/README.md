@@ -72,3 +72,15 @@ Persona is the "who" layer of the AliDujie UX Research Ecosystem:
 - **Persona → UDM**: Use [UDM](https://github.com/AliDujie/universal-design-methods) to plan research methods targeting each persona
 - **Persona → VPD**: Map [VPD](https://github.com/AliDujie/value-proposition-design) value propositions to persona segments
 - **Persona → SWD**: Present persona findings with [SWD](https://github.com/AliDujie/storytelling-with-data) executive narratives
+
+## 🔗 Ecosystem Integration / 生态集成
+
+Persona is the "who" layer of the AliDujie UX Research Ecosystem. Chain it with other skills:
+
+- **Persona → JTBD**: Persona segments → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) opportunity scoring
+- **Persona → UDM**: Persona data → [UDM](https://github.com/AliDujie/universal-design-methods) research planning
+- **Persona → QuantUX**: Persona metrics → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validation
+- **Persona → VPD**: Persona goals → [VPD](https://github.com/AliDujie/value-proposition-design) canvas mapping
+- **Persona → SWD**: Persona economics → [SWD](https://github.com/AliDujie/storytelling-with-data) executive stories
+
+See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 6-skill end-to-end workflow.
