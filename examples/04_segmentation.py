@@ -1,25 +1,47 @@
 #!/usr/bin/env python3
-"""Example: User Segmentation with Behavioral Clustering.
+"""Example: User Segmentation with Behavioral Data.
 
-Scenario: Segmenting users of a fitness app into 3 distinct groups.
+Scenario: Segmenting users of a fitness app into distinct groups.
 """
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from persona import PersonaSkill
 
 persona = PersonaSkill("Fitness App")
 
 print("=" * 60)
-print("3-Step Segmentation: Fitness App Users")
+print("User Segmentation: Fitness App")
 print("=" * 60)
 
-segmentation = persona.quick_segment(
-    behaviors=[
-        {"user": 1, "workouts_per_week": 5, "features_used": ["plan", "track", "social"]},
-        {"user": 2, "workouts_per_week": 2, "features_used": ["plan"]},
-        {"user": 3, "workouts_per_week": 7, "features_used": ["plan", "track", "social", "nutrition"]},
-        {"user": 4, "workouts_per_week": 1, "features_used": ["track"]},
-    ]
+# Add behavioral segments (required: name, description, core_goals, typical_behaviors, key_attitudes)
+persona.add_segment(
+    "Dedicated Athletes",
+    "High-frequency users who use all features",
+    core_goals=["Hit weekly fitness targets", "Share achievements"],
+    typical_behaviors=["Workout 5-7 days/week", "Use plan+track+social features"],
+    key_attitudes=["Health is a priority", "Social motivation"],
+    percentage=30
 )
-print(segmentation)
+persona.add_segment(
+    "Casual Movers",
+    "Low-frequency users who need engagement nudges",
+    core_goals=["Stay generally active"],
+    typical_behaviors=["Workout 1-2 days/week", "Only use plan feature"],
+    key_attitudes=["Want to be healthier", "Low commitment"],
+    percentage=50
+)
+persona.add_segment(
+    "Trackers Only",
+    "Minimal engagement, high churn risk",
+    core_goals=["Remember what they did"],
+    typical_behaviors=["Occasional logging", "No planning"],
+    key_attitudes=["Low motivation", "Forgetful"],
+    percentage=20
+)
+
+# Render segments
+print(persona.render_segments())
 
 print("\n" + "=" * 60)
 print("Segmentation Interpretation")
