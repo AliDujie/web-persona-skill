@@ -1,3 +1,7 @@
+## [3.3.14] - 2026-06-03
+
+- Repo maintenance: correct example count mismatch (5→4 in project structure and resources sections), fix core reference count (8→10), add ecosystem integration to examples/README.md, version bump.
+
 ## [3.3.13] - 2026-06-03
 
 - Version sync: align SKILL.md and CHANGELOG with pyproject.toml/README badge (3.3.13)
