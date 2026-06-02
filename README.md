@@ -18,7 +18,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.10-blue)
+![Version](https://img.shields.io/badge/version-3.3.11-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -47,7 +47,11 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.10
+## 🆕 What's New in v3.3.11
+
+## 🆕 What's New in v3311
+
+- **Repo Maintenance 2026-06-02**: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 - **Repo maintenance 2026-06-02**: Fixed stale What's New TOC anchor (v337 → v339), Version History consistency audit, TOC anchor verification, fixed self-referencing ecosystem link `[Persona](#)` → `[Persona](https://github.com/AliDujie/web-persona-skill)`, TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
@@ -668,7 +672,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.10)**: Repo maintenance 2026-06-02 — TOC anchor verification (v338 → v339), Version History consistency audit (corrected stale v3.3.8 → v3.3.10), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v3.3.11)**: Repo maintenance 2026-06-02 — TOC anchor verification (v338 → v339), Version History consistency audit (corrected stale v3.3.8 → v3.3.11), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
 

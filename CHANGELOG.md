@@ -1,4 +1,8 @@
 ## v3.3.8 (2026-06-01)
+## [3.3.11] - 2026-06-02
+
+- Repo maintenance: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
+
 
 - README maintenance: added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump 3.3.7->3.3.8
 
