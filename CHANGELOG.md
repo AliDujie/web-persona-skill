@@ -1,3 +1,7 @@
+## [3.3.13] - 2026-06-03
+
+- Version sync: align SKILL.md and CHANGELOG with pyproject.toml/README badge (3.3.13)
+
 ## v3.3.8 (2026-06-01)
 ## [3.3.11] - 2026-06-02
 
