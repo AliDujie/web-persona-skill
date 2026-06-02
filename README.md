@@ -18,7 +18,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.11-blue)
+![Version](https://img.shields.io/badge/version-3.3.12-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -27,7 +27,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3311)
+- [What's New](#whats-new-in-v3312)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -47,7 +47,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.11
+## 🆕 What's New in v3.3.12
 
 - **Repo Maintenance 2026-06-02**: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
 
@@ -585,6 +585,20 @@ Persona research data can be combined with management skills to turn user unders
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色驱动产品路线图 | Persona goals → product roadmap |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色定位转品牌策略 | Persona segments → brand positioning |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 角色需求转技术优先级 | User needs → tech priorities |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色洞察转计划审查 | Persona insights → plan review cycle |
+
+## 🔗 Extended Ecosystem
+
+Persona research data can be combined with management skills to turn user understanding into strategic decisions:
+
+| Extended Skill | Collaboration Scenario |
+|---------------|----------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona CAC/LTV → CEO investment decisions |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona goals → CPO product roadmap |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona segments → CMO brand positioning |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | User needs → CTO tech investment priorities |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona insights → CEO plan review cycle |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Persona segments → STM market analysis |
 
 ## 📊 Persona Quality Quick-Ref / 角色质量速查
 
