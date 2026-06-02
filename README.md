@@ -51,7 +51,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 - **Repo Maintenance 2026-06-02**: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
 
-> **📦 Earlier versions (v3.3.6 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
+> **📦 Earlier versions (v3.3.4 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 
 ## 🇨🇳 中文概览
