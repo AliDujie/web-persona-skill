@@ -18,7 +18,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.12-blue)
+![Version](https://img.shields.io/badge/version-3.3.13-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -47,9 +47,13 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
+## 🆕 What's New in v3.3.13
+
+- **Repo Maintenance 2026-06-02**: Beginner's First Tutorial (60-min end-to-end Persona creation workflow), version bump to 3.3.13, ecosystem cross-reference audit across all 6 AliDujie skills.
+
 ## 🆕 What's New in v3.3.12
 
-- **Repo Maintenance 2026-06-02**: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
+- **Repo Maintenance 2026-06-01**: TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 > **📦 Earlier versions (v3.3.4 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
@@ -556,6 +560,137 @@ web-persona-skill/
 └── .github/              # CI/CD workflows & issue templates
 ```
 
+## 🧪 Beginner's First Tutorial — 60-Minute Persona Creation / 新手入门教程
+
+> **Goal:** Create your first evidence-based persona from scratch.
+> **目标：** 从零开始创建第一个数据驱动的人物角色。
+> **Time:** ~60 minutes | **Prerequisites:** Python 3.8+
+
+### Step 1: Define Your Product (2 min)
+
+```python
+from persona import PersonaSkill
+skill = PersonaSkill("FreshMart 生鲜电商")
+```
+
+### Step 2: Create Your First Persona (5 min)
+
+Start with what you know — add assumptions and iterate later:
+
+```python
+skill.add_persona(
+    "小明",
+    "效率型用户 / Efficient User",
+    "primary",
+    "快就是好",
+    goals=["快速完成购买", "减少操作步骤"],
+    behaviors=["高频使用 APP", "夜间下单"],
+    attitudes=["追求效率", "对价格不敏感"],
+    bio="小明是一位28岁的互联网产品经理，工作忙碌，习惯用 APP 快速购买生鲜。"
+)
+```
+
+### Step 3: Add a Secondary Persona (5 min)
+
+```python
+skill.add_persona(
+    "小红",
+    "品质型用户 / Quality-Focused User",
+    "secondary",
+    "品质第一",
+    goals=["买到新鲜好货", "了解食材来源"],
+    behaviors=["仔细对比评价", "每周下单 3-5 次"],
+    attitudes=["品质至上", "愿意为有机食品多付费"],
+    bio="小红是一位32岁的妈妈，注重家庭饮食健康，会仔细阅读产品评价和产地信息。"
+)
+```
+
+### Step 4: Render Persona Cards (2 min)
+
+```python
+print(skill.render_all_personas())
+# → Beautifully formatted persona cards with goals, behaviors, attitudes, bio
+```
+
+### Step 5: Generate Interview Guide (10 min)
+
+```python
+guide = skill.generate_interview("用户访谈 / User Interview",
+    ["goals", "behaviors", "pain_points", "motivations"])
+print(guide)
+# → Structured interview guide with follow-up probes for each persona
+```
+
+### Step 6: Design a Survey (10 min)
+
+```python
+survey = skill.generate_survey("需求调研 / Needs Survey", "needs",
+    pain_points=["找商品耗时", "物流慢", "品质不稳定"])
+print(survey)
+# → Complete questionnaire ready for deployment
+```
+
+### Step 7: Prioritize Features (10 min)
+
+```python
+skill.add_feature("快速结账", {"小明": "高", "小红": "低"}, "高", "低")
+skill.add_feature("商品详情页", {"小明": "低", "小红": "高"}, "高", "中")
+skill.add_feature("有机认证标签", {"小明": "中", "小红": "高"}, "中", "中")
+print(skill.render_feature_matrix())
+# → Feature prioritization matrix weighted by persona importance
+```
+
+### Step 8: Quality Review (3 min)
+
+```python
+print(skill.review_personas())
+# → Quality score + gap analysis + improvement suggestions
+```
+
+### Step 9: Generate CEO Report (3 min)
+
+```python
+report = skill.generate_persona(include_ceo_analysis=True, total_users=100000)
+print(report)
+# → Persona cards + CAC/LTV estimates + acquisition strategy + retention plan
+```
+
+### Step 10: Chain to Next Skill (10 min)
+
+```python
+from jtbd import JTBDSkill
+# Persona → JTBD: discover what each persona is trying to accomplish
+jtbd = JTBDSkill("FreshMart")
+# Use persona goals as input for Jobs discovery
+```
+
+### 📋 Complete Script (Copy-Paste Ready)
+
+```python
+from persona import PersonaSkill
+
+skill = PersonaSkill("FreshMart 生鲜电商")
+
+# Create personas
+skill.add_persona("小明", "效率型用户", "primary", "快就是好",
+    goals=["快速完成购买"], behaviors=["高频使用 APP"],
+    attitudes=["追求效率"], bio="忙碌的互联网产品经理")
+skill.add_persona("小红", "品质型用户", "secondary", "品质第一",
+    goals=["买到新鲜好货"], behaviors=["仔细对比评价"],
+    attitudes=["品质至上"], bio="注重健康的妈妈")
+
+# Render, prioritize, review
+print(skill.render_all_personas())
+skill.add_feature("快速结账", {"小明": "高", "小红": "低"}, "高", "低")
+print(skill.render_feature_matrix())
+print(skill.review_personas())
+
+# CEO report
+print(skill.generate_persona(include_ceo_analysis=True, total_users=100000))
+```
+
+---
+
 ## 🎙️ Interview Prompt Library / 访谈提示库
 
 10 reusable prompts with follow-up probes for persona research:
@@ -682,7 +817,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.11)**: Repo maintenance 2026-06-02 — TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v3.3.13)**: Repo maintenance 2026-06-02 — added Beginner's First Tutorial (60-min end-to-end Persona creation workflow with 10 steps), TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
 
