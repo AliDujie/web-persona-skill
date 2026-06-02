@@ -668,7 +668,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.11)**: Repo maintenance 2026-06-02 — TOC anchor verification (v338 → v339), Version History consistency audit (corrected stale v3.3.8 → v3.3.11), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v3.3.11)**: Repo maintenance 2026-06-02 — TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
 
