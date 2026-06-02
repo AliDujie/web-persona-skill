@@ -27,7 +27,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3310)
+- [What's New](#whats-new-in-v3311)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -49,11 +49,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 🆕 What's New in v3.3.11
 
-## 🆕 What's New in v3311
-
 - **Repo Maintenance 2026-06-02**: Version bump to 3.3.11, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-- **Repo maintenance 2026-06-02**: Fixed stale What's New TOC anchor (v337 → v339), Version History consistency audit, TOC anchor verification, fixed self-referencing ecosystem link `[Persona](#)` → `[Persona](https://github.com/AliDujie/web-persona-skill)`, TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 > **📦 Earlier versions (v3.3.6 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
