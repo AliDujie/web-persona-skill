@@ -6,19 +6,9 @@
 
 Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve Mulder, 2007) and the broader persona methodology canon. A complete toolkit covering the entire persona lifecycle with **10 executable tasks** — from project setup to persona application — plus CEO-level acquisition/retention strategy and OKR bridging.
 
-| Challenge | Without Persona | With Persona |
-|-----------|----------------|-------------|
-| User Understanding | "Our target is everyone" | Evidence-based persona cards with real behaviors |
-| Design Decisions | HiPPO / gut feeling | Persona-driven prioritization matrix |
-| Feature Prioritization | Everyone's request = P0 | Persona-weighted feature scoring |
-| Testing Coverage | Random user selection | Scripted scenarios per persona |
-| Stakeholder Alignment | Abstract demographics | Named personas with goals, quotes, scenarios |
-
-> 🏆 **Proven Impact:** Teams using structured personas report **2.1× higher stakeholder alignment** and **35% faster design decisions** because "what would Alex do?" replaces endless debate.
-
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.14-blue)
+![Version](https://img.shields.io/badge/version-3.3.15-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -46,6 +36,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Resources](#resources)
 
 ---
+
+## 🆕 What's New in v3.3.15
+
+- **Repo Maintenance 2026-06-03**: Duplicate challenge table removed from README header, added Try Before You Decide block after Quick Decision, version bump 3.3.14→3.3.15.
 
 ## 🆕 What's New in v3.3.14
 
@@ -154,6 +148,15 @@ The Web Persona Skill gives you:
 | 将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
 
 > 💡 Persona 是生态起点：当你需要**定义你的用户是谁**时使用。
+
+> 💡 **Try Before You Decide / 先试后决定**:
+> ```python
+> from persona import PersonaSkill
+> # One line → create and render a persona instantly
+> p = PersonaSkill("你的产品")
+> p.add_persona("效率用户", "primary", "快就是好", goals=["快速完成"])
+> print(p.render_all_personas())
+> ```
 
 ## ⚡ Quick Start (5 Minutes)
 
