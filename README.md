@@ -27,7 +27,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3313)
+- [What's New](#whats-new-in-v3314)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -46,6 +46,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Resources](#resources)
 
 ---
+
+## 🆕 What's New in v3.3.14
+
+- **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 3.3.14), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 ## 🆕 What's New in v3.3.13
 
