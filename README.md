@@ -853,11 +853,16 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 | Document | Topic |
 |----------|-------|
 | [SKILL.md](SKILL.md) | Agent-facing execution manual (T1-T10 trigger routing) |
+| [USAGE.md](USAGE.md) | Detailed usage guide with code examples / 详细使用指南 |
 | [INSTALL.md](INSTALL.md) | Detailed installation guide |
+| [LICENSE](LICENSE) | MIT License |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [SECURITY.md](SECURITY.md) | Security policy and responsible use |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
 | [references/core/](references/core/) | 10 core operation manuals — START HERE |
 | [references/advanced/](references/advanced/) | 39 deep-dive references |
 | [examples/](examples/) | 4 runnable scripts with bilingual comments |
+| [persona/](persona/) | Core Python module source code |
 
 ### 📖 Recommended Learning Path
 
