@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3314)
+- [What's New](#whats-new-in-v3315)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -824,7 +824,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.13)**: Repo maintenance 2026-06-02 — added Beginner's First Tutorial (60-min end-to-end Persona creation workflow with 10 steps), TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v3.3.15)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v3.3.14 → v3.3.15), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
 
