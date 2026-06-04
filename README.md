@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.16-blue)
+![Version](https://img.shields.io/badge/version-3.3.17-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -828,7 +828,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.15)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v3.3.14 → v3.3.15), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v3.3.16)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v3.3.14 → v3.3.15), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
 

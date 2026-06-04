@@ -1,3 +1,11 @@
+## [3.3.17] - 2026-06-04
+
+- Repo maintenance: CHANGELOG backfill for v3.3.16 entry, updated Version History Latest entry to v3.3.16, version consistency audit across all files, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 3.3.16→3.3.17.
+
+## [3.3.16] - 2026-06-04
+
+- Repo maintenance: SKILL.md version fix (3.3.16 aligned with pyproject.toml/README), audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills. Version bump 3.3.15→3.3.16.
+
 ## [3.3.15] - 2026-06-03
 
 - Repo maintenance: CHANGELOG backfill for v3.3.15, TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 3.3.14→3.3.15.
