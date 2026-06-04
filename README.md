@@ -867,6 +867,16 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 
 ---
 
+## 📚 References
+
+| Book | Author | Contribution |
+|------|--------|-------------|
+| **赢在用户：Web人物角色创建和应用实践指南** | Steve Mulder (2007) | Foundation — persona creation lifecycle |
+| The Mom Test | Rob Fitzpatrick (2013) | Customer interview methodology |
+| Continuous Discovery Habits | Teresa Torres (2021) | Outcome-driven discovery process |
+| Talking to Humans | Giff Constable (2014) | Customer discovery framework |
+| Lean Customer Development | Cindy Alvarez (2014) | Hypothesis-driven validation |
+
 ## 📚 Resources
 
 | Document | Topic |
@@ -878,6 +888,8 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
 | [SECURITY.md](SECURITY.md) | Security policy and responsible use |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [SECURITY.md](SECURITY.md) | Security policy and responsible use |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
 | [references/core/](references/core/) | 10 core operation manuals — START HERE |
 | [references/advanced/](references/advanced/) | 39 deep-dive references |
 | [examples/](examples/) | 4 runnable scripts with bilingual comments |
