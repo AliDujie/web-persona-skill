@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.19-blue)
+![Version](https://img.shields.io/badge/version-3.3.20-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -37,6 +37,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v3320
+
+- **Repo Maintenance 2026-06-04**: Deduplicated duplicate Extended Ecosystem sections (merged CN+EN into single bilingual table), removed duplicate SECURITY.md in Resources table. Version bump 3.3.19→3.3.20.
 
 ## 🆕 What's New in v3319
 
@@ -734,18 +738,6 @@ print(skill.generate_persona(include_ceo_analysis=True, total_users=100000))
 
 Persona research data can be combined with management skills to turn user understanding into strategic decisions:
 
-| 管理技能 | 应用场景 | 组合效果 |
-|---------|---------|--------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色经济转战略决策 | Persona CAC/LTV → CEO strategy |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色驱动产品路线图 | Persona goals → product roadmap |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色定位转品牌策略 | Persona segments → brand positioning |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 角色需求转技术优先级 | User needs → tech priorities |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色洞察转计划审查 | Persona insights → plan review cycle |
-
-## 🔗 Extended Ecosystem
-
-Persona research data can be combined with management skills to turn user understanding into strategic decisions:
-
 | Extended Skill | Collaboration Scenario |
 |---------------|----------------------|
 | [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona CAC/LTV → CEO investment decisions |
@@ -754,6 +746,15 @@ Persona research data can be combined with management skills to turn user unders
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | User needs → CTO tech investment priorities |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona insights → CEO plan review cycle |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Persona segments → STM market analysis |
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色获客/留存经济 → CEO 投资决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色目标 → CPO 产品路线图 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色分群 → CMO 品牌定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 用户需求 → CTO 技术投资优先级 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色洞察 → CEO 计划审查周期 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 角色分群 → STM 市场分析 |
 
 ## 📊 Persona Quality Quick-Ref / 角色质量速查
 
@@ -889,7 +890,6 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
 | [SECURITY.md](SECURITY.md) | Security policy and responsible use |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
-| [SECURITY.md](SECURITY.md) | Security policy and responsible use |
 | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
 | [references/core/](references/core/) | 10 core operation manuals — START HERE |
 | [references/advanced/](references/advanced/) | 39 deep-dive references |
