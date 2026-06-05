@@ -1,4 +1,15 @@
-## [3.3.17] - 2026-06-04
+## [3.3.20] - 2026-06-04 (PM)
+
+- Repo maintenance: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed TOC anchors intact, version bump 3.3.19→3.3.20.
+
+## [3.3.19] - 2026-06-04
+
+- Repo maintenance: Audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills, version bump 3.3.18→3.3.19.
+
+## [3.3.18] - 2026-06-04 (PM)
+
+- Repo maintenance: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v3316 → v3318), version bump 3.3.17→3.3.18.
+
 
 - Repo maintenance: CHANGELOG backfill for v3.3.16 entry, updated Version History Latest entry to v3.3.16, version consistency audit across all files, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 3.3.16→3.3.17.
 
