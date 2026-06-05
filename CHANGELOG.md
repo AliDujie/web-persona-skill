@@ -1,3 +1,7 @@
+## [3.3.21] - 2026-06-05 (PM)
+
+- Repo maintenance: Version bump 3.3.20→3.3.21, ecosystem cross-reference audit across all 6 AliDujie skills.
+
 ## [3.3.20] - 2026-06-04 (PM)
 
 - Repo maintenance: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed TOC anchors intact, version bump 3.3.19→3.3.20.
