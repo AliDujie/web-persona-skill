@@ -21,7 +21,7 @@
     print(skill.render_all_personas())
 """
 
-__version__ = "3.3.19"
+__version__ = "3.3.20"
 
 from .config import AnalysisConfig, PERSONA_PRIORITIES, PRIORITY_LABELS, KNOWLEDGE_FILES
 from .config import RESEARCH_METHODS, PERSONA_DIMENSIONS, INTERVIEW_SECTIONS, SURVEY_TYPES
