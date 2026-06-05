@@ -34,6 +34,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Best Practices](#best-practices)
 - [Limitations](#limitations)
 - [Resources](#resources)
+- [Recommended Learning Path](#recommended-learning-path)
 
 ---
 
