@@ -39,15 +39,15 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3322
+## 🆕 What's New in v3.3.22
 
 - **Repo Maintenance 2026-06-05 (Evening)**: Added PR template and CODEOWNERS, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 3.3.21→3.3.22.
 
-## 🆕 What's New in v3321
+## 🆕 What's New in v3.3.21
 
 - **Repo Maintenance 2026-06-05 (PM)**: Version bump 3.3.20→3.3.21, ecosystem cross-reference audit across all 6 AliDujie skills.
 
-## 🆕 What's New in v3319
+## 🆕 What's New in v3.3.19
 
 - **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 3.3.18→3.3.19.
 
