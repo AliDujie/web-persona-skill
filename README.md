@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.24-blue)
+![Version](https://img.shields.io/badge/version-3.3.25-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -36,6 +36,12 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Resources](#resources)
 - [Recommended Learning Path](#recommended-learning-path)
 - [Beginner's First Tutorial](#beginners-first-tutorial--60-minute-persona-creation--新手入门教程)
+
+## 🆕 What's New in v3.3.25
+
+- **Repo Maintenance 2026-06-07 (Morning)**: Duplicate "What's New" entry cleanup across Interview Prompt, References, and License sections. All stray duplicate What's New entries removed (found 3 instances after line 700). Ecosystem cross-reference validation. Version bump 3.3.24→3.3.25.
+
+---
 
 ## 🆕 What's New in v3.3.24
 
@@ -726,12 +732,6 @@ print(skill.review_personas())
 print(skill.generate_persona(include_ceo_analysis=True, total_users=100000))
 ```
 
-## 🆕 What's New in v3.3.24
-
-- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (3.3.22→3.3.24 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Tutorial TOC entry. Version bump 3.3.23→3.3.24.
-
----
-
 ## 🎙️ Interview Prompt Library / 访谈提示库
 
 10 reusable prompts with follow-up probes for persona research:
@@ -884,12 +884,6 @@ A: Yes, but the `review_personas()` method will flag if your personas are demogr
 **Q: Persona vs QuantUX — when do I switch from qual to quant?**
 A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based persona creation. When you have survey data (n > 100), switch to T5 (quantitative clustering with KMeans/LCA) for statistically validated segments.
 
-## 🆕 What's New in v3.3.24
-
-- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (3.3.22→3.3.24 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Tutorial TOC entry. Version bump 3.3.23→3.3.24.
-
----
-
 ## 📚 References
 
 | Book | Author | Contribution |
@@ -927,12 +921,6 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
-
-## 🆕 What's New in v3.3.24
-
-- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (3.3.22→3.3.24 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Tutorial TOC entry. Version bump 3.3.23→3.3.24.
-
----
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 
