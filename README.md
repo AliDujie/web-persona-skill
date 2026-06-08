@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.20-blue)
+![Version](https://img.shields.io/badge/version-3.3.21-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -163,6 +163,7 @@ The Web Persona Skill gives you:
 | 定量 A/B 测试、HEART 指标 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | 价值主张画布、PMF 验证 | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
 | 将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 商业框架分析（SWOT、PESTEL 等） | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 Persona 是生态起点：当你需要**定义你的用户是谁**时使用。
 
@@ -470,6 +471,7 @@ swd     = SWDSkill("Travel App").recommend_chart(data_type="categorical", catego
 | 角色场景 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 实验设计 | `quantux.analyze_ab_test()` with persona metrics |
 | 角色优先级 | [VPD](https://github.com/AliDujie/value-proposition-design) 画布填充 | `vpd.analyze_canvas()` weighted by persona priority |
 | 角色经济 | [SWD](https://github.com/AliDujie/storytelling-with-data) 高管汇报 | `swd.build_story()` with persona economics |
+| 角色目标/痛点 | [STM](https://github.com/AliDujie/Structured-Thinking-Model) 商业框架分析 | `stm.analyze("SWOT", persona_context=persona.profile)` |
 
 ## 🤖 AI Agent Integration
 
@@ -745,6 +747,7 @@ Persona research data can be combined with management skills to turn user unders
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色定位转品牌策略 | Persona segments → brand positioning |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 角色需求转技术优先级 | User needs → tech priorities |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色洞察转计划审查 | Persona insights → plan review cycle |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 角色洞察转商业框架分析 | Persona data → STM strategic analysis |
 
 ## 🔗 Extended Ecosystem
 
