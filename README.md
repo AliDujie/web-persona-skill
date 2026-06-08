@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3320)
+- [What's New](#whats-new-in-v3326)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -38,9 +38,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3320
+## 🆕 What's New in v3.3.26
 
-- **Repo Maintenance 2026-06-05**: Version consistency audit across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, verified TOC anchors, fixed duplicate SECURITY.md entry in Resources table. Version bump 3.3.19→3.3.20.
+- **Repo Maintenance 2026-06-09**: Version consistency audit, ecosystem cross-reference validation across all 6 AliDujie skills, CHANGELOG format standardization.
 
 ## 🆕 What's New in v3319
 
@@ -844,7 +844,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.26)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (3.3.26)**: Repo maintenance 2026-06-09 — Version consistency audit, ecosystem cross-reference validation, CHANGELOG format standardization.
 
 **Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 

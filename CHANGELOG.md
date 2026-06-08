@@ -1,3 +1,7 @@
+## [3.3.26] - 2026-06-09
+
+- Repo maintenance: version consistency audit across all files (README badge, pyproject.toml), ecosystem cross-reference validation across all 6 AliDujie skills, What's New heading format standardization, stale TOC anchor fixes, Version History Latest entry sync. Version bump 3.3.25→3.3.26.
+
 ## [3.3.25] - 2026-06-07 (Morning)
 
 - Repo maintenance: Duplicate "What's New" entry cleanup across README.md (found entries leaked into FAQ, Resources, and License sections). All stray duplicate What's New entries removed. Version sync across README badge, SKILL.md, pyproject.toml, __init__.py. Ecosystem cross-reference validation.
