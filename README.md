@@ -8,7 +8,11 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
+<<<<<<< HEAD
 ![Version](https://img.shields.io/badge/version-3.3.21-blue)
+=======
+[![Version](https://img.shields.io/badge/version-3.3.25-blue)](CHANGELOG.md)
+>>>>>>> 66da67a0d99492251b973bc5542c6f1b4f578596
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -17,7 +21,11 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
+<<<<<<< HEAD
 - [What's New](#whats-new-in-v3320)
+=======
+- [What's New](#whats-new-in-v3324)
+>>>>>>> 66da67a0d99492251b973bc5542c6f1b4f578596
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -35,14 +43,41 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Limitations](#limitations)
 - [Resources](#resources)
 - [Recommended Learning Path](#recommended-learning-path)
+- [Beginner's First Tutorial](#beginners-first-tutorial--60-minute-persona-creation--新手入门教程)
+
+## 🆕 What's New in v3.3.25
+
+- **Repo Maintenance 2026-06-07 (Morning)**: Duplicate "What's New" entry cleanup across Interview Prompt, References, and License sections. All stray duplicate What's New entries removed (found 3 instances after line 700). Ecosystem cross-reference validation. Version bump 3.3.24→3.3.25.
 
 ---
 
+<<<<<<< HEAD
 ## 🆕 What's New in v3320
 
 - **Repo Maintenance 2026-06-05**: Version consistency audit across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, verified TOC anchors, fixed duplicate SECURITY.md entry in Resources table. Version bump 3.3.19→3.3.20.
 
 ## 🆕 What's New in v3319
+=======
+## 🆕 What's New in v3.3.24
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (3.3.22→3.3.24 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First Tutorial TOC entry. Version bump 3.3.23→3.3.24.
+
+---
+
+## 🆕 What's New in v3.3.23
+
+- **Repo Maintenance 2026-06-06 (Evening)**: TOC anchor verification, version consistency audit, duplicate entry cleanup, ecosystem cross-reference validation across all 6 AliDujie skills. Version bump 3.3.22→3.3.23.
+
+## 🆕 What's New in v3.3.22
+
+- **Repo Maintenance 2026-06-05 (Evening)**: Added PR template and CODEOWNERS, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 3.3.21→3.3.22.
+
+## 🆕 What's New in v3.3.21
+
+- **Repo Maintenance 2026-06-05 (PM)**: Version bump 3.3.20→3.3.21, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+## 🆕 What's New in v3.3.19
+>>>>>>> 66da67a0d99492251b973bc5542c6f1b4f578596
 
 - **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 3.3.18→3.3.19.
 
@@ -715,8 +750,6 @@ print(skill.review_personas())
 print(skill.generate_persona(include_ceo_analysis=True, total_users=100000))
 ```
 
----
-
 ## 🎙️ Interview Prompt Library / 访谈提示库
 
 10 reusable prompts with follow-up probes for persona research:
@@ -740,6 +773,7 @@ print(skill.generate_persona(include_ceo_analysis=True, total_users=100000))
 
 Persona research data can be combined with management skills to turn user understanding into strategic decisions:
 
+<<<<<<< HEAD
 | 管理技能 | 应用场景 | 组合效果 |
 |---------|---------|--------|
 | [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色经济转战略决策 | Persona CAC/LTV → CEO strategy |
@@ -753,6 +787,8 @@ Persona research data can be combined with management skills to turn user unders
 
 Persona research data can be combined with management skills to turn user understanding into strategic decisions:
 
+=======
+>>>>>>> 66da67a0d99492251b973bc5542c6f1b4f578596
 | Extended Skill | Collaboration Scenario |
 |---------------|----------------------|
 | [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona CAC/LTV → CEO investment decisions |
@@ -761,6 +797,15 @@ Persona research data can be combined with management skills to turn user unders
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | User needs → CTO tech investment priorities |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona insights → CEO plan review cycle |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Persona segments → STM market analysis |
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色获客/留存经济 → CEO 投资决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色目标 → CPO 产品路线图 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色分群 → CMO 品牌定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 用户需求 → CTO 技术投资优先级 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色洞察 → CEO 计划审查周期 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 角色分群 → STM 市场分析 |
 
 ## 📊 Persona Quality Quick-Ref / 角色质量速查
 
@@ -873,8 +918,6 @@ A: Yes, but the `review_personas()` method will flag if your personas are demogr
 **Q: Persona vs QuantUX — when do I switch from qual to quant?**
 A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based persona creation. When you have survey data (n > 100), switch to T5 (quantitative clustering with KMeans/LCA) for statistically validated segments.
 
----
-
 ## 📚 References
 
 | Book | Author | Contribution |
@@ -912,8 +955,6 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
-
----
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 

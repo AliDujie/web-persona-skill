@@ -1,4 +1,28 @@
-## [3.3.17] - 2026-06-04
+## [3.3.25] - 2026-06-07 (Morning)
+
+- Repo maintenance: Duplicate "What's New" entry cleanup across README.md (found entries leaked into FAQ, Resources, and License sections). All stray duplicate What's New entries removed. Version sync across README badge, SKILL.md, pyproject.toml, __init__.py. Ecosystem cross-reference validation.
+
+## [3.3.22] - 2026-06-05 (Evening)
+
+- Added PR template and CODEOWNERS for better contribution workflow
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## [3.3.21] - 2026-06-05 (PM)
+
+- Repo maintenance: Version bump 3.3.20→3.3.21, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+## [3.3.20] - 2026-06-04 (PM)
+
+- Repo maintenance: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed TOC anchors intact, version bump 3.3.19→3.3.20.
+
+## [3.3.19] - 2026-06-04
+
+- Repo maintenance: Audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills, version bump 3.3.18→3.3.19.
+
+## [3.3.18] - 2026-06-04 (PM)
+
+- Repo maintenance: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v3316 → v3318), version bump 3.3.17→3.3.18.
+
 
 - Repo maintenance: CHANGELOG backfill for v3.3.16 entry, updated Version History Latest entry to v3.3.16, version consistency audit across all files, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 3.3.16→3.3.17.
 
