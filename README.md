@@ -9,9 +9,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
 <<<<<<< HEAD
-![Version](https://img.shields.io/badge/version-3.3.21-blue)
+![Version](https://img.shields.io/badge/version-3.3.26-blue)
 =======
-[![Version](https://img.shields.io/badge/version-3.3.25-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.3.26-blue)](CHANGELOG.md)
 >>>>>>> 66da67a0d99492251b973bc5542c6f1b4f578596
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)

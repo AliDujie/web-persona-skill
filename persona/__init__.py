@@ -22,9 +22,9 @@
 """
 
 <<<<<<< HEAD
-__version__ = "3.3.21"
+__version__ = "3.3.26"
 =======
-__version__ = "3.3.25"
+__version__ = "3.3.26"
 >>>>>>> 66da67a0d99492251b973bc5542c6f1b4f578596
 
 from .config import AnalysisConfig, PERSONA_PRIORITIES, PRIORITY_LABELS, KNOWLEDGE_FILES

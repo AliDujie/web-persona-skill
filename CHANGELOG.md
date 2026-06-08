@@ -249,6 +249,11 @@
 
 # Changelog
 
+## [3.3.26] - 2026-06-09
+
+- **Repo Maintenance**: Version sync (SKILL.md was 3.3.25, pyproject.toml/__init__.py were 3.3.21), ecosystem cross-reference audit, README badge consistency check.
+
+
 ## v2.4.78 (2026-05-16)
 
 - Repo maintenance: Added `__version__` to `__all__` export list for proper `from persona import __version__`
