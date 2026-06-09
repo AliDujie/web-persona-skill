@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.27-blue)
+![Version](https://img.shields.io/badge/version-3.3.28-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -37,6 +37,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v3.3.28
+
+- **Repo Maintenance 2026-06-09 (PM)**: Consolidated duplicate References and Recommended Learning Path sections into single merged sections. Added missing CTO Advisor cross-reference to Quick Decision tables. Improved book citations consistency with other AliDujie skills. Version bump 3.3.27→3.3.28.
 
 ## 🆕 What's New in v3.3.27
 
@@ -883,11 +887,14 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 
 | Book | Author | Contribution |
 |------|--------|-------------|
-| **赢在用户：Web人物角色创建和应用实践指南** | Steve Mulder (2007) | Foundation — persona creation lifecycle |
+| **赢在用户：Web人物角色创建和应用实践指南** (Web Persona) | Steve Mulder (2007) | Foundation — evidence-driven persona creation lifecycle |
+| The User Is Always Right | Steve Mulder & Zija Warman (2007) | User-centered design methodology |
+| Persona Lifecycle | Alan Cooper (2004) | Persona design and application |
 | The Mom Test | Rob Fitzpatrick (2013) | Customer interview methodology |
 | Continuous Discovery Habits | Teresa Torres (2021) | Outcome-driven discovery process |
 | Talking to Humans | Giff Constable (2014) | Customer discovery framework |
 | Lean Customer Development | Cindy Alvarez (2014) | Hypothesis-driven validation |
+| Observing the User Experience | Mike Kuniavsky (2003) | Research methods for persona data |
 
 ## 📚 Resources
 
@@ -905,22 +912,6 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 | [references/advanced/](references/advanced/) | 39 deep-dive references |
 | [examples/](examples/) | 4 runnable scripts with bilingual comments |
 | [persona/](persona/) | Core Python module source code |
-
-### 📖 Recommended Learning Path
-
-1. **Start with the README** — Quick start + 30-second example
-2. **Read USAGE.md or INSTALL.md** — Detailed installation and integration guide
-3. **Explore references/core/** — Deep dive into 10 persona lifecycle steps
-4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
-
-## 📚 References
-
-| Book | Author | Contribution |
-|------|--------|-------------|
-| **Web Persona: Getting Started with Personas for Web Design** | Steve Mulder (2007) | Foundation — evidence-driven persona creation |
-| The User Is Always Right | Steve Mulder & Zija Warman (2007) | User-centered design methodology |
-| Persona Lifecycle | Alan Cooper (2004) | Persona design and application |
-| Observing the User Experience | Mike Kuniavsky (2003) | Research methods for persona data |
 
 ### 📖 Recommended Learning Path
 
