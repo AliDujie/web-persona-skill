@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.26-blue)
+![Version](https://img.shields.io/badge/version-3.3.27-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -37,6 +37,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v3.3.27
+
+- **Repo Maintenance 2026-06-09**: Added structured References section with book citations and Recommended Learning Path at end of README. Improved documentation consistency across all 6 AliDujie skills. Version bump 3.3.26→3.3.27.
 
 ## 🆕 What's New in v3.3.26
 
@@ -908,6 +912,23 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 2. **Read USAGE.md or INSTALL.md** — Detailed installation and integration guide
 3. **Explore references/core/** — Deep dive into 10 persona lifecycle steps
 4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
+
+## 📚 References
+
+| Book | Author | Contribution |
+|------|--------|-------------|
+| **Web Persona: Getting Started with Personas for Web Design** | Steve Mulder (2007) | Foundation — evidence-driven persona creation |
+| The User Is Always Right | Steve Mulder & Zija Warman (2007) | User-centered design methodology |
+| Persona Lifecycle | Alan Cooper (2004) | Persona design and application |
+| Observing the User Experience | Mike Kuniavsky (2003) | Research methods for persona data |
+
+### 📖 Recommended Learning Path
+
+1. **Start with the README** — Quick start + 30-second example
+2. **Run the Beginner's First Tutorial** — 60-min end-to-end Persona creation workflow
+3. **Read [USAGE.md](USAGE.md)** — Detailed workflows for all 10 tasks
+4. **Explore [references/core/](references/core/)** — Deep dive into 10 persona lifecycle steps
+5. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
 
 ## 📄 License
 

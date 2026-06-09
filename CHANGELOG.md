@@ -1,3 +1,9 @@
+## [3.3.27] - 2026-06-09
+
+- Added structured References section with book citations and Recommended Learning Path at end of README
+- Improved documentation consistency across all 6 AliDujie skills
+- Version bump 3.3.26→3.3.27
+
 ## [3.3.26] - 2026-06-09
 
 - Repo maintenance: version consistency audit across all files (README badge, pyproject.toml), ecosystem cross-reference validation across all 6 AliDujie skills, What's New heading format standardization, stale TOC anchor fixes, Version History Latest entry sync. Version bump 3.3.25→3.3.26.
