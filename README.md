@@ -38,40 +38,11 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3320
+## 🆕 What's New in v3.3.26
 
-- **Repo Maintenance 2026-06-05**: Version consistency audit across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, verified TOC anchors, fixed duplicate SECURITY.md entry in Resources table. Version bump 3.3.19→3.3.20.
+- **Repo Maintenance 2026-06-10**: Consolidated 8 What's New entries into 1, synced CHANGELOG to v3.3.26, ecosystem cross-reference audit across all 6 AliDujie skills
 
-## 🆕 What's New in v3319
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 3.3.18→3.3.19.
-
-## 🆕 What's New in v3.3.18
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v3316 → v3318), version bump 3.3.17→3.3.18.
-
-## 🆕 What's New in v3.3.16
-
-- **Repo Maintenance 2026-06-04**: Audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills, version bump 3.3.15→3.3.16.
-
-## 🆕 What's New in v3.3.15
-
-- **Repo Maintenance 2026-06-03**: Duplicate challenge table removed from README header, added Try Before You Decide block after Quick Decision, version bump 3.3.14→3.3.15.
-
-## 🆕 What's New in v3.3.14
-
-- **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 3.3.14), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v3.3.13
-
-- **Repo Maintenance 2026-06-02**: Beginner's First Tutorial (60-min end-to-end Persona creation workflow), version bump to 3.3.13, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v3.3.12
-
-- **Repo Maintenance 2026-06-01**: TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-> **📦 Earlier versions (v3.3.4 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
-
+> **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
 
 ## 🇨🇳 中文概览
 
