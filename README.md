@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3326)
+- [What's New](#whats-new-in-v3328)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -852,7 +852,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.26)**: Repo maintenance 2026-06-09 — Version consistency audit, ecosystem cross-reference validation, CHANGELOG format standardization.
+**Latest (3.3.28)**: Repo maintenance 2026-06-10 — Fixed stale TOC anchor (v3326→v3328).
 
 **Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
