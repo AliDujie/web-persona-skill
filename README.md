@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3328)
+- [What's New](#whats-new-in-v3329)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -37,6 +37,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v3.3.29
+
+- **Repo Maintenance 2026-06-10 (PM)**: Fixed stale TOC anchor (v3328→v3329). Version bump 3.3.28→3.3.29.
 
 ## 🆕 What's New in v3.3.28
 
@@ -853,7 +857,9 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.28)**: Repo maintenance 2026-06-10 — Fixed stale TOC anchor (v3326→v3328).
+**Latest (3.3.29)**: Repo maintenance 2026-06-10 — Fixed stale TOC anchor (v3328→v3329). Version bump 3.3.28→3.3.29.
+
+**Previous (v3.3.28)**: Repo maintenance 2026-06-09 PM — Consolidated duplicate References and Recommended Learning Path sections, added missing CTO Advisor cross-reference to Quick Decision tables, improved book citations consistency. Version bump 3.3.27→3.3.28.
 
 **Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
