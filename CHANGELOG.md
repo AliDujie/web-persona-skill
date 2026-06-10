@@ -1,3 +1,16 @@
+## [3.3.29] - 2026-06-10
+
+- Added AliDujie ecosystem ASCII diagram to SKILL.md (was the only skill missing it)
+- Added ecosystem badge and positioning statement to SKILL.md
+- Version bump 3.3.28→3.3.29
+
+## [3.3.28] - 2026-06-09
+
+- Consolidated duplicate References and Recommended Learning Path sections
+- Added missing CTO Advisor cross-reference to Quick Decision tables
+- Improved book citations consistency with other AliDujie skills
+- Version bump 3.3.27→3.3.28
+
 ## [3.3.27] - 2026-06-09
 
 - Added structured References section with book citations and Recommended Learning Path at end of README
