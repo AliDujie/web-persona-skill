@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.29-blue)
+![Version](https://img.shields.io/badge/version-3.3.26-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3329)
+- [What's New](#whats-new-in-v3320)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -38,52 +38,11 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.29
-
-- **Repo Maintenance 2026-06-10 (PM)**: Fixed stale TOC anchor (v3328→v3329). Version bump 3.3.28→3.3.29.
-
-## 🆕 What's New in v3.3.28
-
-- **Repo Maintenance 2026-06-09 (PM)**: Consolidated duplicate References and Recommended Learning Path sections into single merged sections. Added missing CTO Advisor cross-reference to Quick Decision tables. Improved book citations consistency with other AliDujie skills. Version bump 3.3.27→3.3.28.
-
-## 🆕 What's New in v3.3.27
-
-- **Repo Maintenance 2026-06-09**: Added structured References section with book citations and Recommended Learning Path at end of README. Improved documentation consistency across all 6 AliDujie skills. Version bump 3.3.26→3.3.27.
-
 ## 🆕 What's New in v3.3.26
 
-- **Repo Maintenance 2026-06-09**: Version consistency audit, ecosystem cross-reference validation across all 6 AliDujie skills, CHANGELOG format standardization.
+- **Repo Maintenance 2026-06-10**: Consolidated 8 What's New entries into 1, synced CHANGELOG to v3.3.26, ecosystem cross-reference audit across all 6 AliDujie skills
 
-## 🆕 What's New in v3.3.19
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 3.3.18→3.3.19.
-
-## 🆕 What's New in v3.3.18
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v3316 → v3318), version bump 3.3.17→3.3.18.
-
-## 🆕 What's New in v3.3.16
-
-- **Repo Maintenance 2026-06-04**: Audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills, version bump 3.3.15→3.3.16.
-
-## 🆕 What's New in v3.3.15
-
-- **Repo Maintenance 2026-06-03**: Duplicate challenge table removed from README header, added Try Before You Decide block after Quick Decision, version bump 3.3.14→3.3.15.
-
-## 🆕 What's New in v3.3.14
-
-- **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 3.3.14), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v3.3.13
-
-- **Repo Maintenance 2026-06-02**: Beginner's First Tutorial (60-min end-to-end Persona creation workflow), version bump to 3.3.13, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v3.3.12
-
-- **Repo Maintenance 2026-06-01**: TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-> **📦 Earlier versions (v3.3.4 → v2.4.97)**: CHANGELOG version sync, What's New consolidation, TOC anchor fixes, added CN Quick Decision, Quick Start Checklist (CN/EN), Sprint Options table, ecosystem cross-reference audits. Full changelog in [CHANGELOG.md](CHANGELOG.md).
-
+> **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
 
 ## 🇨🇳 中文概览
 
@@ -162,7 +121,6 @@ The Web Persona Skill gives you:
 | Quantitative A/B testing, HEART metrics | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | Value proposition canvas, PMF validation | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
 | Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
-| Business framework analysis (SWOT, PESTEL, etc.) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 Persona is the ecosystem starting point: use it when you need to **define who your users are**.
 
@@ -857,9 +815,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.29)**: Repo maintenance 2026-06-10 — Fixed stale TOC anchor (v3328→v3329). Version bump 3.3.28→3.3.29.
-
-**Previous (v3.3.28)**: Repo maintenance 2026-06-09 PM — Consolidated duplicate References and Recommended Learning Path sections, added missing CTO Advisor cross-reference to Quick Decision tables, improved book citations consistency. Version bump 3.3.27→3.3.28.
+**Latest (3.3.26)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
 
 **Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
@@ -894,14 +850,11 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 
 | Book | Author | Contribution |
 |------|--------|-------------|
-| **赢在用户：Web人物角色创建和应用实践指南** (Web Persona) | Steve Mulder (2007) | Foundation — evidence-driven persona creation lifecycle |
-| The User Is Always Right | Steve Mulder & Zija Warman (2007) | User-centered design methodology |
-| Persona Lifecycle | Alan Cooper (2004) | Persona design and application |
+| **赢在用户：Web人物角色创建和应用实践指南** | Steve Mulder (2007) | Foundation — persona creation lifecycle |
 | The Mom Test | Rob Fitzpatrick (2013) | Customer interview methodology |
 | Continuous Discovery Habits | Teresa Torres (2021) | Outcome-driven discovery process |
 | Talking to Humans | Giff Constable (2014) | Customer discovery framework |
 | Lean Customer Development | Cindy Alvarez (2014) | Hypothesis-driven validation |
-| Observing the User Experience | Mike Kuniavsky (2003) | Research methods for persona data |
 
 ## 📚 Resources
 
@@ -923,10 +876,9 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 ### 📖 Recommended Learning Path
 
 1. **Start with the README** — Quick start + 30-second example
-2. **Run the Beginner's First Tutorial** — 60-min end-to-end Persona creation workflow
-3. **Read [USAGE.md](USAGE.md)** — Detailed workflows for all 10 tasks
-4. **Explore [references/core/](references/core/)** — Deep dive into 10 persona lifecycle steps
-5. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
+2. **Read USAGE.md or INSTALL.md** — Detailed installation and integration guide
+3. **Explore references/core/** — Deep dive into 10 persona lifecycle steps
+4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
 
 ## 📄 License
 

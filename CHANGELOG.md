@@ -1,25 +1,6 @@
-## [3.3.29] - 2026-06-10
+## [3.3.26] - 2026-06-10
 
-- Added AliDujie ecosystem ASCII diagram to SKILL.md (was the only skill missing it)
-- Added ecosystem badge and positioning statement to SKILL.md
-- Version bump 3.3.28→3.3.29
-
-## [3.3.28] - 2026-06-09
-
-- Consolidated duplicate References and Recommended Learning Path sections
-- Added missing CTO Advisor cross-reference to Quick Decision tables
-- Improved book citations consistency with other AliDujie skills
-- Version bump 3.3.27→3.3.28
-
-## [3.3.27] - 2026-06-09
-
-- Added structured References section with book citations and Recommended Learning Path at end of README
-- Improved documentation consistency across all 6 AliDujie skills
-- Version bump 3.3.26→3.3.27
-
-## [3.3.26] - 2026-06-09
-
-- Repo maintenance: version consistency audit across all files (README badge, pyproject.toml), ecosystem cross-reference validation across all 6 AliDujie skills, What's New heading format standardization, stale TOC anchor fixes, Version History Latest entry sync. Version bump 3.3.25→3.3.26.
+- Repo maintenance: consolidated What's New entries, CHANGELOG version sync, ecosystem cross-reference audit
 
 ## [3.3.25] - 2026-06-07 (Morning)
 
