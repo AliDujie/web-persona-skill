@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Example: Feature Prioritization by Persona Impact.
+"""Persona Example 03: Feature Prioritization by Persona Impact / 按角色影响的功能优先级
 
 Scenario: Deciding which features to build next based on persona needs.
+场景：根据角色需求决定下一步构建哪些功能。
 """
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))

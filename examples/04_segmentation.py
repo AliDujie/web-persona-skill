@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Example: User Segmentation with Behavioral Data.
+"""Persona Example 04: User Segmentation with Behavioral Data / 基于行为数据的用户分群
 
 Scenario: Segmenting users of a fitness app into distinct groups.
+场景：将健身应用用户分群为不同组别。
 """
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
