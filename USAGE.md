@@ -302,6 +302,18 @@ Persona is the user definition layer — answer "who are we designing for?" befo
 - [INSTALL.md](INSTALL.md) — Installation guide
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 
+## 🔗 Extended Ecosystem / 扩展生态
+
+Persona research data can be combined with management skills to turn user understanding into strategic decisions:
+
+| Extended Skill | Collaboration Scenario |
+|---------------|------------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona CAC/LTV → CEO investment decisions / 角色经济 → CEO 投资决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona goals → CPO product roadmap / 角色目标 → CPO 产品路线图 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona segments → CMO brand positioning / 角色分群 → CMO 品牌定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | User needs → CTO tech investment priorities / 用户需求 → CTO 技术投资优先级 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona insights → CEO plan review cycle / 角色洞察 → CEO 计划审查 |
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: How many personas should I create?**
