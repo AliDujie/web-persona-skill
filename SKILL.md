@@ -1,6 +1,6 @@
 ---
 name: web-persona-skill
-version: "3.3.30"
+version: "3.3.31"
 description: "Persona 全流程执行 Skill（T1-T10）。给定输入（访谈稿/问卷数据/业务描述），直接产出 Persona 卡片、行为分群、访谈提纲、问卷、验证方案、应用矩阵、可用性测试脚本、旅程地图等交付物。每个任务带 Pitfalls + Verification 双闭环 + 全局 Guardrails。不是教程——是可审计的执行器。"
 author: "渡劫"
 ---
@@ -46,6 +46,37 @@ Persona 是 **用户定义层**——整个研究流程的起点，定义"为谁
 ```
 
 **Persona 的典型协作**：Persona 定义用户 → JTBD 发现 Jobs → UDM 研究 → QuantUX 验证 → VPD 画布 → SWD 汇报 → STM 战略决策
+
+---
+
+## 🎯 Why Use This Skill?
+
+Traditional persona creation relies on **demographics and gut feeling** — producing colorful posters nobody uses. This skill delivers **evidence-based personas** grounded in actual user behavior, with each step auditable and verifiable.
+
+| Challenge | Without This Skill | With Persona Skill |
+|-----------|-------------------|--------------------|
+| User Understanding | "Our target is everyone" | Named personas with real behaviors and scenarios |
+| Feature Prioritization | HiPPO / loudest voice wins | Persona-weighted feature scoring |
+| Testing Coverage | Random user recruitment | Structured scenarios per persona |
+| Stakeholder Alignment | Abstract debates | Concrete "what would Alex do?" references |
+
+> 💡 **Persona is the ecosystem starting point** — define WHO your users are before JTBD discovers WHAT they need, UDM plans HOW to study them, QuantUX validates results, VPD maps value, and SWD presents findings.
+
+### 🔗 Quick Cross-Skill Workflow
+
+```python
+# Persona → JTBD → UDM → QuantUX → VPD → SWD
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+from udm import UDMSkill
+
+p = PersonaSkill("MyApp")
+p.add_persona("Power User", "primary", "Advanced features daily")
+# Persona output feeds into JTBD for job discovery
+j = JTBDSkill("MyApp")
+# JTBD findings feed into UDM for method selection
+u = UDMSkill("MyApp")
+```
 
 ---
 
@@ -163,23 +194,77 @@ Persona 是 **用户定义层**——整个研究流程的起点，定义"为谁
 
 ## Python 工具调用
 
+### 基础用法 / Basic Usage
+
 ```python
-# T5 定量聚类
+from persona import PersonaSkill
+
+# 初始化并创建角色
+skill = PersonaSkill("FreshMart 生鲜电商")
+skill.add_persona("小明", "效率型用户", "primary", "快就是好",
+                  goals=["快速完成购买"], behaviors=["高频使用 APP"],
+                  attitudes=["追求效率"], bio="忙碌的白领")
+skill.add_persona("小红", "品质型用户", "secondary", "品质第一",
+                  goals=["买到新鲜好货"], behaviors=["仔细对比评价"],
+                  attitudes=["品质至上"], bio="注重品质的妈妈")
+
+# 渲染角色卡
+print(skill.render_all_personas())
+
+# 生成访谈指南
+guide = skill.generate_interview("用户访谈", ["goals", "behaviors", "pain_points"])
+print(guide)
+```
+
+### T1-T6: Full Workflow
+
+```python
+# 功能优先级（按角色加权）
+matrix = skill.prioritize_features([
+    {"feature": "一键下单", "persona": "小明", "impact": 5},
+    {"feature": "有机认证标签", "persona": "小红", "impact": 4}
+])
+print(matrix)
+
+# 定量聚类分析
 from persona.clustering import PersonaClusterer
 result = PersonaClusterer(method="auto").fit(df, n_clusters_range=(3, 7))
+print(result.summary())
 
-# T6/T7 LLM 辅助
+# LLM 辅助模拟访谈
 from persona.llm_prompts import PersonaPromptLibrary
 lib = PersonaPromptLibrary()
-prompt = lib.simulated_interview(profile, task="验证假设", questions=[...])
+prompt = lib.simulated_interview(profile, task="验证假设", questions=["..." ])
 
-# T8 OKR 桥接
+# OKR 桥接
 from persona.okr_bridge import OKRBridge
 plan = OKRBridge().derive_okrs(persona_profiles)
 
-# T8 度量
+# 度量套件
 from persona.measurement_toolkit import MeasurementToolkit
 tk = MeasurementToolkit(product="你的产品")
+```
+
+### T9: Usability Test Script
+
+```python
+script = skill.generate_usability_test(
+    persona="效率型用户",
+    tasks=["注册", "搜索商品", "下单支付"],
+    success_criteria=["完成时间 < 2 分钟", "无严重错误"]
+)
+print(script)
+```
+
+### T10: Journey Map
+
+```python
+journey = skill.generate_journey_map(
+    persona="小明",
+    scenario="紧急购买午餐",
+    stages=["需求产生", "搜索", "选择", "下单", "收货"]
+)
+print(journey)
 ```
 
 ---
