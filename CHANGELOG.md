@@ -1,3 +1,11 @@
+## [3.3.31] - 2026-06-12
+
+- Repo maintenance 2026-06-12: CHANGELOG sync (3.3.29 → 3.3.31), cross-reference validation across all 6 AliDujie skills
+
+## [3.3.30] - 2026-06-11
+
+- CHANGELOG catch-up entry
+
 ## [3.3.29] - 2026-06-10 PM
 
 - Fixed SKILL.md version mismatch (3.3.27→3.3.28 to match pyproject/__init__/README)

@@ -38,8 +38,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.29
+## 🆕 What's New in v3.3.31
 
+- **Repo Maintenance 2026-06-12**: CHANGELOG sync (3.3.29→3.3.31), ecosystem cross-reference validation across all 6 AliDujie skills
 - **Repo Maintenance 2026-06-10 PM**: Fixed stale TOC anchor (v3320→v3329), synced README version badge (3.3.26→3.3.29) to match pyproject.toml/SKILL.md/__init__.py (3.3.29). Version bump 3.3.26→3.3.29.
 
 > **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
