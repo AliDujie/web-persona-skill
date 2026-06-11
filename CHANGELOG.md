@@ -1,3 +1,23 @@
+## [3.3.29] - 2026-06-10 PM
+
+- Fixed SKILL.md version mismatch (3.3.27→3.3.28 to match pyproject/__init__/README)
+- Added missing Structured Thinking Model cross-reference to Quick Decision tables (EN+CN)
+- Fixed duplicate row in Chinese Quick Decision table
+- Added AliDujie ecosystem diagram and badge to SKILL.md (was the only skill missing it)
+- Added bilingual headers to 03_feature_prioritization.py and 04_segmentation.py example docstrings
+- Added CHANGELOG entry for v3.3.29
+- Updated README version badge 3.3.28→3.3.29, sync version 3.3.29 across all files
+
+## [3.3.28] - 2026-06-09
+
+- Consolidated duplicate References and Recommended Learning Path sections
+- Added missing CTO Advisor cross-reference to Quick Decision tables
+- Improved book citations consistency with other AliDujie skills
+
+## [3.3.27] - 2026-06-09
+
+- Added structured References section with book citations and Recommended Learning Path at end of README
+
 ## [3.3.26] - 2026-06-10
 
 - Repo maintenance: consolidated What's New entries, CHANGELOG version sync, ecosystem cross-reference audit

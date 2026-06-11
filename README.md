@@ -815,7 +815,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.26)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (3.3.29)**: Repo maintenance 2026-06-10 PM — Fixed stale TOC anchor (v3.3.20→v3.3.29), synced README version badge (3.3.26→3.3.29) to match pyproject/SKILL/__init__, bilingual example docstrings, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
