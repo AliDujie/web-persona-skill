@@ -12,8 +12,8 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
-![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey)
 
 ## 📑 Table of Contents
 
