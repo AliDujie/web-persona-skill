@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3329)
+- [What's New](#whats-new-in-v3331)
 - [Why Teams Choose Persona](#why-teams-choose-persona-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -710,29 +710,17 @@ print(skill.generate_persona(include_ceo_analysis=True, total_users=100000))
 
 ## 🔗 Extended Ecosystem / 扩展生态
 
-Persona research data can be combined with management skills to turn user understanding into strategic decisions:
+Persona research data can be combined with management skills to turn user understanding into strategic decisions.
+角色研究数据可与管理技能结合，将用户理解转化为战略决策。
 
-| 管理技能 | 应用场景 | 组合效果 |
-|---------|---------|--------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | 角色经济转战略决策 | Persona CAC/LTV → CEO strategy |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | 角色驱动产品路线图 | Persona goals → product roadmap |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | 角色定位转品牌策略 | Persona segments → brand positioning |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | 角色需求转技术优先级 | User needs → tech priorities |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | 角色洞察转计划审查 | Persona insights → plan review cycle |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 角色洞察转商业框架分析 | Persona data → STM strategic analysis |
-
-## 🔗 Extended Ecosystem
-
-Persona research data can be combined with management skills to turn user understanding into strategic decisions:
-
-| Extended Skill | Collaboration Scenario |
-|---------------|----------------------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona CAC/LTV → CEO investment decisions |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona goals → CPO product roadmap |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona segments → CMO brand positioning |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | User needs → CTO tech investment priorities |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona insights → CEO plan review cycle |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Persona segments → STM market analysis |
+| Extended Skill 扩展技能 | Collaboration Scenario 协作场景 |
+|----------------------|--------------------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Persona CAC/LTV → CEO investment decisions / 角色经济转战略决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Persona goals → CPO product roadmap / 角色驱动产品路线图 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Persona segments → CMO brand positioning / 角色定位转品牌策略 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | User needs → CTO tech priorities / 角色需求转技术优先级 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | Persona insights → plan review cycle / 角色洞察转计划审查 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Persona data → STM strategic analysis / 角色洞察转商业框架分析 |
 
 ## 📊 Persona Quality Quick-Ref / 角色质量速查
 
@@ -816,7 +804,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.29)**: Repo maintenance 2026-06-10 PM — Fixed stale TOC anchor (v3.3.20→v3.3.29), synced README version badge (3.3.26→3.3.29) to match pyproject/SKILL/__init__, bilingual example docstrings, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (3.3.31)**: Repo maintenance 2026-06-12 — Fixed stale TOC anchor (v3.3.29→v3.3.31), ecosystem cross-reference validation across all 6 AliDujie skills, version sync 3.3.29→3.3.31.
 
 **Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
