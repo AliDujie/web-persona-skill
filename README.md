@@ -35,12 +35,14 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [Limitations](#limitations-局限性)
 - [Resources](#resources)
 - [Recommended Learning Path](#recommended-learning-path)
+- [What's Next](#whats-next--下一步)
 
 ---
 
 ## 🆕 What's New in v3.3.31
 
-- **Repo Maintenance 2026-06-12**: CHANGELOG sync (3.3.29→3.3.31), ecosystem cross-reference validation across all 6 AliDujie skills
+- **Repo Maintenance 2026-06-12 PM**: Added "What's Next / 下一步" section with cross-skill navigation table, ecosystem cross-reference validation
+- **Repo Maintenance 2026-06-12 AM**: CHANGELOG sync (3.3.29→3.3.31), ecosystem cross-reference validation across all 6 AliDujie skills
 - **Repo Maintenance 2026-06-10 PM**: Fixed stale TOC anchor (v3320→v3329), synced README version badge (3.3.26→3.3.29) to match pyproject.toml/SKILL.md/__init__.py (3.3.29). Version bump 3.3.26→3.3.29.
 
 > **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
@@ -861,6 +863,20 @@ A: Start with Persona's qualitative tasks (T2→T3→T6) for evidence-based pers
 2. **Read USAGE.md or INSTALL.md** — Detailed installation and integration guide
 3. **Explore references/core/** — Deep dive into 10 persona lifecycle steps
 4. **Try the full pipeline** — Chain all 6 AliDujie skills end-to-end (see [Complete Pipeline Example](#complete-pipeline-example))
+
+### 🔀 What's Next? / 下一步？
+
+Once you have personas, continue the research pipeline:
+
+完成角色创建后，继续研究管道：
+
+| 你的下一步 | 推荐技能 | 作用 |
+|-----------|---------|------|
+| 发现用户 Jobs | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | 每个角色需要完成什么任务 |
+| 选择研究方法 | [UDM](https://github.com/AliDujie/universal-design-methods) | 为每个角色设计访谈/测试 |
+| 定量验证分群 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | KMeans/LCA 聚类验证 |
+| 验证价值主张 | [VPD](https://github.com/AliDujie/value-proposition-design) | 角色-价值映射 |
+| 汇报角色洞察 | [SWD](https://github.com/AliDujie/storytelling-with-data) | 角色数据故事化 |
 
 ## 📄 License
 
