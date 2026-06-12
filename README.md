@@ -154,6 +154,7 @@ The Web Persona Skill gives you:
 
 ```bash
 # Copy the skill to your agent's skills directory
+# 将技能复制到你 Agent 的技能目录
 cp -r web-persona-skill /your/agent/skills/
 ```
 
