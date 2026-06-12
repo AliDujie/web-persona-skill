@@ -192,14 +192,6 @@ report = skill.generate_persona(include_ceo_analysis=True, total_users=100000)
 print(report)
 ```
 
-> 💡 **Try Before You Decide / 先试后决定**:
-> ```python
-> from persona import PersonaSkill
-> skill = PersonaSkill("你的产品")
-> skill.add_persona("测试用户", "primary", "测试", goals=["测试"])
-> print(skill.render_all_personas())
-> ```
-
 ### ⏱️ 5-Minute Quick-Start Checklist / 5 分钟快速开始检查清单
 
 | Step | EN | CN |
