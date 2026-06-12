@@ -1,3 +1,8 @@
+## [3.3.32] - 2026-06-13
+
+- Added complete 6-skill pipeline code example to "What's Next" section (was the only skill missing a code snippet after the cross-skill nav table)
+- Ecosystem cross-reference validation across all 6 AliDujie skills
+
 ## [3.3.31] - 2026-06-12
 
 - Repo maintenance 2026-06-12: CHANGELOG sync (3.3.29 → 3.3.31), cross-reference validation across all 6 AliDujie skills

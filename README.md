@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.31-blue)
+![Version](https://img.shields.io/badge/version-3.3.32-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -41,6 +41,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 🆕 What's New in v3.3.31
 
+- **Repo Maintenance 2026-06-13**: Added complete 6-skill pipeline code example to "What's Next" section (was only skill missing it), ecosystem cross-reference validation
 - **Repo Maintenance 2026-06-12 PM**: Added "What's Next / 下一步" section with cross-skill navigation table, ecosystem cross-reference validation
 - **Repo Maintenance 2026-06-12 AM**: CHANGELOG sync (3.3.29→3.3.31), ecosystem cross-reference validation across all 6 AliDujie skills
 - **Repo Maintenance 2026-06-10 PM**: Fixed stale TOC anchor (v3320→v3329), synced README version badge (3.3.26→3.3.29) to match pyproject.toml/SKILL.md/__init__.py (3.3.29). Version bump 3.3.26→3.3.29.
@@ -877,6 +878,30 @@ Once you have personas, continue the research pipeline:
 | 定量验证分群 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | KMeans/LCA 聚类验证 |
 | 验证价值主张 | [VPD](https://github.com/AliDujie/value-proposition-design) | 角色-价值映射 |
 | 汇报角色洞察 | [SWD](https://github.com/AliDujie/storytelling-with-data) | 角色数据故事化 |
+
+```python
+# Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end
+from persona import PersonaSkill
+from jtbd import JTBDSkill
+from udm import UDMSkill
+from quantux import QuantUXSkill
+from vpd import VPDSkill
+from swd import SWDSkill
+
+p = PersonaSkill("FreshMart")           # 1. Define who
+p.add_persona("小明", "效率型用户", "primary", "快就是好",
+    goals=["快速完成购买"], behaviors=["高频使用 APP"])
+j = JTBDSkill("FreshMart")              # 2. Discover what they need
+j.score_opportunity("快速购买生鲜", struggle=3, alternative=2, market=5, budget=4)
+u = UDMSkill("FreshMart")               # 3. Plan and run research
+u.generate_interview("Shopping Flow", "contextual")
+qx = QuantUXSkill("FreshMart")          # 4. Validate quantitatively
+qx.calculate_ab_sample_size(baseline=0.30, mde=0.05)
+v = VPDSkill("FreshMart", "Efficient Users")  # 5. Map value
+v.analyze_canvas(jobs=[{"description": "Buy groceries fast"}])
+s = SWDSkill("Q1 Report")               # 6. Present to stakeholders
+s.build_story(context="Persona-driven FreshMart redesign")
+```
 
 ## 📄 License
 
