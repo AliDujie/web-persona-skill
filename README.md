@@ -804,21 +804,11 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (3.3.31)**: Repo maintenance 2026-06-12 — Fixed stale TOC anchor (v3.3.29→v3.3.31), ecosystem cross-reference validation across all 6 AliDujie skills, version sync 3.3.29→3.3.31.
+**Latest (v3.3.34)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram and cross-skill collaboration summary, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 3.3.33 → 3.3.34), ecosystem cross-reference validation across all 6 AliDujie skills.
 
-**Previous (v3.3.18)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
+**Previous (v3.3.33)**: TOC anchor + version badge fix (#whats-new-in-v3332 → v3333, badge 3.3.32 → 3.3.33), version sync across all artifacts (README/pyproject.toml/SKILL.md: 3.3.32 → 3.3.33), ecosystem cross-reference validation.
 
-**Previous (v3.3.16)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v3.3.14 → v3.3.15), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
-
-**Previous (v3.3.8)**: README maintenance — added Ecosystem FAQ section, enhanced "Why Persona-Centric Design Works" promotional section, version bump.
-
-**Previous (v3.3.7)**: README maintenance — added English intro summary, bilingual Quick Start Checklist, version bump.
-
-**Previous (v3.3.6)**: README maintenance — duplicate What's New merge, TOC anchor fix, added CN Quick Decision section, version bump.
-
-**Previous (v3.3.2)**: Major README expansion — from ~95 lines to ~500+ lines with full ecosystem standard documentation. Version sync across all files.
-
-**Previous (v3.3.1)**: Fixed version inconsistency across pyproject.toml/README/SKILL.md. Added full bilingual documentation.
+**Previous (v3.3.32)**: Added complete 6-skill pipeline code example to "What's Next" section (was the only skill missing a code snippet after the cross-skill nav table), ecosystem cross-reference validation.
 
 **Previous (v3.3.0)**: Complete architectural restructure — from "book index" to "execution manual" with 8 core operation manuals and 39 advanced references.
 
