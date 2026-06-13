@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.35-blue)
+![Version](https://img.shields.io/badge/version-3.3.36-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -17,7 +17,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3334)
+- [What's New](#whats-new-in-v3336)
 - [Why Teams Choose Persona](#why-teams-choose-persona-为什么选择-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -39,7 +39,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.35
+## 🆕 What's New in v3.3.36
+
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v3335 → v3336), consolidated maintenance entries, enhanced Python version badge parity check, consolidated maintenance entries
 
 - **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (3.3.34 → 3.3.35), README readability improvements
 
@@ -806,7 +808,9 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.34)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram and cross-skill collaboration summary, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 3.3.33 → 3.3.34), ecosystem cross-reference validation across all 6 AliDujie skills.
+**Latest (v3.3.35)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), consolidated maintenance entries, consolidated maintenance entries.
+
+**Previous (v3.3.34)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram and cross-skill collaboration summary, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 3.3.33 → 3.3.34), ecosystem cross-reference validation across all 6 AliDujie skills.
 
 **Previous (v3.3.33)**: TOC anchor + version badge fix (#whats-new-in-v3332 → v3333, badge 3.3.32 → 3.3.33), version sync across all artifacts (README/pyproject.toml/SKILL.md: 3.3.32 → 3.3.33), ecosystem cross-reference validation.
 
