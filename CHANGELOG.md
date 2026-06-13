@@ -1,3 +1,10 @@
+## [3.3.34] - 2026-06-13
+
+- Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram and cross-skill collaboration summary
+- Consolidated What's New entries for clarity
+- Version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 3.3.33 → 3.3.34)
+- Ecosystem cross-reference validation across all 6 AliDujie skills
+
 ## [3.3.33] - 2026-06-13
 
 - TOC anchor + version badge fix (#whats-new-in-v3332 → v3333, badge 3.3.32 → 3.3.33), version sync across all artifacts (README/pyproject.toml/SKILL.md: 3.3.32 → 3.3.33)
