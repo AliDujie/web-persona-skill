@@ -1,6 +1,6 @@
 ---
 name: web-persona-skill
-version: "3.3.32"
+version: "3.3.33"
 description: "Persona 全流程执行 Skill（T1-T10）。给定输入（访谈稿/问卷数据/业务描述），直接产出 Persona 卡片、行为分群、访谈提纲、问卷、验证方案、应用矩阵、可用性测试脚本、旅程地图等交付物。每个任务带 Pitfalls + Verification 双闭环 + 全局 Guardrails。不是教程——是可审计的执行器。"
 author: "渡劫"
 ---
