@@ -8,7 +8,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.34-blue)
+![Version](https://img.shields.io/badge/version-3.3.35-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -39,7 +39,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.34
+## 🆕 What's New in v3.3.35
+
+- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (3.3.34 → 3.3.35), README readability improvements
 
 - **Repo Maintenance 2026-06-13 PM**: Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram, added cross-skill collaboration summary at top, consolidated What's New entries
 
