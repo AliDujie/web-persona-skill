@@ -1,3 +1,7 @@
+## v3.3.42 (2026-06-15)
+
+- Repo Maintenance 2026-06-15: Version bump 3.3.41 → 3.3.42, ecosystem documentation consistency audit, cross-skill collaboration table validation, consolidated legacy What's New entries.
+
 ## v3.3.41 (2026-06-15)
 
 - Repo Maintenance 2026-06-15 PM: Fixed stale knowledge base paths in config (references/01-persona-basics.md → references/core/01-project-plan.md), updated test assertions to match actual content, version bump 3.3.40→3.3.41, What's New entry, ecosystem documentation consistency audit.

@@ -10,7 +10,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.41-blue)
+![Version](https://img.shields.io/badge/version-3.3.42-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -19,7 +19,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3341)
+- [What's New](#whats-new-in-v3342)
 - [Why Teams Choose Persona](#why-teams-choose-persona-为什么选择-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -42,6 +42,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 ---
 
 ## 🆕 What's New in v3341
+
+- **Repo Maintenance 2026-06-15**: Version bump 3.3.41 → 3.3.42, consolidated older What's New entries, added Persona-to-Feature-Prioritization recipe, cross-skill collaboration consistency check.
+
 
 - **Repo Maintenance 2026-06-15 PM**: Version bump 3.3.40 → 3.3.41, ecosystem documentation consistency audit, cross-skill collaboration table validation, incremental content review.
 
