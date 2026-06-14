@@ -73,5 +73,6 @@ Persona is the "who" layer of the AliDujie UX Research Ecosystem:
 - **Persona → QuantUX**: Persona metrics → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validation
 - **Persona → VPD**: Persona goals → [VPD](https://github.com/AliDujie/value-proposition-design) canvas mapping
 - **Persona → SWD**: Persona economics → [SWD](https://github.com/AliDujie/storytelling-with-data) executive stories
+- **Persona → STM**: Persona strategy → [STM](https://github.com/AliDujie/Structured-Thinking-Model) strategic analysis
 
-See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 6-skill end-to-end workflow.
+See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 7-skill end-to-end workflow.
