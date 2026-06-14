@@ -1,3 +1,12 @@
+## v3.3.41 (2026-06-15)
+
+- Repo Maintenance 2026-06-15 PM: Fixed stale knowledge base paths in config (references/01-persona-basics.md → references/core/01-project-plan.md), updated test assertions to match actual content, version bump 3.3.40→3.3.41, What's New entry, ecosystem documentation consistency audit.
+- Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
+
+## v3.3.40 (2026-06-15)
+
+- Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
+
 ## v3.3.39 (2026-06-14)
 
 - Fixed stale TOC anchor (#whats-new-in-v3337 → v3339), version badge sync (README 3.3.38 → 3.3.39), ecosystem cross-reference validation.
