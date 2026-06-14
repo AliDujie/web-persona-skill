@@ -41,12 +41,11 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3341
+## 🆕 What's New in v3342
 
 - **Repo Maintenance 2026-06-15**: Version bump 3.3.41 → 3.3.42, consolidated older What's New entries, added Persona-to-Feature-Prioritization recipe, cross-skill collaboration consistency check.
 
 
-- **Repo Maintenance 2026-06-15 PM**: Version bump 3.3.40 → 3.3.41, ecosystem documentation consistency audit, cross-skill collaboration table validation, incremental content review.
 
 ## 🆕 What's New in v3.3.40
 
