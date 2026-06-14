@@ -1,3 +1,5 @@
+- **Repo Maintenance 2026-06-14 PM**: Version bump 3.3.37 → 3.3.38, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
+
 # Web Persona Skill
 
 > **从 0 到 1 创建人物角色的实操工具集 — 数据驱动、可审计、可落地。**
@@ -8,7 +10,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.37-blue)
+![Version](https://img.shields.io/badge/version-3.3.38-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -39,7 +41,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ---
 
-## 🆕 What's New in v3.3.37
+## 🆕 What's New in v3.3.38
 
 - **Repo Maintenance 2026-06-14**: Version sync across all artifacts (3.3.36 → 3.3.37), added Structured Thinking Model (STM) cross-reference to examples/README.md ecosystem section, enhanced ecosystem documentation consistency
 
@@ -811,7 +813,9 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.36)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), version sync across all artifacts.
+**Latest (v3.3.38)**: Repo maintenance 2026-06-14 PM — Version bump 3.3.37 → 3.3.38, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+
+**Previous (v3.3.37)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), enhanced Python version badge parity check.: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), version sync across all artifacts.
 
 **Previous (v3.3.34)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram and cross-skill collaboration summary, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 3.3.33 → 3.3.34), ecosystem cross-reference validation across all 6 AliDujie skills.
 

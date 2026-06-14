@@ -21,4 +21,4 @@
     print(skill.render_all_personas())
 """
 
-__version__ = "3.3.37"
+__version__ = "3.3.38"
