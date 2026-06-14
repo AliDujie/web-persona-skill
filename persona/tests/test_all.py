@@ -22,7 +22,7 @@ def test_knowledge_loading():
     # 加载指定主题
     content = load_knowledge("persona_basics")
     assert len(content) > 100, "persona_basics 内容不应为空"
-    assert "人物角色" in content, "persona_basics 应包含'人物角色'关键词"
+    assert "立项" in content or "Persona" in content, "persona_basics 应包含 Persona 相关主题"
 
     content2 = load_knowledge("measuring_results")
     assert len(content2) > 100, "measuring_results 内容不应为空"

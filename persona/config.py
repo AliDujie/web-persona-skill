@@ -11,8 +11,8 @@ from typing import Dict, List
 KNOWLEDGE_BASE_DIR = Path(__file__).parent.parent / "references"
 
 KNOWLEDGE_FILES: Dict[str, str] = {
-    "persona_basics": "01-persona-basics.md",
-    "measuring_results": "02-measuring-results.md",
+    "persona_basics": "core/01-project-plan.md",
+    "measuring_results": "core/09-usability-test-design.md",
 }
 
 # ── 角色优先级 ──────────────────────────────────────────────
