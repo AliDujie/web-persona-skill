@@ -41,9 +41,9 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 🆕 What's New in v3.3.36
 
-- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v3335 → v3336), consolidated maintenance entries, enhanced Python version badge parity check, consolidated maintenance entries
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v3335 → v3336), enhanced Python version badge parity check
 
-- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (3.3.34 → 3.3.35), README readability improvements
+- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, version sync across all artifacts (3.3.34 → 3.3.35), README readability improvements
 
 - **Repo Maintenance 2026-06-13 PM**: Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram, added cross-skill collaboration summary at top, consolidated What's New entries
 
@@ -133,6 +133,7 @@ The Web Persona Skill gives you:
 | Quantitative A/B testing, HEART metrics | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | Value proposition canvas, PMF validation | → [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) |
 | Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| Business framework analysis (SWOT, PESTEL, etc.) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 Persona is the ecosystem starting point: use it when you need to **define who your users are**.
 
@@ -808,7 +809,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.35)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), consolidated maintenance entries, consolidated maintenance entries.
+**Latest (v3.3.36)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), version sync across all artifacts.
 
 **Previous (v3.3.34)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose Persona" section with ecosystem pipeline diagram and cross-skill collaboration summary, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 3.3.33 → 3.3.34), ecosystem cross-reference validation across all 6 AliDujie skills.
 
