@@ -1,6 +1,6 @@
 ## v3.3.39 (2026-06-14)
 
-- Fixed stale TOC anchor (#whats-new-in-v3337 → v3339), version sync across all artifacts (3.3.38 → 3.3.39), ecosystem cross-reference validation.
+- Fixed stale TOC anchor (#whats-new-in-v3337 → v3339), version badge sync (README 3.3.38 → 3.3.39), ecosystem cross-reference validation.
 
 ## v3.3.37 (2026-06-14)
 
