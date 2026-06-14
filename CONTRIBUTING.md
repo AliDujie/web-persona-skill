@@ -67,6 +67,7 @@ When contributing, consider how Persona fits into the broader AliDujie UX Resear
 - [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — Persona 角色假设可用 QuantUX 行为验证
 - [Value Proposition Design](https://github.com/AliDujie/value-proposition-design) — Persona 客户画像可直接用于 VPD 画布
 - [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Persona 数据可交给 SWD 进行叙事呈现
+- [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — Persona 战略定位可用 STM 框架分析
 
 ---
 
