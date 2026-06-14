@@ -32,7 +32,7 @@ from persona.measure import MeasureSystem
 from persona.segment import SegmentAnalyzer
 from persona.strategy import StrategyAnalyzer
 
-__version__ = "3.3.40"
+__version__ = "3.3.41"
 
 __all__ = ["PersonaSkill", "__version__"]
 
