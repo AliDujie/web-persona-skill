@@ -90,3 +90,18 @@
 | 37 | quesenbery-storytelling-ux | Quesenbery《Storytelling for UX》 |
 | 38 | kuniavsky-observing-user-experience | Kuniavsky《Observing the User Experience》 |
 | 39 | christensen-competing-against-luck | Christensen《Competing Against Luck》 |
+
+---
+
+## 🌐 技能生态关联 / Skill Ecosystem Connections
+
+Persona 是 AliDujie UX 研究生态的起点——先回答"为谁做"，再深入"做什么"和"怎么做"：
+
+- **Persona → JTBD**: Persona 的角色行为分群 → JTBD 按角色进行机会评分
+- **Persona → UDM**: Persona 的用户画像 → UDM 为不同角色选择研究方法
+- **Persona → QuantUX**: Persona 的关键行为 → QuantUX 按分群验证数据指标
+- **Persona → VPD**: Persona 的目标/痛点 → VPD 映射到价值主张画布
+- **Persona → SWD**: Persona 的经济数据 → SWD 制作角色画像可视化叙事
+- **Persona → STM**: Persona 的战略洞察 → [STM](https://github.com/AliDujie/Structured-Thinking-Model) 结构化战略分析
+
+> 💡 **完整生态链**: Persona (用户定义) → JTBD (深层需求) → UDM (方法引擎) → VPD (价值设计) → QuantUX (数据验证) → SWD (数据叙事) → [STM](https://github.com/AliDujie/Structured-Thinking-Model) (战略决策)
