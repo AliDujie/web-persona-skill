@@ -1,4 +1,4 @@
-- **Repo Maintenance 2026-06-14 PM**: Version bump 3.3.37 → 3.3.38, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
+- **Repo Maintenance 2026-06-14 PM**: Version bump 3.3.38 → 3.3.39, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
 
 # Web Persona Skill
 
@@ -813,7 +813,9 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v3.3.38)**: Repo maintenance 2026-06-14 PM — Version bump 3.3.37 → 3.3.38, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+**Latest (v3.3.39)**: Repo maintenance 2026-06-14 PM — Version bump 3.3.38 → 3.3.39, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+
+**Previous (v3.3.38)**: Repo maintenance 2026-06-14 PM — Version sync across all artifacts (3.3.37 → 3.3.38), ecosystem cross-reference validation.
 
 **Previous (v3.3.37)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), enhanced Python version badge parity check.: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v3335 → v3336), version sync across all artifacts.
 
