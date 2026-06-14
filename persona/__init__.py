@@ -32,7 +32,7 @@ from persona.measure import MeasureSystem
 from persona.segment import SegmentAnalyzer
 from persona.strategy import StrategyAnalyzer
 
-__version__ = "3.3.39"
+__version__ = "3.3.40"
 
 __all__ = ["PersonaSkill", "__version__"]
 
@@ -196,6 +196,8 @@ class PersonaSkill:
         persona_needs: Dict[str, str],
         impact: str = "高",
         effort: str = "中",
+        business_value: str = "高",
+        **_kwargs: Any,
     ) -> None:
         """添加功能到优先级矩阵。"""
         self._feature.add_feature(name, persona_needs, impact, effort)

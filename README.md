@@ -10,7 +10,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 📖 [GitHub Repository](https://github.com/AliDujie/web-persona-skill)
 
-![Version](https://img.shields.io/badge/version-3.3.39-blue)
+![Version](https://img.shields.io/badge/version-3.3.40-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Examples](https://img.shields.io/badge/Examples-4%20runnable%20scripts-brightgreen)
@@ -19,7 +19,7 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v3339)
+- [What's New](#whats-new-in-v3340)
 - [Why Teams Choose Persona](#why-teams-choose-persona-为什么选择-persona)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use Persona?](#quick-decision-when-to-use-persona)
@@ -40,6 +40,10 @@ Based on 《赢在用户：Web人物角色创建和应用实践指南》(Steve M
 - [What's Next](#whats-next--下一步)
 
 ---
+
+## 🆕 What's New in v3340
+
+- **Repo Maintenance 2026-06-15 AM**: Version bump 3.3.39 → 3.3.40, consolidated daily maintenance entries, ecosystem documentation consistency audit.
 
 ## 🆕 What's New in v3.3.39
 
@@ -436,7 +440,7 @@ from vpd import VPDSkill
 from swd import SWDSkill
 
 persona = PersonaSkill("Travel App")                          # 1. Define user
-persona.add_persona(name="Frequent Traveler", archetype="Business User",
+persona.add_persona(name="Frequent Traveler", short_desc="Business User",
     priority="primary", goals=["Book hotel fast"])
 jtbd    = JTBDSkill("Travel App").score_opportunity("Book hotel fast", struggle=4, alternative=3, market=4, budget=4)  # 2. Validate need
 udm     = UDMSkill("Travel App").generate_interview("Booking Flow", "contextual")  # 3. Run research
@@ -466,8 +470,8 @@ from persona import PersonaSkill
 skill = PersonaSkill("My Product")
 
 # Tool: Persona creation
-def create_persona(name, archetype, priority, goals):
-    skill.add_persona(name, archetype, priority, goals=goals)
+def create_persona(name, short_desc, priority, goals):
+    skill.add_persona(name, short_desc, priority, goals=goals)
     return skill.render_all_personas()
 
 # Tool: Feature prioritization
@@ -814,6 +818,8 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 ## 📊 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
+
+**Latest (v3.3.40)**: Repo maintenance 2026-06-15 AM — Version bump 3.3.39 → 3.3.40, consolidated daily maintenance entries, ecosystem documentation consistency audit.
 
 **Latest (v3.3.39)**: Repo maintenance 2026-06-14 PM — Version bump 3.3.38 → 3.3.39, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
 
