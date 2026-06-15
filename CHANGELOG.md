@@ -1,3 +1,7 @@
+## v3.3.43 (2026-06-15)
+
+- Version bump 3.3.42 → 3.3.43, fixed stale Version History Latest entry (v3.3.40→v3.3.43), ecosystem documentation consistency audit.
+
 ## v3.3.42 (2026-06-15)
 
 - Repo Maintenance 2026-06-15: Version bump 3.3.41 → 3.3.42, ecosystem documentation consistency audit, cross-skill collaboration table validation, consolidated legacy What's New entries.
