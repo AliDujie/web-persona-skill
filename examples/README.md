@@ -18,6 +18,18 @@ All examples use **zero dependencies** — pure Python standard library only.
 
 ## Available Examples / 可用示例
 
+### Expected Output Preview / 输出预览
+
+```
+>>> Persona Created: 小明 (Efficient User)
+>>>  Type: Primary Persona
+>>>  Quote: "快就是好，别让我等"
+>>>  Goals: ["快速完成购买", "减少操作步骤"]
+>>>  Behaviors: ["高频使用 APP", "偏好搜索而非浏览"]
+>>>  CAC/LTV: ¥120 / ¥680
+>>>  Quality Score: 82/100 — Good evidence-driven persona
+```
+
 ### 01_persona_creation.py
 Create and review data-driven user personas with quality scoring.
 创建数据驱动的用户角色并进行质量评审。
